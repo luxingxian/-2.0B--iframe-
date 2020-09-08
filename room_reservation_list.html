@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>客房预订单</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="css/room.css" />
+		<link rel="stylesheet" href="css/l_tab_title.css" />
+		<link rel="stylesheet" href="css/dateRange.css" />
+		<link rel="stylesheet" href="css/f_popup.css" />
+		<link rel="stylesheet" type="text/css" href="css/ordersStyle.css" />
+	</head>
+
+	<body>
+		<!--content-->
+
+		<!--主体-->
+		<div class="l_container">
+			<div class="s_content">
+				<ul class="s_con clear">
+					<li class="fl active">待处理</li>
+					<li class="fl">未完成</li>
+					<li class="fl">今日新订单</li>
+					<li class="fl">今日入住</li>
+					<li class="fl">今日离店</li>
+					<li class="fl">全部订单</li>
+				</ul>
+				<div class="content_min">
+					<!--二级筛选导航公用结构-->
+					<div class="l_header clearfix w_plate_class">
+						<div class="w_plate_one">
+							<p><i>板块</i><em></em></p>
+							<ul class="f_border">
+								<li class="l_select_name">板块</li>
+								<li>会议</li>
+								<li>西餐西餐西餐西餐西餐</li>
+								<li>中餐</li>
+							</ul>
+						</div>
+						<div class="wtimexuan l_hide">
+							<p><i>按创建时间</i><em></em></p>
+							<ul class="f_border">
+								<li class="l_select_name">选择时间</li>
+								<li>按创建时间</li>
+								<li>按入住时间</li>
+								<li>按离店时间</li>
+							</ul>
+						</div>
+						<div class="ta_date l_date sjhide fl" id="div_date1">
+							<span class="date_title" id="date1"></span>
+							<em class="clearDate"></em>
+						</div>
+						<div class="l_hide">
+							<p><i>支付类型</i><em></em></p>
+							<ul class="f_border">
+								<li class="l_select_name">支付类型</li>
+								<li>全部</li>
+								<li>预付</li>
+								<li>现付</li>
+							</ul>
+						</div>
+						<div class="l_hide">
+							<p><i>订单状态</i><em></em></p>
+							<ul class="f_border">
+								<li class="l_select_name">订单状态</li>
+								<li>商户已确认</li>
+								<li>买家已提交</li>
+								<li>买家已付全款</li>
+							</ul>
+						</div>
+						<p class="search_input fl l_hide">
+							<input type="text" placeholder="请输入订单编号,手机号" class="l_search" />
+							<img src="images/l_icon_search.png" alt="" />
+						</p>
+
+						<a href="javascript:;" class="l_ref fr"><img src="images/s_icon.png" />刷新</a>
+					</div>
+					<!--二级筛选导航公用结构--ed---->
+					<div class="s_table table_none">
+						<table>
+							<thead>
+								<tr>
+									<th width="14.53%" style=" padding-left:2.31%;">订单编号</th>
+									<th width="13.2%">房间信息</th>
+									<th width="9.6%">入住客户</th>
+									<th width="7.06%">住店时间</th>
+									<th width="9.73%">应收金额</th>
+									<th width="5.73%">支付类型</th>
+									<th width="10.4%">订单状态</th>
+									<th width="8.4%">创建时间</th>
+									<th width="13.73%">操作人/操作时间</th>
+									<th width="5%">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="s_tip">
+										<a href="goods_details_advance.html">01011608040004</a><em class="s_icon"></em>
+										<span class="s_list f_border">
+															<i class="list_r"></i>
+															<i class="list_l">无烟房间，也希望是个高层房间</i>											
+														</span>
+									</td>
+									<td>豪华经济高端单人大床*1</td>
+									<td>
+										<em>赵先生</em>
+										<em>18856365734</em>
+									</td>
+									<td>
+										<em>2017-01-21</em>
+										<em>2017-02-21</em>
+									</td>
+									<td>
+										￥1,750.00
+									</td>
+									<td class="s_relatve">
+										<em class="s_icon1"></em>
+										<span class="s_poistin f_border">
+															<i></i>
+															预付
+														</span>
+									</td>
+									<td>
+										<em class="s_icon2">商户已确认</em>
+									</td>
+									<td>
+										<em>2017-01-16</em>
+										<em>12:24:53</em>
+									</td>
+									<td>
+										<em>Norman</em>
+										<em>2017-01-21 12:24:53</em>
+									</td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<p class="s_queren"><img src="images/s_m.png" />完成订单</p>
+											<p class="s_tuikuan"><img src="images/s_qian.png" />订单退款</p>
+											<p class="s_fahuo_min"><img src="images/flase.png" />取消订单</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="s_tip">
+										<a href="goods_details_advance.html">01011608040004</a><em class="s_icon"></em>
+										<span class="s_list f_border">
+															<i class="list_r"></i>
+															<i class="list_l">无烟房间，也希望是个高层房间</i>											
+														</span>
+									</td>
+									<td>豪华经济高端单人大床*1</td>
+									<td>
+										<em>赵先生</em>
+										<em>18856365734</em>
+									</td>
+									<td>
+										<em>2017-01-21</em>
+										<em>2017-02-21</em>
+									</td>
+									<td>
+										￥1,750.00
+									</td>
+									<td class="s_relatve">
+										<em class="s_icon3"></em>
+										<span class="s_poistin f_border">
+															<i></i>
+															现付
+														</span>
+									</td>
+									<td>
+										<em class="s_icon4">买家已提交</em>
+									</td>
+									<td>
+										<em>2017-01-16</em>
+										<em>12:24:53</em>
+									</td>
+									<td>
+										<em>Norman</em>
+										<em>2017-01-21 12:24:53</em>
+									</td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<p class="l_sure_order"><img src="images/teur.png" />确认订单</p>
+											<p class="s_fahuo_min"><img src="images/flase.png" />取消订单</p>
+											<a href="printing.html"><p><img src="images/w_printList.png" />打印订单</p></a>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="s_tip">
+										<a href="goods_details_advance.html">01011608040004</a><em class="s_icon"></em>
+										<span class="s_list f_border">
+															<i class="list_r"></i>
+															<i class="list_l">无烟房间，也希望是个高层房间</i>											
+														</span>
+									</td>
+									<td>豪华经济高端单人大床*1</td>
+									<td>
+										<em>赵先生</em>
+										<em>18856365734</em>
+									</td>
+									<td>
+										<em>2017-01-21</em>
+										<em>2017-02-21</em>
+									</td>
+									<td>
+										￥1,750.00
+									</td>
+									<td class="s_relatve">
+										<em class="s_icon1"></em>
+										<span class="s_poistin f_border">
+															<i></i>
+															预付
+														</span>
+									</td>
+									<td>
+										<em class="s_icon7">买家已付全款</em>
+									</td>
+									<td>
+										<em>2017-01-16</em>
+										<em>12:24:53</em>
+									</td>
+									<td>
+										<em>Norman</em>
+										<em>2017-01-21 12:24:53</em>
+									</td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<p class="l_sure_order"><img src="images/teur.png" />确认订单</p>
+											<p class="s_tuikuan"><img src="images/s_qian.png" />订单退款</p>
+											<p class="s_xiugai"><img src="images/amend.png" />修改订单</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="s_tip">
+										<a href="goods_details_advance.html">01011608040004</a><em class="s_icon"></em>
+										<span class="s_list f_border">
+															<i class="list_r"></i>
+															<i class="list_l">无烟房间，也希望是个高层房间</i>											
+														</span>
+									</td>
+									<td>豪华经济高端单人大床*1</td>
+									<td>
+										<em>赵先生</em>
+										<em>18856365734</em>
+									</td>
+									<td>
+										<em>2017-01-21</em>
+										<em>2017-02-21</em>
+									</td>
+									<td>
+										￥1,750.00
+									</td>
+									<td>
+
+									</td>
+									<td>
+										<em class="s_icon6">待买家支付</em>
+									</td>
+									<td>
+										<em>2017-01-16</em>
+										<em>12:24:53</em>
+									</td>
+									<td>
+										<em>Norman</em>
+										<em>2017-01-21 12:24:53</em>
+									</td>
+									<td class="l_opt">
+									</td>
+								</tr>
+								<tr>
+									<td class="s_tip">
+										<a href="goods_details_advance.html">01011608040004</a>
+									</td>
+									<td>豪华经济高端单人大床*1</td>
+									<td>
+										<em>赵先生</em>
+										<em>18856365734</em>
+									</td>
+									<td>
+										<em>2017-01-21</em>
+										<em>2017-02-21</em>
+									</td>
+									<td>
+										￥1,750.00
+									</td>
+									<td class="s_relatve">
+										<em class="s_icon3"></em>
+										<span class="s_poistin f_border">
+															<i></i>
+															现付
+														</span>
+									</td>
+									<td>
+										<span class="s_icon8"><i></i>交易成功</span>
+									</td>
+									<td>
+										<em>2017-01-16</em>
+										<em>12:24:53</em>
+									</td>
+									<td>
+										<em>Norman</em>
+										<em>2017-01-21 12:24:53</em>
+									</td>
+									<td class="l_opt">
+									</td>
+								</tr>
+								<tr>
+									<td class="s_tip">
+										<a href="goods_details_advance.html">01011608040004</a>
+									</td>
+									<td>豪华经济高端单人大床*1</td>
+									<td>
+										<em>赵先生</em>
+										<em>18856365734</em>
+									</td>
+									<td>
+										<em>2017-01-21</em>
+										<em>2017-02-21</em>
+									</td>
+									<td>
+										￥1,750.00
+									</td>
+									<td class="s_relatve">
+										<em class="s_icon3"></em>
+										<span class="s_poistin f_border">
+															<i></i>
+															现付
+														</span>
+									</td>
+									<td>
+										<span class="s_icon9"><i></i>订单关闭</span>
+									</td>
+									<td>
+										<em>2017-01-16</em>
+										<em>12:24:53</em>
+									</td>
+									<td>
+										<em>Norman</em>
+										<em>2017-01-21 12:24:53</em>
+									</td>
+									<td class="l_opt">
+									</td>
+								</tr>
+								<tr>
+									<td class="s_tip">
+										<a href="goods_details_advance.html">01011608040004</a>
+									</td>
+									<td>豪华经济高端单人大床*1</td>
+									<td>
+										<em>赵先生</em>
+										<em>18856365734</em>
+									</td>
+									<td>
+										<em>2017-01-21</em>
+										<em>2017-02-21</em>
+									</td>
+									<td>
+										￥1,750.00
+									</td>
+									<td class="s_relatve">
+										<em class="s_icon3"></em>
+										<span class="s_poistin f_border">
+															<i></i>
+															现付
+														</span>
+									</td>
+									<td>
+										<span class="s_text">买家已取消</span>
+									</td>
+									<td>
+										<em>2017-01-16</em>
+										<em>12:24:53</em>
+									</td>
+									<td>
+										<em>Norman</em>
+										<em>2017-01-21 12:24:53</em>
+									</td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<p class="s_quxiao"><img src="images/complete.png" />同意买家取消订单</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="s_tip">
+										<a href="goods_details_advance.html">01011608040004</a>
+									</td>
+									<td>豪华经济高端单人大床*1</td>
+									<td>
+										<em>赵先生</em>
+										<em>18856365734</em>
+									</td>
+									<td>
+										<em>2017-01-21</em>
+										<em>2017-02-21</em>
+									</td>
+									<td>
+										￥1,750.00
+									</td>
+									<td class="s_relatve">
+										<em class="s_icon3"></em>
+										<span class="s_poistin f_border">
+															<i></i>
+															现付
+														</span>
+									</td>
+									<td>
+										<em class="s_icon0">买家已付担保金</em>
+									</td>
+									<td>
+										<em>2017-01-16</em>
+										<em>12:24:53</em>
+									</td>
+									<td>
+										<em>Norman</em>
+										<em>2017-01-21 12:24:53</em>
+									</td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<p class="s_quxiao"><img src="images/complete.png" />同意买家取消订单</p>
+											<p class="s_xiugai"><img src="images/amend.png" />修改订单</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									
+								</tr>
+								<tr>
+									<td class="s_tip">
+										<a href="goods_details_advance.html">01011608040004</a>
+									</td>
+									<td>豪华经济高端单人大床*1</td>
+									<td>
+										<em>赵先生</em>
+										<em>18856365734</em>
+									</td>
+									<td>
+										<em>2017-01-21</em>
+										<em>2017-02-21</em>
+									</td>
+									<td>
+										￥1,750.00
+									</td>
+									<td class="s_relatve">
+										<em class="s_icon3"></em>
+										<span class="s_poistin f_border">
+															<i></i>
+															现付
+										</span>
+									</td>
+									<td>
+										<em class="s_icon0">买家已付担保金</em>
+									</td>
+									<td>
+										<em>2017-01-16</em>
+										<em>12:24:53</em>
+									</td>
+									<td>
+										<em>Norman</em>
+										<em>2017-01-21 12:24:53</em>
+									</td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<p class="s_quxiao"><img src="images/complete.png" />同意买家取消订单</p>
+											<p class="s_xiugai"><img src="images/amend.png" />修改订单</p>
+											<p class="s_xiugai"><img src="images/amend.png" />修改订单</p>
+											<p class="s_xiugai"><img src="images/amend.png" />修改订单</p>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="bode_height">
+						<!--选择板块提示-->
+						<div class="node_box">
+							<p class="f_node f_node_none">
+								<img src="images/f_table.png" class="node_img" />
+								<span class="node_text">请联系系统管理员创建板块</span>
+								<!--<a href="plate_manage.html"><span class="node_hot">创建板块</span></a>-->
+							</p>
+							<div class="f_node_none">
+								<img src="images/jiantou.png" class="node_img_two" style="display: block; width:35%; height: 173px; position: absolute; left:5%; top: 123px;" />
+								<p class="f_node_two">
+									<img src="images/xuanzebankuai.png" class="node_img_two" />
+									<span class="node_text">请选择板块</span>
+								</p>
+							</div>
+							<p class="f_node f_node_none">
+								<img src="images/f_table2.png" class="node_img"/>
+								<span class="node_text">您没有当前业务权限</span>
+							</p>	
+						</div>
+						<!--选择板块提示-->
+					</div>
+				</div>
+			</div>
+			<!--底部分页开始-->
+			<div class="l_container">
+				<div class="l_foot_page clearfix">
+					<div class="l_left fl">
+						<p>每页显示
+							<select>
+								<option>10</option>
+								<option>20</option>
+								<option>30</option>
+							</select>
+						</p>
+					</div>
+					<div class="l_right fr clearfix">
+						<p>
+							<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+							<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+							<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+						</p>
+						<p class="l_skippage">
+							到<input type="number" />页<button>确定</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--底部分页--ed-->
+			<!--主体-->
+
+			<!--完成订单弹窗-->
+			<!--<div class="s_tag s_none1">
+			<p class="s_shadow"></p>
+			<div class="s_vote">
+				<div class="vote_text vote_tag clear">
+					<span class="fl"></span>
+					<p class="fl">确认客户已离店？</br>确认后，订单交易成功。</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="s_determine fr">确定</a>
+					<a href="javascript:;" class="s_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>-->
+			<div class="s_confirm_list firm_none1">
+				<p class="s_shadow"></p>
+				<div class="confirm_min1 clear">
+					<div class="com_min fl">
+						<div class="com_log">
+							<ul class="com_ul clear">
+								<li class="fl ul_actve">房间信息</li>
+								<li class="fl">订单信息</li>
+							</ul>
+							<div class="com_tab">
+								<div class="com_table com_class" style="display: block;">
+									<div class="com_height">
+										<table>
+											<thead>
+												<tr>
+													<th>日期</th>
+													<th>房型</th>
+													<th>数量</th>
+													<th>房间单价</th>
+													<th>房间总价</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="com_padding">2016-08-21</td>
+													<td>经济标间经济标间经济</td>
+													<td>2</td>
+													<td>¥ 250.00</td>
+													<td>¥ 500.00</td>
+												</tr>
+												<tr>
+													<td class="com_padding">2016-08-21</td>
+													<td>经济标间经济标间经济</td>
+													<td>2</td>
+													<td>¥ 250.00</td>
+													<td>¥ 500.00</td>
+												</tr>
+												<tr>
+													<td class="com_padding">2016-08-21</td>
+													<td>经济标间经济标间经济</td>
+													<td>2</td>
+													<td>¥ 250.00</td>
+													<td>¥ 500.00</td>
+												</tr>
+												<tr>
+													<td class="com_padding">2016-08-21</td>
+													<td>经济标间经济标间经济</td>
+													<td>2</td>
+													<td>¥ 250.00</td>
+													<td>¥ 500.00</td>
+												</tr>
+												<tr>
+													<td class="com_padding">2016-08-21</td>
+													<td>经济标间经济标间经济</td>
+													<td>2</td>
+													<td>¥ 250.00</td>
+													<td>¥ 500.00</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="f_con_text">
+										<span class="f_con_width">担保金退款</span>
+										<span>订单完成后将自动发起退款</span>
+									</p>
+									<p class="f_con_text">
+										<span class="f_con_width">退款类型</span>
+										<span class="f_text_blak">全部退款</span>
+									</p>
+									<p class="f_con_text">
+										<span class="f_con_width">待退款金额</span>
+										<span class="f_text_blak">¥ 500.00</span>
+									</p>
+									
+								</div>
+								<div class="com_list com_class">
+									<div class="w_typr_info w_first">
+										<p class="w_pass_infor">订单信息</p>
+										<p class="w_details_infor">
+											<em>
+											<span class="details_one">订单类型 </span>
+											<span class="details_two">客房预订单</span>
+										</em>
+											<em>
+											<span class="details_three">订单来源</span>
+											<span class="details_four">微信</span>								
+										</em>
+										</p>
+										<p class="w_details_infor">
+											<em>
+											<span class="details_one">创建时间 </span>
+											<span class="details_two">2016-08-04 14:24:53</span>
+										</em>
+											<em>
+											<span class="details_one">下单用户</span>
+											<span class="details_two">hkekghg</span>
+										</em>
+										</p>
+									</div>
+									<div class="w_typr_info w_first">
+										<p class="w_pass_infor">支付信息</p>
+										<p class="w_details_infor">
+											<em>
+											<span class="details_one">支付类型</span>
+											<span class="details_two">预付</span>
+										</em>
+											<em class="details_width">
+											<span class="details_three">支付方式</span>
+											<span class="details_four">微信支付</span>								
+										</em>
+										</p>
+										<p class="w_details_infor">
+											<em>
+											<span class="details_one">收款单号 </span>
+											<span class="details_two">SK2016080400004</span>
+										</em>
+											<em class="details_width">
+											<span class="details_one">交易流水号 </span>
+											<span class="details_two">1009660380201506130728806387</span>
+										</em>
+										</p>
+									</div>
+									<div class="w_typr_info w_first">
+										<p class="w_pass_infor">入住信息</p>
+										<div class="infor_clear clear">
+											<span class="infor_left fl">入住人</span>
+											<ul class="infor_right fl">
+												<li class="fl">
+													<span><em>[房间1]</em> 邵双欣</span>
+													<span><em>[房间1]</em> 邵双欣</span>
+													<span><em>[房间1]</em> 邵双欣</span>
+												</li>
+												<li class="fl">
+													<span><em>[房间1]</em> 邵双欣</span>
+													<span><em>[房间1]</em> 邵双欣</span>
+													<span><em>[房间1]</em> 邵双欣</span>
+												</li>
+												<li class="fl">
+													<span><em>[房间1]</em> 邵双欣</span>
+													<span><em>[房间1]</em> 邵双欣</span>
+													<span><em>[房间1]</em> 邵双欣</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="s_center1">
+							<div class="clear fr">
+								<a href="javascript:;" class="firm_btn1 fl">取消</a>
+								<div class="scroll_postion fl">
+									<a href="javascript:;" class="firm_btn2">确定</a>
+									<div class="s_scroll f_scroll_height">
+										<p class="scroll_p">确认客户已离店？确认后，订单交易完成。</p>
+										<p class="clear">
+											<a href="javascript:;" class="scroll_btn2 fr">确定</a>
+											<a href="javascript:;" class="scroll_btn1 fr">取消</a>
+										</p>
+										<span class="scrool_span"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="firm_right1 fr">
+						<div class="firm_post">
+							<p class="post_text">完成订单</p>
+							<div class="post_list">
+								<p class="firm_kuan">订单编号</p>
+								<p>11160804142453400004</p>
+							</div>
+							<div class="post_list">
+								<p>赵先生</p>
+								<p class="post_margin">18877944744</p>
+								<p>1608房间</p>
+								<p class="post_height">
+									<span>备注</span>
+									<span class="post_wight" title="有窗房间请安排有窗房间">有窗房间请安排有窗房间</span>
+								</p>
+							</div>
+							<div class="post_list">
+								<p class="post_hot clear">
+									<span class="fl">总房费</span>
+									<spab class="fr">¥ 355.00</spab>
+								</p>
+								<p class="post_hot clear">
+									<span class="fl">优惠</span>
+									<spab class="fr">-¥ 35</spab>
+								</p>
+								<p class="post_hot clear">
+									<span class="fl">订单应收房费</span>
+									<spab class="fr">¥ 700</spab>
+								</p>
+							</div>
+							<p class="post_last clear">
+								<span class="fl">实收房费</span>
+								<span class="fr">¥ 300.00</span>
+							</p>
+							<!--<p class="post_last clear">
+							<span class="fl">订单应收房费</span>
+							<span class="fr">¥ 300.00</span>
+						</p>-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--完成订单弹窗-->
+
+			<!--订单退款弹窗-->
+			<div class="s_refund w_re_none">
+				<p class="s_shadow"></p>
+				<div class="w_affirm_order">
+					<div class="w_affirm_left fl">
+						<div class="w_affirm_tab">
+							<span class="cus_info active">退款设置</span>
+							<span class="com_info">订单信息</span>
+						</div>
+						<div class="affirm_tab_one">
+							<div class="s_nearly" style="margin: 20px 30px 0 30px;">
+								<div class="nearly_title">
+									<table>
+										<thead>
+											<tr>
+												<th>日期</th>
+												<th>房型</th>
+												<th>数量</th>
+												<th>房间单价</th>
+												<th>房间总价</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="table_padding">2016-08-21</td>
+												<td>经济标间经济标间经济</td>
+												<td>2</td>
+												<td>￥249</td>
+												<td>￥500</td>
+											</tr>
+											<tr>
+												<td class="table_padding">2016-08-21</td>
+												<td>经济标间经济标间经济</td>
+												<td>2</td>
+												<td>￥249</td>
+												<td>￥500</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="list_checkbox" style="margin: 20px 0 0 30px;">
+								<p class="check_p">退款设置<i class="w_required">（必填）</p>
+							<p class="check_text">退款类型</p>
+							<ul class="clear">
+								<li class="fl">
+									<span class="firm_active"><em class="firm_em"></em></span> 全部退款(订单关闭)
+								</li>
+								<li class="fl">
+									<span><em></em></span> 部分退款(订单直接关闭)
+								</li>
+								<li class="fl">
+									<span><em></em></span> 部分退款(订单继续进行)
+								</li>
+							</ul>
+						</div>
+						<div class="order_note">
+							<p class="check_text1">待退款金额</p>
+							<input type="text" placeholder="退款金额不能为零" class="oder_inp" />
+						</div>
+						<div class="s_tuikuan1">
+							<p>退款原因</p>
+							<div class="hot_list hot_back clear">
+								<input type="text" class="oder_inp1" maxlength="50" placeholder="输入退款原因" onkeyup="javascript:setShowLength(this, 0, 's_span2');" class="fl" />
+								<span class="fr"><i id="s_span2">0</i>/50</span>
+							</div>
+						</div>
+					</div>
+					<div class="affirm_tab_two">
+						<div class="w_typr_info w_first">
+							<p class="w_pass_infor">订单信息</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_one">订单类型 </span>
+									<span class="details_two">客房预订单</span>
+								</em>
+								<em>
+									<span class="details_one">订单来源</span>
+									<span class="details_two">微信</span>								
+								</em>
+							</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_one">创建时间 </span>
+									<span class="details_two">2016-08-04 14:24:53</span>
+								</em>
+								<em>
+									<span class="details_one">下单用户</span>
+									<span class="details_two">hkekghg</span>
+								</em>
+							</p>
+						</div>
+						<div class="w_typr_info w_first">
+							<p class="w_pass_infor">收款信息</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_one">支付类型</span>
+									<span class="details_two">预付</span>
+								</em>
+								<em>
+									<span class="details_one">支付方式</span>
+									<span class="details_two">微信支付</span>
+								</em>
+							</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_one">收款单号 </span>
+									<span class="details_two">SK1608040004</span>
+								</em>
+								<em class="s_title">
+									<span class="details_three">交易流水号</span>
+									<span class="details_four">1009660380201506130728806387</span>								
+								</em>
+							</p>
+						</div>
+						<div class="w_typr_info w_first">
+							<p class="w_pass_infor">入住信息</p>
+							<span class="w_pass_left fl">
+								<em class="details_one">入住人</span>
+							</span>
+							<span class="w_pass_right fl">
+								<table>
+									<tr>
+										<td><i>[房间1]</i>邵双欣</td>
+										<td><i>[房间1]</i>邵双欣</td>
+										<td><i>[房间1]</i>邵双欣</td>
+									</tr>
+									<tr>
+										<td><i>[房间1]</i>邵双欣</td>
+										<td><i>[房间1]</i>邵双欣</td>
+										<td><i>[房间1]</i>邵双欣</td>
+									</tr>
+									<tr>
+										<td><i>[房间1]</i>邵双欣</td>
+										<td><i>[房间1]</i>邵双欣</td>
+										<td><i>[房间1]</i>邵双欣</td>
+									</tr>
+									<tr>
+								</table>
+							</span>
+						</div>
+					</div>
+					<div class="delivered_btn">
+						<!--238 84-->
+						<span class="w_sure_btn">确定</span>
+						<span class="w_cancel_btn">取消</span>
+						<div class="secondary_popup">
+							<p>是否确认退款？</p>
+							<em class="secondary_sure_btn">确定</em>
+							<em class="secondary_cancel_btn">取消</em>
+							<i class="note_san"></i>
+						</div>
+
+					</div>
+				</div>
+				<div class="firm_right refundOrder w_affirm_right affirm_back fr">
+					<div class="firm_text firm_text_none">
+						<p class="firmTitle">订单退款</p>
+						<div class="paddBottom">
+							<p>订单编号</p>
+							<p>1111111111111111111111</p>
+						</div>
+						<div class="paddBottom">
+							<p>赵先生</p>
+							<p>18518099336</p>
+							<p>1608房间
+							</p>
+							<p>经济标间*2
+							</p>
+							<p>2016-08-21至2016-08-23
+							</p>
+							<p class="remark" style="margin-top: 15px;">备注</p>
+							<p class="remarkText" title="有窗房间请安排有窗房间排有窗房间请安排有窗房间排">有窗房间请安排有窗房间排有窗房间请安排有窗房间排</p>
+						</div>
+						<div class="paddBottom">
+							<p class="money">总房费<span class="fr">￥1,0660.00</span></p>
+							<p class="money">优惠<span class="fr">-￥277.00</span></p>
+							<p class="money">订单应收房费<span class="fr">￥783.00</span></p>
+						</div>
+						<p class="totalMoney">实收房费<span class="fr">￥783.00</span></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--同意取消订单弹窗-->
+		<div class="s_tag s_none">
+			<p class="s_shadow"></p>
+			<div class="s_vote">
+				<div class="vote_text clear">
+					<span class="fl"></span>
+					<p class="fl">买家已申请取消订单，</br>是否同意取消？</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="s_determine fr">确定</a>
+					<a href="javascript:;" class="s_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>
+		<!--同意取消订单弹窗-->
+
+		<!--确认订单弹窗-->
+		<div class="s_confirm_list firm_none">
+			<p class="s_shadow"></p>
+			<div class="confirm_min1 clear">
+				<div class="com_min fl">
+					<div class="com_log">
+						<ul class="com_ul clear">
+							<li class="fl ul_actve">房间信息</li>
+							<li class="fl">订单信息</li>
+						</ul>
+						<div class="com_tab">
+							<div class="com_table com_class" style="display: block;">
+								<table>
+									<thead>
+										<tr>
+											<th>日期</th>
+											<th>房型</th>
+											<th>数量</th>
+											<th>房间单价</th>
+											<th>房间总价</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="com_padding">2016-08-21</td>
+											<td>经济标间经济标间经济</td>
+											<td>2</td>
+											<td>¥ 250.00</td>
+											<td>¥ 500.00</td>
+										</tr>
+										<tr>
+											<td class="com_padding">2016-08-21</td>
+											<td>经济标间经济标间经济</td>
+											<td>2</td>
+											<td>¥ 250.00</td>
+											<td>¥ 500.00</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+							<div class="com_list com_class">
+								<div class="w_typr_info w_first">
+									<p class="w_pass_infor">订单信息</p>
+									<p class="w_details_infor">
+										<em>
+											<span class="details_one">订单类型 </span>
+											<span class="details_two">客房预订单</span>
+										</em>
+										<em>
+											<span class="details_three">订单来源</span>
+											<span class="details_four">微信</span>								
+										</em>
+									</p>
+									<p class="w_details_infor">
+										<em>
+											<span class="details_one">创建时间 </span>
+											<span class="details_two">2016-08-04 14:24:53</span>
+										</em>
+										<em>
+											<span class="details_one">下单用户</span>
+											<span class="details_two">hkekghg</span>
+										</em>
+									</p>
+								</div>
+								<div class="w_typr_info w_first">
+									<p class="w_pass_infor">支付信息</p>
+									<p class="w_details_infor">
+										<em>
+											<span class="details_one">支付类型</span>
+											<span class="details_two">预付</span>
+										</em>
+										<em class="details_width">
+											<span class="details_three">支付方式</span>
+											<span class="details_four">微信支付</span>								
+										</em>
+									</p>
+									<p class="w_details_infor">
+										<em>
+											<span class="details_one">收款单号 </span>
+											<span class="details_two">SK2016080400004</span>
+										</em>
+										<em class="details_width">
+											<span class="details_one">交易流水号 </span>
+											<span class="details_two">1009660380201506130728806387</span>
+										</em>
+									</p>
+								</div>
+								<div class="w_typr_info w_first">
+									<p class="w_pass_infor">入住信息</p>
+									<div class="infor_clear clear">
+										<span class="infor_left fl">入住人</span>
+										<ul class="infor_right fl">
+											<li class="fl">
+												<span><em>[房间1]</em> 邵双欣</span>
+												<span><em>[房间1]</em> 邵双欣</span>
+												<span><em>[房间1]</em> 邵双欣</span>
+											</li>
+											<li class="fl">
+												<span><em>[房间1]</em> 邵双欣</span>
+												<span><em>[房间1]</em> 邵双欣</span>
+												<span><em>[房间1]</em> 邵双欣</span>
+											</li>
+											<li class="fl">
+												<span><em>[房间1]</em> 邵双欣</span>
+												<span><em>[房间1]</em> 邵双欣</span>
+												<span><em>[房间1]</em> 邵双欣</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="s_center1">
+						<div class="clear fr">
+							<a href="javascript:;" class="firm_btn1 fl">取消</a>
+							<div class="scroll_postion fl">
+								<a href="javascript:;" class="firm_btn2">确定</a>
+								<div class="s_scroll f_scroll_height">
+									<p class="scroll_p">是否确认订单？确认后，请预留房间！</p>
+									<p class="clear">
+										<a href="javascript:;" class="scroll_btn2 fr">确定</a>
+										<a href="javascript:;" class="scroll_btn1 fr">取消</a>
+									</p>
+									<span class="scrool_span"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="firm_right1 fr">
+					<div class="firm_post">
+						<p class="post_text">确认订单</p>
+						<div class="post_list">
+							<p class="firm_kuan">订单编号</p>
+							<p>11160804142453400004</p>
+						</div>
+						<div class="post_list">
+							<p>赵先生</p>
+							<p class="post_margin">18877944744</p>
+							<p>1608房间</p>
+							<p class="post_height">
+								<span>备注</span>
+								<span class="post_wight" title="有窗房间请安排有窗房间">有窗房间请安排有窗房间</span>
+							</p>
+						</div>
+						<div class="post_list">
+							<p class="post_hot clear">
+								<span class="fl">总房费</span>
+								<spab class="fr">¥ 355.00</spab>
+							</p>
+							<p class="post_hot clear">
+								<span class="fl">优惠</span>
+								<spab class="fr">-¥ 35</spab>
+							</p>
+							<p class="post_hot clear">
+								<span class="fl">订单应收房费</span>
+								<spab class="fr">¥ 700</spab>
+							</p>
+						</div>
+						<p class="post_last clear">
+							<span class="fl">实收房费</span>
+							<span class="fr">¥ 300.00</span>
+						</p>
+						<!--<p class="post_last clear">
+							<span class="fl">订单应收房费</span>
+							<span class="fr">¥ 300.00</span>
+						</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--取消订单弹窗-->
+		<div class="s_refund w_cancel_popup">
+			<p class="s_shadow"></p>
+			<div class="w_affirm_order">
+				<div class="w_affirm_left fl">
+					<div class="w_affirm_tab">
+						<span class="cus_info active">取消订单</span>
+						<span class="com_info">订单信息</span>
+					</div>
+					<div class="affirm_tab_one">
+						<div class="s_nearly" style="margin: 20px 30px 0 30px;">
+							<div class="nearly_title">
+								<table>
+									<thead>
+										<tr>
+											<th>日期</th>
+											<th>房型</th>
+											<th>数量</th>
+											<th>房间单价</th>
+											<th>房间总价</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="table_padding">2016-08-21</td>
+											<td>经济标间经济标间经济</td>
+											<td>2</td>
+											<td>￥249</td>
+											<td>￥500</td>
+										</tr>
+										<tr>
+											<td class="table_padding">2016-08-21</td>
+											<td>经济标间经济标间经济</td>
+											<td>2</td>
+											<td>￥249</td>
+											<td>￥500</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="list_checkbox" style="margin: 20px 0 0 30px;">
+							<p class="check_p">取消订单<i class="w_required">（必填）</i></p>
+							<p class="check_text">担保金退款类型</p>
+							<ul class="clear">
+								<li class="fl">
+									<span class="firm_active"><em class="firm_em"></em></span> 全部退款
+								</li>
+								<li class="fl">
+									<span><em></em></span> 部分退款
+								</li>
+								<li class="fl">
+									<span><em></em></span> 不退款
+								</li>
+							</ul>
+						</div>
+						<div class="order_note">
+							<p class="check_text1">待退款金额<i>（不能超过实收担保金，确认取消后将自动发起退款）</i></p>
+							<input type="text" placeholder="退款金额不能为零" class="oder_inp" />
+						</div>
+						<div class="s_tuikuan1">
+							<p class="check_text1">退款原因</p>
+							<div class="hot_list hot_back clear">
+								<input type="text" class="oder_inp1" maxlength="50" placeholder="输入退款原因" onkeyup="javascript:setShowLength(this, 0, 's_span2');" class="fl" />
+								<span class="fr"><i id="s_span2">0</i>/50</span>
+							</div>
+						</div>
+					</div>
+					<div class="affirm_tab_two">
+						<div class="w_typr_info w_first">
+							<p class="w_pass_infor">订单信息</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_one">订单类型 </span>
+									<span class="details_two">客房预订单</span>
+								</em>
+								<em>
+									<span class="details_one">订单来源</span>
+									<span class="details_two">微信</span>								
+								</em>
+							</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_one">创建时间 </span>
+									<span class="details_two">2016-08-04 14:24:53</span>
+								</em>
+								<em>
+									<span class="details_one">下单用户</span>
+									<span class="details_two">hkekghg</span>
+								</em>
+							</p>
+						</div>
+						<div class="w_typr_info w_first">
+							<p class="w_pass_infor">收款信息</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_one">支付类型</span>
+									<span class="details_two">预付</span>
+								</em>
+								<em>
+									<span class="details_one">支付方式</span>
+									<span class="details_two">微信支付</span>
+								</em>
+							</p>
+						</div>
+						<div class="w_typr_info w_first">
+							<p class="w_pass_infor">入住信息</p>
+							<span class="w_pass_left fl">
+								<em class="details_one">入住人</span>
+							</span>
+							<span class="w_pass_right fl">
+								<table>
+									<tr>
+										<td><i>[房间1]</i>邵双欣</td>
+										<td><i>[房间1]</i>邵双欣</td>
+										<td><i>[房间1]</i>邵双欣</td>
+									</tr>
+									<tr>
+										<td><i>[房间1]</i>邵双欣</td>
+										<td><i>[房间1]</i>邵双欣</td>
+										<td><i>[房间1]</i>邵双欣</td>
+									</tr>
+									<tr>
+										<td><i>[房间1]</i>邵双欣</td>
+										<td><i>[房间1]</i>邵双欣</td>
+										<td><i>[房间1]</i>邵双欣</td>
+									</tr>
+									<tr>
+								</table>
+							</span>
+						</div>
+					</div>
+					<div class="delivered_btn">
+						<!--238 84-->
+						<span class="w_sure_btn">确定</span>
+						<span class="w_cancel_btn">取消</span>
+						<div class="secondary_popup">
+							<p>确认取消订单，取消后订单关闭？</p>
+							<em class="secondary_sure_btn">确定</em>
+							<em class="secondary_cancel_btn">取消</em>
+							<i class="note_san"></i>
+						</div>
+
+					</div>
+				</div>
+				<div class="firm_right refundOrder w_affirm_right affirm_back fr">
+					<div class="firm_text firm_text_none">
+						<p class="firmTitle">取消订单</p>
+						<div class="paddBottom">
+							<p>订单编号</p>
+							<p>1111111111111111111111</p>
+						</div>
+						<div class="paddBottom">
+							<p>赵先生</p>
+							<p>18518099336</p>
+							<p>1608房间
+							</p>
+							<p>经济标间*2
+							</p>
+							<p>2016-08-21至2016-08-23
+							</p>
+							<p class="remark" style="margin-top: 15px;">备注</p>
+							<p class="remarkText" title="有窗房间请安排有窗房间排有窗房间请安排有窗房间排">有窗房间请安排有窗房间排有窗房间请安排有窗房间排</p>
+						</div>
+						<div class="paddBottom">
+							<p class="money">总房费<span class="fr">￥1,0660.00</span></p>
+							<p class="money">优惠<span class="fr">-￥277.00</span></p>
+							<!--<p class="money">订单应收房费<span class="fr">￥783.00</span></p>-->
+						</div>
+						<p class="totalMoney">订单应收房费
+							<!--实收担保金--><span class="fr">￥783.00</span></p>
+					</div>
+					<!--实收担保金-->
+				</div>
+			</div>
+		</div>
+
+		<!--客房-修改订单-->
+		<div class="popUpBox clearfix popAmendOrder">
+			<div class="popLeft fl">
+				<p class="popTab">
+					<a href="javascript:;" class="active">修改订单</a>
+					<a href="javascript:;">订单信息</a>
+				</p>
+				<div class="tableContent goodInfo">
+					<ul class="clearfix">
+						<li class="fl">日期</li>
+						<li class="fl">房型</li>
+						<li class="fl">数量</li>
+						<li class="fl">房间单价</li>
+						<li class="fl">房间总价</li>
+					</ul>
+					<div class="scrollContent">
+						<table>
+							<tbody>
+								<tr>
+									<td>2018-05-25</td>
+									<td><span>经济标间经济标间</span></td>
+									<td>4</td>
+									<td>￥100</td>
+									<td>￥400</td>
+								</tr>
+								<tr>
+									<td>2018-05-25</td>
+									<td><span>经济标间经济标间</span></td>
+									<td>4</td>
+									<td>￥100</td>
+									<td>￥400</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+					<div class="cancleRenson">
+						<p class="rensonTitle">取消原因<span class="redColor">&nbsp;&nbsp;( 必填 )</span></p>
+						<div class="roomMoney">
+							<p class="inputTitle">实收房费<span>（实收房费不能为零，不能超过原实收房费）</span></p>
+							<input type="number" name="" id="" value="" />
+						</div>
+						<div class="refoundMoney">
+							<p class="inputTitle">待退款金额<span>（修改订单提交成功后，将自动发起退款）</span></p>
+							<p class="refoundNum">￥100</span>
+							</p>
+						</div>
+						<div class="textArea">
+							<p class="inputTitle">修改原因</p>
+							<textarea maxlength="50" placeholder="请输入订单取消理由"></textarea>
+							<span class="l_num"><i>0</i>/50</span>
+						</div>
+					</div>
+				</div>
+				<div class="tableContent orderInfo">
+					<div class="clearfix">
+						<h3 class="orderInfoTitle">订单信息</h3>
+						<p class="fl orderInfoList">
+							<span class="orderKey">订单类型</span>
+							<span class="orderValue">菜品预订订单</span>
+						</p>
+						<p class="fl orderInfoList">
+							<span class="orderKey">订单来源</span>
+							<span class="orderValue">portal</span>
+						</p>
+						<p class="fl orderInfoList">
+							<span class="orderKey">创建时间</span>
+							<span class="orderValue">2016-08-05 15:12:32</span>
+						</p>
+						<p class="fl orderInfoList">
+							<span class="orderKey">下单用户</span>
+							<span class="orderValue">jack</span>
+						</p>
+					</div>
+					<div class="clearfix">
+						<h3 class="orderInfoTitle">支付信息</h3>
+						<p class="fl orderInfoList">
+							<span class="orderKey">支付类型</span>
+							<span class="orderValue">预付</span>
+						</p>
+						<p class="fl orderInfoList">
+							<span class="orderKey">支付方式</span>
+							<span class="orderValue">微信支付</span>
+						</p>
+						<p class="fl orderInfoList">
+							<span class="orderKey">收款单号</span>
+							<span class="orderValue">111111111111</span>
+						</p>
+						<p class="fl orderInfoList">
+							<span class="orderKey">交易流水号</span>
+							<span class="orderValue">1111111111111111111111111</span>
+						</p>
+					</div>
+					<div class="clearfix">
+						<h3 class="orderInfoTitle">入住信息</h3>
+						<div class="person fl">入住人</div>
+						<div class="room fl">
+							<span>[房间1] <em>邵双欣</em></span>
+							<span>[房间1] <em>邵双欣</em></span>
+							<span>[房间1] <em>邵双欣</em></span>
+							<span>[房间1] <em>邵双欣</em></span>
+							<span>[房间1] <em>邵双欣</em></span>
+							<span>[房间1] <em>邵双欣</em></span>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="bottomBtn clearfix">
+					<a href="javascript:;" class="sure fr">确定</a>
+					<a href="javascript:;" class="cancle fr">取消</a>
+					<div class="s_scroll">
+						<p class="scroll_p">是否确认修改订单？</p>
+						<p class="clear">
+							<a href="javascript:;" class="scroll_btn2 fr">确定</a>
+							<a href="javascript:;" class="scroll_btn1 fr">取消</a>
+						</p>
+						<span class="scrool_span"></span>
+					</div>
+				</div>
+			</div>
+			<div class="popRight fl">
+				<div class="firm_text firm_text_none">
+					<p class="firmTitle">修改订单</p>
+					<div class="paddBottom">
+						<p>订单编号</p>
+						<p>1111111111111111111111</p>
+					</div>
+					<div class="paddBottom">
+						<p>赵先生</p>
+						<p>18518099336</p>
+						<p>经济标间*2</p>
+						<p>2016-05-23至2016-05-25</p>
+						<p class="remark">备注</p>
+						<p class="remarkText" title="请安排有窗户的房间，窗户要大，房间要干净、干净">请安排有窗户的房间，窗户要大，房间要干净、干净</p>
+					</div>
+					<div class="paddBottom">
+						<p class="money">总房费<span>￥1500.00</span></p>
+						<p class="money">优惠<span>-￥250.00</span></p>
+						<p class="money">订单应收房费<span>￥1500.00</span></p>
+					</div>
+					<p class="totalMoney pay">实收房费<span>￥1250.00</span></p>
+					<p class="totalMoney prepay">订单应收房费<span>￥1250.00</span></p>
+					<p class="totalMoney assure">实收担保金<span>￥550.00</span></p>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--客房-修改订单--ed-->
+		<div class="l_drop"></div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dateRange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/l_daterange.js" type="text/javascript" charset="utf-8"></script>
+		<!--鼠标移入支付类型图标显示提示-->
+		<script>
+			$(function() {
+				$('.s_relatve em').hover(function() {
+					$(this).next('.s_poistin').stop().fadeIn();
+				}, function() {
+					$(this).next('.s_poistin').stop().fadeOut();
+				});
+				//取消弹窗
+				$('.w_cancel_popup .list_checkbox ul li').click(function() {
+					$(this).children('span').addClass('firm_active').parent('li').siblings().children('span').removeClass('firm_active');
+					if($('.w_cancel_popup .list_checkbox ul li:first-child').children('span').hasClass('firm_active')) {
+						//alert('11')
+						$('.w_cancel_popup .oder_inp').attr('disabled', 'disabled')
+					} else {
+						$('.w_cancel_popup .oder_inp').removeAttr('disabled', 'disabled')
+					}
+				});
+				if($('.w_cancel_popup .list_checkbox ul li:first-child').children('span').hasClass('firm_active')) {
+					$('.w_cancel_popup .oder_inp').attr('disabled', 'disabled')
+				} else {
+					$('.w_cancel_popup .oder_inp').removeAttr('disabled', 'disabled')
+				}
+				$('.w_cancel_popup .list_checkbox ul li:nth-child(2)').click(function() {
+					$('.w_cancel_popup .oder_inp').attr('disabled', false)
+				});
+				$('.w_cancel_popup .list_checkbox ul li:nth-child(3)').click(function() {
+					$('.w_cancel_popup .oder_inp').attr('disabled', "disabled")
+				});
+				var fp1;
+				var fp2;
+				var fp3;
+				$(".w_cancel_popup .w_sure_btn").click(function() {
+					if($(".w_affirm_tab span:last-child").hasClass("active") && $('.w_cancel_popup .oder_inp').val() == "" || $('.w_cancel_popup .oder_inp1').val() == "") {
+						$(".w_affirm_tab .cus_info:first-child").addClass("active").siblings().removeClass("active");
+						$(".affirm_tab_one").show();
+						$(".affirm_tab_two").hide();
+					}
+					if($('.w_cancel_popup .list_checkbox ul li').children('span').hasClass('firm_active')) {
+						$(".w_cancel_popup .check_text").css("background", "");
+						fp1 = true;
+					} else {
+						$(".w_cancel_popup .check_text").css("background", " url(./images/w_yz.png) no-repeat 94%");
+						fp1 = false;
+					}
+					if($('.w_cancel_popup .oder_inp').val() == "") {
+						$(".w_cancel_popup .oder_inp").css("border", "1px solid red");
+						fp2 = false;
+					} else {
+						$(".w_cancel_popup .oder_inp").css("border", "1px solid #dcdcdc");
+						fp2 = true;
+					}
+					if($('.w_cancel_popup .oder_inp1').val() == "") {
+						$(".w_cancel_popup .hot_back ").css("border", "1px solid red");
+						fp3 = false;
+					} else {
+						$(".w_cancel_popup .hot_back ").css("border", "1px solid #dcdcdc");
+						fp3 = true;
+					}
+					if(fp1 && fp2 && fp3) {
+						$('.w_cancel_popup .note_san').fadeIn();
+						$('.w_cancel_popup .secondary_popup').fadeIn();
+					} else {
+						return false
+					}
+
+				});
+				$(".w_cancel_popup .secondary_sure_btn").click(function() {
+					$(".w_cancel_popup").fadeOut();
+					$('.w_cancel_popup .note_san').fadeOut();
+					$('.w_cancel_popup .secondary_popup').fadeOut();
+					tcHide();
+				});
+				$('.w_cancel_popup .w_cancel_btn').click(function() {
+					$('.w_cancel_popup').fadeOut();
+					tcHide()
+				});
+				$('.s_fahuo_min').click(function() {
+					$('.w_cancel_popup').fadeIn();
+					tcShow(1)
+				});
+
+				//退款弹窗
+				$('.w_re_none .list_checkbox ul li').click(function() {
+					$(this).children('span').addClass('firm_active').parent('li').siblings().children('span').removeClass('firm_active');
+					if($('.w_re_none .list_checkbox ul li:first-child').children('span').hasClass('firm_active')) {
+						//alert('11')
+						$('.w_re_none .oder_inp').attr('disabled', 'disabled')
+					} else {
+						$('.w_re_none .oder_inp').removeAttr('disabled', 'disabled')
+					}
+				});
+				if($('.w_re_none .list_checkbox ul li:first-child').children('span').hasClass('firm_active')) {
+					$('.w_re_none .oder_inp').attr('disabled', 'disabled')
+				} else {
+					$('.w_re_none .oder_inp').removeAttr('disabled', 'disabled')
+				}
+				$('.w_re_none .list_checkbox ul li:nth-child(1)').click(function() {
+					$('.w_re_none .oder_inp').attr('disabled', true)
+				});
+				var fp1;
+				var fp2;
+				var fp3;
+				$(".w_re_none .w_sure_btn").click(function() {
+					if($('.w_re_none .list_checkbox ul li').children('span').hasClass('firm_active')) {
+						$(".w_re_none .check_text").css("background", "");
+						fp1 = true;
+					} else {
+						$(".w_re_none .check_text").css("background", " url(./images/w_yz.png) no-repeat 94%");
+						fp1 = false;
+					}
+					if($('.w_re_none .oder_inp').val() == "") {
+						$(".w_re_none .oder_inp").css("border", "1px solid red");
+						fp2 = false;
+					} else {
+						$(".w_re_none .oder_inp").css("border", "1px solid #dcdcdc");
+						fp2 = true;
+					}
+					if($('.w_re_none .oder_inp1').val() == "") {
+						$(".w_re_none .hot_back ").css("border", "1px solid red");
+						fp3 = false;
+					} else {
+						$(".w_re_none .hot_back ").css("border", "1px solid #dcdcdc");
+						fp3 = true;
+					}
+					if(fp1 && fp2 && fp3) {
+						$('.w_re_none .note_san').fadeIn();
+						$('.w_re_none .secondary_popup').fadeIn();
+					} else {
+						return false
+					}
+				});
+				$(".w_re_none .secondary_sure_btn").click(function() {
+					$(".w_re_none").fadeOut();
+					$('.w_re_none .note_san').fadeOut();
+					$('.w_re_none .secondary_popup').fadeOut();
+					tcHide();
+				});
+				$('.w_re_none .w_cancel_btn').click(function() {
+					$('.w_re_none').fadeOut();
+					tcHide()
+				});
+				$('.s_tuikuan').click(function() {
+					$('.w_re_none').fadeIn();
+					tcShow(1)
+				});
+			});
+		</script>
+		<!--鼠标移入表格背景颜色变化-->
+		<script>
+			$(function() {
+				$('.s_table tbody tr').hover(function() {
+					$(this).css('background', '#f0f5f9');
+					$(this).find('.s_icon').css('background', 'url(./images/list.png) no-repeat center')
+
+				}, function() {
+					$(this).css('background', '#fff');
+					$(this).find('.s_icon').css('background', 'url(./images/s_icon2.png) no-repeat center')
+				});
+
+				$('.s_tip em').hover(function() {
+					$(this).parents('.s_tip').find('.s_list').stop().fadeIn();
+				}, function() {
+					$(this).parents('.s_tip').find('.s_list').stop().fadeOut();
+				});
+			});
+		</script>
+		<!--点击分类切换背景颜色--->
+		<script>
+			$(function() {
+				$('.s_con li').click(function() {
+					$('.s_con li').removeClass('active');
+					$(this).addClass('active');
+				});
+			});
+		</script>
+		<!--字数限制-->
+		<script>
+			function setShowLength(obj, maxlength, id) {
+				var rem = maxlength + obj.value.length;
+				var wid = id;
+				if(rem < 0) {
+					rem = 0;
+				}
+				document.getElementById(wid).innerHTML = rem;
+			}
+		</script>
+		<script>
+			$(document).ready(function() {
+				$(".l_sure_order").click(function() {
+					$(".affirm_order_popup").fadeIn();
+
+				})
+				$(".affirm_order_popup .w_sure_btn").click(function() {
+					$(".secondary_popup,.delivered_btn .note_san").show();
+					$('.note_san').fadeIn();
+					//$('.secondary_popup').hide()
+				})
+				$(".secondary_popup .secondary_cancel_btn").click(function() {
+					$(".secondary_popup,.delivered_btn .note_san").hide();
+				})
+				$(".w_cancel_btn").click(function() {
+					$(this).parents(".affirm_order_popup").fadeOut()
+				})
+				$(".w_affirm_tab span").click(function() {
+					$(this).addClass("active").siblings().removeClass("active");
+				})
+				$(".w_affirm_tab .cus_info").click(function() {
+					$(".affirm_tab_one").show();
+					$(".affirm_tab_two").hide();
+				})
+				$(".w_affirm_tab .com_info").click(function() {
+					$(".affirm_tab_one").hide();
+					$(".affirm_tab_two").show();
+				})
+				$(".w_add_product span.news_product").click(function() {
+					$(this).css({
+						"border": "1px solid #ebebeb",
+						"color": "#e7e7e7"
+					});
+					$(".w_sure_choice").show();
+					$(".product_infor_table").hide();
+					$(".add_product_infor").show();
+					$(".add_product_query").show();
+				});
+				$(".product_infor_delete").click(function() {
+					$(this).parents("tr").remove()
+				})
+				$('.l_opt').css('padding-left', '0');
+				$('.s_table table>thead>tr>th:last-child').css('padding-left', '0px');
+				
+			});
+		</script>
+
+		<script>
+			$(function() {
+				/*确认弹窗*/
+				$('.l_sure_order').click(function() {
+					$('.firm_none').fadeIn();
+					tcShow(1)
+				});
+				$(function() {
+					$('.w_cancel_btn').click(function() {
+						$('.refund_none').fadeOut();
+						$('.secondary_popup').hide();
+						tcHide()
+					});
+				});
+				/*取消弹窗*/
+				$('.s_quxiao').click(function() {
+					$('.s_none').fadeIn();
+					tcShow()
+				});
+				$('.s_determine ,.s_cancel ').click(function() {
+					$('.s_none').fadeOut();
+					tcHide()
+				});
+				/*完成弹窗*/
+				$('.s_queren').click(function() {
+					$('.firm_none1').fadeIn();
+					tcShow(1)
+				});
+				$('.s_determine,.s_cancel ').click(function() {
+					$('.s_none1').fadeOut();
+					tcHide()
+				});
+				$('.w_cancel_btn').click(function() {
+					$('.re_none').fadeOut();
+					$(this).parents('.secondary_popup').fadeOut();
+					tcHide()
+				});
+				$(".determine").click(function() {
+					if($(".hot_back  input").val() == "") {
+						$(".cancel_reason_popup").fadeIn().delay(1000).fadeOut();
+						tcHide()
+					} else {
+						$(this).parents(".close_none2").fadeOut();
+						tcHide()
+					}
+					return false;
+				});
+				$('.cancel').click(function() {
+					$(".close_none2").fadeOut();
+					tcHide()
+				});
+			})
+		</script>
+		<script>
+			$(function() {
+				/*退款操作二次确认弹窗*/
+				$('.firm_btn2').click(function() {
+					$('.s_scroll').fadeIn();
+					tcShow(1);
+				});
+				$('.scroll_btn2').click(function() {
+					$('.firm_none').fadeOut();
+					$('.firm_none1').fadeOut();
+					$(this).parents('.s_scroll').fadeOut();
+					tcHide();
+				});
+				$('.scroll_btn1').click(function() {
+					$('.s_scroll').fadeOut();
+				})
+				$('.firm_btn1 ').click(function() {
+					$('.firm_none').fadeOut();
+					$('.firm_none1').fadeOut();
+					tcHide();
+				});
+				/*订单切换*/
+				$('.com_ul li').click(function() {
+					$(this).siblings().removeClass('ul_actve');
+					$(this).addClass('ul_actve');
+					var index = $(this).index();
+					$(this).parent().next('.com_tab').find('.com_class').eq(index).show().siblings().hide();
+
+				});
+			});
+		</script>
+		<!--修改订单弹窗-->
+		<script type="text/javascript">
+			$(function() {
+				var len = 0;
+				$(".textArea textarea").keyup(function() {
+					len = $(this).val().length;
+					$(".textArea .l_num i").html(len);
+					$(this).css("border-color", "#dcdcdc");
+				});
+				$(".roomMoney input").keyup(function() {
+					$(this).css("border-color", "#dcdcdc");
+				})
+				$(".popTab a").click(function() {
+					$(".popTab a").removeClass("active");
+					$(this).addClass("active");
+					var ind = $(this).index()
+					$(this).parents(".popUpBox").find(".tableContent").hide();
+					$(this).parents(".popUpBox").find(".tableContent").eq(ind).show();
+				})
+
+				$(".bottomBtn a.sure").click(function() {
+					if($(this).parents(".popUpBox").find(".roomMoney input").val() == "") {
+						$(this).parents(".popUpBox").find(".roomMoney input").css("border-color", "#f33");
+					} else if($(this).parents(".popUpBox").find(".textArea textarea").val() == "") {
+						$(this).parents(".popUpBox").find(".textArea textarea").css("border-color", "#f33");
+					} else {
+						$(".s_scroll").fadeIn();
+						$(".scroll_btn1").click(function() {
+							$(this).parents(".s_scroll").fadeOut();
+						})
+						$(".scroll_btn2").click(function() {
+							$(this).parents(".popUpBox").fadeOut();
+							$(".l_drop").fadeOut();
+							tcHide();
+						})
+					}
+				})
+
+				$(".s_xiugai").click(function() {
+					$(".popAmendOrder").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow(1);
+				})
+				$(".bottomBtn a.cancle").click(function() {
+					$(this).parents(".popUpBox").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide();
+				})
+			});
+		</script>
+
+		<!--选择板块下拉-->
+		<script>
+			$('.f_node_two .node_text').click(function() {
+				$('.w_plate_one ul').slideDown();
+
+				return false;
+			});
+		</script>
+
+		<script>
+			$(".wtimexuan ul").delegate("li", "click", function() {
+				if($(this).hasClass("l_select_name")) {
+					return false;
+				}
+				$(".ta_date").removeClass("sjhide");
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				//判断 表格最后一、二行排序位置
+				$(".s_table tr:last-child").find(".l_opt div").css("margin-top","-280px")
+				$(".s_table tr:last-child").find(".l_opt div i").css({"width":"0px","height":"0px","border":"0px","border-left":"13px solid transparent","border-right":"13px solid transparent","border-top":"13px solid #fff","top":"233px"})
+				//chechbox选择效果/上架置灰高亮切换
+				$("td.l_check label").click(function() {
+					$(this).toggleClass("checked");
+					if($(".l_check label").hasClass("checked")) {
+						$(".list_button").children().last('a').addClass("s_button2");
+						$('a.s_button2').click(function(e) {
+							$('.delete_top').fadeIn();
+							tcShow();
+						});
+						$('.issue .is_main .is_top em,.issue .is_main .is_but .one_release,.issue .is_main .is_but input:last-child,.delete_determine ,.delete_cancel').click(function(e) {
+							$('.delete_top').fadeOut();
+							tcHide();
+						});
+
+					} else {
+						$('a.s_button2').off();
+						$(".list_button").children().last('a').removeClass("s_button2");
+					}
+				});
+				//新增商品置灰高亮切换
+				$(".w_plate_class div ul li").not(".l_select_name").click(function() {
+					$(".l_add").addClass("active");
+				});
+				$('.list_con ul li').click(function() {
+					$(this).addClass('active').siblings().removeClass('active');
+				});
+				$('.l_opt').css('padding-left', '0');
+				$('.l_table table>thead>tr>th:last-child').css('padding-left', '0px')
+			});
+		</script>
+	</body>
+
+</html>

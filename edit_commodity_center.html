@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>编辑商品（商品）</title>
+		<link rel="stylesheet" href="css/list.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_global.css" />
+		<link rel="stylesheet" href="css/file_content.css" />
+		<link rel="stylesheet" href="assets/css/croppic.css" />
+		<link rel="stylesheet" href="css/switch_but_sliding.css" />
+
+	</head>
+
+	<body>
+		
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content">
+				<div class="main">
+					<div class="clear"></div>
+					<div class="edit_left fl">
+						<div class="edit_left_top">
+							<p>基本信息</p>
+						</div>
+						<div class="edit_left_details">
+							<p class="p1">
+								<span>商品编码：</span>06020027
+							</p>
+							<p class="p2">
+								<i>*</i>
+								<span>选择常规类：</span>
+								<select class="yan6">
+									<option value="0">请选择</option>
+									<option value="1">游泳馆</option>
+									<option value="2">瑜伽室</option>
+									<option value="3">健身房</option>
+								</select>
+							</p>
+							<p class="p3">
+								<i>*</i>
+								<span>商品名称：</span>
+								<input type="text" placeholder="输入1-10个汉字" class="yan1" />
+							</p>
+							<p class="p4">
+								<span>当前分类排位：</span>
+								<select>
+									<option value="">17</option>
+									<option value="">16</option>
+									<option value="">15</option>
+									<option value="">14</option>
+									<option value="">13</option>
+									<option value="">12</option>
+									<option value="">11</option>
+									<option value="">10</option>
+									<option value="">9</option>
+									<option value="">8</option>
+									<option value="">7</option>
+									<option value="">6</option>
+									<option value="">5</option>
+									<option value="">4</option>
+									<option value="">3</option>
+									<option value="">2</option>
+									<option value="">1</option>
+								</select>
+							</p>
+						</div>
+						<div class="edit_product">
+							<div class="edit_product_left fl">
+								<i>*</i>
+								<span>商品介绍：</span>
+								<div class="paragraph">
+									<ul>
+										<li class="ime_section1 ime_section">段落1</li>
+										<li class="ime_section2 ime_section">段落2</li>
+										<li class="ime_section3 ime_section">段落3</li>
+										<li class="ime_add1">+</li>
+										<li class="ime_add2">+</li>
+									</ul>
+								</div>
+							</div>
+							<div class="edit_product_content w_duanluo fl">
+								<div class="comments">
+									<p>
+										段落内容
+									</p>
+									<textarea placeholder="内容" maxlength="100" onkeyup="javascript:setShowLength(this, 0, 's_em1');"></textarea>
+									<span><em id="s_em1">0</em>/100</span>
+								</div>
+								<div class="paragraph_tishi">
+									<p>段落图片</p>
+								</div>
+								<div class="paragraph_img">
+									<div class="paragraph_img_popup">
+										<div class="paragraph_img_change">
+											<img src="images/w_yule1.jpg">
+											<em>
+						<span class="close fl">X</span>
+						<span class="change fr">换图片</span>
+					</em>
+										</div>
+										<div class="paragraph_img_preview">
+											<p>+</p>
+											<p>本地上传</p>
+										</div>
+									</div>
+								</div>
+								<div class="paragraph_img_advace">
+									<p>图片建议尺寸：750像素*500像素</p>
+								</div>
+								<div class="paragraph_img_delete">
+									<p class="paragraph1">删除段落</p>
+								</div>
+								<div class="link_delete">
+									<p><span>链接地址：</span>http://hotel.harvetech.cn/product/show.do?plateId=128</p>
+								</div>
+							</div>
+							<div class="edit_product_content w_duanluo1 fl">
+								<div class="comments">
+									<p>
+										段落内容
+									</p>
+									<textarea placeholder="内容1" maxlength="100" onkeyup="javascript:setShowLength(this, 0, 's_em2');"></textarea>
+									<span><em id="s_em2">0</em>/100</span>
+								</div>
+								<div class="paragraph_tishi">
+									<p>段落图片</p>
+								</div>
+								<div class="paragraph_img paragraph_popup">
+									<p>+</p>
+									<p>本地上传</p>
+								</div>
+								<div class="paragraph_img_advace">
+									<p>图片建议尺寸：750像素*500像素</p>
+								</div>
+								<div class="paragraph_img_delete">
+									<p class="paragraph2">删除段落</p>
+								</div>
+							</div>
+							<div class="edit_product_content w_duanluo2 fl">
+								<div class="comments">
+									<p>
+										段落内容
+									</p>
+									<textarea placeholder="内容2" maxlength="100" onkeyup="javascript:setShowLength(this, 0, 's_em3');"></textarea>
+									<span><em id="s_em3">0</em>/100</span>
+								</div>
+								<div class="paragraph_tishi">
+									<p>段落图片</p>
+								</div>
+								<div class="paragraph_img paragraph_popup">
+									<p>+</p>
+									<p>本地上传</p>
+								</div>
+								<div class="paragraph_img_advace">
+									<p>图片建议尺寸：750像素*500像素</p>
+								</div>
+								<div class="paragraph_img_delete">
+									<p class="paragraph3">删除段落</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="edit_right fr">
+						<div class="edit_right_top">
+							<p>销售信息</p>
+						</div>
+						<div class="sales_information">
+							<p class="p8">
+								<i>*</i>
+								<span>销售方式：</span>
+								<span class="so_show"><input type="radio" class="yan7" name="a">仅展示</span>
+								<span><input type="radio" disabled="disabled" class="yan7" name="a">可购买（<i class="the_store"><input type="checkbox" disabled="disabled">店内</i><i><input type="checkbox" disabled="disabled">微商城</i>）</span>
+								<span class="the_sign"><img src="images/the_sign.png"></span>
+							</p>
+							<p class="p9">
+								<i>*</i>
+								<span>库存量：</span>
+								<input type="number" placeholder="0"  class="yan2" />
+								<span class="the_sign"><img src="images/the_sign.png"></span>
+							</p>
+							<p class="p5">
+								<i>*</i>
+								<span>价格：</span>
+								<em>￥</em>
+								<input type="text" placeholder="设置商品价格，保留2位小数" class="yan3 s_jia" />
+							</p>
+						</div>
+						<div class="edit_right_top">
+							<p>商品图片</p>
+						</div>
+						
+						<div class="pictures">
+							<p class="picTip"><span class="redColor">*</span>商品图：请至少上传一张</p>
+							<div class="picContent clearfix">
+								<div class="picPreview fl">
+									<img src="images/picPreview.png"/>
+								</div>
+								<div class="picUpload fr">
+									<ul>
+										<li>
+											<div class="picShow">
+												<img src="images/tutu.png" alt=""/>
+												<p class="picDrop"><span class="delePic fl">×</span><span class="changePic fr">更换图片</span></p>
+											</div>
+											<div class="upLoad">
+												<img src="images/xinzengshangpin_26.png" alt="" />
+											</div>
+										</li>
+										<li>
+											<div class="picShow">
+												<img src="images/tutu.png" alt=""/>
+												<p class="picDrop"><span class="delePic fl">×</span><span class="changePic fr">更换图片</span></p>
+											</div>
+											<div class="upLoad">
+												<img src="images/xinzengshangpin_26.png" alt="" />
+											</div>
+										</li>
+										<li>
+											<div class="picShow">
+												<img src="images/tutu.png" alt=""/>
+												<p class="picDrop"><span class="delePic fl">×</span><span class="changePic fr">更换图片</span></p>
+											</div>
+											<div class="upLoad">
+												<img src="images/xinzengshangpin_26.png" alt="" />
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<p class="sizeTip">图片建议尺寸：750像素*500像素</p>
+						</div>
+					
+					</div>
+					<div class="w_edit_btn">
+						<em class="edit_save">保存</em>
+						<em class="edit_pre">预览</em>
+						<em class="edit_cancel">取消</em>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--主体--ed-->
+		
+		<!--切图-->
+		<div class="cut_photo">
+			<div class="cut_p_top">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModal1"></div>
+		</div>
+		<div class="cut_photo2">
+			<div class="cut_p_top2">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModal3"></div>
+		</div>
+		<div class="addaae_prompt">
+			<p><i></i><span>信息不全，请完善！</span></p>
+		</div>
+		<!--预览-->
+		<div class="pvwBox">
+			<div class="pvw_top">
+				<div class="pvw_close fr">&#10005;</div>
+			</div>
+			<div class="pvw_main">
+				<div class="w_content3">
+					<!--头部-->
+					<div class="nav_bar clearfix">
+						<div class="col-3">
+							<a href="javascript:;" class="back"><img src="images/back-arrow.png" alt="" /></a>
+						</div>
+						<div class="col-6 title">商品详情</div>
+						<div class="col-3 right"></div>
+					</div>
+					<!--头部-->
+					<!--banner-->
+					<!--轮播开始-->
+					<div class="w_mian">
+						<ul class="clearfix">
+							<li class="w_hleft">
+								<div id="slideBox" class="slideBox">
+									<div class="bd">
+										<ul>
+											<li>
+												<a class="pic" href="javascript:;"><img src="images/bnner_1.png" /></a>
+											</li>
+											<li>
+												<a class="pic" href="javascript:;"><img src="images/bnner_2.jpg"></a>
+											</li>
+											<li>
+												<a class="pic" href="javascript:;"><img src="images/bnner_3.jpg" /></a>
+											</li>
+										</ul>
+									</div>
+									<div class="hd">
+										<ul>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<p class="s_xie">联系酒店</p>
+						<div class="s_poition">
+						</div>
+					</div>
+					<!--轮播结束-->
+					<!--主体-->
+					<div class="cater_middle" id="midle">
+						<div class="cater_name">
+							<div class="cater_name_left fl">
+								<p>
+									高温瑜伽
+								</p>
+							</div>
+						</div>
+						<div class="cater_like">
+							<div class="cater_like_left fl">
+								<div class="cater_name_right">
+									<p>
+										<i>&yen;</i><span class="price">990.00</span><span><del>&yen;99.00</del></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="cater_details_name">
+							<span>详情介绍</span>
+						</div>
+						<div class="cater_matter">
+							<p>热腾腾刚烤好的蓝带鸡排 （取代传统油炸的作法，吃起来更健康） 咬下一口后，鲜嫩酥脆的鸡肉伴着流泻出的浓郁起司，真的是太好吃了!! 吃了几口觉得有点腻？没关系，赶快吃几口沙拉，爽口的蔬菜莎拉加上有嚼劲的磨菇，瞬间就解除了鸡肉的油腻感</p>
+							<p>
+								<img src="images/list_4.png">
+							</p>
+						</div>
+						<div class="cater_matter">
+							<p>热腾腾刚烤好的蓝带鸡排 （取代传统油炸的作法，吃起来更健康） 咬下一口后，鲜嫩酥脆的鸡肉伴着流泻出的浓郁起司，真的是太好吃了!! 吃了几口觉得有点腻？没关系，赶快吃几口沙拉，爽口的蔬菜莎拉加上有嚼劲的磨菇，瞬间就解除了鸡肉的油腻感</p>
+							<p>
+								<img src="images/list_4.png">
+							</p>
+						</div>
+						<div class="s_yuan">
+							<p><i class="s_left"></i>到底了<i class="s_right"></i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--删除弹窗-->
+		<div class="l_popup l_popup_del">
+			<p class="l_pop_article"><img src="images/l_icon_del3.png" />确认要删除吗？</p>
+			<p class="l_btns">
+				<a href="javascript:;" class="l_ok">确定</a>
+				<a href="javascript:;" class="l_cancle">取消</a>
+			</p>
+		</div>
+		<!--取消弹窗-->
+		<div class="l_popup l_popup_download">
+			<p class="l_pop_article tc">确认要取消？</p>
+			<p class="l_btns">
+				<a href="javascript:;" class="l_ok">确定</a>
+				<a href="javascript:;" class="l_cancle">取消</a>
+			</p>
+		</div>
+		<div class="l_drop"></div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/croppic.min.js"></script>
+		<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/l_global.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				//图片浮层悬浮效果
+				$(".picShow").parent().hover(function(){
+					$(this).find(".picDrop").stop(true,true).fadeIn();
+				},function(){
+					$(this).find(".picDrop").stop(true,true).fadeOut();
+				});
+				//确定删除图片弹窗
+				$(".picUpload .picDrop .delePic").click(function(){
+					$(".l_popup_del").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow();
+				});
+				//图片长传弹窗
+				$('.picUpload .upLoad,.picDrop .changePic').click(function(e) {
+					$('.cut_photo').fadeIn();
+					tcShow();
+				});
+				$('.cut_photo .cut_p_top a').click(function(e) {
+					$('.cut_photo').fadeOut();
+					tcHide();
+				});
+				//图片预览效果
+				$(".picShow").click(function(){
+					$(".picPreview img").attr("src",$(this).attr("src"))
+				})
+			})
+		</script>
+		
+		<script type="text/javascript">
+			$(function() {
+				$(".close").click(function(){
+					$(".l_popup_del").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow();
+				})
+				$(".edit_cancel").click(function() {
+					$(".l_popup_download").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow()
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				//开启、关闭按钮点击切换样式
+				$(".on_off img").click(function() {
+					var src = $(this).attr("src");
+					var data_src = $(this).attr("data_src");
+					$(this).attr("src", data_src);
+					$(this).attr("data_src", src);
+				});
+				//上传证书效果
+				$("#file").change(function() {
+					$(".file_name").val($(this).val());
+				});
+				//弹窗点击显示
+				$(".bind_btn").click(function() {
+					$(".l_popup_bind").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow();
+				});
+				//确定点击验证效果
+				$(".ok_btn").click(function() {
+					if($(".pop_name").val() != "") {
+						$(this).parents(".l_popup").fadeOut();
+						$(".l_drop").fadeOut();
+						$(".pop_tip").fadeOut();
+						tcHide();
+					} else {
+						$(".pop_tip").fadeIn();
+					}
+				});
+				$(".pop_name").focus(function() {
+					$(".pop_tip").fadeOut();
+				});
+				//取消点击效果
+				$(".cancle_btn").click(function() {
+					$(this).parents(".l_popup").fadeOut();
+					$(".l_drop").fadeOut();
+					$(".pop_tip").fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+		<script>
+			$(function() {
+				$('.edit_cancel').click(function() {
+					$('.s_less').fadeIn();
+				});
+				$('.less_max,.oder_in,.oder_inlin').click(function() {
+					$('.s_less').fadeOut();
+				});
+			});
+		</script>
+		<!--轮播js-->
+		<script type="text/javascript">
+			TouchSlide({
+				slideCell: "#slideBox",
+				titCell: ".hd ul", //开启自动分页 autoPage:true，此时设置 titCell 为导航元素包裹层
+				mainCell: ".bd ul",
+				effect: "leftLoop",
+				autoPage: true, //自动分页
+				autoPlay: true //自动播放
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				var ok1;
+				var ok2;
+				var ok3;
+				var ok4;
+				var ok5;
+				var ok6;
+				var ok7;
+				$(".w_edit_btn .edit_save").click(function() {
+					if($(".yan6 option:checked").val() > 0) {
+						$(".yan6").css("border", "1px solid #c8cacb");
+						ok6 = true;
+					} else {
+						$(".yan6").css("border", "1px solid red");
+						ok6 = false;
+					}
+
+					if($(".yan1").val() == "" || $(".yan1").val().length < 2 || $(".yan1").val().length > 20) {
+						$(".yan1").css("border", "1px solid red");
+						ok1 = false;
+					} else {
+						$(".yan1").css("border", "1px solid #c8cacb");
+						ok1 = true;
+					}
+					if($(".yan2").val() == "") {
+						$(".yan2").css("border", "1px solid red");
+						ok2 = false;
+					} else {
+						$(".yan2").css("border", "1px solid #c8cacb");
+						ok2 = true;
+
+					}
+					if($(".yan3").val() == "") {
+						$(".yan3").css("border", "1px solid red");
+						ok3 = false;
+					} else {
+						$(".yan3").css("border", "1px solid #c8cacb");
+						ok3 = true;
+
+					}
+					if($(".picShow").is(":visible")) {
+						$(".picContent").css("border", "1px dashed #c8cacb");
+						ok4 = true;
+						} else {
+						$(".picContent").css("border", "1px dashed red");
+						ok4 = false;
+					}
+					$(".edit_product_content").each(function() {
+						var ok51;
+						var ok52;
+						var ind1;
+						var ind2;
+
+						if($(this).find(".comments textarea").val() == "") {
+							ok51 = false;
+							ind1 = $(this).index();
+
+						} else {
+							ok51 = true;
+						}
+
+						if($(this).find(".paragraph_img").hasClass("paragraph_popup")) {
+							ok52 = false;
+							ind2 = $(this).index();
+						} else {
+							ok52 = true;
+
+						}
+
+						if(ok52 || ok51) {
+							ok5 = true;
+						} else {
+							ok5 = false;
+							$(".paragraph ul li.ime_section:visible").eq(ind1 - 1).css("border", "1px solid red")
+							$(".paragraph ul li.ime_section:visible").eq(ind2 - 1).css("border", "1px solid red")
+						}
+					})
+
+
+					if($(".sales_information .p8 input[type='radio']:checked").val()) {
+						ok7 = true;
+						$(".main .edit_right .sales_information .p8").css("border", "1px solid #fff");
+
+					} else {
+						ok7 = false;
+						$(".main .edit_right .sales_information .p8").css("border", "1px solid red");
+					}
+
+					if(ok1 && ok2 && ok3 && ok4 && ok5 && ok6) {
+						alert("success")
+					} else {
+						$(".addaae_prompt").fadeIn().delay(2000).fadeOut();
+					}
+
+				})
+				$(".yan1").focus(function() {
+					$(".yan1").css("border", "1px solid #c8cacb");
+				})
+				$(".yan2").focus(function() {
+					$(".yan2").css("border", "1px solid #c8cacb");
+				})
+				$(".yan3").focus(function() {
+					$(".yan3").css("border", "1px solid #c8cacb");
+				})
+				$(".yan4").focus(function() {
+					$(".yan4").css("border", "1px solid #c8cacb");
+				})
+
+				$(".edit_product_content").each(function() {
+					var $main = $(this);
+					$main.find(".comments textarea").focus(function() {
+						$(".paragraph ul li").eq($main.index() - 1).css("border", "1px solid #c8cacb");
+					})
+
+					$main.find(".paragraph_img.paragraph_popup").click(function() {
+						$(".paragraph ul li").eq($main.index() - 1).css("border", "1px solid #c8cacb");
+					})
+				})
+				$(".yan6").focus(function() {
+					$(".yan6").css("border", "1px solid #c8cacb");
+				})
+				$(".yan7").click(function() {
+					$(this).parents(".p8").css("border", "1px solid #fff");
+				})
+			})
+		</script>
+		<!--预览弹窗-->
+		<script>
+			$(".pvwBox").hide();
+			$(".edit_pre").click(function(e) {
+				$(".pvwBox").fadeIn();
+				$(".l_drop").fadeIn();
+				tcShow(1);
+			})
+			$(".pvw_close").click(function(e) {
+				$(".pvwBox").fadeOut();
+				$(".l_drop").fadeOut();
+				tcHide();
+			})
+		</script>
+		<!--确定删除图片弹窗-->
+		<script>
+			$(".paragraph_img .close").click(function(e) {
+				$(".w2").fadeIn();
+			})
+			$(".w2 .wx_save").click(function(e) {
+				$(".w2").fadeOut();
+				$(".paragraph_img_change").hide();
+				$(".paragraph_img_popup .paragraph_img_preview").show();
+			})
+			$(".w2 .wx_save,.w2 .wx_cancel").click(function(e) {
+				$(".w2").fadeOut();
+			})
+		</script>
+		<script>
+			$(".paragraph1,.paragraph2,.paragraph3").click(function(e) {
+				$(".l_popup_del").fadeIn();
+				$(".l_drop").fadeIn();
+				tcShow();
+			})
+		</script>
+		<script>
+			$(function() {
+				$('.w_duanluo2 .paragraph3').click(function(e) {
+					$(".w_duanluo2").hide();
+					$(".w_duanluo1").show();
+					$(".ime_section3").hide();
+					$(".ime_add2").show();
+				});
+				$('.w_duanluo1 .paragraph2').click(function(e) {
+					$(".w_duanluo1").hide();
+					$(".w_duanluo").show();
+					$(".ime_section2").hide();
+					$(".ime_add1").show();
+					$(".ime_add2").hide();
+				});
+			});
+		</script>
+		<!--商品图片添加-->
+		<script>
+			$(function() {
+				$('.ime_add1').click(function(e) {
+					$('.ime_add1').hide();
+					$('.ime_add2,.ime_section2').show();
+					$(".w_duanluo1").show();
+					$(".w_duanluo,.w_duanluo2").hide();
+				});
+				$('.ime_add2').click(function(e) {
+					$('.ime_add2').hide();
+					$('.ime_add3,.ime_section3').show();
+					$(".w_duanluo2").show();
+					$(".w_duanluo,.w_duanluo1").hide();
+				});
+			});
+		</script>
+
+		<!--商品图片切换-->
+		<script>
+			$(document).ready(function() {
+				$(".product_img_right ul li").click(function() {
+					var m = $(this).index();
+					$(".product_img_left").eq(m).show().siblings(".product_img_left").hide();
+				});
+			});
+		</script>
+		<!--商品介绍弹窗-->
+		<script>
+			$(function() {
+				$('.not_img_preview').click(function(e) {
+					$('.cut_photo').fadeIn();
+				});
+				$('.cut_photo .cut_p_top a').click(function(e) {
+					$('.cut_photo').fadeOut();
+				});
+			});
+		</script>
+		<!--商品图片浮动层关闭-->
+		<script>
+			$(document).ready(function() {
+				$(".product_img_right .close").click(function(e) {
+					$(".w4").fadeIn();
+				})
+				$(".w4 .wx_save").click(function(e) {
+					$(".w4").fadeOut();
+					$(".img_change").hide();
+					$(".img_preview").show();
+				})
+				$(".w4 .wx_save,.w4 .wx_cancel").click(function(e) {
+					$(".w4").fadeOut();
+				})
+
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				$(this).find(".w_preview_change").mouseover(function() {
+					$(this).find("em").stop(true, true).fadeIn();
+				});
+				$(this).find(".w_preview_change").mouseout(function() {
+					$(this).find("em").delay(10).fadeOut(500);
+				});
+			});
+		</script>
+		<script>
+			$(".w_preview_change .change").click(function(e) {
+				$(".cut_photo2").fadeIn();
+				tcShow();
+			})
+			$(".w_preview_change .close").click(function(e) {
+				$(".w5").fadeIn();
+			})
+			$(".w5 .wx_save").click(function(e) {
+				$(".w5").fadeOut();
+				$(".w_preview_change").hide();
+				$(".w_preview_upload").show();
+			})
+			$(".w5 .agreed_popup_right,.w5 .wx_cancel").click(function(e) {
+				$(".w5").fadeOut();
+			})
+		</script>
+
+		<!--商品介绍切换-->
+		<script>
+			$(document).ready(function() {
+				$(".edit_product_left ul li").click(function() {
+					$(this).addClass("active").siblings().removeClass("active")
+					var m = $(this).index();
+					$(".edit_product_content").eq(m).show().siblings(".edit_product_content").hide();
+				});
+			});
+		</script>
+		<!--商品介绍浮动层-->
+		<script>
+			$(document).ready(function() {
+				$(this).find(".paragraph_img").mouseover(function() {
+					$(this).find("em").stop(true, true).fadeIn();
+				});
+				$(this).find(".paragraph_img").mouseout(function() {
+					$(this).find("em").delay(10).fadeOut(500);
+				});
+			});
+		</script>
+		<!--切图弹出-->
+		<script>
+			$(function() {
+				$('.w_preview_change .change').click(function(e) {
+					$('.cut_photo2').fadeIn();
+					tcShow();
+				});
+				$('.cut_photo2 .cut_p_top2 a').click(function(e) {
+					$('.cut_photo2').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+		<script>
+			$(function() {
+				$('.w_preview_upload').click(function(e) {
+					$('.cut_photo2').fadeIn();
+					tcShow();
+				});
+				$('.cut_photo2 .cut_p_top2 a').click(function(e) {
+					$('.cut_photo2').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+		<!--切图弹出-->
+		<script>
+			$(function() {
+				$('.paragraph_popup').click(function(e) {
+					$('.cut_photo').fadeIn();
+					tcShow();
+				});
+				$('.cut_photo .cut_p_top a').click(function(e) {
+					$('.cut_photo').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+		<!--切图弹出-->
+		<script>
+			$(function() {
+				$('.paragraph_img_popup .change,.paragraph_img_popup .paragraph_img_preview').click(function(e) {
+					$('.cut_photo').fadeIn();
+					tcShow();
+				});
+				$('.cut_photo .cut_p_top a').click(function(e) {
+					$('.cut_photo').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+		<script>
+			$(function() {
+				$('.edit_right .switch_but input').click(function(e) {
+					if($(this).parent().hasClass("switch_but1")) {
+						$(this).parent().removeClass("switch_but1");
+						$(this).parent().addClass("switch_but2");
+						$(".promotion,.p7").hide();
+					} else {
+						$(this).parent().removeClass("switch_but2");
+						$(this).parent().addClass("switch_but1");
+						$(".promotion,.p7").show();
+					}
+				});
+			});
+		</script>
+		<!--字数限制js-->
+		<script>
+			function setShowLength(obj, maxlength, id) {
+				var rem = maxlength + obj.value.length;
+				var wid = id;
+				if(rem < 0) {
+					rem = 0;
+				}
+				document.getElementById(wid).innerHTML = rem;
+			}
+		</script>
+		<!--切图插件js-->
+		<script>
+			var croppicContainerModalOptions = {
+				uploadUrl: 'http://tech.harvetech.cn/wifihotel/img_save_to_file.php',
+				cropUrl: 'http://tech.harvetech.cn/wifihotel/img_crop_to_file.php',
+				modal: true,
+				imgEyecandyOpacity: 0.4,
+				loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+				onBeforeImgUpload: function() {
+					console.log('onBeforeImgUpload')
+				},
+				onAfterImgUpload: function() {
+					console.log('onAfterImgUpload')
+				},
+				onImgDrag: function() {
+					console.log('onImgDrag')
+				},
+				onImgZoom: function() {
+					console.log('onImgZoom')
+				},
+				onBeforeImgCrop: function() {
+					console.log('onBeforeImgCrop')
+				},
+				onAfterImgCrop: function() {
+					console.log('onAfterImgCrop')
+				},
+				onReset: function() {
+					console.log('onReset')
+				},
+				onError: function(errormessage) {
+					console.log('onError:' + errormessage)
+				}
+			}
+			var cropContainerModal = new Croppic('cropContainerModal1', croppicContainerModalOptions);
+		</script>
+		<!--切图插件js-->
+		<script>
+			var croppicContainerModalOptions = {
+				uploadUrl: 'http://tech.harvetech.cn/wifihotel/img_save_to_file.php',
+				cropUrl: 'http://tech.harvetech.cn/wifihotel/img_crop_to_file.php',
+				modal: true,
+				imgEyecandyOpacity: 0.4,
+				loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+				onBeforeImgUpload: function() {
+					console.log('onBeforeImgUpload')
+				},
+				onAfterImgUpload: function() {
+					console.log('onAfterImgUpload')
+				},
+				onImgDrag: function() {
+					console.log('onImgDrag')
+				},
+				onImgZoom: function() {
+					console.log('onImgZoom')
+				},
+				onBeforeImgCrop: function() {
+					console.log('onBeforeImgCrop')
+				},
+				onAfterImgCrop: function() {
+					console.log('onAfterImgCrop')
+				},
+				onReset: function() {
+					console.log('onReset')
+				},
+				onError: function(errormessage) {
+					console.log('onError:' + errormessage)
+				}
+			}
+			var cropContainerModal = new Croppic('cropContainerModal3', croppicContainerModalOptions);
+		</script>
+		<!--输入金额保留2小数点-->
+		<script>
+			$(function() {
+				$(".s_jia").on('keyup', function(event) {
+					var $amountInput = $(this);
+					$amountInput.val($amountInput.val().replace(/^\./g, "").replace(/\.{2,}/g, ".").replace(".", "$#$").replace(/\./g, "").replace("$#$", ".").replace(/^(\-)*(\d+)\.(\d\d).*$/, '$1$2.$3'));
+				});
+				$(".s_jia").on('blur', function() {
+					var $amountInput = $(this);
+					$amountInput.val(($amountInput.val().replace(/\.$/g, "")));
+				});
+			})
+		</script>
+	</body>
+
+</html>

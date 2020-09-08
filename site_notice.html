@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>站内通知</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/room.css" />
+		<link rel="stylesheet" href="css/site_notice.css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	</head>
+
+	<body>
+		<!--content-->
+
+		<div class="max_mniu">
+			<div class="main">
+				<div class="plase_min clear">
+					<ul class=" fl">
+						<li class="s_to">消息通知</li>
+						<li>系统公告</li>
+					</ul>
+					<div class="notice_serach_renovate fr">
+						<a href="javascript:;" class="s_shua">刷新</a>
+					</div>
+				</div>
+				<div class="max_content">
+					<div>
+						<div class="notice_serach">
+							<div class="notice_serach_left fl">
+								<ul>
+									<li class="active">
+										<a href="javascript:;">全部</a>
+									</li>
+									<li class="booking_sheet_sx">|</li>
+									<li>
+										<a href="javascript:;">今天</a>
+									</li>
+									<li class="booking_sheet_sx">|</li>
+									<li>
+										<a href="javascript:;">昨天</a>
+									</li>
+									<li class="booking_sheet_sx">|</li>
+									<li>
+										<a href="javascript:;">7天</a>
+									</li>
+									<li class="booking_sheet_sx">|</li>
+									<li>
+										<a href="javascript:;">30天</a>
+									</li>
+									<li class="booking_sheet_sx">|</li>
+								</ul>
+							</div>
+							<div id="time" class="fl">
+								<span>自定义</span>
+								<label for="select-date" class="w_date"></label>
+								<input type="text" id="select-date" name="select-date" value="" onchange="selectDay()"> -
+								<label for="to-date" class="w_dateone"></label>
+								<input type="text" id="to-date" name="to-date" value="" onchange="selectDay()">
+							</div>
+							<div class="message_state fl">
+								<p>
+									<span>消息状态</span>
+									<select>
+										<option>全部</option>
+										<option>未读消息</option>
+										<option>已读消息</option>
+									</select>
+								</p>
+							</div>
+						</div>
+
+						<div class="tableBox">
+							<table class="site_table">
+								<thead>
+									<tr>
+										<td width="60px"></td>
+										<td>通知内容</td>
+										<td>通知时间</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td class="w_opt">
+											<span>您有新的消费订单01011608040004，请及时处理！</span>
+											<i>立即处理</i>
+											<div class="w_tc_btn l_opt_tips">
+												<p><img src="images/teur.png" />确认订单</p>
+												<p><img src="images/flase.png" />取消订单</p>
+												<p><img src="images/complete.png" />同意取消</p>
+												<p><img src="images/w_add_kc.png" />补充库存</p>
+												<p><img src="images/s_qian.png" />退款</p>
+												<p><img src="images/w_th.png" />退货</p>
+											</div>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td class="w_opt">
+											<span>您有新的消费订单01011608040004，请及时处理！</span>
+											<i>立即处理</i>
+											<div class="w_tc_btn l_opt_tips">
+												<p><img src="images/teur.png" />确认订单</p>
+												<p><img src="images/flase.png" />取消订单</p>
+												<p><img src="images/complete.png" />同意取消</p>
+												<p><img src="images/w_add_kc.png" />补充库存</p>
+												<p><img src="images/s_qian.png" />退款</p>
+												<p><img src="images/w_th.png" />退货</p>
+											</div>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td class="w_opt">
+											<span>您有新的消费订单01011608040004，请及时处理！</span>
+											<i>立即处理</i>
+											<div class="w_tc_btn l_opt_tips">
+												<p><img src="images/teur.png" />确认订单</p>
+												<p><img src="images/flase.png" />取消订单</p>
+												<p><img src="images/complete.png" />同意取消</p>
+												<p><img src="images/w_add_kc.png" />补充库存</p>
+												<p><img src="images/s_qian.png" />退款</p>
+												<p><img src="images/w_th.png" />退货</p>
+											</div>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td class="w_opt">
+											<span>您有新的消费订单01011608040004，请及时处理！</span>
+											<i>立即处理</i>
+											<div class="w_tc_btn l_opt_tips">
+												<p><img src="images/teur.png" />确认订单</p>
+												<p><img src="images/flase.png" />取消订单</p>
+												<p><img src="images/complete.png" />同意取消</p>
+												<p><img src="images/w_add_kc.png" />补充库存</p>
+												<p><img src="images/s_qian.png" />退款</p>
+												<p><img src="images/w_th.png" />退货</p>
+											</div>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td class="w_opt">
+											<span>您有新的消费订单01011608040004，请及时处理！</span>
+											<i>立即处理</i>
+											<div class="w_tc_btn l_opt_tips">
+												<p><img src="images/teur.png" />确认订单</p>
+												<p><img src="images/flase.png" />取消订单</p>
+												<p><img src="images/complete.png" />同意取消</p>
+												<p><img src="images/w_add_kc.png" />补充库存</p>
+												<p><img src="images/s_qian.png" />退款</p>
+												<p><img src="images/w_th.png" />退货</p>
+											</div>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td class="w_opt">
+											<span>您有新的消费订单01011608040004，请及时处理！</span>
+											<i>立即处理</i>
+											<div class="w_tc_btn l_opt_tips">
+												<p><img src="images/teur.png" />确认订单</p>
+												<p><img src="images/flase.png" />取消订单</p>
+												<p><img src="images/complete.png" />同意取消</p>
+												<p><img src="images/w_add_kc.png" />补充库存</p>
+												<p><img src="images/s_qian.png" />退款</p>
+												<p><img src="images/w_th.png" />退货</p>
+											</div>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td class="w_opt">
+											<span>您有新的消费订单01011608040004，请及时处理！</span>
+											<i>立即处理</i>
+											<div class="w_tc_btn l_opt_tips">
+												<p><img src="images/teur.png" />确认订单</p>
+												<p><img src="images/flase.png" />取消订单</p>
+												<p><img src="images/complete.png" />同意取消</p>
+												<p><img src="images/w_add_kc.png" />补充库存</p>
+												<p><img src="images/s_qian.png" />退款</p>
+												<p><img src="images/w_th.png" />退货</p>
+											</div>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td class="w_opt">
+											<span>您有新的消费订单01011608040004，请及时处理！</span>
+											<i>立即处理</i>
+											<div class="w_tc_btn l_opt_tips">
+												<p><img src="images/teur.png" />确认订单</p>
+												<p><img src="images/flase.png" />取消订单</p>
+												<p><img src="images/complete.png" />同意取消</p>
+												<p><img src="images/w_add_kc.png" />补充库存</p>
+												<p><img src="images/s_qian.png" />退款</p>
+												<p><img src="images/w_th.png" />退货</p>
+											</div>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td class="w_opt">
+											<span>您有新的消费订单01011608040004，请及时处理！</span>
+											<i>立即处理</i>
+											<div class="w_tc_btn l_opt_tips">
+												<p><img src="images/teur.png" />确认订单</p>
+												<p><img src="images/flase.png" />取消订单</p>
+												<p><img src="images/complete.png" />同意取消</p>
+												<p><img src="images/w_add_kc.png" />补充库存</p>
+												<p><img src="images/s_qian.png" />退款</p>
+												<p><img src="images/w_th.png" />退货</p>
+											</div>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td class="w_opt">
+											<span>您有新的消费订单01011608040004，请及时处理！</span>
+											<i>立即处理</i>
+											<div class="w_tc_btn l_opt_tips">
+												<p><img src="images/teur.png" />确认订单</p>
+												<p><img src="images/flase.png" />取消订单</p>
+												<p><img src="images/complete.png" />同意取消</p>
+												<p><img src="images/w_add_kc.png" />补充库存</p>
+												<p><img src="images/s_qian.png" />退款</p>
+												<p><img src="images/w_th.png" />退货</p>
+											</div>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div style="display: none;">
+						<div class="notice_serach">
+							<div class="message_state fl">
+								<p>
+									<span>公告状态</span>
+									<select>
+										<option>全部</option>
+										<option>未读消息</option>
+										<option>已读消息</option>
+									</select>
+								</p>
+							</div>
+
+						</div>
+
+						<div class="tableBox">
+							<table class="site_table">
+								<thead>
+									<tr>
+										<td width="60px"></td>
+										<td>标题</td>
+										<td>发布时间</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td>
+											<span>微信公众号服务介绍</span>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+
+										</td>
+										<td>
+											<span>微信公众号服务介绍</span>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td>
+											<span>商户管理平台介绍
+</span>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td>
+											<span>商户管理平台介绍
+</span>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<span>热烈庆祝新疆地区酒店开通单商户系统</span>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<span>热烈庆祝新疆地区酒店开通单商户系统</span>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<span>商品03011012已售完，请及时补充库存！</span>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<span>热烈庆祝新疆地区酒店开通单商户系统</span>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td>
+											<span>热烈庆祝新疆地区酒店开通单商户系统</span>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<em>
+											<img src="images/site_information.png">
+										</em>
+										</td>
+										<td>
+											<span>热烈庆祝新疆地区酒店开通单商户系统</span>
+										</td>
+										<td>
+											<span>2016-08-04 14:24:53</span>
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="pagination_site">
+					<ul>
+						<li>共有数据：201条</li>
+						<li><span>< 上一页</span></li>
+						<li>
+							<a href="javascript:;" class="active">1</a>
+						</li>
+						<li>
+							<a href="javascript:;">2</a>
+						</li>
+						<li>
+							<a href="javascript:;">3</a>
+						</li>
+						<li>
+							<a href="javascript:;">4</a>
+						</li>
+						<li>
+							<a href="javascript:;">5</a>
+						</li>
+						<li>
+							<em>...</em>
+						</li>
+						<li>
+							<a href="javascript:;">20</a>
+						</li>
+						<li><span>下一页 ></span></li>
+						<li>
+							<input type="text">
+						</li>
+						<li class="skip"><span>跳转</span></li>
+						<li>
+							<em>每页</em>
+							<select>
+								<option>10</option>
+								<option>20</option>
+								<option>30</option>
+							</select>
+							<em>条</em>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--同意取消订单-->
+		<div class="w_popup food_cancel_popup">
+			<div class="w_tou_popup"></div>
+			<div class="w_food_cancel">
+				<div class="w_delivered_top">
+					<i></i>
+					<p class="w_send_product">买家已申请取消订单，</p>
+					<p>是否同意取消？</p>
+				</div>
+				<div class="delivered_btn">
+					<span class="w_sure_btn">确定</span>
+					<span class="w_cancel_btn">取消</span>
+				</div>
+			</div>
+		</div>
+
+
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+			<script type="text/javascript" src="js/public.js"></script>
+			<script>
+				$(".w_opt i").click(function(){
+					$(this).siblings(".l_opt_tips").fadeIn();
+					$(this).parents("tr").siblings().find(".l_opt_tips").hide();
+				})
+				
+				$(".l_opt_tips p").click(function(){
+					$(this).parent().fadeOut();
+				})
+			</script>
+			<script>
+				$(".site_table tbody tr").click(function(e) {
+					$(this).find("em").hide();
+				});
+			</script>
+			<!--天数点击效果-->
+			<script>
+				$(".notice_serach_left ul li").click(function(e) {
+					$(this).not($(".booking_sheet_sx")).addClass("active").siblings().removeClass("active")
+				});
+			</script>
+			<!--分页器点击效果-->
+			<script>
+				$(document).ready(function() {
+					$(".pagination_site ul li a").click(function() {
+						$(".pagination_site ul li a").removeClass("active");
+						$(this).addClass("active");
+					});
+				});
+			</script>
+			<!--时间插件-->
+			<script>
+				$(function() {
+					$("#select-date").datepicker({
+						defaultDate: "+1w",
+						changeMonth: true,
+						numberOfMonths: 1,
+						onClose: function(selectedDate) {
+							$("#to-date").datepicker("option", "minDate", selectedDate);
+						}
+					});
+					$("#to-date").datepicker({
+						defaultDate: "+1w",
+						changeMonth: true,
+						numberOfMonths: 1,
+						onClose: function(selectedDate) {
+							$("#select-date").datepicker("option", "maxDate", selectedDate);
+						}
+					});
+				});
+				jQuery(function($) {
+					$.datepicker.regional['zh-CN'] = {
+						closeText: '关闭',
+						prevText: '<上月',
+						nextText: '下月>',
+						currentText: '今天',
+						monthNames: ['一月', '二月', '三月', '四月', '五月', '六月',
+							'七月', '八月', '九月', '十月', '十一月', '十二月'
+						],
+						monthNamesShort: ['一', '二', '三', '四', '五', '六',
+							'七', '八', '九', '十', '十一', '十二'
+						],
+						dayNames: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
+						dayNamesShort: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+						dayNamesMin: ['日', '一', '二', '三', '四', '五', '六'],
+						weekHeader: '周',
+						dateFormat: 'yy-mm-dd',
+						firstDay: 1,
+						isRTL: false,
+						showMonthAfterYear: true,
+						yearSuffix: '年'
+					};
+					$.datepicker.setDefaults($.datepicker.regional['zh-CN']);
+				});
+			</script>
+
+			<script>
+				//选择日期后
+				function selectDay(obj) {
+					var beginTime = $("#select-date").val();
+					var endTime = $("#to-date").val();
+					if(null == beginTime || "" == beginTime) {
+						alert("请选择起始日期");
+						return false;
+					} else if(null == endTime || "" == endTime) {
+						return false;
+					}
+					//window.location.href = "?beginTime=" + beginTime + "&endTime=" + endTime;
+				}
+			</script>
+			<script>
+				$(function() {
+					$('.plase_min ul li').click(function() {
+						$(this).addClass('s_to').siblings().removeClass('s_to');
+						var index = $(this).index();
+						$('.max_content>div').eq(index).show().siblings().hide();
+					})
+				})
+			</script>
+
+	</body>
+
+</html>

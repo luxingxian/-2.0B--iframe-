@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>日历管理</title>
+		<link rel="stylesheet" href="css/jquery-ui.min.css" />
+		<link rel="stylesheet" href="css/sjcalendar.css" />
+		<link rel="stylesheet" href="css/l_tab_title.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+
+		<div class="main">
+			<div class="calendar-manage clearfix">
+				<div class="calendar-manage-left">
+					<!-- 日历 -->
+					<div class="c-day cal-manage" id="cal_div"></div>
+					<!-- set menu -->
+					<div class="set-box">
+						<span class="week-set">刷新</span>
+					</div>
+					<ul class="label-box">
+						<li class="remarks"><i></i><span>周末</span></li>
+					</ul>
+					<div class="remarksone"><span>注意：操作假日或周末规则维护后还需操作再次生成房型价格。</span></div>
+				</div>
+				<div class="calendar-manage-right">
+					<div class="title-top">
+						<!--<div class="label"> &rsaquo; </div>-->
+					</div>
+					<div class="cmr-top">
+						<div class="cmr-top-main">
+							<div class="cmr-top-main-l">
+								<span>特殊节日</span>
+							</div>
+							<div class="cmr-top-main-r">
+								<a href="javascript:;" class="addfestival"><i></i>新增节日</a>
+							</div>
+						</div>
+					</div>
+					<div class="tabletwoBox">
+						<table>
+							<thead>
+								<tr>
+									<th width="">节日名称</th>
+									<th width="">日期</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>店庆</td>
+									<td>10月1日</td>
+									<td class="erase">
+										<a href="javascript:;" class="edit"></a>
+										<a href="javascript:;" class="junk"></a>
+									</td>
+								</tr>
+								<tr>
+									<td>啤酒节</td>
+									<td>10月27日-10月30日</td>
+									<td class="erase">
+										<a href="javascript:;" class="edit"></a>
+										<a href="javascript:;" class="junk"></a>
+									</td>
+								</tr>
+								<tr>
+									<td>啤酒节</td>
+									<td>11月1日-11月2日</td>
+									<td class="erase">
+										<a href="javascript:;" class="edit"></a>
+										<a href="javascript:;" class="junk"></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--为选择日期新增提示-->
+		<div class="added-prompt">
+			<p class="s_shadow"></p>
+			<div class="ap-main">
+				<div class="ap-top">
+					<span class="fl">提示</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="ap-m">
+					<span>请选择节日时间</span>
+				</div>
+				<div class="ap-but">
+					<input type="button" value="确定" class="sure" />
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<!--删除提示-->
+		<div class="delete-prompt">
+			<p class="s_shadow"></p>
+			<div class="dp-main">
+				<div class="dp-top">
+					<span class="fl">提示</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="dp-m dlo_mone">
+					<span>删除后预订价格不会变更，需再次生成价格并发布生效。是否确认删除?</span>
+				</div>
+				<div class="dp-but">
+					<input type="button" value="确定" class="sure" />
+					<input type="button" value="取消" class="cancel" />
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<!--删除成功提示-->
+		<div class="success-prompt">
+			<p class="s_shadow"></p>
+			<div class="sp-main">
+				<div class="sp-top">
+					<span class="fl">提示</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="sp-m">
+					<span>操作成功！调整节日后还需再次生成房型价格以生效。</span>
+				</div>
+				<div class="sp-but">
+					<a href="javascriprt" class="w_tz"><input type="button" value="马上调整房价" class="sure w_tz" /></a>
+					<input type="button" value="稍后修改" class="cancel" />
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<!--新增特殊节日-->
+		<div class="add-special-festival">
+			<p class="s_shadow"></p>
+			<div class="asf-main">
+				<div class="asf-top">
+					<span class="fl">新增特殊节日</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="asf-m">
+					<p><span>日期：</span><em>2016.8.1</em>-<em>2016.8.4</em></p>
+					<p><span>名称：</span><input type="text" maxlength="5" onkeyup="javascript:setShowLength(this, 5, 'word_number');" /><i id="word_number">0/5</i></p>
+				</div>
+				<div class="asf-but">
+					<input type="button" value="确定" class="sure" />
+				</div>
+				<div class="addmm_prompt">
+					<p><i></i><span>信息不全，请完善！</span></p>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<!--修改特殊节日-->
+		<div class="revise-special-festival">
+			<p class="s_shadow"></p>
+			<div class="rsf-main">
+				<div class="rsf-top">
+					<span class="fl">修改特殊节日</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="rsf-m">
+					<p class="pone"><span>日期：</span><label class="" for="select-date"></label>
+						<!--<label class="" for="select-date"></label>-->
+						<input type="text" id="select-date" name="select-date" value="" onchange="selectDay()"> - <label class="wstxtone" for="to-date"></label>
+						<input type="text" id="to-date" name="to-date" value="" onchange="selectDay()">
+						<p class="ptwo"><span>名称：</span><input type="text" /></p>
+				</div>
+				<div class="rsf-but">
+					<input type="button" value="确定" class="sure" />
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<!--修改成功提示-->
+		<div class="modify-success-prompt">
+			<p class="s_shadow"></p>
+			<div class="msp-main">
+				<div class="msp-top">
+					<span class="fl">提示</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="msp-m">
+					<span>操作成功！调整节日后还需再次生成房型价格以生效。</span>
+				</div>
+				<div class="msp-but">
+					<a href="javascript" class="w_tz"><input type="button" value="马上调整房价" class="sure w_tz" /></a>
+					<input type="button" value="稍后修改" class="cancel" />
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<script>
+			// 模拟传入数据
+			var holiday_data = "2016-10-08:除夕|2016-10-09:春节|2016-10-13:国庆节"; // 模拟传入法定假日数据
+			var add_holiday_data = "2016-10-08:啤酒节|2016-10-10:啤酒节|2016-11-01:啤酒节|2016-11-02:啤酒节"; // 模拟传入自定义节日数据
+		</script>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/sjcalendar-cal.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<!--跳转页面-->
+		<script>
+			$(".w_tz").click(function() {
+				$(this).attr("href", "room-manage.html");
+				tcHide()
+			})
+		</script>
+		<script>
+			$(document).ready(function() {
+				//删除提示
+				$("a.junk").click(function() {
+					$(".delete-prompt").fadeIn();
+					tcShow();
+				});
+				$(".dp-top em,.dp-but input.cancel").click(function() {
+					$(".delete-prompt").fadeOut();
+					tcHide()
+				});
+				//删除成功提示
+				$(".dp-but input.sure").click(function() {
+					$(".delete-prompt").fadeOut();
+					$(".success-prompt").fadeIn();
+				});
+				$(".sp-top em,.sp-but input.cancel").click(function() {
+					$(".success-prompt").fadeOut();
+					tcHide()
+				});
+				//新增特殊节日
+				$("a.addfestival").click(function() {
+					if($("#cal_div a").hasClass('selected') == true) {
+						$(".add-special-festival").fadeIn();
+					} else {
+						//为选择日期新增提示
+						$(".added-prompt").fadeIn();
+					}
+					tcShow();
+				});
+				$(".ap-top em,.ap-but input").click(function() {
+					$(".added-prompt").fadeOut();
+					tcHide()
+				});
+				$(".asf-top em").click(function() {
+					$(".add-special-festival").fadeOut();
+					tcHide()
+				});
+				$(".asf-but input").click(function() {
+					var one = $(".asf-m p input").val().length;
+					if(one == 0) {
+						$(".asf-m p input").css("border", "1px solid #ff0000");
+						$(".addmm_prompt").fadeIn();
+						setTimeout(function() {
+								$(".addmm_prompt").fadeOut();
+							},
+							2000);
+					} else {
+						$(".add-special-festival").fadeOut();
+						$(".asf-m p input").css("border", "1px solid #c8cacb");
+					}
+				});
+				//修改特殊节日
+				$("a.edit").click(function() {
+					$(".revise-special-festival").fadeIn();
+					tcShow();
+				});
+				$(".rsf-top em").click(function() {
+					$(".revise-special-festival").fadeOut();
+					tcHide()
+				});
+				//修改成功提示
+				$(".rsf-but input").click(function() {
+					$(".revise-special-festival").fadeOut();
+					$(".modify-success-prompt").fadeIn();
+				});
+				$(".msp-top em,.msp-but input.cancel").click(function() {
+					$(".modify-success-prompt").fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+
+		<!--时间插件-->
+		<script>
+			$(function() {
+				$("#select-date").datepicker({
+					defaultDate: "+1w",
+					changeMonth: true,
+					numberOfMonths: 1,
+					onClose: function(selectedDate) {
+						$("#to-date").datepicker("option", "minDate", selectedDate);
+					}
+				});
+				$("#to-date").datepicker({
+					defaultDate: "+1w",
+					changeMonth: true,
+					numberOfMonths: 1,
+					onClose: function(selectedDate) {
+						$("#select-date").datepicker("option", "maxDate", selectedDate);
+					}
+				});
+			});
+			jQuery(function($) {
+				$.datepicker.regional['zh-CN'] = {
+					closeText: '关闭',
+					prevText: '<上月',
+					nextText: '下月>',
+					currentText: '今天',
+					monthNames: ['一月', '二月', '三月', '四月', '五月', '六月',
+						'七月', '八月', '九月', '十月', '十一月', '十二月'
+					],
+					monthNamesShort: ['一', '二', '三', '四', '五', '六',
+						'七', '八', '九', '十', '十一', '十二'
+					],
+					dayNames: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
+					dayNamesShort: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+					dayNamesMin: ['日', '一', '二', '三', '四', '五', '六'],
+					weekHeader: '周',
+					dateFormat: 'yy-mm-dd',
+					firstDay: 1,
+					isRTL: false,
+					showMonthAfterYear: true,
+					yearSuffix: '年'
+				};
+				$.datepicker.setDefaults($.datepicker.regional['zh-CN']);
+			});
+		</script>
+
+		<script>
+			//选择日期后
+			function selectDay(obj) {
+				var beginTime = $("#select-date").val();
+				var endTime = $("#to-date").val();
+				if(null == beginTime || "" == beginTime) {
+					alert("请选择起始日期");
+					return false;
+				} else if(null == endTime || "" == endTime) {
+					return false;
+				}
+				//window.location.href = "?beginTime=" + beginTime + "&endTime=" + endTime;
+			}
+		</script>
+
+		<!--字数限制-->
+		<script>
+			function setShowLength(obj, maxlength, id) {
+				var rem = obj.value.length;
+				var wid = id;
+				if(rem < 0) {
+					rem = 0;
+				}
+				document.getElementById(wid).innerHTML = rem + "/5";
+			}
+		</script>
+
+	</body>
+
+</html>

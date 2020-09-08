@@ -1,0 +1,28 @@
+.contentBox .mainBox{width: 100%;height: auto;float: left;}
+.contentBox .mainBox .slideBar{width: 13%}
+.contentBox .mainBox .container_right{width: 86.8%;height: auto;padding-top: 22px;position: relative;}
+.container_right ul.titles{width: 100%;border-bottom: 1px solid #ccc;padding-left: 40px;box-sizing: border-box;}
+.container_right ul.titles li{float: left;height: 38px;line-height: 38px;padding: 0 20px;border: 1px solid #ccc;margin-left: -1px;margin-bottom: -1px;font-size: 14px;color: #666;box-sizing: border-box;cursor: pointer;}
+.container_right ul.titles li.active{color: #669;border-top: 3px solid #5574b2;border-bottom-color:#fff;line-height: 35px;}
+.container_right .l_content{margin: 0 50px 0 40px;position: absolute;top:60px;left: 0;width: 93%;display: none;height: auto;}
+.container_right .l_content.first{display: block;}
+.container_right .l_content .section{border-bottom: 1px solid #e5e5e5;padding: 0 30px 0 20px;}
+.container_right .l_content .section h4{font-size: 14px;color: #000;height: 60px;line-height: 60px;background: url(../images/pull_down.png) no-repeat;background-position:right center;}
+.container_right .l_content .section h4.up_img{background-image: url(../images/pull_up.png)}
+.container_right .l_content .section .toggle_box{display: none;padding-bottom: 24px;}
+.container_right .l_content .section p{font-size: 12px;color: #333;line-height: 22px;}
+.container_right .l_content .section p.indent{text-indent: 24px;line-height: 30px;}
+.container_right .l_content .section p.subtitle{margin-top: 10px;font-weight: bold;}
+.container_right .l_content .section1 p{line-height: 34px;}
+.container_right .l_content .section1 p.subtitle{font-size: 14px;font-weight:normal;}
+.contentBox .mainBox .l_content .order_status{width: 1120px;min-height: 760px;background: #f7f7f7;margin-bottom:40px;margin-top: 20px;}
+.contentBox .mainBox .l_content .order_status .p1{width: 1076px;height: 66px;border-bottom: 1px dashed #bfbfbf;margin: auto;}
+.contentBox .mainBox .l_content .order_status .p1 em{display: block; font-size: 12px;color: #333333;}
+.contentBox .mainBox .l_content .order_status .p1 em:first-child{padding-top: 15px;font-weight:bold ;}
+.contentBox .mainBox .l_content .order_status .p1 em:nth-of-type(2){padding-top: 5px;}
+.contentBox .mainBox .l_content .order_status .p2{font-size: 12px;color: #333333;padding-left: 20px;margin-top: 20px;}
+.contentBox .mainBox .l_content .order_status .p3{width: 1076px;height: 40px;margin: auto;padding-left: 30px;margin-top: 15px;}
+.contentBox .mainBox .l_content .order_status .p3 em{display: block; font-size: 12px;color: #333333;}
+.contentBox .mainBox .l_content .order_status .p3 em:first-child{font-weight:bold ;}
+.contentBox .mainBox .l_content .order_status .p3 em:nth-of-type(2){padding-top: 5px;width: 815px;}
+

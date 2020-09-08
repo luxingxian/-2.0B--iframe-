@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页入口管理-新增板块</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="assets/css/croppic.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" href="css/w_Plate_Style.css" />
+		<link rel="stylesheet" href="css/switch_but_sliding.css" />
+		<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+	</head>
+
+	<body>
+		<!--content-->
+
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content w_all" style="min-height: 1400px;">
+				<!--菜单栏-->
+				<div class="w_management">
+					<div class="w_navsbtn">
+						<div class="w_navsbtn_left fl">
+							<em>新增板块</em>
+						</div>
+						<div class="w_navsbtn_right fr">
+							<a href="plate_manage.html"><em class="w_shelves">返回</em></a>
+						</div>
+					</div>
+				</div>
+				<!--菜end-->
+				<!--板块分类-->
+				<div class="w_header clearfix">
+					<div class="home_p_left fl">
+						<div class="home_content">
+							<h3>板块信息</h3>
+							<div class="form_mation form1">
+								<p><i>*</i>业务类型</p>
+								<ul class="clear">
+									<li class="fl"><span></span>客房</li>
+									<li class="fl"><span></span>餐饮</li>
+									<li class="fl"><span></span>商品</li>
+									<li class="fl"><span></span>娱乐</li>
+									<li class="fl"><span></span>会议</li>
+								</ul>
+							</div>
+							<div class="form_mation form2">
+								<p><i>*</i>板块名称</p>
+								<input type="text" class="form_input" placeholder="输入板块名称，2-20个汉字">
+							</div>
+							<div class="form_mation">
+								<p>
+									<em class="fl"><i>*</i>入口图片<!--<span class="to_pic"></span>--></em>
+									<em class="fr">图片比例2:1</em>
+								</p>
+								<div class="plate_upload_item">
+									<p></p>
+									<p>上传图片</p>
+								</div>
+								<!--浮层-->
+								<div class="plate_upload_pic">
+									<div class="no_label"></div>
+									<img src="images/adv_list_img.png">
+									<div class="left_up_operation">
+										<em class="left_up_delete">删除</em>
+										<em class="left_up_change">换图片</em>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="home_p_right fl">
+						<div class="home_content">
+							<div class="plate_message">
+								<span>扩展信息</span>
+								<span class="switch_but switch_but2">
+									<input type="checkbox" name="toggle" class="togg">
+									<label for="toggle"><i></i></label>
+								</span>
+							</div>
+							<div class="w_all_plate">
+								<div class="form_mation w_select_time form3">
+									<p class="text_size">营业时间</p>
+									<!--板块分类-->
+									<div class="w_plate_class">
+										<div class="w_plate_on">
+											<p><i>时</i></p>
+											<ul class="w_scroll">
+											</ul>
+										</div>
+										<div class="w_plate_on">
+											<p><i>分</i></p>
+											<ul>
+												<li>
+													00
+												</li>
+												<li>
+													30
+												</li>
+											</ul>
+										</div>
+										<div class="w_plate_on w_pzx">
+											——
+										</div>
+										<div class="w_plate_on w_third">
+											<p><i>时</i></p>
+											<ul class="w_scroll">
+
+											</ul>
+										</div>
+										<div class="w_plate_on">
+											<p><i>分</i></p>
+											<ul>
+												<li>
+													00
+												</li>
+												<li>
+													30
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="form_mation form4">
+									<p class="text_size">联系电话</p>
+									<input type="text" class="form_input">
+								</div>
+								<div class="form_mation w_select_time form6">
+									<p class="text_size">地址</p>
+									<div class="w_plate_class  w_all_address">
+										<div class="w_plate_class_left fl">
+											<div class="w_plate_two">
+												<p><i class="w_pro">省</i></p>
+												<ul class="w_province w_country">
+												</ul>
+											</div>
+											<div class="w_plate_two">
+												<p><i>市</i></p>
+												<ul class="w_city w_country">
+
+												</ul>
+											</div>
+											<div class="w_plate_two">
+												<p><i>区/县</i></p>
+												<ul class="w_area w_country">
+
+												</ul>
+											</div>
+										</div>
+										<div class="w_plate_class_right fr">
+											<div class="w_plate_two">
+												<input type="text" class="w_address" />
+												<a href="javascript:;" class="address_img fr"><img src="images/w_address.png"></a>
+											</div>
+										</div>
+									</div>
+									<div id="container"></div>
+								</div>
+
+								<div class="form_mation clear">
+									<p class="text_size"><em class="fl">板块图片</em><em class="fr">图片比例3:2</em></p>
+									<div class="plate_upload_item1 fl">
+										<div class="plate_upload_default w1">
+											<p>+</p>
+											<p>上传图片</p>
+										</div>
+										<!--浮层-->
+										<div class="plate_upload_pic1 pic1">
+											<div class="no_label"></div>
+											<img src="images/adv_list_img.png">
+											<div class="left_up_operation">
+												<em class="left_up_delete1 del1">删除</em>
+												<em class="left_up_change1">换图片</em>
+											</div>
+										</div>
+									</div>
+									<div class="plate_upload_item1 fl">
+										<div class="plate_upload_default w2">
+											<p>+</p>
+											<p>上传图片</p>
+										</div>
+										<!--浮层-->
+										<div class="plate_upload_pic1 pic2">
+											<div class="no_label"></div>
+											<img src="images/adv_list_img.png">
+											<div class="left_up_operation">
+												<em class="left_up_delete1 del2">删除</em>
+												<em class="left_up_change2">换图片</em>
+											</div>
+										</div>
+									</div>
+									<div class="plate_upload_item1 fl">
+										<div class="plate_upload_default w3">
+											<p>+</p>
+											<p>上传图片</p>
+										</div>
+										<!--浮层-->
+										<div class="plate_upload_pic1 pic3">
+											<div class="no_label"></div>
+											<img src="images/adv_list_img.png">
+											<div class="left_up_operation">
+												<em class="left_up_delete1 del3">删除</em>
+												<em class="left_up_change3">换图片</em>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w_bottom_btn">
+					<span>取消</span>
+					<span class="w_save">保存</span>
+				</div>
+			</div>
+			<!--主体--ed-->
+		</div>
+
+		<!--切图-->
+		<div class="cut_photo_left">
+			<div class="cut_p_top">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModal"></div>
+		</div>
+		<div class="cut_photo_right1 cut_photo_right">
+			<div class="cut_p_top">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModal1"></div>
+		</div>
+		<div class="cut_photo_right2 cut_photo_right">
+			<div class="cut_p_top">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModal2"></div>
+		</div>
+		<div class="cut_photo_right3 cut_photo_right">
+			<div class="cut_p_top">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModal3"></div>
+		</div>
+		<!--验证弹窗-->
+		<div class="addaae_prompt">
+			<p><i></i><span>信息不全，请完善！</span></p>
+		</div>
+		<!--wrap--ed-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="assets/js/croppic.min.js"></script>
+		<script type="text/javascript" src="js/address.js"></script>
+		<!--验证-->
+		<script>
+			$(function() {
+				var fp1;
+				var fp2;
+				var fp3;
+				var fp4;
+				var fp5;
+				var fp6;
+				$(".w_save").click(function() {
+					//业务类型
+					if($(".form_mation ul li span").hasClass("firm_active")) {
+						$(".form1 p").css("background", "");
+						fp1 = true
+					} else {
+						$(".form1 p").css("background", "url(./images/w_yz.png) no-repeat right");
+						fp1 = false
+					}
+					//板块名称
+					if($(".form2 input").val() == "") {
+						$(".form2 .form_input").css({
+							"border-bottom": "1px solid #ff3333",
+							"background": "url(./images/w_yz.png) no-repeat right"
+						});
+						$(".form2 input").attr("placeholder", "不能为空").addClass("invalid");
+						fp2 = false;
+					} else {
+						$(".form2 input").css({
+							"border-bottom": "1px solid #ccc",
+							"background": ""
+						});
+						$(".form2 input").attr("placeholder", "2-20个字").css("color", "#000").removeClass("invalid");
+						fp2 = true;
+					}
+					//营业时间
+					$(".w_plate_on i").each(function() {
+						var aa = $(this).html()
+						if(aa == "时" || aa == "分") {
+							$(".form3 .text_size").css("background", "url(./images/w_yz.png) no-repeat right");
+							fp3 = false;
+						} else {
+							$(".form3 .text_size").css("background", "");
+							fp3 = true;
+						}
+					})
+					//联系电话
+					if($(".form4 input").val() == "") {
+						$(".form4 .form_input").css({
+							"border-bottom": "1px solid #ff3333",
+							"background": "url(./images/w_yz.png) no-repeat right"
+						});
+						$(".form4 input").attr("placeholder", "不能为空").addClass("invalid");
+						fp4 = false;
+					} else {
+						$(".form4 input").css({
+							"border-bottom": "1px solid #ccc",
+							"background": ""
+						});
+						$(".form4 input").attr("placeholder", "2-20个字").css("color", "#000").removeClass("invalid");
+						fp4 = true;
+					}
+
+					//介绍
+					if($(".form5 textarea").val() == "") {
+						$(".form5 p").css("background", "url(./images/w_yz.png) no-repeat right");
+						$(".form5 textarea").attr("placeholder", "不能为空").addClass("invalid");
+						fp5 = false;
+					} else {
+						$(".form5 p").css("background", "");
+						$(".form5 textarea").attr("placeholder", "2-20个字").css("color", "#000").removeClass("invalid");
+						fp5 = true;
+					}
+					//地址
+					if($(".w_pro").text() == "") {
+						$(".form6 .text_size").css("background", "url(./images/w_yz.png) no-repeat right");
+						fp6 = false;
+					} else {
+						$(".form6 .text_size").css("background", "");
+						fp6 = true;
+					};
+					if(fp1 && fp2 && fp3 && fp4 && fp5 && fp6 ) {
+						return false;
+					} else {
+						$(".addaae_prompt").fadeIn().delay(2000).fadeOut();
+					}
+				})
+			})
+		</script>
+
+		<!---->
+		<script>
+			$('.form1 ul li').click(function() {
+				$('.form1 ul li').children('span').removeClass('firm_active');
+				$(this).children('span').addClass('firm_active');
+			})
+		</script>
+		<script>
+			$(function() {
+				//入口图片上传
+				$(".plate_upload_item,.left_up_change").click(function() {
+					$(".cut_photo_left").fadeIn();
+					tcShow();
+				})
+				$('.cut_photo_left .cut_p_top a').click(function(e) {
+					$('.cut_photo_left').fadeOut();
+					tcHide();
+				});
+
+				$(".plate_upload_default,.left_up_change1").click(function() {
+					$(".cut_photo_right1").fadeIn();
+					tcShow();
+				});
+				$(".plate_upload_default,.left_up_change2").click(function() {
+					$(".cut_photo_right2").fadeIn();
+					tcShow();
+				});
+				$(".plate_upload_default,.left_up_change3").click(function() {
+					$(".cut_photo_right3").fadeIn();
+					tcShow();
+				});
+				$('.cut_photo_right .cut_p_top a').click(function(e) {
+					$('.cut_photo_right').fadeOut();
+					tcHide();
+				});
+
+				$(".del1").click(function() {
+					$(".w1").fadeIn();
+					$(".pic1").hide()
+				})
+				$(".del2").click(function() {
+					$(".w2").fadeIn();
+					$(".pic2").hide()
+				})
+				$(".del3").click(function() {
+					$(".w3").fadeIn();
+					$(".pic3").hide()
+				})
+				//浮层
+				$(".plate_upload_pic").mousemove(function() {
+					$(this).find(".no_label,.left_up_operation").stop(true, true).fadeIn()
+				})
+				$(".plate_upload_pic").mouseleave(function() {
+					$(this).find(".no_label,.left_up_operation").delay(200).fadeOut()
+				})
+				$(".plate_upload_pic1").mousemove(function() {
+					$(this).find(".no_label,.left_up_operation").stop(true, true).fadeIn()
+				})
+				$(".plate_upload_pic1").mouseleave(function() {
+					$(this).find(".no_label,.left_up_operation").delay(200).fadeOut()
+				})
+				//删除图片
+				$(".left_up_delete").click(function() {
+					$(".plate_upload_pic").hide();
+					$(".plate_upload_item").animate({
+						marginTop: "15px"
+					}, 1000);
+				})
+			})
+		</script>
+
+		<!--地图-->
+		<script>
+			window.onload = function() {
+
+				//直接加载地图
+
+				//初始化地图函数  自定义函数名init
+				function init() {
+					//定义map变量 调用 qq.maps.Map() 构造函数   获取地图显示容器
+					var map = new qq.maps.Map(document.getElementById("container"), {
+						center: new qq.maps.LatLng(39.916527, 116.397128), // 地图的中心地理坐标。
+						zoom: 10 // 地图的中心地理坐标。
+					});
+				}
+
+				//调用初始化函数地图
+				init();
+
+			}
+		</script>
+		<script>
+			$(function() {
+				//					$(".w_province li").click(function() {
+				//					var aa = $(".w_plate_two:first-child i").is(":empty");
+				//					if(aa == true){
+				//						$(".w_plate_two:nth-of-type(2) p,.w_plate_two:nth-of-type(3) p").off("click");
+				//						alert(1)
+				//					}else{
+				//						$(".w_plate_two:nth-of-type(2) p,.w_plate_two:nth-of-type(3) p").on("click");
+				//						alert(2)
+				//					}
+				//					});
+				//获取省
+				for(var j = 0; j < provinceList.length; j++) {
+					var Province = provinceList[j].name;
+					$('.w_province').append('<li>' + Province + '</li>');
+				}
+				//获取市
+				$(".w_province li").click(function() {
+					$('.w_city').empty();
+					var w_province_index = $(this).index();
+					var w_city_index = provinceList[w_province_index];
+					cityList = w_city_index.cityList
+					for(var i = 0; i < w_city_index.cityList.length; i++) {
+						var Country = w_city_index.cityList[i].name
+						$('.w_city').append('<li>' + Country + '</li>');
+					}
+				})
+				$(".w_plate_class").delegate("li", "click", function() {
+					$(this).parents("ul").siblings("p").find("i").html($(this).html());
+					$(this).parents("ul").slideUp();
+				});
+				$(".w_plate_class").delegate("li", "mousemove", function() {
+					$(this).css({
+						"background": "#2e85f5",
+						"color": "#fff",
+						"cursor": "pointer"
+					});
+				});
+				$(".w_plate_class").delegate("li", "mouseleave", function() {
+					$(this).css({
+						"background": "#FFFFFF",
+						"color": "#a0a0a0",
+						"cursor": "pointer"
+					});
+				});
+				//获取区
+				$(".w_city").delegate("li", "click", function() {
+					$('.w_area').empty();
+					var w_area = $(this).index();
+					var w_region = cityList[w_area];
+					for(var i = 0; i < w_region.areaList.length; i++) {
+						var Area = w_region.areaList[i]
+						$('.w_area').append('<li>' + Area + '</li>');
+					}
+				})
+			})
+		</script>
+		<script type="text/javascript">
+			//营业时间
+			function zero(num) {
+				num = Number(num);
+				if(num < 10) {
+					return '0' + num;
+				} else {
+					return num;
+				}
+			}
+			for(var i = 1; i < 25; i++) {
+				$('.w_plate_on:nth-of-type(1) ul,.w_plate_on:nth-of-type(4) ul').append('<li>' + zero(i) + '</li>')
+			}
+		</script>
+		<script type="text/javascript">
+			/*扩展信息按钮切换*/
+			$(function() {
+				$('.switch_but input').click(function(e) {
+					if($(this).parent().hasClass("switch_but1")) {
+						$(this).parent().removeClass("switch_but1");
+						$(this).parent().addClass("switch_but2");
+						$(this).parents(".home_p_right").css("background", "url(./images/w_edit_img.png) no-repeat center #FFFFFF");
+						$(".w_all_plate").hide();
+					} else {
+						$(this).parent().removeClass("switch_but2");
+						$(this).parent().addClass("switch_but1");
+						$(this).parents(".home_p_right").css("background", "#FFFFFF");
+						$(".w_all_plate").fadeIn();
+
+					}
+				});
+				//介绍
+				var num = 1;
+				$(".introduce_input textarea").keyup(function() {
+					num = $(this).val().length;
+					if(num > 300) {
+						num = 300;
+					}
+					$(this).siblings(".w_num").find("em").html(num);
+				});
+			});
+		</script>
+		<!--切图插件-->
+		<script>
+			var croppicContainerModalOptions = {
+				uploadUrl: 'http://tech.harvetech.cn/wifihotel/img_save_to_file.php',
+				cropUrl: 'http://tech.harvetech.cn/wifihotel/img_crop_to_file.php',
+				modal: true,
+				imgEyecandyOpacity: 0.4,
+				loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+				onBeforeImgUpload: function() {
+					console.log('onBeforeImgUpload')
+				},
+				onAfterImgUpload: function() {
+					console.log('onAfterImgUpload')
+				},
+				onImgDrag: function() {
+					console.log('onImgDrag')
+				},
+				onImgZoom: function() {
+					console.log('onImgZoom')
+				},
+				onBeforeImgCrop: function() {
+					console.log('onBeforeImgCrop')
+				},
+				onAfterImgCrop: function() {
+					console.log('onAfterImgCrop')
+				},
+				onReset: function() {
+					console.log('onReset')
+				},
+				onError: function(errormessage) {
+					console.log('onError:' + errormessage)
+				}
+			}
+			var cropContainerModal = new Croppic('cropContainerModal', croppicContainerModalOptions);
+		</script>
+		<!--切图插件-->
+		<script>
+			var croppicContainerModalOptions = {
+				uploadUrl: 'http://tech.harvetech.cn/wifihotel/img_save_to_file.php',
+				cropUrl: 'http://tech.harvetech.cn/wifihotel/img_crop_to_file.php',
+				modal: true,
+				imgEyecandyOpacity: 0.4,
+				loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+				onBeforeImgUpload: function() {
+					console.log('onBeforeImgUpload')
+				},
+				onAfterImgUpload: function() {
+					console.log('onAfterImgUpload')
+				},
+				onImgDrag: function() {
+					console.log('onImgDrag')
+				},
+				onImgZoom: function() {
+					console.log('onImgZoom')
+				},
+				onBeforeImgCrop: function() {
+					console.log('onBeforeImgCrop')
+				},
+				onAfterImgCrop: function() {
+					console.log('onAfterImgCrop')
+				},
+				onReset: function() {
+					console.log('onReset')
+				},
+				onError: function(errormessage) {
+					console.log('onError:' + errormessage)
+				}
+			}
+			var cropContainerModal = new Croppic('cropContainerModal1', croppicContainerModalOptions);
+		</script>
+		<!--切图插件-->
+		<script>
+			var croppicContainerModalOptions = {
+				uploadUrl: 'http://tech.harvetech.cn/wifihotel/img_save_to_file.php',
+				cropUrl: 'http://tech.harvetech.cn/wifihotel/img_crop_to_file.php',
+				modal: true,
+				imgEyecandyOpacity: 0.4,
+				loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+				onBeforeImgUpload: function() {
+					console.log('onBeforeImgUpload')
+				},
+				onAfterImgUpload: function() {
+					console.log('onAfterImgUpload')
+				},
+				onImgDrag: function() {
+					console.log('onImgDrag')
+				},
+				onImgZoom: function() {
+					console.log('onImgZoom')
+				},
+				onBeforeImgCrop: function() {
+					console.log('onBeforeImgCrop')
+				},
+				onAfterImgCrop: function() {
+					console.log('onAfterImgCrop')
+				},
+				onReset: function() {
+					console.log('onReset')
+				},
+				onError: function(errormessage) {
+					console.log('onError:' + errormessage)
+				}
+			}
+			var cropContainerModal = new Croppic('cropContainerModal2', croppicContainerModalOptions);
+		</script>
+		<!--切图插件-->
+		<script>
+			var croppicContainerModalOptions = {
+				uploadUrl: 'http://tech.harvetech.cn/wifihotel/img_save_to_file.php',
+				cropUrl: 'http://tech.harvetech.cn/wifihotel/img_crop_to_file.php',
+				modal: true,
+				imgEyecandyOpacity: 0.4,
+				loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+				onBeforeImgUpload: function() {
+					console.log('onBeforeImgUpload')
+				},
+				onAfterImgUpload: function() {
+					console.log('onAfterImgUpload')
+				},
+				onImgDrag: function() {
+					console.log('onImgDrag')
+				},
+				onImgZoom: function() {
+					console.log('onImgZoom')
+				},
+				onBeforeImgCrop: function() {
+					console.log('onBeforeImgCrop')
+				},
+				onAfterImgCrop: function() {
+					console.log('onAfterImgCrop')
+				},
+				onReset: function() {
+					console.log('onReset')
+				},
+				onError: function(errormessage) {
+					console.log('onError:' + errormessage)
+				}
+			}
+			var cropContainerModal = new Croppic('cropContainerModal3', croppicContainerModalOptions);
+		</script>
+	</body>
+
+</html>

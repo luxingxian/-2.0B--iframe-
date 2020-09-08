@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>客户中心-来访用户</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/dateRange.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_global.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_goods_manage.css" />
+	</head>
+
+	<body>
+		<!--content-->
+
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content clearfix ">
+				<div class="l_sub_header clearfix">
+					<a href="javascript:;" class="fl white_list">白名单</a>
+					<a href="javascript:;" class="pl_hide marleft l_right_btn fr ">批量删除</a>
+					<a href="javascript:;" class="l_down fr l_right_btn">下载表单</a>
+				</div>
+
+				<!--二级筛选导航公用结构-->
+				<div class="l_header clearfix w_plate_class">
+					<a href="javascript:;" class="active">全部</a>
+					<a href="javascript:;">今天</a>
+					<a href="javascript:;">昨天</a>
+					<a href="javascript:;">7天</a>
+					<div class="ta_date l_date" id="div_date1">
+						<span class="date_title" id="date1"></span>
+						<em class="clearDate"></em>
+					</div>
+					<p class="search_input fl l_hide">
+						<input type="text" placeholder="请输入订单编号,手机号" class="l_search" />
+						<img src="images/l_icon_search.png" alt="" />
+					</p>
+					<a href="javascript:;" class="l_ref fr"><img src="images/l_icon_ref.png" />刷新</a>
+				</div>
+				<!--二级筛选导航公用结构--ed---->
+
+				<div class="l_table table_three">
+					<table>
+						<thead>
+							<tr>
+								<th class="tha"></th>
+								<th class="thb">来访日期</th>
+								<th class="thc">用户ID</th>
+								<th class="thd">手机号</th>
+								<th class="the">性别</th>
+								<th class="thf">新老用户</th>
+								<th class="thg">来访时间</th>
+								<th class="thi">操作</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>2017-03-31</td>
+								<td>C123456789</td>
+								<td>18518099332</td>
+								<td>男</td>
+								<td class="l_old_new"><i>新</i></td>
+								<td>13:06:24</td>
+								<td class="l_opt_del">
+									<img src="images/l_icon_del2.png" />
+								</td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>2017-03-31</td>
+								<td>C123456789</td>
+								<td>18518099332</td>
+								<td>女</td>
+								<td class="l_old_new old"><i>老</i></td>
+								<td>13:06:24</td>
+								<td class="l_opt_del">
+									<img src="images/l_icon_del2.png" />
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!--主体--ed-->
+		<!--底部分页开始-->
+		<div class="l_container">
+			<div class="l_foot_page clearfix">
+				<div class="l_left fl">
+					<p>每页显示
+						<select>
+							<option>10</option>
+							<option>20</option>
+							<option>30</option>
+						</select>
+					</p>
+				</div>
+				<div class="l_right fr clearfix">
+					<p>
+						<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+						<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+						<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+					</p>
+					<p class="l_skippage">
+						到<input type="number" />页<button>确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--底部分页--ed-->
+
+		<!--下载表单弹窗-->
+		<div class="l_popup l_popup_download">
+			<p class="l_pop_article tc">确认要下载表单？</p>
+			<p class="l_btns">
+				<a href="javascript:;" class="l_ok">确定</a>
+				<a href="javascript:;" class="l_cancle">取消</a>
+			</p>
+		</div>
+		<!--删除弹窗-->
+		<div class="l_popup l_popup_del">
+			<p class="l_pop_article"><img src="images/l_icon_del3.png" />确认要删除表单？</p>
+			<p class="l_btns">
+				<a href="javascript:;" class="l_ok">确定</a>
+				<a href="javascript:;" class="l_cancle">取消</a>
+			</p>
+		</div>
+		<!--白名单用户档案-->
+		<div class="l_popup l_popup_white l_popup_two">
+			<div class="popcont">
+				<h3 class="pop_title">白名单用户档案</h3>
+				<div class="pop_mess clearfix">
+					<p class="mess_one"><span class="mess_tit">用户ID</span><span class="mess_val">大厅</span></p>
+					<p class="mess_one"><span class="mess_tit">手机号</span><span class="mess_val">18518099332</span></p>
+					<p class="mess_name martop22">姓名</p>
+					<input type="text" class="pop_name" placeholder="请填写姓名" />
+					<div class="section_select">
+						<div class="l_aside fl">
+							<p class="title_name">职位</p>
+							<div class="select">
+								<p class="view">请选择</p>
+								<ul class="f_border">
+									<li>职位一</li>
+									<li>职位二</li>
+									<li>职位三</li>
+									<li>职位三</li>
+									<li>职位三</li>
+									<li>职位三</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="l_aside fr">
+							<p class="title_name">职级</p>
+							<div class="select">
+								<p class="view">请选择</p>
+								<ul class="f_border">
+									<li>总经理</li>
+									<li>总监</li>
+									<li>经理</li>
+									<li>主管</li>
+									<li>专员</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<p class="mess_name fl">状态</p>
+					<p class="radio fl">
+						<input type="radio" name="job" id="job1" value="" /><label for="job1">任职</label>
+						<input type="radio" name="job" id="job2" value="" /><label for="job2">离职</label>
+					</p>
+				</div>
+
+				<p class="pop_foot_btn clearfix">
+					<a href="javascript:;" class="ok_btn">确定</a>
+					<a href="javascript:;" class="cancle_btn">取消</a>
+				</p>
+			</div>
+			<div class="pop_tip tc"><img src="images/l_icon_invalid.png" />信息不全，请先填写完整信息！</div>
+		</div>
+		<div class="l_drop"></div>
+		<!--弹窗背景遮罩-->
+
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/l_global.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dateRange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/l_daterange.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//来访客户白名单弹窗/信息验证
+				$(".white_list").click(function() {
+					if($(this).hasClass("active")) {
+						$(".l_popup_white").fadeIn();
+						$(".l_drop").fadeIn();
+						tcShow(1);
+					} else {
+						return false;
+					};
+
+				});
+				//状态单选效果
+				$(".radio label").click(function() {
+					$(".radio label").removeClass("checked");
+					$(this).addClass("checked");
+				});
+				//确定点击验证效果
+				$(".ok_btn").click(function() {
+
+					if($(".view").html() != "请选择" && $(".radio label").hasClass("checked")) {
+						$(this).parents(".l_popup").fadeOut();
+						$(".l_drop").fadeOut();
+						tcHide();
+					} else {
+						$(".pop_tip").fadeIn().delay(1000).fadeOut();
+					}
+				});
+				//取消点击效果
+				$(".cancle_btn").click(function() {
+					$(this).parents(".l_popup").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide();
+				});
+				$(".pl_hide").click(function() {
+					if($(this).hasClass("active")) {
+						$(".l_popup_del").fadeIn();
+						$(".l_drop").fadeIn();
+						tcShow();
+					} else {
+						return false;
+					}
+
+				});
+
+				//模拟下拉效果
+				$(".select .view").click(function() {
+					$(this).next().slideToggle();
+					$(this).parents('.l_aside').siblings().find('.select ul').slideUp()
+					return false;
+				});
+				$(".select ul li").click(function() {
+					$(this).parents(".select").find(".view").html($(this).html());
+					$(this).parent().slideUp();
+				});
+				$(document).click(function() {
+					$(".select ul").slideUp();
+				})
+			});
+		</script>
+	</body>
+
+</html>

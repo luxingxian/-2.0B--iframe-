@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>关注客户管理</title>
+		<link rel="stylesheet" href="css/sjstyle.css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_global.css" />
+
+	</head>
+
+	<body>
+		
+			<!--头部开始-->
+				<div style="margin-top: 60px;">
+					<div class="mheader">
+						<div class="header_l fl">
+							<ul>
+								<li class="active">
+									<a href="javascript:;">全部</a>
+								</li>
+								<li class="vertical">|</li>
+								<li>
+									<a href="javascript:;">今天</a>
+								</li>
+								<li class="vertical">|</li>
+								<li>
+									<a href="javascript:;">昨天</a>
+								</li>
+								<li class="vertical">|</li>
+								<li>
+									<a href="javascript:;">7天</a>
+								</li>
+								<li class="vertical">|</li>
+								<li>
+									<a href="javascript:;">30天</a>
+								</li>
+								<li class="vertical">|</li>
+							</ul>
+						</div>
+						<div class="header_time fl">
+							<div class="time_text fl">自定义</div>
+							<div class="time fl">
+								<label class="" for="select-date"></label>
+								<input type="text" id="select-date" name="select-date" value="" onchange="selectDay()"> - <label class="wstxtone" for="to-date"></label>
+								<input type="text" id="to-date" name="to-date" value="" onchange="selectDay()">
+							</div>
+						</div>
+						<div class="header_r fr">
+							<div class="polling fl">
+								<input type="text" placeholder="输入用户昵称" /><span></span>
+							</div>
+							<div class="vertical fl">
+								<span>|</span>
+							</div>
+							<div class="renovate fl">
+								<span>刷新</span>
+							</div>
+						</div>
+					</div>
+					<div class="main_table clearfix">
+						<div class="mt_top">
+							<div class="mtt_l fl">
+								<a href="javascript:;" class="s_already active">已关注</a>
+								<a href="javascript:;" class="s_blacklist">黑名单</a>
+							</div>
+							<div class="mtt_r fr">
+								<a href="javascript:;" class="remov_blacklist">移出黑名单</a>
+								<a href="javascript:;" class="add_blacklist">加入黑名单</a>
+								<a href="javascript:;" class="batch_grouping">批量分组</a>
+							</div>
+						</div>
+						<div class="tableoneBox" style="height: 710px;">
+							<div>
+								<table class="table_already">
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>
+											<div class="divimg">
+												<img src="assets/img/park_view.jpg" />
+											</div>
+										</td>
+										<td>
+											<p><span class="spanname">我是王佳琪</span></p>
+											<p class="tdp"><em>星标用户</em><em>活跃用户</em><em>普通</em><i class="xiatriangle"></i></p>
+										</td>
+										<td>
+											<span class="remarks">修改备注</span>
+										</td>
+										<td>
+											<p>关注时间</p>
+											<p>2016-08-02 20:24:53</p>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>
+											<div class="divimg">
+												<img src="assets/img/park_view.jpg" />
+											</div>
+										</td>
+										<td>
+											<p><span class="spanname">吴秀波</span></p>
+											<p class="tdp"><em>星标用户</em><em>活跃用户</em><i class="xiatriangle"></i></p>
+										</td>
+										<td>
+											<span class="remarks">修改备注</span>
+										</td>
+										<td>
+											<p>关注时间</p>
+											<p>2016-08-02 20:24:53</p>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>
+											<div class="divimg">
+												<img src="assets/img/park_view.jpg" />
+											</div>
+										</td>
+										<td>
+											<p><span class="spanname">杰森斯坦森</span></p>
+											<p class="tdp"><em>星标用户</em><i class="xiatriangle"></i></p>
+										</td>
+										<td>
+											<span class="remarks">修改备注</span>
+										</td>
+										<td>
+											<p>关注时间</p>
+											<p>2016-08-02 20:24:53</p>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>
+											<div class="divimg">
+												<img src="assets/img/park_view.jpg" />
+											</div>
+										</td>
+										<td>
+											<p><span class="spanname">周围</span></p>
+											<p class="tdp"><span>无标签</span><i class="xiatriangle"></i></p>
+										</td>
+										<td>
+											<span class="remarks">修改备注</span>
+										</td>
+										<td>
+											<p>关注时间</p>
+											<p>2016-08-02 20:24:53</p>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>
+											<div class="divimg">
+												<img src="assets/img/park_view.jpg" />
+											</div>
+										</td>
+										<td>
+											<p><span class="spanbeizhu">不知道了</span><span class="spanname">（史泰龙）</span></p>
+											<p class="tdp"><em>星标用户</em><em>活跃用户</em><i class="xiatriangle"></i></p>
+										</td>
+										<td>
+											<span class="remarks">修改备注</span>
+										</td>
+										<td>
+											<p>关注时间</p>
+											<p>2016-08-02 20:24:53</p>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>
+											<div class="divimg">
+												<img src="assets/img/park_view.jpg" />
+											</div>
+										</td>
+										<td>
+											<p><span class="spanname">我是王佳琪</span></p>
+											<p class="tdp"><span>无标签</span><i class="xiatriangle"></i></p>
+										</td>
+										<td>
+											<span class="remarks">修改备注</span>
+										</td>
+										<td>
+											<p>关注时间</p>
+											<p>2016-08-02 20:24:53</p>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>
+											<div class="divimg">
+												<img src="assets/img/park_view.jpg" />
+											</div>
+										</td>
+										<td>
+											<p><span class="spanname">我是王佳琪</span></p>
+											<p class="tdp"><em>星标用户</em><em>活跃用户</em><i class="xiatriangle"></i></p>
+										</td>
+										<td>
+											<span class="remarks">修改备注</span>
+										</td>
+										<td>
+											<p>关注时间</p>
+											<p>2016-08-02 20:24:53</p>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>
+											<div class="divimg">
+												<img src="assets/img/park_view.jpg" />
+											</div>
+										</td>
+										<td>
+											<p><span class="spanname">我是王佳琪</span></p>
+											<p class="tdp"><em>星标用户</em><i class="xiatriangle"></i></p>
+										</td>
+										<td>
+											<span class="remarks">修改备注</span>
+										</td>
+										<td>
+											<p>关注时间</p>
+											<p>2016-08-02 20:24:53</p>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>
+											<div class="divimg">
+												<img src="assets/img/park_view.jpg" />
+											</div>
+										</td>
+										<td>
+											<p><span class="spanname">我是王佳琪</span></p>
+											<p class="tdp"><em>星标用户</em><em>活跃用户</em><i class="xiatriangle"></i></p>
+										</td>
+										<td>
+											<span class="remarks">修改备注</span>
+										</td>
+										<td>
+											<p>关注时间</p>
+											<p>2016-08-02 20:24:53</p>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>
+											<div class="divimg">
+												<img src="assets/img/park_view.jpg" />
+											</div>
+										</td>
+										<td>
+											<p><span class="spanname">我是王佳琪</span></p>
+											<p class="tdp"><em>普通</em><i class="xiatriangle"></i></p>
+										</td>
+										<td>
+											<span class="remarks">修改备注</span>
+										</td>
+										<td>
+											<p>关注时间</p>
+											<p>2016-08-02 20:24:53</p>
+										</td>
+									</tr>
+								</table>
+								<table class="table_blacklist">
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>
+											<div class="divimg">
+												<img src="assets/img/park_view.jpg" />
+											</div>
+										</td>
+										<td>
+											<p><span class="spanname">我是王佳琪</span></p>
+											<p class="tdp"><em>黑名单</em><i class="xiatriangle"></i></p>
+										</td>
+										<td>
+											<span class="remarks">修改备注</span>
+										</td>
+										<td>
+											<p>关注时间</p>
+											<p>2016-08-02 20:24:53</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+
+							<!--底部分页开始-->
+							<div class="l_container">
+								<div class="l_foot_page mar10 clearfix">
+									<div class="l_left fl">
+										<p>每页显示
+											<select>
+												<option>10</option>
+												<option>20</option>
+												<option>30</option>
+											</select>
+										</p>
+									</div>
+									<div class="l_right fr clearfix">
+										<p>
+											<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+											<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+											<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+										</p>
+										<p class="l_skippage">
+											到<input type="number" />页<button>确定</button>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!--底部分页--ed-->
+						</div>
+						<div class="newbuilt_grouping">
+							<table>
+								<thead>
+									<tr>
+										<th width="218px"><span>全部用户</span><i>(37)</i></th>
+										<th><em class="addtrtd">新建分组</em></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<span>星标用户</span><i>(20)</i>
+											<input type="text" value="星标用户" maxlength="10" />
+										</td>
+										<td>
+											<a href="javascript:;" class="edit"></a>
+											<a href="javascript:;" class="junk"></a>
+											<a href="javascript:;" class="tdkeep">保存</a>
+											<a href="javascript:;" class="tdcancel">取消</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>活跃用户</span><i>(12)</i>
+											<input type="text" value="活跃用户" maxlength="10" />
+										</td>
+										<td>
+											<a href="javascript:;" class="edit"></a>
+											<a href="javascript:;" class="junk"></a>
+											<a href="javascript:;" class="tdkeep">保存</a>
+											<a href="javascript:;" class="tdcancel">取消</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>普通</span><i>(5)</i>
+											<input type="text" value="普通" maxlength="10" />
+										</td>
+										<td>
+											<a href="javascript:;" class="edit"></a>
+											<a href="javascript:;" class="junk"></a>
+											<a href="javascript:;" class="tdkeep">保存</a>
+											<a href="javascript:;" class="tdcancel">取消</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+		
+		<!--设置分组-->
+		<div class="grouping_popupBg clear">
+			<div class="grouping_popup">
+				<div class="gp_san"></div>
+				<div class="gp_top">
+					<span>设置分组</span>
+				</div>
+				<div class="gp_main">
+					<label><input type="checkbox" />星标用户</label>
+					<label><input type="checkbox" />活跃用户</label>
+					<label><input type="checkbox" />普通</label>
+					<label><input type="checkbox" />双行示例</label>
+				</div>
+				<div class="gp_but">
+					<input type="button" value="确定" class="sure" />
+					<input type="button" value="取消" class="cancel" />
+				</div>
+			</div>
+		</div>
+
+		<!--备注名称-->
+		<div class="remarks_popupBg">
+			<div class="remarks_popup">
+				<div class="rmp_san"></div>
+				<div class="rmp_top">
+					<span>备注名称</span>
+				</div>
+				<div class="rmp_main">
+					<input type="text" id="s_textar" maxlength="10" onpaste="javascript:setShowLength(this, 10, 's_em');" />
+					<span><em id="s_em">0</em>/10</span>
+				</div>
+				<div class="rmp_but">
+					<input type="button" value="确定" class="sure" />
+					<input type="button" value="取消" class="cancel" />
+				</div>
+			</div>
+		</div>
+
+		<!--移出黑名单弹窗-->
+		<div class="l_popup l_remove">
+			<p class="l_pop_article tc">确认移出黑名单？</p>
+			<p class="l_btns">
+				<a href="javascript:;" class="l_ok">确定</a>
+				<a href="javascript:;" class="l_cancle">取消</a>
+			</p>
+		</div>
+
+		<!--加入黑名单弹窗-->
+		<div class="l_popup l_blacklist">
+			<p class="l_pop_article">加入黑名单后，你将无法接收该用户发来的消息，且该用户无法接收公众号发出的消息，无法参与留言和赞赏,<br/>确认加入黑名单？</p>
+			<p class="l_btns">
+				<a href="javascript:;" class="l_ok">确定</a>
+				<a href="javascript:;" class="l_cancle">取消</a>
+			</p>
+		</div>
+
+		<!--删除弹窗-->
+		<div class="l_popup l_popup_del">
+			<p class="l_pop_article"><img src="images/l_icon_del3.png" />确认要删除吗？</p>
+			<p class="l_btns">
+				<a href="javascript:;" class="l_ok">确定</a>
+				<a href="javascript:;" class="l_cancle">取消</a>
+			</p>
+		</div>
+		<div class="l_drop"></div>
+		<!--弹窗背景遮罩-->
+		<!--批量分组-->
+		<div class="batchgroupp">
+			<div class="bgp_main">
+				<div class="bgp_top">
+					<span class="fl">批量分组</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="bgp_m">
+					<label><input type="checkbox" />星标用户</label>
+					<label><input type="checkbox" />活跃用户</label>
+					<label><input type="checkbox" />普通</label>
+					<label><input type="checkbox" />示例示例示例</label>
+					<label><input type="checkbox" />示例示例示例</label>
+					<label><input type="checkbox" />示例示例示例</label>
+					<label><input type="checkbox" />示例示例示例</label>
+					<label><input type="checkbox" />示例示例示例</label>
+				</div>
+				<div class="bgp_but">
+					<input type="button" value="确定" class="sure" />
+					<input type="button" value="取消" class="cancel" />
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+		<!--字数限制js-->
+		<script>
+			window.onload = function() {
+				var oDiv = document.getElementById('s_em');
+				var oTxt = document.getElementById('s_textar');
+
+				if(window.navigator.userAgent.indexOf('MSIE 9.0') != -1) {
+					var timer = null;
+
+					oTxt.onfocus = function() {
+						var num = oTxt.value.length;
+						timer = setInterval(function() {
+							oDiv.innerHTML = oTxt.value.length;
+						}, 10);
+
+					};
+					oTxt.onblur = function() {
+						clearInterval(timer);
+					};
+				} else {
+
+					oTxt.onpropertychange = oTxt.oninput = function() {
+						oDiv.innerHTML = oTxt.value.length;
+					};
+				}
+			};
+		</script>
+
+		<!--主体选项卡点击效果-->
+		<script>
+			$(document).ready(function() {
+				$(".header_l ul li a").click(function() {
+					$(".header_l ul li").removeClass("active");
+					$(this).parent().addClass("active");
+				});
+			});
+		</script>
+
+		<!--删除弹窗-->
+		<script>
+			$(function() {
+				$('a.junk').click(function(e) {
+					$('.l_popup_del').fadeIn();
+					$('.l_drop').fadeIn();
+					tcShow();
+				});
+				$('.l_popup_del .l_ok,.l_popup_del .l_cancle').click(function(e) {
+					$('.l_popup_del').fadeOut();
+					$('.l_drop').fadeOut();
+					tcHide()
+				});
+			});
+		</script>
+
+		<!--加入黑名单-->
+		<script>
+			$(document).ready(function() {
+				$(".table_already tr > td > input[type='checkbox']").click(function() {
+					var c = 0;
+					$(".table_already tr > td > input[type='checkbox']").each(function() {
+						var o = $(this).is(":checked");
+						if(o == true) {
+							c += 1;
+						}
+					});
+					if(c > 0) {
+						$('a.add_blacklist').addClass("add_blacklistjihuo");
+						$('a.add_blacklist').click(function(e) {
+							$('.addblacklistp').fadeIn();
+							$('.l_blacklist').fadeIn();
+							$('.l_drop').fadeIn();
+							tcShow()
+						});
+					} else {
+						$('a.add_blacklist').removeClass("add_blacklistjihuo");
+					}
+				});
+				$('.addblacklistp .abp_main .abp_top em,.addblacklistp .abp_main .abp_but input').click(function(e) {
+					$('.addblacklistp').fadeOut();
+				});
+				$('.l_blacklist .l_ok,.l_blacklist .l_cancle').click(function(e) {
+					$('.l_blacklist,.l_drop').fadeOut();
+					tcHide()
+				});
+			});
+		</script>
+
+		<!--移出黑名单-->
+		<script>
+			$(document).ready(function() {
+				$(".table_blacklist tr > td > input[type='checkbox']").click(function() {
+					var s = 0;
+					$(".table_blacklist tr > td > input[type='checkbox']").each(function() {
+						var w = $(this).is(":checked");
+						if(w == true) {
+							s += 1;
+						}
+					});
+					if(s > 0) {
+						$('a.remov_blacklist').addClass("remov_blacklistjihuo");
+						$('a.remov_blacklist').click(function(e) {
+							$('.l_remove').fadeIn();
+							$('.l_drop').fadeIn();
+							tcShow();
+						});
+					} else {
+						$('a.remov_blacklist').removeClass("remov_blacklistjihuo");
+					}
+					$('.l_remove .l_ok,.l_remove .l_cancle').click(function(e) {
+						$('.l_remove,.l_drop').fadeOut();
+						tcHide();
+					});
+				});
+			});
+		</script>
+
+		<!--批量分组-->
+		<script>
+			$(document).ready(function() {
+				$(".table_already tr > td > input[type='checkbox']").click(function() {
+					var d = 0;
+					$(".table_already tr > td > input[type='checkbox']").each(function() {
+						var r = $(this).is(":checked");
+						if(r == true) {
+							d += 1;
+						}
+					});
+					if(d > 0) {
+						$('a.batch_grouping').addClass("batch_groupingjihuo");
+						$('a.batch_grouping').click(function(e) {
+							$('.batchgroupp').fadeIn();
+							$('.l_drop').fadeIn();
+							tcShow();
+						});
+					} else {
+						$('a.batch_grouping').removeClass("batch_groupingjihuo");
+					}
+				});
+				$('.batchgroupp .bgp_main .bgp_top em,.batchgroupp .bgp_main .bgp_but input').click(function(e) {
+					$('.batchgroupp').fadeOut();
+					$('.l_drop').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+
+		<!--修改分组-->
+		<script>
+			$(function() {
+				$('a.edit').click(function(e) {
+					$(this).hide();
+					$(this).siblings("a.junk").hide();
+					$(this).parent().siblings("td").find("span,i").hide();
+					$(this).siblings('.tdkeep,.tdcancel').show().css({
+						"display": "inline-block"
+					});
+					$(this).parent().siblings("td").find("input").show();
+				});
+				$('a.tdcancel').click(function(e) {
+					$(this).hide();
+					$(this).siblings("a.tdkeep").hide();
+					$(this).parent().siblings("td").find("input").hide();
+					$(this).siblings('.junk,.edit').show().css({
+						"display": "inline-block"
+					});
+					$(this).parent().siblings("td").find("span,i").show();
+				});
+				$('a.tdkeep').click(function(e) {
+					var inputVal = $(this).parent().siblings("td").find("input").val()
+					var spanHtml = $(this).parent().siblings("td").find("span").html(inputVal);
+					$(this).hide();
+					$(this).siblings("a.tdcancel").hide();
+					$(this).parent().siblings("td").find("input").hide();
+					$(this).siblings('.junk,.edit').show().css({
+						"display": "inline-block"
+					});
+					$(this).parent().siblings("td").find("span,i").show();
+				});
+			});
+		</script>
+
+		<!--新建分组-->
+		<script>
+			$(".addtrtd").click(function() {
+				$(".newbuilt_grouping table tbody").append("<tr><td><span style='display: none;'>普通</span><i style='display: none;'>(0)</i><input type='text' value='普通' style='display: inline-block;' /></td><td><a href='javascript:;' class='edit' style='display: none;'></a><a href='javascript:;' class='junk' style='display: none;'></a><a href='javascript:;' class='tdkeep' style='display: inline-block;'>保存</a><a href='javascript:;' class='tdcancel' style='display: inline-block;'>取消</a></td></tr>");
+				$('.newbuilt_grouping tbody input').attr('maxlength', '10');
+			});
+		</script>
+		<!--限制输入字符个数-->
+
+		<!--已关注与黑名单切换-->
+		<script>
+			$(document).ready(function() {
+				$(".s_already").click(function() {
+					$(".s_blacklist").removeClass("active");
+					$(this).addClass("active");
+					$(".table_blacklist").hide();
+					$(".table_already").show();
+				});
+				$(".s_blacklist").click(function() {
+					$(".s_already").removeClass("active");
+					$(this).addClass("active");
+					$(".table_already").hide();
+					$(".table_blacklist").show();
+				});
+			});
+		</script>
+
+		<!--设置分组-->
+		<script>
+			$(document).ready(function() {
+				$(".table_already .xiatriangle").click(function() {
+					var onepageX = $(this).offset().top + 16;
+					var onepageY = $(this).offset().left - 186;
+					$(".grouping_popupBg").show();
+					$(".grouping_popup").css({
+						"top": onepageX,
+						"left": onepageY
+					});
+				});
+				$(".grouping_popup .gp_but input").click(function() {
+					$(".grouping_popupBg").hide();
+				});
+			});
+		</script>
+
+		<!--备注名称-->
+		<script>
+			$(document).ready(function() {
+				$(".table_already .remarks").click(function() {
+					var pageX = $(this).offset().top + 30;
+					var pageY = $(this).offset().left - 126;
+					$(".remarks_popupBg").show();
+					$(".remarks_popup").css({
+						"top": pageX,
+						"left": pageY
+					});
+				});
+				$(".remarks_popup .rmp_but input").click(function() {
+					$(".remarks_popupBg").hide();
+				});
+			});
+		</script>
+
+		<!--时间插件-->
+		<script>
+			$(function() {
+				$("#select-date").datepicker({
+					defaultDate: "+1w",
+					changeMonth: true,
+					numberOfMonths: 1,
+					onClose: function(selectedDate) {
+						$("#to-date").datepicker("option", "minDate", selectedDate);
+					}
+				});
+				$("#to-date").datepicker({
+					defaultDate: "+1w",
+					changeMonth: true,
+					numberOfMonths: 1,
+					onClose: function(selectedDate) {
+						$("#select-date").datepicker("option", "maxDate", selectedDate);
+					}
+				});
+			});
+			jQuery(function($) {
+				$.datepicker.regional['zh-CN'] = {
+					closeText: '关闭',
+					prevText: '<上月',
+					nextText: '下月>',
+					currentText: '今天',
+					monthNames: ['一月', '二月', '三月', '四月', '五月', '六月',
+						'七月', '八月', '九月', '十月', '十一月', '十二月'
+					],
+					monthNamesShort: ['一', '二', '三', '四', '五', '六',
+						'七', '八', '九', '十', '十一', '十二'
+					],
+					dayNames: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
+					dayNamesShort: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+					dayNamesMin: ['日', '一', '二', '三', '四', '五', '六'],
+					weekHeader: '周',
+					dateFormat: 'yy-mm-dd',
+					firstDay: 1,
+					isRTL: false,
+					showMonthAfterYear: true,
+					yearSuffix: '年'
+				};
+				$.datepicker.setDefaults($.datepicker.regional['zh-CN']);
+			});
+		</script>
+
+		<script>
+			//选择日期后
+			function selectDay(obj) {
+				var beginTime = $("#select-date").val();
+				var endTime = $("#to-date").val();
+				if(null == beginTime || "" == beginTime) {
+					alert("请选择起始日期");
+					return false;
+				} else if(null == endTime || "" == endTime) {
+					return false;
+				}
+				window.location.href = "?beginTime=" + beginTime + "&endTime=" + endTime;
+			}
+		</script>
+
+	</body>
+
+</html>

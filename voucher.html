@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>收款单</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/dateRange.css" />
+		<link rel="stylesheet" href="css/l_tab_title.css" />
+		<link rel="stylesheet" href="css/sj_style.css" />
+	</head>
+
+	<body>
+		<!--content-->
+
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content">
+				<div class="classification">
+					<ul>
+						<li class="active">全部</li>
+						<li>客房</li>
+						<li>商品</li>
+					</ul>
+				</div>
+				<div class="screening">
+					<ul>
+						<li>
+							<a href="javascript:;" class="active">今天</a>
+						</li>
+						<li>
+							<a href="javascript:;">昨天</a>
+						</li>
+						<li>
+							<a href="javascript:;">7天</a>
+						</li>
+					</ul>
+					<div class="w_plate_one">
+						<p><i>交易状态</i><em></em></p>
+						<ul class="f_border">
+							<li class="l_select_name">交易状态</li>
+							<li>支付成功</li>
+							<li>支付中用户取消</li>
+							<li>支付失败</li>
+						</ul>
+					</div>
+					<div class="ta_date l_date" id="div_date1">
+						<span class="date_title" id="date1"></span>
+						<em class="clearDate"></em>
+					</div>
+					<div class="search">
+						<input type="text" value="" placeholder="输入单号/编号/手机号" />
+						<a href="javascript:;"></a>
+					</div>
+					<div class="refresh">
+						<a href="javascript:;"><i></i>刷新</a>
+					</div>
+				</div>
+				<div class="table">
+					<table>
+						<thead>
+							<tr>
+								<th class="thfirst" width="12%">收款单号</th>
+								<th width="12.2%">订单编号</th>
+								<th width="11.4%">交易流水号</th>
+								<th width="8.8%">实收金额</th>
+								<th width="11.4%">客户信息</th>
+								<th width="14%">交易状态</th>
+								<th width="13.6%">收款完成时间</th>
+								<th width="10.4%">业务类型</th>
+								<th width="6.2%">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><em class="emone">SK2016080400004</em></td>
+								<td><em class="emtwo">111612151840029999</em></td>
+								<td><em class="emthree">1009660380223312</em></td>
+								<td>¥&nbsp;1,500.00</td>
+								<td>
+									<p class="pone">赵先生</p>
+									<p class="pone">18877944744</p>
+								</td>
+								<td>
+									<span class="spanwin"><i></i>支付成功</span>
+								</td>
+								<td>
+									<p class="pone">2016-08-04</p>
+									<p class="pone">12:24:53</p>
+								</td>
+								<td>客房</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><em class="emone">SK2016080400004</em></td>
+								<td><em class="emtwo">111612151840029999</em></td>
+								<td><em class="emthree">1009660380223312</em></td>
+								<td>¥&nbsp;1,050.00</td>
+								<td>
+									<p class="pone">赵先生</p>
+									<p class="pone">18877944744</p>
+								</td>
+								<td>
+									<span class="spanlose">支付中用户取消</span>
+								</td>
+								<td>
+									<p class="pone">2016-08-04</p>
+									<p class="pone">12:24:53</p>
+								</td>
+								<td>商品</td>
+								<td>
+									<a href="javascript:;" class="gainnew"></a>
+								</td>
+							</tr>
+							<tr>
+								<td><em class="emone">SK2016080400004</em></td>
+								<td><em class="emtwo">111612151840029999</em></td>
+								<td><em class="emthree">1009660380223312</em></td>
+								<td>¥&nbsp;700.00</td>
+								<td>
+									<p class="pone">赵先生</p>
+									<p class="pone">18877944744</p>
+								</td>
+								<td>
+									<span class="spanwin"><i></i>支付成功</span>
+								</td>
+								<td>
+									<p class="pone">2016-08-04</p>
+									<p class="pone">12:24:53</p>
+								</td>
+								<td>客房</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><em class="emone">SK2016080400004</em></td>
+								<td><em class="emtwo">111612151840029999</em></td>
+								<td><em class="emthree">1009660380223312</em></td>
+								<td>¥&nbsp;1,050.00</td>
+								<td>
+									<p class="pone">赵先生</p>
+									<p class="pone">18877944744</p>
+								</td>
+								<td>
+									<span class="spanlose">支付中用户取消</span>
+								</td>
+								<td>
+									<p class="pone">2016-08-04</p>
+									<p class="pone">12:24:53</p>
+								</td>
+								<td>商品</td>
+								<td>
+									<a href="javascript:;" class="gainnew"></a>
+								</td>
+							</tr>
+							<tr>
+								<td><em class="emone">SK2016080400004</em></td>
+								<td><em class="emtwo">111612151840029999</em></td>
+								<td><em class="emthree">1009660380223312</em></td>
+								<td>¥&nbsp;1,500.00</td>
+								<td>
+									<p class="pone">赵先生</p>
+									<p class="pone">18877944744</p>
+								</td>
+								<td>
+									<span class="spanwin"><i></i>支付成功</span>
+								</td>
+								<td>
+									<p class="pone">2016-08-04</p>
+									<p class="pone">12:24:53</p>
+								</td>
+								<td>客房</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><em class="emone">SK2016080400004</em></td>
+								<td><em class="emtwo">111612151840029999</em></td>
+								<td><em class="emthree">1009660380223312</em></td>
+								<td>¥&nbsp;1,500.00</td>
+								<td>
+									<p class="pone">赵先生</p>
+									<p class="pone">18877944744</p>
+								</td>
+								<td>
+									<span class="spanshu"><i></i>支付失败</span>
+								</td>
+								<td>
+									<p class="pone">2016-08-04</p>
+									<p class="pone">12:24:53</p>
+								</td>
+								<td>客房</td>
+								<td>
+									<a href="javascript:;" class="gainnew"></a>
+								</td>
+							</tr>
+							<tr>
+								<td><em class="emone">SK2016080400004</em></td>
+								<td><em class="emtwo">111612151840029999</em></td>
+								<td><em class="emthree">1009660380223312</em></td>
+								<td>¥&nbsp;1,500.00</td>
+								<td>
+									<p class="pone">赵先生</p>
+									<p class="pone">18877944744</p>
+								</td>
+								<td>
+									<span class="spanshu"><i></i>支付失败</span>
+								</td>
+								<td>
+									<p class="pone">2016-08-04</p>
+									<p class="pone">12:24:53</p>
+								</td>
+								<td>客房</td>
+								<td>
+									<a href="javascript:;" class="gainnew"></a>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!--主体--ed-->
+		<!--底部分页开始-->
+		<div class="l_container">
+			<div class="l_foot_page clearfix">
+				<div class="l_left fl">
+					<p>每页显示
+						<select>
+							<option>10</option>
+							<option>20</option>
+							<option>30</option>
+						</select>
+					</p>
+				</div>
+				<div class="l_right fr clearfix">
+					<p>
+						<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+						<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+						<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+					</p>
+					<p class="l_skippage">
+						到<input type="number" />页<button>确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--底部分页--ed-->
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/sjjs.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="js/dateRange.js"></script>
+		<script type="text/javascript" src="js/vr_daterange.js"></script>
+
+	</body>
+
+</html>

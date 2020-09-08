@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>微平台-门店管理-添加设备</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/device_manage.css" />
+	</head>
+
+	<body>
+		<!--content-->
+
+		<!--主体开始-->
+		<div class="l_container device_a">
+			<div class="l_content clearfix ">
+				<div class="add_mess clearfix">
+					<p class="add_left">1、选择设备所属门店</p>
+					<p class="add_right">
+						<span>
+								<select name="">
+									<option value="1">请选择门店</option>
+									<option value="2">桔子水晶酒店</option>
+									<option value="3">桔子水晶酒店</option>
+									<option value="4">桔子水晶酒店</option>
+								</select>
+							</span>
+					</p>
+					<p class="add_left add_middle">2、请选择你的设备类型</p>
+					<p class="add_right add_middle border_p"><span class="device_style">请选择以上选项</span></p>
+					<p class="add_left">3、设置网络名称</p>
+					<p class="add_right">
+						<span class="web_name">请选择以上选项</span>
+						<span class="ssid"><i>网络名称(SSID)</i><input type="text" placeholder="请输入无线网络名称" maxlength="32"/><em>总长度32个字符以内</em></span>
+					</p>
+				</div>
+				<div class="foot_btn_a">
+					<a href="javascript:;" class="foot_btn_add">添加</a>
+					<a href="" class="foot_btn_cancle">取消</a>
+				</div>
+			</div>
+		</div>
+
+		<!--添加设备弹窗-改造设备认证流程-->
+		<div class="device_tanbox device_tan_a">
+			<div class="device_tanbox_title">改造此店设备的认证流程
+				<a href="javascript:;"><img src="images/icon_cancle.png" alt="" /></a>
+			</div>
+			<div class="device_box clearfix">
+				<div class="device_left">
+					<p class="marb10">设备需做以下改造，方可支持微信连Wi-Fi：</p>
+					<p>√.改造认证逻辑：详情参考
+						<a href="">《WiFi硬件鉴权协议接口说明》</a>
+					</p>
+					<p>√.改造认证Portal页：请参考
+						<a href="">demo页(如右图)源代码</a>
+					</p>
+					<p class="mart10">门店Wi-Fi信息</p>
+					<div class="box_in">
+						<p>门店名称: 浩海国际酒店</p>
+						<p>SSID: 12334</p>
+						<p>shopId: 3127326</p>
+						<p>appId: wxa4b4edd09acf33d5</p>
+						<p>ecretKey: a3e696629912dc7722be49ced0efd8bc</p>
+					</div>
+					<p>*如无设备改造能力，建议联系此店的Wi-Fi设备商</p>
+				</div>
+				<div class="device_right">
+					<img src="images/pic_weixin.png" alt="" />
+				</div>
+
+			</div>
+
+			<p class="next_btn">
+				<a href="javascript:;">下一步</a>
+			</p>
+		</div>
+		<!--添加设备弹窗-改造设备认证流程--ed-->
+
+		<!--添加设备弹窗-绑定为管理员-->
+		<div class="device_tanbox device_tan_b">
+			<div class="device_tanbox_title">绑定为管理员
+				<a href="javascript:;"><img src="images/icon_cancle.png" alt="" /></a>
+			</div>
+			<div class="device_box clearfix">
+				<div class="device_left">
+					<img src="images/icon_erweima.png" alt="" />
+				</div>
+				<div class="device_right">
+					<h3>请扫码绑定成为WiFi管理员，以便接受“添加设备”反馈报告。</h3>
+					<p>（说明：WiFi服务商改造设备完成后，若有顾客用微信方式连接此店WiFi， 则连网成功的那台WiFi设备添加成功，并且会收到“添加设备”反馈报告。）
+					</p>
+				</div>
+
+			</div>
+
+			<p class="next_btn">
+				<a href="javascript:;" class="pre_btn">上一步</a>
+				<a href="javascript:;" class="ok_btn">完成</a>
+			</p>
+		</div>
+		<!--添加设备弹窗-绑定为管理员-->
+		<div class="l_drop"></div>
+
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/l_global.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//	选择门店效果
+				$(".add_mess p select").change(function() {
+					if($(this).val() == 1) {
+						$(".device_style").html("请选择以上选项");
+						$(".web_name").html("请选择以上选项");
+						$(".ssid").css("display", "none");
+					} else {
+						$(".device_style").html("portal型设备（在poratl页上输入手机号码和短信验证码连WiFi的设备）");
+						$(".web_name").html("为保证门店下多台设备无缝漫游，设备必须使用相同的无线网络名称和密码");
+						$(".ssid").css("display", "block");
+					}
+				})
+				//改造此店设备的认证流程弹窗
+				$(".foot_btn_add").click(function() {
+					$(".device_tan_a").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow(1)
+				})
+				//	弹窗关闭
+				$(".device_tan_a .device_tanbox_title a").click(function() {
+					$(".device_tan_a").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide()
+				})
+
+				//下一步弹窗
+				$(".device_tan_a .next_btn").click(function() {
+					$(".device_tan_a").fadeOut()
+					$(".device_tan_b").fadeIn()
+				})
+				//	弹窗关闭
+				$(".device_tan_b .device_tanbox_title a").click(function() {
+					$(".device_tan_b").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide()
+				})
+
+				$(".device_tan_b .next_btn .pre_btn").click(function() {
+					$(".device_tan_b").fadeOut();
+					$(".device_tan_a").fadeIn();
+				})
+
+				$(".device_tan_b .ok_btn").click(function() {
+					$(".device_tan_b").fadeOut()
+					$(".l_drop").fadeOut();
+					tcHide()
+
+					//关闭本页
+				})
+
+				$(".ssid input").keyup(function() {
+					if($(this).val().length >= 32) {
+						$(".ssid em").html("输入不能超过32个字符").css("color", "#f33")
+					} else {
+						$(".ssid em").html("总长度32个字符以内").css("color", "#666")
+
+					}
+				});
+
+				//所有弹窗垂直居中显示
+//				function popup() {
+//					$(".device_tanbox").each(function() {
+//						var pop_hei = $(this).outerHeight();
+//						$(this).css("margin-top", -pop_hei / 2);
+//					});
+//
+//				};
+//				popup();
+//
+//				$(window).resize(function() {
+//					popup();
+//				});
+
+			})
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,13 @@
+
+.w_popup{ position: fixed; top: 0; left: 0; bottom: 0; right: 0;  width: 100%; height: 100%;display: none;z-index:100;}
+.w_popup .w_tou_popup{position: fixed;background:#000; width: 100%; height: 100%;opacity: 0.4;filter:Alpha(opacity=40);}
+
+/*同意取消订单*200*/
+.w_popup .w_food_cancel{position: absolute;width: 280px; min-height: 200px; border-radius: 2px;background: #FFFFFF;z-index: 3;left: 50%;margin-left: -140px;top: 0%;}
+.w_popup .w_food_cancel .w_delivered_top{width: 100%;height: 120px;background: #8e8e8e;position: relative;}
+.w_popup .w_food_cancel .w_delivered_top i{position: absolute; display: inline-block; background: url(../images/food_popup.png) no-repeat center; width: 22px;height: 17px;left: 19px;top: 38px;}
+.w_popup .w_food_cancel .w_delivered_top p{font-size: 14px;color: #FFFFFF;padding-left: 50px;}
+.w_popup .w_food_cancel .w_delivered_top p.w_send_product{padding-top: 33px;}
+.w_popup .w_food_cancel .delivered_btn{width: 100%;height: 80px;}
+.w_popup .w_food_cancel .delivered_btn span{float: right; display: inline-block;width: 72px;height: 36px;line-height:36px;border-radius: 2px;text-align: center;background: #e8e8e8;margin-right: 18px;margin-top: 24px;cursor: pointer;}
+.w_popup .w_food_cancel .delivered_btn span.w_cancel_btn{background: none;}

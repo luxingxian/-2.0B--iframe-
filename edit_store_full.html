@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>营销-店内满减-编辑</title>
+		<link rel="stylesheet" type="text/css" href="css/dateRange.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/w_store.css" />
+		<link rel="stylesheet" href="css/jedate.css" />
+	</head>
+
+	<body>
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content clearfix">
+				<div class="w_store_top">
+					<a href="javascript:;" class="active_set fl">活动设置</a>
+					<a href="javascript:;" class="ope_data fl">操作记录</a>
+					<a href="javascript:;" class="go_back fr">返回</a>
+				</div>
+				<div class="w_store_bottom">
+					<div class="w_addMess">
+						<h3 class="addTitle">活动信息</h3>
+						<p class="edit_work">编辑活动</p>
+						<div class="addInfo">
+							<p class="activityTitle"><span class="red">*</span>活动名称</p>
+							<p class="inputName"><input type="text" value="" placeholder="2-20个字" class="fp1" /></p>
+							<p class="f_dian">店庆促销满百直减</p>
+							<p class="activityTitle"><span class="red">*</span>活动有效期</p>
+							<!--<div class="ta_date activityDate" id="div_date1">
+								<span class="date_title fp2" id="date1"></span>
+							</div>-->
+							<div class="f_data activityDate">
+								<span class="wstxt"></span><input type="text" class="workinput wicon" id="inpstart" readonly>
+									——
+								<span class="wstxt"></span><input type="text" class="workinput wicon" id="inpend" readonly>
+							</div>	
+							<p class="f_time">2017-06-01 00:00:00   至    2017-06-07 23:59:59</p>
+							<p class="activityTitle">活动范围</p>
+							<p class="activityRange"><span>店内</span><i>（仅前台记账消费，统一结算时参加活动）</i></p>
+						</div>
+
+						<h3 class="ruleTitle">优惠规则</h3>
+						<div class="discount">
+							<ul class="discountTitle">
+								<li class="one">层级</li>
+								<li class="two">优惠条件</li>
+								<li class="three">优惠金额</li>
+								<li class="four">操作</li>
+							</ul>
+							<ul class="discountArticle">
+								<li class="one">1</li>
+								<li class="two">单笔满<input type="text" autocomplete="off" value="100" />元</li>
+								<li class="three">减<input type="text" autocomplete="off" / value="50">元</li>
+								<li class="four"></li>
+							</ul>
+							<ul class="discountArticle">
+								<li class="one">1</li>
+								<li class="two">单笔满<input type="text" autocomplete="off" />元</li>
+								<li class="three">减<input type="text" autocomplete="off" />元</li>
+								<li class="four">启用</li>
+							</ul>
+							<ul class="discountArticle">
+								<li class="one">1</li>
+								<li class="two">单笔满<input type="text" autocomplete="off" />元</li>
+								<li class="three">减<input type="text" autocomplete="off" />元</li>
+								<li class="four">启用</li>
+							</ul>
+						</div>
+						<div class="bottom_btn">
+							<a href="javascript:;" class="w_cancel">取消</a>
+							<a href="javascript:;" class="w_save">保存</a>
+						</div>
+					</div>
+				</div>
+				<div class="w_act_record">
+					<table>
+						<thead>
+							<th>操作时间</th>
+							<th>操作人</th>
+							<th>操作类型</th>
+							<th>操作描述</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2017-05-05 14:34:26</td>
+								<td>shaoshuangxin</td>
+								<td>编辑活动</td>
+								<td>
+									<p>1.停用<i>三级优惠规则</i>；</p>
+								</td>
+							</tr>
+							<tr>
+								<td>2017-05-05 14:34:26</td>
+								<td>shaoshuangxin</td>
+								<td>编辑活动</td>
+								<td>
+									<p>1.修改 <i>活动名称</i> 从 <i>店庆促销</i> 改为 <i>店庆促销满百直减</i>；</p>
+									<p>2.修改 <i>活动有效期</i> 从 <i>2017-06-01 00:00:00  至  2017-06-05 23:59:59</i> 改为 <i>2017-06-01 00:00:00  至  2017-06-07 23:59:59 </i>；</p>
+									<p>3.修改 <i>一级优惠规则</i> 从 <i>满100.00元 减5.00元 </i>改为 <i>满100.00元 减10.00元</i>；</p>
+									<p>4.启用 <i>二级优惠规则，</i>设置为 <i>满200.00元 减20.00元</i>；</p>
+									<p>5.启用 <i>三级优惠规则，</i>设置为 <i>满300.00元 减30.00元</i>；</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!--主体--ed-->
+		<div class="quitbox">
+			<div class="quitpopup">
+				<p class="qptop"><span>确定要退出酒店后台系统吗？</span></p>
+				<p class="qpbut">
+					<input type="button" value="取消" class="undo" />
+					<input type="button" value="确定" class="affirm" />
+				</p>
+			</div>
+		</div>
+		<!--验证弹窗-->
+		<div class="addaae_prompt">
+			<p><i></i><span>信息不全，请完善！</span></p>
+		</div>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dateRange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.jedate.js"></script>
+		<script>
+			var start = {
+				format: 'YYYY-MM-DD hh:mm:ss',
+				minDate: '2014-06-16 23:59:59', //设定最小日期为当前日期
+				isinitVal: true,
+				maxDate: $.nowDate({
+					DD: 0
+				}), //最大日期
+				okfun: function(obj) {
+					end.minDate = obj.val; //开始日选好后，重置结束日的最小日期
+					endDates();
+				}
+			};
+			var end = {
+				format: 'YYYY-MM-DD hh:mm:ss',
+				minDate: $.nowDate({
+					DD: 0
+				}), //设定最小日期为当前日期
+				maxDate: '2099-06-16 23:59:59', //最大日期
+				isinitVal: true,
+				okfun: function(obj) {
+					start.maxDate = obj.val; //将结束日的初始值设定为开始日的最大日期
+				}
+			};
+			//这里是日期联动的关键        
+			function endDates() {
+				//将结束日期的事件改成 false 即可
+				end.trigger = false;
+				$("#inpend").jeDate(end);
+			}
+			$('#inpstart').jeDate(start);
+			$('#inpend').jeDate(end);
+
+			//或者是
+			$.jeDate('#inpstart', start);
+			$.jeDate('#inpend', end);
+		</script>
+		<script>
+			$(function() {
+				//tab切换
+				$(".ope_data").click(function(){
+					$(this).css({"background":"#2e85f5","color":"#fff"});
+					$(".active_set").css({"background":"none","color":"#737373"});
+					$(".w_store_bottom").hide();
+					$(".w_act_record").show();
+					$(".go_back").hide();
+				})
+				$(".active_set").click(function(){
+					$(this).css({"background":"#2e85f5","color":"#fff"});
+					$(".ope_data").css({"background":"none","color":"#737373"});
+					$(".w_store_bottom").show();
+					$(".w_act_record").hide();
+					$(".edit_work").show();
+				})
+				
+				
+				//编辑
+				$(".edit_work").click(function() {
+					$(this).hide();
+					$('.inputName').show();
+					$('.f_data').show();
+					$('.f_time').hide();
+					$('.f_dian').hide();
+					$(".inputName").css("border-bottom", "1px solid #e9eef2");
+					
+					$(".discount ul li input").css("border-bottom", "1px solid #ccc");
+					$(".discount ul li.four").show();
+					$(".discount ul li.one").css("width", "19.7%")
+					$(".discount ul li.two").css("width", "37%")
+					$(".discount ul li.three").css("width", "34%")
+					$(".bottom_btn").show();
+					$(".go_back").show();
+				})
+				//返回
+				$(".go_back").click(function() {
+					$('.inputName').hide();
+					$('.f_dian').show();
+					$('.f_data').hide();
+					$('.f_time').show();
+					$(".edit_work").show();
+					$(".inputName").css("border-bottom", "1px solid 0px");
+					$(".discount ul li input").css("border-bottom", "1px solid 0px");
+					$(".discount ul li.four").hide();
+					$(".discount ul li.one").css("width", "26.33%")
+					$(".discount ul li.two").css("width", "40.33%")
+					$(".discount ul li.three").css("width", "33.33%")
+					$(".bottom_btn").hide();
+					$(".go_back").hide();
+				})
+				//验证非空
+				var fp1;
+				var fp2;
+				$(".w_save").click(function() {
+					if($(".inputName input").val() == "") {
+						$(".inputName").css({
+							"border-bottom": "1px solid #ff3333",
+							"background": "url(./images/w_yz.png) no-repeat right"
+						});
+						$(".inputName input").attr("placeholder", "不能为空").addClass("invalid");
+						fp1 = false;
+					} else {
+						$(".inputName").css({
+							"border-bottom": "1px solid #ccc",
+							"background": ""
+						});
+						$(".inputName input").attr("placeholder", "2-20个字").css("color", "#000").removeClass("invalid");
+						fp1 = true;
+					}
+					if($(".date_title").html() == "开始时间——结束时间") {
+						$(".date_title").css({
+							"color": "#ff3333",
+							"background": "url(./images/w_yz.png) no-repeat right"
+						});
+						fp2 = false;
+					} else {
+						$(".date_title").css({
+							"color": "#000",
+							"background": ""
+						});
+						fp2 = true;
+					}
+					if(fp1 && fp2) {
+						return 
+					} else {
+						$(".addaae_prompt").fadeIn().delay(2000).fadeOut();
+					}
+					$(".inputName").click(function() {
+						$(".inputName").css({
+							"border-bottom": "1px solid #ccc",
+							"background": ""
+						});
+						$(".inputName input").attr("placeholder", "2-20个字").css("color", "#000").removeClass("invalid");
+					})
+					$(".date_title").click(function() {
+						$(".date_title").css({
+							"color": "#000",
+							"background": ""
+						});
+					})
+				})
+
+			})
+		</script>
+		<script type="text/javascript">
+			$(function() {						
+				$(".discountArticle").each(function() {
+					if($(this).find(".four").html() == "停用") {
+						$(this).find("input").removeAttr("disabled");
+						$(this).find("li").not(".four").css("color", "#666")
+					} else {
+						$(this).find("input").attr("disabled", "disabled")
+						$(this).find("li").not(".four").css("color", "#ccc")
+					}
+				})
+				$(".discountArticle li.four").click(function() {
+					if($(this).html() == "启用") {
+						$(this).html("停用");
+						$(this).parents("ul").find("input").removeAttr("disabled").css("border-bottom", "1px solid #666");;
+						$(this).siblings().css("color", "#666")
+
+					} else {
+						$(this).html("启用");
+						$(this).parents("ul").find("input").attr("disabled", "disabled").css("border-bottom", "1px solid #eee");;
+						$(this).siblings().css("color", "#ccc")
+					}
+				})
+			})
+		</script>
+	</body>
+
+</html>

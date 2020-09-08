@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户管理</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_global.css" />
+	</head>
+
+	<body>
+		<!--content-->
+
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content clearfix ">
+				<!--二级筛选导航公用结构-->
+				<div class="l_header clearfix">
+					<a href="javascript:;" class="l_ref fr"><img src="images/l_icon_ref.png" />刷新</a>
+					<p class="search_input fr"><input type="text" placeholder="输入用户手机号" class="l_search" /><img src="images/l_icon_search.png" alt="" /></p>
+				</div>
+				<!--二级筛选导航公用结构--ed---->
+
+				<div class="sjtable">
+					<table>
+						<thead>
+							<tr>
+								<th width="10%">序号</th>
+								<th width="11.5%">用户ID</th>
+								<th width="8.5%">手机号</th>
+								<th width="11.3%">昵称</th>
+								<th width="14%">注册平台</th>
+								<th width="9%">累计消费金额</th>
+								<th width="7.8%">登录次数</th>
+								<th width="17%">最近登录时间</th>
+								<th width="7.4%">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>C000003145</td>
+								<td>13319786543</td>
+								<td>赵先生</td>
+								<td>portal</td>
+								<td>¥ 0.00</td>
+								<td>1</td>
+								<td>2017-03-16 22:31:24</td>
+								<td>
+									<a href="query_user.html" class="eyeem"></a>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>C000214521</td>
+								<td>13319786543</td>
+								<td>钱小刀</td>
+								<td>微信</td>
+								<td>¥ 224.00</td>
+								<td>2</td>
+								<td>2017-03-17 10:21:34</td>
+								<td>
+									<a href="query_user.html" class="eyeem"></a>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>C015471422</td>
+								<td>13319786543</td>
+								<td>孙子兵法</td>
+								<td>微信</td>
+								<td>¥ 00.00</td>
+								<td>2</td>
+								<td>2017-03-17 10:21:34</td>
+								<td>
+									<a href="query_user.html" class="eyeem"></a>
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>C021452123</td>
+								<td>13319786543</td>
+								<td>都说起个名字长点好</td>
+								<td>portal</td>
+								<td>¥ 224.00</td>
+								<td>2</td>
+								<td>2017-03-17 10:21:34</td>
+								<td>
+									<a href="query_user.html" class="eyeem"></a>
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>C021547412</td>
+								<td>13319786543</td>
+								<td>阿不力提·阿布力麦提</td>
+								<td>portal</td>
+								<td>¥ 00.00</td>
+								<td>2</td>
+								<td>2017-03-17 10:21:34</td>
+								<td>
+									<a href="query_user.html" class="eyeem"></a>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+		<!--主体--ed-->
+		<!--底部分页开始-->
+		<div class="l_container">
+			<div class="l_foot_page clearfix">
+				<div class="l_left fl">
+					<p>每页显示
+						<select>
+							<option>10</option>
+							<option>20</option>
+							<option>30</option>
+						</select>
+					</p>
+				</div>
+				<div class="l_right fr clearfix">
+					<p>
+						<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+						<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+						<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+					</p>
+					<p class="l_skippage">
+						到<input type="number" />页<button>确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--底部分页--ed-->
+
+
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

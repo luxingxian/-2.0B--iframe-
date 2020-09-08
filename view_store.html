@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>微平台-门店管理-添加门店</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/croppic.css"/>
+		<link rel="stylesheet" type="text/css" href="css/store_compile.css"/>
+		<link rel="stylesheet" href="css/view_stores.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/w_Plate_Style.css"/>-->
+	</head>
+
+	<body>
+		<!--content-->
+
+		<!--主体-->
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content clearfix ">
+				<div class="conten_box">
+					<div class="l_sub_header clearfix">
+						<a href="javascript:;" class="l_add_title">添加门店</a>
+						<a href="management.html" class="l_right_btn fr l_back">返回</a>
+					</div>
+					<div class="shop_measages">
+						<p class="title_newadd">新增资讯</p>
+						<div class="newmessage_map">
+							<p class="address_position"><span>*</span><span>地理位置</span></p>
+							<div class="form_mation w_select_time form6 clear">
+									<div class="w_plate_class  w_all_address ">
+										<div class="w_plate_class_left fl">
+											<div class="w_plate_two w_province_tab">
+												<p><i class="w_pro">省</i></p>
+												<ul class="w_province w_country">
+												</ul>
+											</div>
+											<div class="w_plate_two w_twon_tab">
+												<p><i>市</i></p>
+												<ul class="w_city w_country">
+												</ul>
+											</div>
+											<div class="w_plate_two w_county_tab">
+												<p><i>区/县</i></p>
+												<ul class="w_area w_country">
+
+												</ul>
+											</div>
+										</div>
+										<div class="w_plate_class_right fr">
+											<div class="w_plate_two">
+												<input type="text" class="w_address"/>
+												<div style="position: absolute;width: 20px;height: 20px;background: rgba(0,0,0,0.1);top: 6px;right: 1px;border-radius: 50%;z-index: 20;"></div>
+												<a href="javascript:;" class="address_img fr"><img src="images/w_address.png" id="search_map"></a>
+											</div>
+										</div>
+										
+									</div>
+							</div>
+						</div>
+						<div class="newmessage_map">
+							<p class="address_position"><span>*</span><span>地理位置</span></p>
+						</div>
+						<div class="search_map">
+							<div class="search_information fl">
+								<p class="search_result">共找到<span>14</span>家</p>
+								<ul>
+									<li>
+										<span class="map_sign">A</span>
+										<div class="right_information">
+											<p>
+												先锋金融大厦先锋金融大厦
+											</p>
+											<p>
+												<span class="addres_title">地址 :</span>
+												<span class="detail_information">北京市朝阳去酒仙桥中路24号院4号楼5层中路24号院4号楼5层</span>
+											</p>
+											<i class="clear"></i>
+											<p>
+												<span>电话 :</span>
+												<span>暂无</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<span class="map_sign">B</span>
+										<div class="right_information">
+											<p>
+												先锋金融大厦先锋金融大厦
+											</p>
+											<p>
+												<span class="addres_title">地址 :</span>
+												<span class="detail_information">北京市朝阳去酒仙桥中路24号院4号楼5层中路24号院4号楼5层</span>
+											</p>
+											<i class="clear"></i>
+											<p>
+												<span>电话 :</span>
+												<span>暂无</span>
+											</p>
+										</div>
+									</li>
+										<li>
+										<span class="map_sign">C</span>
+										<div class="right_information">
+											<p>
+												先锋金融大厦先锋金融大厦
+											</p>
+											<p>
+												<span class="addres_title">地址 :</span>
+												<span class="detail_information">北京市朝阳去酒仙桥中路24号院4号楼5层中路24号院4号楼5层</span>
+											</p>
+											<i class="clear"></i>
+											<p>
+												<span>电话 :</span>
+												<span>暂无</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<span class="map_sign">D</span>
+										<div class="right_information">
+											<p>
+												先锋金融大厦先锋金融大厦
+											</p>
+											<p>
+												<span class="addres_title">地址 :</span>
+												<span class="detail_information">北京市朝阳去酒仙桥中路24号院4号楼5层中路24号院4号楼5层</span>
+											</p>
+											<i class="clear"></i>
+											<p>
+												<span>电话 :</span>
+												<span>暂无</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<span class="map_sign">E</span>
+										<div class="right_information">
+											<p>
+												先锋金融大厦先锋金融大厦
+											</p>
+											<p>
+												<span class="addres_title">地址 :</span>
+												<span class="detail_information">北京市朝阳去酒仙桥中路24号院4号楼5层中路24号院4号楼5层</span>
+											</p>
+											<i class="clear"></i>
+											<p>
+												<span>电话 :</span>
+												<span>暂无</span>
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div id="container" class="fr"></div>
+						</div>
+						<div class="c_store_list">
+							<p class="stroes_name">
+								<span>门店名称</span>
+								<span>先锋金融大厦</span>
+							</p>
+							<div class="edit_phops">
+								<p>
+									<span class="red_icon">*</span><span>门店图片</span>
+									<span>请上传门店图片如门店内、外景图、门店服务信息等,
+										图片将展示在微信客户端的门店
+										页。最多可上传9张图片,文件格式为BMP、PNG、JPEG、JPG或GIF,大小不超过5M。</span>
+								</p>
+								<ul class="edit_loadphops">
+									<li class="person_change">
+										<img src="images/add_stores.jpg"/>
+									</li>
+									<li>
+										
+										<img src="images/show_stroes.jpg" />
+										<div class="float_lay">
+											<div class="del_list">删除</div>
+										</div>
+									</li>
+									<li>
+										<img src="images/show_stroes.jpg" />
+										<div class="float_lay">
+											<div class="del_list">删除</div>
+										</div>
+									</li>
+									<li>
+										<img src="images/show_stroes.jpg" />
+										<div class="float_lay">
+											<div class="del_list">删除</div>
+										</div>
+									</li>
+									<li>
+										<img src="images/show_stroes.jpg" />
+										<div class="float_lay">
+											<div class="del_list">删除</div>
+										</div>
+									</li>
+									<li>
+										<img src="images/show_stroes.jpg" />
+										<div class="float_lay">
+											<div class="del_list">删除</div>
+										</div>
+									</li>
+									<li>
+										<img src="images/show_stroes.jpg" />
+										<div class="float_lay">
+											<div class="del_list">删除</div>
+										</div>
+									</li>
+									<li>
+										<img src="images/show_stroes.jpg" />
+										<div class="float_lay">
+											<div class="del_list">删除</div>
+										</div>
+									</li>
+									<li>
+										<img src="images/show_stroes.jpg" />
+										<div class="float_lay">
+											<div class="del_list">删除</div>
+										</div>
+									</li>
+									<li>
+										<img src="images/show_stroes.jpg" />
+										<div class="float_lay">
+											<div class="del_list">删除</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="server_phone">
+								<p><span>*</span><span>客服电话</span></p>
+								<p><input type="text" name="" id="" value="" placeholder='固定电话需加区号、分机号均用"-"连接'/></p>
+							</div>
+							<div class="operen_hour">
+								<p><span>*</span><span>营业时间</span></p>
+								<div class="w_plate_class w_plate_edit clear">
+										<div class="w_plate_on">
+											<p><i>时</i></p>
+											<ul class="w_scroll">
+											</ul>
+										</div>
+										<div class="w_plate_on">
+											<p><i>分</i></p>
+											<ul>
+												<li>
+													00
+												</li>
+												<li>
+													30
+												</li>
+											</ul>
+										</div>
+										<div class="w_plate_on w_pzx">
+											——
+										</div>
+										<div class="w_plate_on w_third">
+											<p><i>时</i></p>
+											<ul class="w_scroll">
+								
+											</ul>
+										</div>
+										<div class="w_plate_on">
+											<p><i>分</i></p>
+											<ul>
+												<li>
+													00
+												</li>
+												<li>
+													30
+												</li>
+											</ul>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear_both clear"></div>
+					<div class="aptitude_information">
+						<p class="title_main">
+							资质信息
+						</p>
+						<div class="specific_message">
+							<div>
+								<p class="theme_aptitude">
+									<span>*</span>
+									<span>经营资质主体</span>
+								</p>
+								<div class="select_radio">
+									<div>
+										<div class="active_add cricle_btn active_public">
+											<div></div>
+										</div>
+										<p>公众号主题设计</p>
+									</div>
+									<div>
+										<div class="cricle_btn relitive_them">
+											<div></div>
+										</div>
+										<p>相关主题设计(若地点的经营资质名称与帐号主体名称不一致，请选择相关三体。)</p>
+									</div>
+								</div>
+							</div>
+							<div>
+								<p class="theme_aptitude">
+									<span>*</span>
+									<span>经营资质证件号</span>
+								</p>
+								<p class="bottom_line">
+									<input type="" name="" id="" placeholder="请填写15位营业执照注册号或9位组织机构代码(如123345678-9)或18位或20位统一社会信用代码"/>
+								</p>
+							</div>
+							<div class="difrent_level">
+								<p class="theme_aptitude">
+									<span>*</span>
+									<span>经营资质名称</span>
+								</p>
+								<p class="bottom_line">
+									<input type="" name="" id="" placeholder="请填写营业执照名称,或组织机构代码证名称。"/>
+								</p>
+							</div>
+							<div class="relitive_loadphops difrent_level">
+								<p>
+									<span>相关证明材料</span>
+									<span>提交能证明此经营资质主体与帐号主体相关的证明材料。文件格式BMP、PNG、JPEG、JPG或GIF，大小不能超过2M，只能上传1张。</span>
+								</p>
+								<ul class="edit_loadphops lisFirst">
+									<li>
+										<img src="images/l_icon_plus_b.png" class="add_logos"/>
+										<input type="file" name="" class="file_input"/>
+										<label for=""></label>
+										<p>
+											上传图片
+											<input type="file" name="" id="file_input"/>
+											<label for=""></label>
+											
+										</p>
+									</li>
+									<li class="first_phops">
+										<img src="" class="img"/>
+										<div class="float_lay">
+											<div class="del_list">删除</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="bottom_list">
+						<input type="button" id="" value="提交" class="determin_btn"/>
+						<input type="button" id="" value="取消" class="cancel_btn"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--主体-->
+
+		<!--退出系统弹窗-->
+		<div class="quitbox">
+			<div class="quitpopup">
+				<p class="qptop"><span>确定要退出酒店后台系统吗？</span></p>
+				<p class="qpbut">
+					<input type="button" value="取消" class="undo" />
+					<input type="button" value="确定" class="affirm" />
+				</p>
+			</div>
+		</div>
+		<div class="cut_photo">
+			<div class="cut_p_top">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModal_center"></div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="assets/js/croppic.min.js"></script>
+		<script type="text/javascript" src="js/address.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".w_province_tab").click(function(){
+					$(".w_twon_tab").show();
+				});
+				$(".w_twon_tab").click(function(){
+					$(".w_county_tab").show();
+				})
+//				点击搜索文字搜索
+				$("#search_map").click(function(){
+					$(".search_information").show();
+					$("#container").css("width","80%")
+				})
+				/**资质信息管理tab切换**/
+//				公众号主题设计
+				$(".active_public").click(function(){
+					 $(this).css("background","rgb(14,132,237)");
+					 $(".difrent_level").hide();
+					 $(".relitive_them").css("background","white");
+					 var hei = $(this).parents("body").height();
+					 $('#iframe_menu', window.parent.document).height(hei+100);
+					 $('#iframe_index', top.document).height(hei+200);
+				});
+//				相关主题设计
+				$(".relitive_them").click(function(){
+					 $(this).css("background","rgb(14,132,237)");
+					 $(".difrent_level").show();
+					 $(".active_public").css("background","white");
+					 var hei = $(this).parents("body").height();
+						$('#iframe_menu', window.parent.document).height(hei + 100);
+						$('#iframe_index', top.document).height(hei + 200);
+				})
+//			获取图片
+				$("input[type='file']").change(function(){
+					 var file = this.files[0];
+			   		 if (window.FileReader) {    
+			            var reader = new FileReader();    
+			            reader.readAsDataURL(file); 
+			            $(".first_phops").show();
+			            reader.onloadend = function (e) {
+				            $(".img").attr("src",e.target.result);
+				            };    
+			         } 
+				})
+			})
+		</script>
+		<script type="text/javascript">
+//			编辑删除遮罩层
+			$(function(){
+				$(".edit_loadphops>li").on("mouseenter",function(){
+					$(this).find("div").fadeIn();
+				});
+				$(".edit_loadphops>li").on("mouseleave",function(){
+					$(this).find("div").fadeOut();
+				})
+			})
+		</script>
+		<script type="text/javascript">
+
+		</script>
+		<!--切图弹出-->
+		<script>
+			$(function() {
+				$('.person_change').click(function(e) {
+					$('.cut_photo').fadeIn();
+					tcShow();
+				});
+				$('.cut_photo .cut_p_top a').click(function(e) {
+					$('.cut_photo').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+		<script>
+			$(function() {
+				$('.person_change').click(function(e) {
+					$('.cut_photo').fadeIn();
+					tcShow();
+				});
+				$('.cut_photo .cut_p_top a').click(function(e) {
+					$('.cut_photo').fadeOut();
+					tcHide();
+				});
+			});
+	    </script>
+		<!--地图-->
+		<script>
+			window.onload = function() {
+				//直接加载地图
+				//初始化地图函数  自定义函数名init
+				function init() {
+					//定义map变量 调用 qq.maps.Map() 构造函数   获取地图显示容器
+					var map = new qq.maps.Map(document.getElementById("container"), {
+						center: new qq.maps.LatLng(39.916527, 116.397128), // 地图的中心地理坐标。
+						zoom: 12 // 地图的中心地理坐标。
+					});
+				}
+				//调用初始化函数地图
+				init();
+			}
+		</script>
+		<script>
+			$(function() {
+				//					$(".w_province li").click(function() {
+				//					var aa = $(".w_plate_two:first-child i").is(":empty");
+				//					if(aa == true){
+				//						$(".w_plate_two:nth-of-type(2) p,.w_plate_two:nth-of-type(3) p").off("click");
+				//						alert(1)
+				//					}else{
+				//						$(".w_plate_two:nth-of-type(2) p,.w_plate_two:nth-of-type(3) p").on("click");
+				//						alert(2)
+				//					}
+				//					});
+				//获取省
+				for(var j = 0; j < provinceList.length; j++) {
+					var Province = provinceList[j].name;
+					$('.w_province').append('<li>' + Province + '</li>');
+				}
+				//获取市
+				$(".w_province li").click(function() {
+					$('.w_city').empty();
+					var w_province_index = $(this).index();
+					var w_city_index = provinceList[w_province_index];
+					cityList = w_city_index.cityList
+					for(var i = 0; i < w_city_index.cityList.length; i++) {
+						var Country = w_city_index.cityList[i].name
+						$('.w_city').append('<li>' + Country + '</li>');
+					}
+				})
+				$(".w_plate_class").delegate("li", "click", function() {
+					$(this).parents("ul").siblings("p").find("i").html($(this).html());
+					$(this).parents("ul").slideUp();
+				});
+				$(".w_plate_class").delegate("li", "mousemove", function() {
+					$(this).css({
+						"background": "#2e85f5",
+						"color": "#fff",
+						"cursor": "pointer"
+					});
+				});
+				$(".w_plate_class").delegate("li", "mouseleave", function() {
+					$(this).css({
+						"background": "#FFFFFF",
+						"color": "#a0a0a0",
+						"cursor": "pointer"
+					});
+				});
+				//获取区
+				$(".w_city").delegate("li", "click", function() {
+					$('.w_area').empty();
+					var w_area = $(this).index();
+					var w_region = cityList[w_area];
+					for(var i = 0; i < w_region.areaList.length; i++) {
+						var Area = w_region.areaList[i]
+						$('.w_area').append('<li>' + Area + '</li>');
+					}
+				})
+			})
+		</script>
+		<script type="text/javascript">
+			//营业时间
+			function zero(num) {
+				num = Number(num);
+				if(num < 10) {
+					return '0' + num;
+				} else {
+					return num;
+				}
+			}
+			for(var i = 1; i < 25; i++) {
+				$('.w_plate_on:nth-of-type(1) ul,.w_plate_on:nth-of-type(4) ul').append('<li>' + zero(i) + '</li>')
+			}
+		</script>
+		<script type="text/javascript">
+//			条件选择
+			
+		</script>
+			<!--切图插件js-->
+		<script>
+			var croppicContainerModalOptions = {
+				uploadUrl: 'http://tech.harvetech.cn/wifihotel/img_save_to_file.php',
+				cropUrl: 'http://tech.harvetech.cn/wifihotel/img_crop_to_file.php',
+				modal: true,
+				imgEyecandyOpacity: 0.4,
+				loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+				onBeforeImgUpload: function() {
+					console.log('onBeforeImgUpload')
+				},
+				onAfterImgUpload: function() {
+					console.log('onAfterImgUpload')
+				},
+				onImgDrag: function() {
+					console.log('onImgDrag')
+				},
+				onImgZoom: function() {
+					console.log('onImgZoom')
+				},
+				onBeforeImgCrop: function() {
+					console.log('onBeforeImgCrop')
+				},
+				onAfterImgCrop: function() {
+					console.log('onAfterImgCrop')
+				},
+				onReset: function() {
+					console.log('onReset')
+				},
+				onError: function(errormessage) {
+					console.log('onError:' + errormessage)
+				}
+			}
+			var cropContainerModal = new Croppic('cropContainerModal_center', croppicContainerModalOptions);
+		</script>
+	</body>
+
+</html>

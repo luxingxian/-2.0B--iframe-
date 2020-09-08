@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>餐桌控制台</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" href="css/w_Plate_Style.css" />
+		<link rel="stylesheet" href="css/cal.css" />
+		<link rel="stylesheet" href="css/jedate.css" />
+	</head>
+
+	<body>
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content w_all">
+				<!--主体-->
+				<div class="s_content">
+					<div class="s_min">
+						<div class="s_mian w_plate_class clear" style="background: none;margin: 0;">
+							<div class="w_plate_one fl">
+								<p><i>餐饮</i><em></em></p>
+								<ul>
+									<li>
+										餐饮
+									</li>
+									<li>
+										娱乐
+									</li>
+									<li>
+										客房
+									</li>
+								</ul>
+							</div>
+							<span class="s_tips1 fl">类型</span>
+							<p class="s_text fl">
+								<input type="radio" name="m" id="max" value="大厅" />
+								<label for="max">大厅</label>
+								<input type="radio" name="m" id="min" value="包间" />
+								<label for="min">包间</label>
+							</p>
+							<p class="s_time fr">刷新</p>
+						</div>
+						<div class="prev">
+							<ul class="s_next clear">
+								<li class="on">午餐</li>
+								<li>晚餐</li>
+							</ul>
+							<div class="max_box">
+								<div class="min_box" style="display: block;">
+									<div class="s_tab1">
+										<div class="min_time">
+											<div class="cal-box">
+												<a class="btn-today" href="javascript:back_cal_today()"> 今天 </a>
+												<a class="btn-ago" href="javascript:make_cal(-20)"> &lsaquo; </a>
+												<div id="cal_div" class="cal"></div>
+												<a class="btn-later" href="javascript:make_cal(-6)"> &rsaquo; </a>
+											</div>
+										</div>
+										<div class="s_heihgt clear">
+											<p class="s_tet fl">在线预订</p>
+											<p class="s_right s_btn1 fl">
+												<input type="checkbox" name="toggle" />
+												<label for="toggle">
+			    					<i></i>
+			    				</label>
+											</p>
+											<ul class="s_nav fr">
+												<li class="fl"><input type="button" value="新增预订单" disabled="true" class="s_red1" /></li>
+												<li class="fl"><input type="button" value="修改库存" disabled="true" class="s_red" /></li>
+											</ul>
+										</div>
+										<ul class="s_mack clear">
+											<li class="fl">
+												<div class="mack_div">
+													<p class="s_img">
+														<img src="images/s_hui.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+													<p class="s_shadow"></p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div">
+													<p class="s_img">
+														<img src="images/s_hui.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+													<p class="s_shadow"></p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="s_hot clear">
+										<p class="fl">N/N&nbsp;&nbsp;订单量/可预订量</p>
+										<p class="s_p1 fl"><i></i>无库存</p>
+										<p class="s_p2 fl"><i></i>无可预订桌型</p>
+										<p class="s_p3 fl"><i></i>关闭在线预订</p>
+									</div>
+								</div>
+								<div class="min_box">
+									<div class="s_tab1">
+										<div class="min_time"></div>
+										<div class="s_heihgt clear">
+											<p class="s_tet fl">在线预订</p>
+											<p class="s_right s_btn1 fl">
+												<input type="checkbox" name="toggle" />
+												<label for="toggle">
+					    					<i></i>
+					    				</label>
+											</p>
+											<ul class="s_nav fr">
+												<li class="fl"><input type="button" value="新增预订单" /></li>
+												<li class="fl"><input type="button" value="修改库存" /></li>
+											</ul>
+										</div>
+										<ul class="s_mack clear">
+											<li class="fl">
+												<div class="mack_div">
+													<p class="s_img">
+														<img src="images/s_hui.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+													<p class="s_shadow"></p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="s_pink fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div1">
+													<p class="s_img">
+														<img src="images/booking_person.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+												</div>
+											</li>
+											<li class="fl">
+												<div class="mack_div">
+													<p class="s_img">
+														<img src="images/s_hui.png" />&nbsp;&nbsp;2
+													</p>
+													<p class="s_p">10/0</p>
+													<p class="s_center">桌型名称</p>
+													<p class="s_shadow"></p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="s_hot clear">
+										<p class="fl">N/N&nbsp;&nbsp;订单量/可预定量</p>
+										<p class="s_p1 fl"><i></i>无库存</p>
+										<p class="s_p2 fl"><i></i>无可预定桌性</p>
+										<p class="s_p3 fl"><i></i>关闭在线预定</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--tab-->
+						<div class="plase">
+							<ul class="s_laft clear">
+								<li class="fl s_on">待确认预订单</li>
+								<li class="fl">待就餐预订单</li>
+							</ul>
+							<div class="max_list">
+								<div class="list_1" style="display:block;">
+									<div class="s_inp fr">
+										<input type="text" placeholder="输入订单编号,客户手机号" />
+										<p class="searchIcon"><img src="images/l_icon_search.png" alt="" /></p>
+									</div>
+									<div class="s_table">
+										<table>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>2016.10.13</td>
+													<td>13:00</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check2 fr"></a>
+														<a href="javascript:;" class="check1 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>2016.10.13</td>
+													<td>13:00</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check2 fr"></a>
+														<a href="javascript:;" class="check1 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>2016.10.13</td>
+													<td>13:00</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check2 fr"></a>
+														<a href="javascript:;" class="check1 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>2016.10.13</td>
+													<td>13:00</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check2 fr"></a>
+														<a href="javascript:;" class="check1 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>2016.10.13</td>
+													<td>13:00</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check2 fr"></a>
+														<a href="javascript:;" class="check1 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>2016.10.13</td>
+													<td>13:00</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check2 fr"></a>
+														<a href="javascript:;" class="check1 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>2016.10.13</td>
+													<td>13:00</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check2 fr"></a>
+														<a href="javascript:;" class="check1 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>2016.10.13</td>
+													<td>13:00</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check2 fr"></a>
+														<a href="javascript:;" class="check1 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>2016.10.13</td>
+													<td>13:00</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check2 fr"></a>
+														<a href="javascript:;" class="check1 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>2016.10.13</td>
+													<td>13:00</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check2 fr"></a>
+														<a href="javascript:;" class="check1 fr"></a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="user clear">
+										<p class="s_list1 fl">
+											<i></i>确认订单
+										</p>
+										<p class="s_list2 fl">
+											<i></i>取消订单
+										</p>
+										<!--分页-->
+										<div class="pagination clear fr">
+											<ul>
+												<li><span>< 上一页</span></li>
+												<li>
+													<a href="javascript:;" class="active">1</a>
+												</li>
+												<li>
+													<a href="javascript:;">2</a>
+												</li>
+												<li>
+													<a href="javascript:;">3</a>
+												</li>
+												<li>
+													<a href="javascript:;">4</a>
+												</li>
+												<li>
+													<em>...</em>
+												</li>
+												<li>
+													<a href="javascript:;">24</a>
+												</li>
+												<li><span>下一页 ></span></li>
+											</ul>
+										</div>
+										<!--分页-->
+										<p class="s_you fr">订单总量 : 126</p>
+									</div>
+								</div>
+								<div class="list_1">
+									<div class="s_inp fr">
+										<input type="text" class="fl" placeholder="输入订单编号,客户手机号" />
+									</div>
+									<div class="s_table">
+										<table>
+											<tbody>
+												<tr class="black">
+													<td>1</td>
+													<td><i class="s_name"></i>13:00</td>
+													<td>2016.10.13</td>
+													<td>微信</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>一层大厅6人桌</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check5 fr"></a>
+														<a href="javascript:;" class="check4 fr"></a>
+														<a href="javascript:;" class="check3 fr"></a>
+													</td>
+												</tr>
+												<tr class="black1">
+													<td>1</td>
+													<td><i class="s_name1"></i>13:00</td>
+													<td>2016.10.13</td>
+													<td>下线</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>一层大厅10人桌</td>
+													<td>5人用餐</td>
+													<td>大厅</td>
+													<td class="clear">
+														<a href="javascript:;" class="check5 fr"></a>
+														<a href="javascript:;" class="check4 fr"></a>
+														<a href="javascript:;" class="check3 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td><i class="s_name2"></i>13:00</td>
+													<td>2016.10.13</td>
+													<td>portal</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>二层大厅6人桌</td>
+													<td>5人用餐</td>
+													<td>仅包间</td>
+													<td class="clear">
+														<a href="javascript:;" class="check5 fr"></a>
+														<a href="javascript:;" class="check4 fr"></a>
+														<a href="javascript:;" class="check3 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td><i class="s_name2"></i>13:00</td>
+													<td>2016.10.13</td>
+													<td>微信</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>二层大厅6人桌</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check5 fr"></a>
+														<a href="javascript:;" class="check4 fr"></a>
+														<a href="javascript:;" class="check3 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td><i class="s_name2"></i>13:00</td>
+													<td>2016.10.13</td>
+													<td>微信</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>一层大厅4人桌</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check5 fr"></a>
+														<a href="javascript:;" class="check4 fr"></a>
+														<a href="javascript:;" class="check3 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td><i class="s_name2"></i>13:00</td>
+													<td>2016.10.13</td>
+													<td>微信</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>一层大厅6人桌</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check5 fr"></a>
+														<a href="javascript:;" class="check4 fr"></a>
+														<a href="javascript:;" class="check3 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td><i class="s_name2"></i>13:00</td>
+													<td>2016.10.13</td>
+													<td>微信</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>二层大厅6人桌</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check5 fr"></a>
+														<a href="javascript:;" class="check4 fr"></a>
+														<a href="javascript:;" class="check3 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td><i class="s_name2"></i>13:00</td>
+													<td>2016.10.13</td>
+													<td>微信</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>一层大厅12人桌</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check5 fr"></a>
+														<a href="javascript:;" class="check4 fr"></a>
+														<a href="javascript:;" class="check3 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td><i class="s_name2"></i>13:00</td>
+													<td>2016.10.13</td>
+													<td>微信</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>一层大厅8人桌</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check5 fr"></a>
+														<a href="javascript:;" class="check4 fr"></a>
+														<a href="javascript:;" class="check3 fr"></a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td><i class="s_name2"></i>13:00</td>
+													<td>2016.10.13</td>
+													<td>微信</td>
+													<td>张先生</td>
+													<td>13323456789</td>
+													<td>一层大厅4人桌</td>
+													<td>5人用餐</td>
+													<td>包间优先</td>
+													<td class="clear">
+														<a href="javascript:;" class="check5 fr"></a>
+														<a href="javascript:;" class="check4 fr"></a>
+														<a href="javascript:;" class="check3 fr"></a>
+													</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+									<div class="user clear">
+										<p class="s_list3 fl">
+											<i></i>未按时就餐
+										</p>
+										<p class="s_list4 fl">
+											<i></i>即将就餐
+										</p>
+										<p class="s_list5 fl">
+											<i></i>修改订单
+										</p>
+										<p class="s_list6 fl">
+											<i></i>完成订单
+										</p>
+										<p class="s_list2 fl">
+											<i></i>取消订单
+										</p>
+										<!--分页-->
+										<div class="pagination clear fr">
+											<ul>
+												<li><span>< 上一页</span></li>
+												<li>
+													<a href="javascript:;" class="active">1</a>
+												</li>
+												<li>
+													<a href="javascript:;">2</a>
+												</li>
+												<li>
+													<a href="javascript:;">3</a>
+												</li>
+												<li>
+													<a href="javascript:;">4</a>
+												</li>
+												<li>
+													<em>...</em>
+												</li>
+												<li>
+													<a href="javascript:;">24</a>
+												</li>
+												<li><span>下一页 ></span></li>
+											</ul>
+										</div>
+										<!--分页-->
+										<p class="s_you fr">订单总量 : 126</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--主体-->
+
+			</div>
+		</div>
+		<!--主体--ed-->
+		<!--待确认预订单取消弹框-->
+		<div class="s_width">
+			<div class="w_tou_popup"></div>
+			<div class="s_tan">
+				<p class="s_shop clear">
+					<span class="s_next1 fl">预订单取消</span>
+					<span class="s_next2 fr">×</span>
+				</p>
+				<div class="user_name clear">
+					<div class="fl">
+						<p>订单编号 : <span>01011608040004</span></p>
+						<p>创建时间 : <span>2016.9.30 19:22</span></p>
+						<p>就餐人数 : <span>3 人</span></p>
+					</div>
+					<div class="fr">
+						<p>订单来源 : <span>微信</span></p>
+						<p>就餐时间 : <span>2016.9.30 19:22</span></p>
+						<p>预约类型 : <span>包间优先</span></p>
+					</div>
+				</div>
+				<div class="user_pass clear">
+					<div class="fl">
+						<p>预订人姓名 ：<span>张先生</span></p>
+						<p>就餐人姓名 ： <span>孙女士</span></p>
+					</div>
+					<div class="fr">
+						<p>预订人电话 ：<span>19012345678</span></p>
+						<p>就餐人电话 ： <span>19012345678</span></p>
+					</div>
+				</div>
+				<div class="s_tel clear">
+					<p class="fl"><i>*</i>取消原因说明 : </p>
+					<div class="s_div fl">
+						<p class="s_texttar "><textarea class="s_tex2"></textarea></p>
+						<p class="ding"><span class="s_em1">0</span>/100</p>
+					</div>
+				</div>
+				<div class="s_button clear">
+					<input type="button" value="确定" class="mian_btn fl mian_btn_a" />
+					<input type="button" value="取消" class="min_btn fl" />
+				</div>
+			</div>
+			<div class="addue_prompt">
+				<p><i></i><span>信息不全，请完善！</span></p>
+			</div>
+		</div>
+		<!--待确认预订单取消弹框-->
+		<!--待就餐预订单取消弹框-->
+		<div class="s_width1">
+			<div class="w_tou_popup"></div>
+			<div class="s_tan1">
+				<p class="s_shop clear">
+					<span class="s_next1 fl">预订单取消</span>
+					<span class="s_next2 fr">×</span>
+				</p>
+				<div class="user_name clear">
+					<div class="fl">
+						<p>订单编号 : <span>01011608040004</span></p>
+						<p>创建时间 : <span>2016.9.30 19:22</span></p>
+						<p>就餐人数 : <span>3 人</span></p>
+					</div>
+					<div class="fr">
+						<p>订单来源 : <span>微信</span></p>
+						<p>就餐时间 : <span>2016.9.30 19:22</span></p>
+						<p>预约类型 : <span>包间优先</span></p>
+					</div>
+				</div>
+				<div class="user_pass clear">
+					<div class="fl">
+						<p>预订人姓名 :<span>张先生</span></p>
+						<p>就餐人姓名 : <span>孙女士</span></p>
+					</div>
+					<div class="fr">
+						<p>预订人电话 :<span>19012345678</span></p>
+						<p>就餐人电话 : <span>19012345678</span></p>
+					</div>
+				</div>
+				<p class="s_big"><span>预订桌型 : </span>大厅 - 一层大厅6人桌</p>
+				<div class="s_tel clear">
+					<p class="fl"><i>*</i>取消原因说明 : </p>
+					<div class="s_div fl">
+						<p class="s_texttar "><textarea class="s_tex"></textarea></p>
+						<p class="ding"><span class="s_em2">0</span>/100</p>
+					</div>
+				</div>
+				<div class="s_button clear">
+					<input type="button" value="确定" class="mian_btn fl s_mian_b" />
+					<input type="button" value="取消" class="min_btn fl" />
+				</div>
+			</div>
+			<div class="addue_prompt">
+				<p><i></i><span>信息不全，请完善！</span></p>
+			</div>
+		</div>
+		<!--待就餐预订单取消弹框-->
+		<!--订单修改弹框-->
+		<div class="w_touming w3">
+			<div class="w_tou_popup"></div>
+			<div class="booking_sheet_modify">
+				<div class="booking_sheet_top">
+					<span class="booking_sheet_left fl">预订单修改</span>
+					<span class="booking_sheet_right fr">×</span>
+				</div>
+				<div class="booking_sheet_center">
+					<div class="booking_plate1">
+						<p class="p1">
+							<em>
+								<i>订单编号：</i>01011608040004
+							</em>
+							<em>
+								<i>创建时间：</i>2016.9.30 19:22
+							</em>
+							<em>
+								<i>订单来源：</i>微信
+							</em>
+						</p>
+						<p class="p2">
+							<em class="s_back">
+								<i>就餐时间：</i><input name="select_jate" id="select_jate" type="text"  value=""  readonly/> 
+								<label for="select_jate" >修改</label>
+							</em>
+							<em>
+								<i>预订人姓名：</i>张先生
+							</em>
+							<em>
+								<i>预订人电话：</i>19012345678
+							</em>
+						</p>
+						<p class="p3">
+							<em>
+								<i>预订类型：</i>包间优先
+							</em>
+							<em>
+								<i>就餐人姓名：</i>孙女士
+							</em>
+							<em>
+								<i>就餐人电话：</i>19812345678
+							</em>
+						</p>
+						<p class="p4">
+							<em>
+								<i>就餐人数：</i><input type="text" />&nbsp;人
+							</em>
+							<em>
+								<i>预订桌型名称：</i><i class="table_name">大厅 - 一层大厅4人桌</i>								
+								<span class="book_repair">修改</span>
+								<span class="book_cancel" style="display: none;">取消</span>
+							</em>
+						</p>
+					</div>
+					<div class="booking_plate2">
+						<span class="s_active">大厅</span>
+						<span>包间</span>
+					</div>
+					<div class="booking_plate3">
+						<table>
+							<tr>
+								<td>
+									<span class="book_name">大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>6</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>11</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>4</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>12</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">二层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>11</i>
+										</em>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="book_name">十三层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>22</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">三层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>10-12</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>10</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>4</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>4</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">二层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>11</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">十三层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>22</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">三层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>10-12</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">二层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>10</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">二层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="wx_btn">
+					<span class="wx_save">保存修改</span>
+					<span class="wx_cancel">取消</span>
+				</div>
+			</div>
+		</div>
+		<!--订单修改弹框-->
+		<!--预订单完成-->
+		<div class="w_touming w5">
+			<div class="w_tou_popup"></div>
+			<div class="reservation_confirmation_complete">
+				<div class="reservation_confirmation_top">
+					<span class="reservation_confirmation_left fl">预订单确认</span>
+					<span class="reservation_confirmation_right fr">×</span>
+				</div>
+				<div class="reservation_confirmation_center">
+					<div class="booking_plate7">
+						<p class="p9">
+							<em>
+									<i>订单编号：</i>01011608040004
+								</em>
+							<em>
+									<i>创建时间：</i>2016.9.30 19:22
+								</em>
+							<em>
+									<i>订单来源：</i>微信
+								</em>
+						</p>
+						<p class="p10">
+							<em>
+									<i>就餐时间：</i>2016.10.1 18:00
+								</em>
+							<em>
+									<i>预订人姓名：</i>张先生
+								</em>
+							<em>
+									<i>预订人电话：</i>19012345678
+								</em>
+						</p>
+						<p class="p11">
+							<em>
+									<i>预订类型：</i>包间优先
+								</em>
+							<em>
+									<i>就餐人姓名：</i>孙女士
+								</em>
+							<em>
+									<i>就餐人电话：</i>19812345678
+								</em>
+						</p>
+						<p class="p12">
+							<em>
+									<i>就餐人数：</i>3人
+								</em>
+							<em>
+									<i>预订桌型名称：</i><i class="table_name2"></i>
+								</em>
+						</p>
+					</div>
+					<div class="booking_plate8">
+						<span class="s_active">大厅</span>
+						<span>包间</span>
+					</div>
+					<div class="booking_plate9">
+						<table>
+							<tr>
+								<td>
+
+									<span class="book_name">大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>6</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>11</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>4</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>12</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">二层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>11</i>
+										</em>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="book_name">十三层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>22</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">三层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>10-12</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>10</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>4</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>4</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">二层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>11</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">十三层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>22</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">三层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>10-12</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">二层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>10</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">二层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="wx_btn">
+					<span class="wx_save">确定</span>
+					<span class="wx_cancel">取消</span>
+				</div>
+			</div>
+		</div>
+		<!--预订单完成-->
+		<div class="w_touming w4">
+			<div class="w_tou_popup"></div>
+			<div class="booking_to_complete">
+				<div class="booking_to_top">
+					<span class="booking_to_left fl">预订单完成</span>
+					<span class="booking_to_right fr">×</span>
+				</div>
+				<div class="booking_to_center">
+					<div class="booking_plate4">
+						<p class="p5">
+							<em>
+									<i>订单编号：</i>01011608040004
+								</em>
+							<em>
+									<i>创建时间：</i>2016.9.30 19:22
+								</em>
+							<em>
+									<i>订单来源：</i>微信
+								</em>
+						</p>
+						<p class="p6">
+							<em>
+									<i>就餐时间：</i>2016.10.1 18:00
+								</em>
+							<em>
+									<i>预订人姓名：</i>张先生
+								</em>
+							<em>
+									<i>预订人电话：</i>19012345678
+								</em>
+						</p>
+						<p class="p7">
+							<em>
+									<i>预订类型：</i>包间优先
+								</em>
+							<em>
+									<i>就餐人姓名：</i>孙女士
+								</em>
+							<em>
+									<i>就餐人电话：</i>19812345678
+								</em>
+						</p>
+						<p class="p8">
+							<em>
+									<i>就餐人数：</i><input type="text" />&nbsp;人
+								</em>
+							<em>
+									<i>预订桌型名称：</i><i class="table_name1">大厅 - 一层大厅4人桌</i>
+									<span class="switch_but switch_but2">
+										<input type="checkbox" name="toggle" class="togg">
+										<label for="toggle"><i></i></label>
+									</span>
+								</em>
+						</p>
+					</div>
+					<div class="booking_plate5">
+						<span class="s_active">大厅</span>
+						<span>包间</span>
+					</div>
+					<div class="booking_plate6">
+						<table>
+							<tr>
+								<td>
+									<span class="book_name">大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>6</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>11</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>4</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>12</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">二层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>11</i>
+										</em>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="book_name">十三层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>22</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">三层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>10-12</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>10</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>4</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>4</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">二层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>11</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">十三层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>22</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">三层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="book_name">一层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>10-12</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">二层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>10</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">一层大厅靠窗</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+								<td>
+									<span class="book_name">二层大厅</span>
+									<em>
+											<span><img src="images/booking_person.png"></span>
+											<i>8</i>
+										</em>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="wx_btn">
+					<span class="wx_save">确定</span>
+					<span class="wx_cancel">取消</span>
+				</div>
+			</div>
+		</div>
+		<!--库存修改弹框-->
+		<div class="s_minu">
+			<div class="w_tou_popup"></div>
+			<div class="minu_r">
+				<p class="mniu_p clear">
+					<span class="fl">库存修改-2016.9.28 午餐</span>
+					<span class="fr toGig">×</span>
+				</p>
+				<div class="s_click">
+					<div class="s_top clear">
+						<span class="fl">桌型 : </span>
+						<p class="fl">大厅6人桌</p>
+					</div>
+					<div class="s_top clear">
+						<span class="fl">可容纳就餐人数 : </span>
+						<p class="fl">4-6人桌</p>
+					</div>
+					<div class="s_top clear">
+						<span class="fl">当前剩余库存量 : </span>
+						<p class="fl">12张</p>
+					</div>
+					<div class="s_mis clear">
+						<span class="fl">目标剩余库存量 : </span>
+						<div class="s_errw fl">
+							<em class="fl errw_l">-</em>
+							<input type="text" value="0" class="fl" />
+							<em class="fl errw_r">+</em>
+						</div>
+					</div>
+					<div class="s_mian_btn">
+						<input type="button" value=" 确定" class="s_list_btn" />
+						<input type="button" value=" 取消" class="s_list_btn1" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--新增预订单-->
+		<div class="l_tan_win">
+			<div class="w_tou_popup"></div>
+			<div class="l_tan_box">
+				<p class="l_tan_title">新增预订单-2016.9.28 午餐
+					<a href="javascript:;">×</a>
+				</p>
+				<div class="tan_content clearfix">
+					<p class="left">桌型:</p>
+					<p class="right">大厅-大厅6人桌（4-6人）</p>
+
+					<p class="left"><em>* </em>就餐时间:</p>
+					<p class="right p2"><span>2016.9.30 </span>
+						<select id="onetime" name="" value="">
+							<option value="">00</option>
+							<option value="">01</option>
+							<option value="">02</option>
+							<option value="">03</option>
+							<option value="">04</option>
+							<option value="">05</option>
+							<option value="">06</option>
+							<option value="">07</option>
+							<option value="">08</option>
+							<option value="">09</option>
+							<option value="">10</option>
+							<option value="">11</option>
+							<option value="">12</option>
+							<option value="">13</option>
+							<option value="">14</option>
+							<option value="">15</option>
+							<option value="">16</option>
+							<option value="">17</option>
+							<option value="">18</option>
+							<option value="">19</option>
+							<option value="">20</option>
+							<option value="">21</option>
+							<option value="">22</option>
+							<option value="">23</option>
+						</select>
+						:
+						<select name="">
+							<option value="">00</option>
+							<option value="">30</option>
+						</select>
+					</p>
+					<p class="left"><em>* </em>就餐人姓名:</p>
+					<p class="right p3">
+						<input type="text" class="s_frst" />
+						<input type="radio" name="a" id="a1" checked="checked" />
+						<label for="a1"></label>先生
+						<input type="radio" name="a" id="a2" />
+						<label for="a2"></label>女士
+
+					</p>
+
+					<p class="left"><em>* </em>就餐人电话:</p>
+					<p class="right p4">
+						<input type="text" class="s_last" />
+					</p>
+					<p class="left">就餐人数:</p>
+					<p class="right p5">
+						<input type="text" />&nbsp;&nbsp;&nbsp;&nbsp;人
+					</p>
+					<p class="left">特殊说明:</p>
+					<p class="right p6">
+						<textarea name="" rows="" cols="" maxlength="100"></textarea>
+						<i><em>0</em>/100</i>
+					</p>
+
+					<p class="left"></p>
+					<p class="right p7">
+						<a href="javascript:;" class="ok">确定</a>
+						<a href="javascript:;" class="cancle">取消</a>
+					</p>
+				</div>
+			</div>
+			<div class="addue_prompt">
+				<p><i></i><span>信息不全，请完善！</span></p>
+			</div>
+		</div>
+		<div class="quitbox">
+			<div class="quitpopup">
+				<p class="qptop"><span>确定要退出酒店后台系统吗？</span></p>
+				<p class="qpbut">
+					<input type="button" value="取消" class="undo" />
+					<input type="button" value="确定" class="affirm" />
+				</p>
+			</div>
+		</div>
+		<!--wrap--ed-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="js/cal.js"></script>
+		<script type="text/javascript" src="js/jquery.jedate.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".w_fc").mouseover(function() {
+					$(this).find(".feed_show").hide();
+					$(this).find(".feed_hide").show();
+				});
+				$(".w_fc").mouseout(function() {
+					$(this).find(".feed_hide").hide();
+					$(this).find(".feed_show").show();
+				});
+				$(".w_fc").click(function() {
+					$(".wcp_touming").fadeIn()
+				});
+				$(".consulting_popup_right,.wx_cancel").click(function() {
+					$(".wcp_touming").fadeOut()
+				});
+				$(".w_popup_right ul li").click(function() {
+					$(this).addClass("active").siblings().removeClass("active");
+				});
+			});
+		</script>
+		<!--//导航栏切换效果-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".w_navsbtn_left em").click(function() {
+					$(this).addClass("active").siblings().removeClass("active");
+				})
+			});
+		</script>
+		<script>
+			$("#select_jate").jeDate({
+				isinitVal: true,
+				format: "YYYY-MM-DD",
+				marks: ['2017-01-03', '2017-01-04', '2017-01-05', '2017-01-06'],
+				maxDate: $.nowDate(10) //1代表明天，2代表后天，以此类推
+			})
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('.ok').click(function(e) {
+					var one = $(".s_frst").val().length;
+					var two = $(".s_last").val().length;
+					if(one == 0 || two == 0) {
+						$(".addue_prompt").fadeIn();
+						setTimeout(function() {
+								$(".addue_prompt").fadeOut();
+							},
+							2000);
+					} else {
+						$('.l_tan_win').fadeOut();
+					}
+				});
+
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(function() {
+				$('.mian_btn_a').click(function() {
+					var user = $(".s_tex2").val().length;
+					if(user == 0) {
+						$(".addue_prompt").fadeIn();
+						setTimeout(function() {
+								$(".addue_prompt").fadeOut();
+							},
+							2000);
+					} else {
+						$('.s_width').fadeOut();
+					}
+				})
+			})
+			$(function() {
+				$('.s_mian_b').click(function() {
+					var user2 = $(".s_tex").val().length;
+					if(user2 == 0) {
+						$(".addue_prompt").fadeIn();
+						setTimeout(function() {
+								$(".addue_prompt").fadeOut();
+							},
+							2000);
+					} else {
+						$('.s_width1').fadeOut();
+					}
+				})
+			})
+		</script>
+		<script>
+			$(function() {
+				$('.errw_l').click(function() {
+					var num = $('.s_errw input').val();
+					num--;
+					if(num < 0) {
+						num = 0;
+					}
+					$(this).next('input').val(num);
+				})
+				$('.errw_r').click(function() {
+					var num = $('.s_errw input').val();
+					num++;
+					$(this).prev('input').val(num);
+				})
+			});
+
+			$('.s_red').click(function() {
+				$('.s_minu').fadeIn();
+				tcShow()
+			});
+			$('.toGig').click(function() {
+				$('.s_minu').fadeOut();
+				tcHide()
+			})
+			$('.s_list_btn1').click(function() {
+				$('.s_minu').fadeOut();
+				tcHide()
+			});
+
+			$('.s_red1').click(function() {
+				$('.l_tan_win').fadeIn();
+				tcShow(1)
+			});
+			$('.l_tan_title a').click(function() {
+				$('.l_tan_win').fadeOut();
+				tcHide()
+			})
+			$('.cancle').click(function() {
+				$('.l_tan_win').fadeOut();
+				tcHide()
+			});
+		</script>
+		<!--开关-->
+		<script type="text/javascript">
+			$(function() {
+				var len = 0;
+				$(".l_tan_win .l_tan_box .tan_content .p6 textarea").keyup(function() {
+					len = $(this).val().length;
+					$(".l_tan_win .p6 i em").html(len)
+				})
+			})
+			$(function() {
+				var len1 = 0;
+				$(".s_tex2").keyup(function() {
+					len1 = $(this).val().length;
+					$(".s_em1").html(len1)
+				})
+			})
+			$(function() {
+				var len2 = 0;
+				$(".s_tex").keyup(function() {
+					len2 = $(this).val().length;
+					$(".s_em2").html(len2)
+				})
+			})
+		</script>
+		<script>
+			$(function() {
+				$('.s_right').click(function() {
+					if($(this).hasClass('s_btn1')) {
+						$(this).removeClass('s_btn1');
+						$(this).addClass('s_btn2');
+					} else {
+						$(this).removeClass('s_btn2');
+						$(this).addClass('s_btn1');
+					}
+				});
+			})
+		</script>
+		<!--切换-->
+		<script>
+			$(function() {
+				$('.s_next li').click(function() {
+					$(this).addClass('on').siblings().removeClass('on');
+					//					var index = $(this).index();
+					//					$('.max_box .min_box').eq(index).show().siblings().hide();
+					//					$('.s_mack li').removeClass('active')
+				});
+
+				$('.s_laft li').click(function() {
+					$(this).addClass('s_on').siblings().removeClass('s_on');
+					var index = $(this).index();
+					$('.max_list .list_1').eq(index).show().siblings().hide();
+				});
+
+				$('.s_mack li').click(function() {
+					$(this).addClass('active').siblings().removeClass('active');
+					if($(this).hasClass('active')) {
+						$('.s_nav li input').removeAttr('disabled').addClass('list_btn')
+					} else {
+						$('.s_nav li input').attr('disabled', true).removeClass('list_btn')
+					}
+
+				});
+			})
+		</script>
+		<!--分页器点击效果-->
+		<script>
+			$(document).ready(function() {
+				$(".pagination ul li a").click(function() {
+					$(".pagination ul li a").removeClass("active");
+					$(this).addClass("active");
+				});
+			});
+		</script>
+		<!--字数限制-->
+		<!--<script>
+			function setShowLength(obj, maxlength, id) {
+				var rem = maxlength - obj.value.length;
+				var wid = id;
+				if(rem < 0) {
+					rem = 0;
+				}
+				document.getElementById(wid).innerHTML = rem;
+			}
+		</script>-->
+		<!--取消订单-->
+		<script>
+			$(function() {
+				$('.check2 ').click(function() {
+					$('.s_width').fadeIn();
+					tcShow();
+				});
+				$('.s_next2').click(function() {
+					$('.s_width,.s_width1').fadeOut();
+					tcHide();
+				})
+				$('.min_btn ').click(function() {
+					$('.s_width,.s_width1').fadeOut();
+					tcHide();
+				});
+				$('.check5 ').click(function() {
+					$('.s_width1').fadeIn();
+					tcShow();
+				});
+			});
+		</script>
+		<!--预订单修改-->
+		<script>
+			$(".check3 ").click(function(e) {
+				$(".w3").fadeIn();
+				tcShow();
+			});
+			$(".w3 .booking_sheet_right,.w3 .wx_save,.w3 .wx_cancel").click(function(e) {
+				$(".w3").fadeOut();
+				tcHide();
+			});
+			$(".book_repair").click(function(e) {
+				$(this).hide();
+				$(".book_cancel").show();
+				$(".booking_plate2,.booking_plate3").fadeIn();
+//				$(".booking_sheet_modify").css("height", "750px");
+			});
+			$(".book_cancel").click(function(e) {
+				$(this).hide();
+				$(".book_repair").show();
+				$(".booking_plate2,.booking_plate3").hide();
+				$(".booking_sheet_modify").css("height", "285px");
+			});
+
+			$(".booking_plate2 span").click(function(e) {
+				$(this).addClass("s_active").siblings().removeClass("s_active");
+			});
+
+			$(".w3 .wx_save").click(function(e) {
+				if($(".table_name").text() == "") {
+					$(".addaae_prompt").fadeIn();
+					setTimeout(function() {
+							$(".addaae_prompt").fadeOut();
+						},
+						2000);
+				} else {
+					$(".w3").fadeOut();
+					tcHide();
+				}
+			});
+			$(".w3 tr td").click(function(e) {
+				var suremodify = $(this).parents(".booking_plate3").siblings(".booking_plate2").find(".s_active").html();
+				$(".w3 tr td").removeClass("active1");
+				$(this).addClass("active1");
+				$(".table_name").text(suremodify + $(this).find("span").text() + '(' + $(this).find("i").text() + ')')
+			});
+		</script>
+		<!--预订单确认-->
+		<script>
+			$(".check1").click(function(e) {
+				$(".w5").fadeIn();
+				tcShow(1);
+			});
+			$(".w5 .reservation_confirmation_right,.w5 .wx_save,.w5 .wx_cancel").click(function(e) {
+				$(".w5").fadeOut();
+				tcHide();
+			});
+			$(".booking_plate8 span").click(function(e) {
+				$(this).addClass("s_active").siblings().removeClass("s_active");
+			});
+
+			$(".w5 .wx_save").click(function(e) {
+				if($(".table_name2").text() == "") {
+					$(".addaae_prompt").fadeIn();
+					setTimeout(function() {
+							$(".addaae_prompt").fadeOut();
+						},
+						2000);
+				} else {
+					$(".w5").fadeOut();
+					tcHide();
+				}
+			});
+			$(".w5 tr td").click(function(e) {
+				var surewx = $(this).parents(".booking_plate9").siblings(".booking_plate8").find(".s_active").html();
+				$(".w5 tr td").removeClass("active");
+				$(this).addClass("active");
+				$(".table_name2").text(surewx + $(this).find("span").text() + '(' + $(this).find("i").text() + ')');
+			});
+		</script>
+		<!--餐桌切换-->
+		<script>
+			$(function() {
+				$('.booking_to_center .switch_but input').click(function(e) {
+					if($(this).parent().hasClass("switch_but1")) {
+						$(this).parent().removeClass("switch_but1");
+						$(this).parent().addClass("switch_but2");
+						$(".booking_plate5,.booking_plate6").hide();
+						$(".booking_to_complete").css("height", "285px");
+					} else {
+						$(this).parent().removeClass("switch_but2");
+						$(this).parent().addClass("switch_but1");
+						$(".booking_plate5,.booking_plate6").show();
+						$(".booking_to_complete").css("height", "750px");
+					}
+				});
+			});
+		</script>
+		<!--预订单完成-->
+		<script>
+			$(".check4").click(function(e) {
+				$(".w4").fadeIn();
+				tcShow();
+			});
+			$(".w4 .booking_to_right,.w4 .wx_save,.w4 .wx_cancel").click(function(e) {
+				$(".w4").fadeOut();
+				tcHide();
+			});
+
+			$(".booking_plate5 span").click(function(e) {
+				$(this).addClass("s_active").siblings().removeClass("s_active");
+			});
+
+			$(".w4 .wx_save").click(function(e) {
+				if($(".table_name1").text() == "") {
+					$(".addaae_prompt").fadeIn();
+					setTimeout(function() {
+							$(".addaae_prompt").fadeOut();
+						},
+						2000);
+				} else {
+					$(".w4").fadeOut();
+					tcHide();
+				}
+			});
+			$(".w4 tr td").click(function(e) {
+				var surecon = $(this).parents(".booking_plate6").siblings(".booking_plate5").find(".s_active").html();
+				$(".w4 tr td").removeClass("active");
+				$(this).addClass("active");
+				$(".table_name1").text(surecon + $(this).find("span").text() + '(' + $(this).find("i").text() + ')')
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>自定义菜单</title>
+		<link rel="stylesheet" href="css/sjonestyle.css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_global.css" />
+	</head>
+
+	<body>
+		<div class="wrap" style="margin-top: 60px;">
+			<!--头部开始-->
+			<div class="l_container l_content ">
+				<div class="content" style="min-width: 1200px;">
+					<div class="fl-box fl">
+						<div class="interface">
+							<div class="w_title">
+								<em>集智集客</em>
+							</div>
+							<div class="bottom-nav-box">
+								<div class="key"></div>
+								<ul class="bottom-nav">
+									<li class="ui-state-default portlet">
+										<div class="portlet-header active_text">公司动态</div>
+										<ul id="item1" class="portlet-content">
+											<li class="ui-state-default"><span class="active_text">关于我们</span></li>
+											<li class="ui-state-default"><span class="active_text">产品展示</span></li>
+											<li class="ui-state-default"><span class="active_text">最新功能</span></li>
+											<li class="ui-state-default"><span class="active_text">版本介绍</span></li>
+										</ul>
+									</li>
+									<li class="ui-state-default portlet">
+										<div class="portlet-header active_text">GK头条</div>
+										<ul id="item2" class="portlet-content">
+										</ul>
+									</li>
+									<li class="ui-state-default portlet">
+										<div class="portlet-header active_text">GK社区</div>
+										<ul id="item3" class="portlet-content">
+											<li class="ui-state-default"><span class="active_text">关于我们</span></li>
+											<li class="ui-state-default"><span class="active_text">产品展示</span></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div id="placeholder-toggle">菜单排序</div>
+					</div>
+					<div class="fr-box fr">
+						<div class="edit-box">
+							<p class="edit-box-p1">请选择左边菜单进行编辑</p>
+							<p class="edit-box-p2">请选择拖拽左边菜单进行排序</p>
+
+							<div class="edit-style-1">
+								<div class="edit-one edit-two">
+									<span>GK头条</span>
+									<em>删除菜单</em>
+								</div>
+								<div class="edit-one">
+									<span>菜单名称</span>
+									<input type="text" maxlength="4">
+								</div>
+								<div class="edit-one">
+									<p>不超过4个字</p>
+								</div>
+								<div class="edit-one">
+									<span>菜单内容</span>
+									<select>
+										<option>微网站</option>
+									</select>
+									<select>
+										<option>网站首页</option>
+									</select>
+								</div>
+								<p class="l_btn"><input type="button" value="保存" /></p>
+							</div>
+
+							<div class="edit-style-2">
+								<div class="edit-one edit-two">
+									<span>GK头条</span>
+									<em>删除菜单</em>
+								</div>
+								<div class="edit-one">
+									<i>已添加子菜单，仅可设置菜单名称。</i>
+								</div>
+								<div class="edit-one">
+									<span>菜单名称</span>
+									<input type="text" maxlength="4">
+								</div>
+								<div class="edit-one">
+									<p>不超过4个字</p>
+								</div>
+								<p class="l_btn"><input type="button" value="保存" /></p>
+							</div>
+
+							<div class="edit-style-3">
+								<div class="edit-one edit-two">
+									<span>GK头条</span>
+									<em>删除子菜单</em>
+								</div>
+								<div class="edit-one">
+									<span>子菜单名称</span>
+									<input type="text" maxlength="8">
+								</div>
+								<div class="edit-one">
+									<p>不超过8个字</p>
+								</div>
+								<div class="edit-one">
+									<span>子菜单内容</span>
+									<select>
+										<option>微网站</option>
+									</select>
+									<select>
+										<option>网站首页</option>
+									</select>
+								</div>
+								<p class="l_btn"><input type="button" value="保存" /></p>
+							</div>
+						</div>
+					</div>
+					<div class="content-but">
+						<p><input type="button" value="发布" class="save-and-publish" /><input type="button" value="预览" class="s-preview" /></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="preview-popup">
+			<div class="pp-main">
+				<ul class="pp-main-ul">
+					<li class="pp-main-li">
+						<i></i>公司动态
+						<ul class="main-li-ul">
+							<li class="li-ul-li">关于我们</li>
+							<li class="li-ul-li">产品展示</li>
+							<li class="li-ul-li">最新功能</li>
+							<li class="li-ul-li">版本介绍</li>
+						</ul>
+					</li>
+					<li class="pp-main-li">
+						<i></i>GK头条
+						<ul class="main-li-ul">
+							<li class="li-ul-li">最新功能</li>
+							<li class="li-ul-li">版本介绍</li>
+						</ul>
+					</li>
+					<li class="pp-main-li">
+						<i></i>GK社区
+						<ul class="main-li-ul">
+							<li class="li-ul-li">关于我们</li>
+							<li class="li-ul-li">产品展示</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="pp-but">
+				<input type="button" value="退出预览" class="out-preview" />
+			</div>
+		</div>
+
+		<div class="l_drop"></div>
+		<!--弹窗背景遮罩-->
+		<!--发布弹窗-->
+		<div class="l_popup l_popup_download">
+			<p class="l_pop_article tc">确认要发布？</p>
+			<p class="l_btns">
+				<a href="javascript:;" class="l_ok">确定</a>
+				<a href="javascript:;" class="l_cancle">取消</a>
+			</p>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script>
+			$(document).ready(function() {
+
+				// 菜单展开项下方添加小箭头图标
+				$(".portlet").find(".portlet-content").prepend("<span class='down-arrow'></span>");
+
+				// 
+				$(".portlet").find(".portlet-header,.portlet-content li span").prepend("<i></i>");
+
+				// 判断菜单中是否有子项目，有子项目添加图标
+				function judge() {
+					$(".portlet").each(function() {
+						var x = $(this).find(".portlet-content li.ui-state-default").toArray();
+						var y = $(this).find(".portlet-content li").hasClass("add-child");
+						if(x.length > 0) {
+							$(this).find(".portlet-header i").addClass("has");
+						}
+						if(x.length < 5 && y == false) {
+							$(this).find(".portlet-content").append("<li class='add-child'><span>＋</span></li>");
+						} else if(x.length > 4) {
+							$(this).find(".portlet-content li.add-child").hide();
+						}
+					});
+				}
+				judge();
+
+				// 点击选中边框绿色
+				function active_color() {
+					$(".portlet .portlet-header,.portlet .portlet-content li.ui-state-default").click(function() {
+						$(".active").removeClass("active");
+						$(this).addClass("active");
+					});
+				}
+				active_color();
+
+				// 
+				$(".portlet .portlet-content li.add-child").click(function() {
+					$(".active").removeClass("active");
+					$(this).before("<li class='ui-state-default active'><span><i></i>新建菜单</span></li>");
+					$(this).prev().trigger('click')
+					judge();
+					active_color();
+				});
+
+				// 打开菜单排序开关
+				$("#placeholder-toggle").click(function() {
+					if($(this).hasClass("on") == false) {
+						$(this).addClass("on");
+						$(this).html("完成");
+						$(".bottom-nav").attr("id", "sortable");
+						$(".portlet").find(".portlet-content .add-child").hide();
+						$(".portlet").find(".portlet-header i,.portlet-content li span i").addClass("placeholder");
+
+						// 菜单排序
+						$("#sortable,#sortable #item1,#sortable #item2,#sortable #item3").sortable({
+							placeholder: "ui-state-highlight",
+							cursor: "move"
+						}).disableSelection();
+
+						$(".edit-box-p1,.edit-box-p2,.edit-style-1,.edit-style-2,.edit-style-3").hide();
+						$(".edit-box-p2").show();
+
+					} else {
+						$(this).removeClass("on");
+						$(this).html("菜单排序");
+						$(".bottom-nav").attr("id", "");
+						$(".portlet").find(".portlet-header i,.portlet-content li span i").removeClass("placeholder");
+						$(".portlet").find(".portlet-content .add-child").show();
+						$(".active").removeClass("active");
+
+						$(".edit-box-p1,.edit-box-p2,.edit-style-1,.edit-style-2,.edit-style-3").hide();
+						$(".edit-box-p1").show();
+					}
+				});
+
+				// 点击菜单打开子菜单
+				$(".portlet").on("click", function(e) {
+					e.stopPropagation();
+					$(".portlet .portlet-content").hide();
+					$(this).find(".portlet-content").show();
+
+					// 判断菜单是否有子项目，没有就隐藏展开项目
+					$("#sortable .portlet").each(function() {
+						var x = $(this).find(".portlet-content li").hasClass("ui-state-default");
+						if(x == false) {
+							$(this).find(".portlet-content").hide();
+						}
+					});
+				});
+
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(".portlet .portlet-header").click(function() {
+				if($(this).parent().parent().eq(0).attr('id') == "sortable") {
+					$(".edit-box-p1,.edit-box-p2,.edit-style-1,.edit-style-2,.edit-style-3").hide();
+					$(".edit-box-p2").show();
+				} else {
+					var q = $(this).siblings(".portlet-content").find("li.ui-state-default").toArray();
+					if(q.length > 0) {
+						$(".edit-box-p1,.edit-box-p2,.edit-style-1,.edit-style-2,.edit-style-3").hide();
+						$(".edit-style-2").show();
+					} else {
+						$(".edit-box-p1,.edit-box-p2,.edit-style-1,.edit-style-2,.edit-style-3").hide();
+						$(".edit-style-1").show();
+					}
+				}
+				$('.edit-two').html($(this).text())
+				var ind = $('.portlet .portlet-header').index(this);
+				console.log($(this).index);
+				$('.portlet .portlet-header').filter(function(index) {
+					return index != ind;
+				}).next().find('li').each(function() {
+					if($(this).find('span').text() == '新建菜单') {
+						$(this).remove()
+					}
+					if($(this).hasClass('add-child')) {
+						$(this).show();
+					}
+				})
+			});
+			$(".portlet .portlet-content ").on('click', "li", function() {
+				if($(this).parent().parent().parent().eq(0).attr('id') == "sortable") {
+					$(".edit-box-p1,.edit-box-p2,.edit-style-1,.edit-style-2,.edit-style-3").hide();
+					$(".edit-box-p2").show();
+				} else {
+					$(".edit-box-p1,.edit-box-p2,.edit-style-1,.edit-style-2,.edit-style-3").hide();
+					$(".edit-style-3").show();
+				}
+			});
+			$('.portlet .portlet-content').on('click', '.ui-state-default', function() {
+				$('.edit-two').html($(this).find('span').text())
+			})
+		</script>
+
+		<script type="text/javascript">
+			$(".s-preview").click(function() {
+				$(".preview-popup").fadeIn();
+				tcShow(1);
+			});
+			$(".out-preview").click(function() {
+				$(".preview-popup").fadeOut();
+				tcHide();
+			});
+		</script>
+
+		<!--发布弹窗-->
+		<script>
+			$(function() {
+				$('.save-and-publish').click(function(e) {
+					$(".l_popup_download").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow()
+				});
+				$('.l_ok,.l_cancle').click(function(e) {
+					$('.l_popup_download').fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide()
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>系统公告</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_system.css" />
+	</head>
+
+	<body>
+		<!--content-->
+		<!--头部开始-->
+			<div class="l_container l_tab">
+				<div class="l_content">
+					<p class="l_title">通知</p>
+					<ul class="l_ul clearfix">
+						<li>
+							<a href="javascript:;" target="iframe_menu" >消息通知</a>
+						</li>
+						<li  class="active">
+							<a href="SystemNotice.html" target="iframe_menu" >系统公告</a>
+						</li>
+						<li>
+							<a href="consulting_with.html" target="iframe_menu" >问题反馈</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--头部--ed-->
+				<!--主体开始-->
+			<div class="l_container">
+				<!--主体iframe开始-->
+				<div class="iframe_box">
+					<div class="box_index">
+						<iframe src="SystemNotice.html" name="iframe_menu" id="iframe_menu" scrolling="no"></iframe>
+					</div>
+				</div>
+				<!--主体iframe结束-->
+			</div>
+		<!--主体--ed-->
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				$(".notice_wrap").click(function() {
+					$(".nothing").hide();
+					$(".notice_box").fadeIn(300);
+					$(".notice_wrap").removeClass("active");
+					$(this).addClass("active");
+				});
+				//	公告选中效果
+				$(".prev").click(function() {
+					var num = $(".curPage").html();
+					num--;
+					if(num < 1) {
+						num = 1;
+					}
+					$(".curPage").html(num);
+				})
+				$(".next").click(function() {
+					var num = $(".curPage").html();
+					var totalNum = $(".totalPage").html();
+					num++;
+					if(num > totalNum) {
+						num = totalNum;
+					}
+					$(".curPage").html(num);
+				})
+				//分页前后点击效果
+			})
+		</script>
+	</body>
+
+</html>

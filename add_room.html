@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>新增房型</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/room.css" />
+		<link rel="stylesheet" href="assets/css/croppic.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content clearfix ">
+				<p class="s_drop clear">
+					<span class="fl">新增房型</span>
+					<a href="house_IM.html" class="fr">返回</a>
+				</p>
+				<div class="s_subpage clear">
+					<!--左-->
+					<div class="s_subpage_l fl">
+						<div class="page_min">
+							<p class="subpage_p">基本信息<em>(必填)</em></p>
+							<div class="clearfix bassInfo">
+								<div class="infoContent infoLeft fl clearfix">
+									<div class="model classify">
+										<p class="title">分类名称</p>
+										<div class="selectContent">
+											<p class="selectInput">请选择</p>
+											<div class="selectList">
+												<ul>
+													<li>22222222222222222222</li>
+													<li>3333</li>
+													<li>4444</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="clearfix">
+										<div class="model styleBed fl">
+											<p class="title">床型</p>
+											<div class="selectContent">
+												<p class="selectInput">请选择</p>
+												<div class="selectList">
+													<ul>
+														<li>大床房</li>
+														<li>双人床</li>
+														<li>单人床</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="model roomNum fl">
+											<p class="title">数量（张）</p>
+											<input type="number" name="" id="" value="" placeholder="例如:1"/>
+										</div>
+										<div class="model bedWidth fl">
+											<p class="title">床宽（米）</p>
+											<input type="number" name="" id="" value="" placeholder="例如:1.5"/>
+										</div>
+									</div>
+									<div class="clearfix">
+										<div class="model addBed fl">
+											<p class="title">能否加床</p>
+											<div class="selectContent">
+												<p class="selectInput">请选择</p>
+												<div class="selectList">
+													<ul>
+														<li class="ok">能</li>
+														<li>不能</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="model bedPrice fl">
+											<p class="title">加床费（元/张/晚）</p>
+											<input type="number" name="" id="" value="" placeholder="例如:200.00"/>
+										</div>
+									</div>
+									
+								</div>
+								<div class="infoContent infoRight fl">
+									<div class="model roomNam">
+										<p class="title">房型名称</p>
+										<input type="text" name="" id="" value="" placeholder="请输入房型名称，1-20个字"/>
+									</div>
+									<div class="clearfix">
+										<div class="model personNum fl">
+											<p class="title">可入住人数</p>
+											<input type="number" name="" id="" value="" placeholder="例如:2"/>
+										</div>
+										<div class="model roomSq fl">
+											<p class="title">房间面积（平方米）</p>
+											<input type="text" name="" id="" value="" placeholder="例如:20-30"/>
+										</div>
+									</div>
+									<div class="clearfix">
+										<div class="model breakfast fl">
+											<p class="title">含早情况</p>
+											<div class="selectContent">
+												<p class="selectInput">请选择</p>
+												<div class="selectList">
+													<ul>
+														<li>不含早餐</li>
+														<li class="ok">含早餐</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="model breakfastNum fl">
+											<p class="title">早餐数量</p>
+											<input type="number" name="" id="" value="" placeholder="例如:3"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page_min">
+							<p class="subpage_p">销售信息<em>(必填)</em></p>
+							<div class="clear">
+								<div class="s_dorpmenu1 fl">
+									<span>底价(元)</span>
+									<input type="text" placeholder="例如：33.00" class="s_inp" />
+								</div>
+								<div class="s_dorpmenu1 fl">
+									<span>基础价(元)</span>
+									<input type="text" placeholder="例如：33.00" class="s_inp" />
+								</div>
+
+								<div class="s_dorpmenu dorp_up s_summary saleStyle fl">
+									<span>销售方式</span>
+									<div class="clear">
+										<div class="dorp_min fl">
+											<span class="w_cover"></span>
+											<p><i>请选择</i><em></em>
+											</p>
+											<ul>
+												<li class="w_show">仅展示</li>
+												<li class="w_buy">可购买</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="s_dorpmenu dorp_up s_summary  fl">
+									<span class="payStyle">支付类型<img src="images/icon_tishi.png" alt="" class="tipIcon"/></span>
+									<div class="clear">
+										<div class="f_mniu clear">
+											<div class="w_tming">
+
+											</div>
+											<p class="fl"><i class="add_on"></i>预付</p>
+											<p class="fl"><i></i>现付</p>
+											<p class="fl"><i></i>担保</p>
+										</div>
+									</div>
+									<div class="l_opt_tips">
+										<i></i>
+										<p>现付：需客户入住后到前台付款；</p>
+										<p>预付：需客户在线支付全部房费；</p>
+										<p>担保：需客户按照首晚房费支付担保金，
+订单完成时自动退还。</p>
+									</div>
+								</div>
+								<div class="s_dorpmenu1 none_margin fl">
+									<span>房型总量(间)</span>
+									<input type="text" placeholder="例如：3" class="s_inp" />
+								</div>
+							</div>
+						</div>
+						<div class="s_sideBar">
+							<p class="sideBar_p">其他设施</p>
+							<ul class="sideBar_ul clear">
+								<li class="bar_list fl">全部分类</li>
+								<li class="fl">硬件设施</li>
+								<li class="fl">媒体服务</li>
+								<li class="fl">住宿用品</li>
+							</ul>
+							<div class="s_quan clear">
+								<p class="fr">
+									<input type="checkbox" value="" id="a1" /><label for="a1"></label>全选
+								</p>
+							</div>
+							<ul class="s_message clear">
+								<li class="fl">免费洗漱用品（6样以上）</li>
+								<li class="fl">免费瓶装水</li>
+								<li class="fl">拖鞋</li>
+								<li class="fl">浴衣</li>
+								<li class="fl">房内保险箱</li>
+								<li class="fl">闹钟</li>
+								<li class="fl">咖啡壶/茶壶</li>
+								<li class="fl">浴衣</li>
+								<li class="fl">针线包</li>
+								<li class="fl">雨伞</li>
+								<li class="fl">浴衣</li>
+								<li class="fl">房内保险箱</li>
+								<li class="fl">闹钟</li>
+								<li class="fl">咖啡壶/茶壶</li>
+								<li class="fl">浴衣</li>
+								<li class="fl">针线包</li>
+								<li class="fl">雨伞</li>
+								<li class="fl">免费瓶装水</li>
+								<li class="fl">拖鞋</li>
+								<li class="fl">浴衣</li>
+								<li class="fl">房内保险箱</li>
+								<li class="fl">闹钟</li>
+								<li class="fl">咖啡壶/茶壶</li>
+								<li class="fl">浴衣</li>
+							</ul>
+						</div>
+					</div>
+					<!--右-->
+					<div class="s_subpage_r fr">
+						<div class="subpage_min">
+							<div class="s_loginbar">
+								<p class="loginbar_p">图片</p>
+								<p class="log_p clear">
+									<span class="fl">推广图(必填)</span>
+									<span class="fr">图片建议比例：2:1</span>
+								</p>
+								<div class="min_tag">
+									<div class="tag_list one">
+										<img src="images/f_qie.png" class="one" />
+										<div class="one_img">
+											<img src="assets/img/park_view.jpg" />
+										</div>
+									</div>
+									<div class="sub_list list_one clear">
+										<i class="fl"></i><span class="fr">换图片</span>
+									</div>
+								</div>
+							</div>
+							<div class="s_copyright">
+								<p class="log_p1 clear">
+									<span class="fl">房型图 （请至少上传一张）</span>
+									<span class="fr">图片建议比例：3:2</span>
+								</p>
+								<div class="min_tag1">
+									<div class="tag_list1">
+										<img src="images/f_qie1.png" class="two" />
+										<div class="two_img">
+											<img src="assets/img/park_view.jpg" />
+										</div>
+									</div>
+									<div class="sub_list list_two clear">
+										<i class="fl">×</i><span class="fr">换图片</span>
+									</div>
+								</div>
+								<div class="min_tag1">
+									<div class="tag_list1">
+										<img src="images/f_qie1.png" class="threes" />
+										<div class="threes_img">
+
+										</div>
+									</div>
+									<div class="sub_list list_threes clear">
+										<i class="fl">×</i><span class="fr">换图片</span>
+									</div>
+								</div>
+								<div class="min_tag1">
+									<div class="tag_list1">
+										<img src="images/f_qie1.png" class="fours" />
+										<div class="fours_img">
+
+										</div>
+									</div>
+									<div class="sub_list list_fours clear">
+										<i class="fl">×</i><span class="fr">换图片</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sub_button clear">
+					<a href="javascript:;" class="sub_cancel fl">取消</a>
+					<a href="javascript:;" class="sub_determine fl">确定</a>
+				</div>
+			</div>
+		</div>
+		<!--主体--ed-->
+		<!--切图1、2、3-->
+		<div class="cut_photoone">
+			<div class="cut_p_top">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModalone"></div>
+		</div>
+		<div class="cut_phototwo">
+			<div class="cut_p_top">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModaltwo"></div>
+		</div>
+		<div class="cut_photothree">
+			<div class="cut_p_top">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModalthree"></div>
+		</div>
+		<div class="cut_photofour">
+			<div class="cut_p_top">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModalfour"></div>
+		</div>
+		<!--取消订单弹窗-->
+		<div class="s_tag s_none">
+			<p class="s_shadow"></p>
+			<div class="s_vote">
+				<div class="vote_text clear">
+					<span class="fl"></span>
+					<p class="fl">确定取消吗？</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="s_determine fr">确定</a>
+					<a href="javascript:;" class="s_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>
+		<!--取消订单弹窗-->
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="assets/js/croppic.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+		//	基本信息
+			$(function(){
+				$(".selectInput").click(function(){
+					$(this).next(".selectList").slideToggle();
+					$(this).parents(".model").siblings().find(".selectList").slideUp(400);
+					$(this).parents(".infoContent").siblings().find(".selectList").slideUp(400);
+					return false;
+				})
+				$(".selectList ul li").click(function(){
+					$(this).parents(".selectList").slideUp();
+					$(this).parents(".selectContent").find(".selectInput").html($(this).html())
+				})
+				$(document).click(function() {
+					$(".selectList").slideUp();
+				});
+				$(".styleBed .selectList li").click(function(){
+					$(".roomNum,.bedWidth").fadeIn(400);
+				})
+				$(".addBed .selectList li.ok").click(function(){
+					$(".bedPrice").fadeIn(400);
+				})
+				$(".breakfast .selectList li.ok").click(function(){
+					$(".breakfastNum").fadeIn(400);
+				})
+				$(".payStyle").hover(function(){
+					$(".l_opt_tips").stop(true,true).fadeIn();
+				},function(){
+					$(".l_opt_tips").stop(true,true).fadeOut();
+				})
+			})
+		</script>
+		<!--切图插件-->
+		<script>
+			var croppicContainerModalOptions = {
+				uploadUrl: 'http://tech.harvetech.cn/wifihotel/img_save_to_file.php',
+				cropUrl: 'http://tech.harvetech.cn/wifihotel/img_crop_to_file.php',
+				modal: true,
+				imgEyecandyOpacity: 0.4,
+				loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+				onBeforeImgUpload: function() {
+					console.log('onBeforeImgUpload')
+				},
+				onAfterImgUpload: function() {
+					console.log('onAfterImgUpload')
+				},
+				onImgDrag: function() {
+					console.log('onImgDrag')
+				},
+				onImgZoom: function() {
+					console.log('onImgZoom')
+				},
+				onBeforeImgCrop: function() {
+					console.log('onBeforeImgCrop')
+				},
+				onAfterImgCrop: function() {
+					console.log('onAfterImgCrop')
+				},
+				onReset: function() {
+					console.log('onReset')
+				},
+				onError: function(errormessage) {
+					console.log('onError:' + errormessage)
+				}
+			}
+			var cropContainerModal = new Croppic('cropContainerModalone', croppicContainerModalOptions);
+			var cropContainerModal = new Croppic('cropContainerModaltwo', croppicContainerModalOptions);
+			var cropContainerModal = new Croppic('cropContainerModalthree', croppicContainerModalOptions);
+			var cropContainerModal = new Croppic('cropContainerModalfour', croppicContainerModalOptions);
+		</script>
+		<script>
+			$(function() {
+				var Imgone = $(".one_img").html();
+				var Imgtwo = $(".two_img").html();
+				var Imgthree = $(".threes_img").html();
+				var Imgfour = $(".fours_img").html();
+				if(Imgone.indexOf('img') > 0) {
+					$('.min_tag').hover(function() {
+						$('.list_one').show().stop().animate({
+							'bottom': '0'
+						}, 'normal');
+					}, function() {
+						$('.list_one').stop().animate({
+							'bottom': '-30px'
+						}, 'normal')
+					});
+
+					$('.list_one span').click(function(e) {
+						$('.cut_photoone').fadeIn();
+						tcShow()
+					});
+					$('.cut_p_top').click(function(e) {
+						$('.cut_photoone').fadeOut();
+						tcHide()
+					});
+				} else {
+					$('.list_one').hide();
+					$('.one').click(function(e) {
+						$('.cut_photoone').fadeIn();
+						tcShow()
+					});
+					$('.cut_p_top').click(function(e) {
+						$('.cut_photoone').fadeOut();
+						tcHide()
+					});
+				}
+				if(Imgtwo.indexOf('img') > 0) {
+					$('.min_tag1').on("mouseover mouseout", function(event) {
+						if(event.type == "mouseover") {
+							$(this).find('.list_two ').show().stop().animate({
+								'bottom': '0'
+							}, 'normal');
+						} else if(event.type == "mouseout") {
+							$(this).find('.list_two').stop().animate({
+								'bottom': '-30px'
+							}, 'normal')
+						}
+					});
+					
+					$('.list_two span').click(function(e) {
+						$('.cut_phototwo').fadeIn();
+						tcShow()
+					});
+					$('.cut_p_top').click(function(e) {
+						$('.cut_phototwo').fadeOut();
+						tcHide()
+					});
+				} else {
+					$('.list_two').hide();
+					$('.two').click(function(e) {
+						$('.cut_phototwo').fadeIn();
+						tcShow()
+					});
+					$('.cut_p_top').click(function(e) {
+						$('.cut_phototwo').fadeOut();
+						tcHide()
+					});
+				}
+				if(Imgthree.indexOf('img') > 0) {
+					$('.min_tag1').on("mouseover mouseout", function(event) {
+						if(event.type == "mouseover") {
+							$(this).find('.list_threes ').show().stop().animate({
+								'bottom': '0'
+							}, 'normal');
+						} else if(event.type == "mouseout") {
+							$(this).find('.list_threes').stop().animate({
+								'bottom': '-30px'
+							}, 'normal')
+						}
+					});
+					$('.list_threes span').click(function(e) {
+						$('.cut_photothree').fadeIn();
+						tcShow()
+					});
+					$('.cut_p_top').click(function(e) {
+						$('.cut_photothree').fadeOut();
+						tcHide()
+					});
+				} else {
+					$('.list_threes').hide();
+					$('.threes').click(function(e) {
+						$('.cut_phototwo').fadeIn();
+						tcShow()
+					});
+					$('.cut_p_top').click(function(e) {
+						$('.cut_photothree').fadeOut();
+						tcHide()
+					});
+				}
+				if(Imgfour.indexOf('img') > 0) {					
+					$('.min_tag1').on("mouseover mouseout", function(event) {
+						if(event.type == "mouseover") {
+							$(this).find('.list_fours ').show().stop().animate({
+								'bottom': '0'
+							}, 'normal');
+						} else if(event.type == "mouseout") {
+							$(this).find('.list_fours').stop().animate({
+								'bottom': '-30px'
+							}, 'normal')
+						}
+					});
+					$('.list_fours span').click(function(e) {
+						$('.cut_photofour').fadeIn();
+						tcShow()
+					});
+					$('.cut_p_top').click(function(e) {
+						$('.cut_photofour').fadeOut();
+						tcHide()
+					});
+				} else {
+					$('.list_fours').hide();
+					$('.fours').click(function(e) {
+						$('.cut_photofour').fadeIn();
+						tcShow()
+					});
+					$('.cut_p_top').click(function(e) {
+						$('.cut_photofour').fadeOut();
+						tcHide()
+					});
+				}
+			});
+		</script>
+		<!--切图插件删除图片-->
+		<script>
+			$(function() {
+				$('.list_two').children('i').click(function(e) {
+					$(this).parent().prev().children('.two_img').remove();
+					$(this).parent().hide();
+					$(this).parents('.min_tag1').unbind();					
+					$('.two').click(function(e) {
+						$('.cut_phototwo').fadeIn();
+						tcShow()
+					});
+				});
+
+				$('.list_threes').children('i').click(function(e) {
+					$(this).parent().prev().children('.threes_img').remove();
+					$(this).parent().hide();
+					$(this).parents('.min_tag1').unbind();						
+					$('.threes').click(function(e) {
+						$('.cut_phototwo').fadeIn();
+						tcShow()
+					});
+				});
+
+				$('.list_fours').children('i').click(function(e) {
+					$(this).parent().prev().children('.fours_img').remove();
+					$(this).parent().hide();
+					$(this).parents('.min_tag1').unbind();		
+					$('.fours').click(function(e) {
+						$('.cut_phototwo').fadeIn();
+						tcShow()
+					});
+				});
+			})
+		</script>
+		<!--设备选中效果-->
+		<script>
+			$(function() {
+				$(".w_show").click(function() {
+					$('.f_mniu i').removeClass("add_on");
+					$(".w_tming").show();
+				})
+				$(".w_buy").click(function() {
+					$(".w_tming").hide();
+				})
+				$('.sideBar_ul li').click(function() {
+					$(this).addClass('bar_list').siblings().removeClass('bar_list');
+				});
+
+				$(".s_quan p label").click(function() {
+					var min = $('.s_message li').length;
+					$(this).toggleClass("checked");
+					if($(this).hasClass('checked')) {
+						$('.s_message li').addClass('s_click');
+
+					} else {
+						$('.s_message li').removeClass('s_click');
+					}
+					$('.s_message li').click(function() {
+						var min1 = $('.s_message li').length;
+						if(min1 <= min) {
+							$(".s_quan p label").removeClass('checked');
+						}
+					});
+				});
+				$('.s_message li').click(function() {
+					if($(this).hasClass('s_click')) {
+						$(this).removeClass('s_click');
+					} else {
+						$(this).addClass('s_click');
+					}
+				});
+				/*取消弹窗*/
+				$('.sub_cancel ').click(function() {
+					$('.s_shadow').fadeIn();
+					$('.s_none').fadeIn();
+					tcShow()
+				});
+				$('.s_determine,.s_cancel').click(function() {
+					$('.s_none').fadeOut();
+					tcHide()
+				});
+				/*复选框切换效果*/
+				$('.f_mniu p').click(function() {
+					$(this).children('i').toggleClass('add_on');
+				});
+			});
+		</script>
+		<!--下拉效果-->
+		<script>
+			$(document).click(function(e) {
+				$('.dorp_min ul').slideUp();
+			});
+			$('.dorp_min p').click(function() {
+				$(this).next().slideToggle();
+				$(this).parents('.dorp_up').siblings().find("ul").slideUp();
+				return false;
+			});
+			$('.dorp_min ul li').click(function() {
+				$(this).parents("ul").siblings("p").find("i").html($(this).html());
+				$(this).parents("ul").slideUp();
+				if($(this).parents("ul").siblings("p").find("i").html() == '其他') {
+					$(this).parents('.s_dorpmenu2').find('.menu_p').fadeIn();
+					$(this).parents('.s_summary').find('.s_text').fadeIn();
+				} else {
+					$(this).parents('.s_dorpmenu2').find('.menu_p').fadeOut();
+					$(this).parents('.s_summary').find('.s_text').fadeOut();
+				}
+				if($(this).parents("ul").siblings("p").find("i").html() == '能') {
+					$(this).parents('.s_name').children('.s_dan').removeClass('s_hide');
+				} else {
+					$(this).parents('.s_name').children('.s_dan').addClass('s_hide');
+				}
+				return false;
+			});
+		</script>
+	</body>
+
+</html>

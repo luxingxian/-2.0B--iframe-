@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>营销-限时促销-新增活动</title>
+		<link rel="stylesheet" type="text/css" href="css/dateRange.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_evaluation.css" />
+		<link rel="stylesheet" href="css/jedate.css" />
+	</head>
+
+	<body>
+
+		<div class="wrap">
+			<!--主体开始-->
+			<div class="l_container">
+				<div class="l_content clearfix">
+					<div class="addHeat clearfix">
+						<a href="javascript:;" class="addNav">新增活动</a>
+						<a href="Promotion.html" class="addBack fr">返回</a>
+					</div>
+					<div class="addContent clearfix">
+						<div class="addMess fl">
+							<h3 class="addTitle">活动信息</h3>
+							<div class="addInfo">
+								<p class="activityTitle"><span class="red">*</span>活动名称</p>
+								<p class="inputName"><input type="text" placeholder="2-20个字" /></p>
+								<p class="activityTitle"><span class="red">*</span>活动有效期</p>
+								<!--<div class="ta_date activityDate" id="div_date1">
+									<span class="date_title " id="date1"></span>
+								</div>-->
+								<div class="f_data activityDate date_title">
+									<span class="wstxt"></span><input type="text" placeholder="开始时间" class="workinput wicon" id="inpstart" readonly> ——
+									<span class="wstxt"></span><input type="text" placeholder="结束时间" class="workinput wicon" id="inpend" readonly>
+								</div>
+								<p class="activityTitle"><span class="red">*</span>活动范围</p>
+								<ul class="f_title clear">
+									<li class="fl">
+										<span></span>店内
+									</li>
+									<li class="fl">
+										<span></span>微信
+									</li>
+									<li class="fl">
+										<span></span>全平台
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="addGood fr">
+							<h3 class="addTitle">活动商品</h3>
+							<div class="addText">
+								<p class="goodNum">活动商品共<span class="">0</span>个</p>
+								<p class="addPoint"><span>+</span>添加商品...</p>
+							</div>
+							<!--底部分页开始-->
+							<div class="l_foot_page fl">
+								<div class="l_right fl">
+									<p>
+										<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+										<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+										<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+									</p>
+									<p class="l_skippage">
+										到<input type="number" />页<button>确定</button>
+									</p>
+								</div>
+							</div>
+							<!--底部分页--ed-->
+						</div>
+					</div>
+					<div class="bottom_btn">
+						<a href="javascript:;" class="bottom_cancel">取消</a>
+						<a href="javascript:;" class="bottom_save">保存</a>
+					</div>
+				</div>
+			</div>
+			<!--主体--ed-->
+		</div>
+		<!--wrap--ed-->
+
+		<!--退出系统弹窗-->
+		<div class="quitbox">
+			<div class="quitpopup">
+				<p class="qptop"><span>确定要退出酒店后台系统吗？</span></p>
+				<p class="qpbut">
+					<input type="button" value="取消" class="undo" />
+					<input type="button" value="确定" class="affirm" />
+				</p>
+			</div>
+		</div>
+		<!--选择商品弹窗-->
+		<div class="w_popup">
+			<div class="w_tou_popup"></div>
+			<div class="choose_goods">
+				<div class="choose_up">
+					<div class="choose_goods_top">
+						<em class="fl">选择商品</em>
+						<em class="choose_close fr">&#10005;</em>
+					</div>
+					<div class="choose_menu">
+						<ul>
+							<li class="active">已选<i>0</i>个</li>
+							<li title="微商城">微商城</li>
+							<li title="便利店">便利店</li>
+							<li title="小卖部">小卖部</li>
+						</ul>
+					</div>
+					<div class="choose_goods_input">
+						<div class="w_plate_class fl w_plate">
+							<div class="w_plate_one">
+								<p><i>全部板块</i><em></em></p>
+								<ul class="f_border">
+									<li>
+										板块
+									</li>
+									<li>
+										西餐
+									</li>
+									<li>
+										中餐
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="search_input fl">
+							<input type="text" placeholder="输入活动ID、活动名称" class="l_search" />
+							<img src="images/l_icon_search.png" alt="" />
+						</div>
+						<div class="w_note fr">
+							注：至少选择一个商品
+						</div>
+					</div>
+				</div>
+				<div class="choose_bottom">
+					<div class="w_bg">
+						<div class="choose_bottom_left fl">
+							<ul>
+								<li class="active">全部</li>
+								<li>方便速食</li>
+								<li>洗浴用品</li>
+								<li>电子产品</li>
+								<li>纪念品</li>
+								<li>零食</li>
+								<li>饮料</li>
+								<li>小吃</li>
+							</ul>
+						</div>
+						<div class="choose_bottom_right fr">
+							<ul>
+								<li>
+									<p class="com_code">
+										<em class="fl">商品编码：<i>5160027578</i></em>
+										<em class="w_checkbox  fr"></em>
+									</p>
+									<p class="com_img">
+										<img src="images/w_com_img.png">
+									</p>
+									<p class="com_name">
+										方便面方便面方便面方
+									</p>
+									<p class="com_prices">
+										<em class="w_prices fl">¥ <i>10.00</i></em>
+										<em class="w_invent fr">库存<i>20</i></em>
+									</p>
+								</li>
+								<li>
+									<p class="com_code">
+										<em class="fl">商品编码：<i>5160027578</i></em>
+										<em class="w_checkbox  fr"></em>
+									</p>
+									<p class="com_img">
+										<img src="images/w_com_img.png">
+									</p>
+									<p class="com_name">
+										方便面方便面方便面方
+									</p>
+									<p class="com_prices">
+										<em class="w_prices fl">¥ <i>10.00</i></em>
+										<em class="w_invent fr">库存<i>20</i></em>
+									</p>
+								</li>
+								<li>
+									<p class="com_code">
+										<em class="fl">商品编码：<i>5160027578</i></em>
+										<em class="w_checkbox fr"></em>
+									</p>
+									<p class="com_img">
+										<img src="images/w_com_img.png">
+									</p>
+									<p class="com_name">
+										方便面方便面方便面方
+									</p>
+									<p class="com_prices">
+										<em class="w_prices fl">¥ <i>10.00</i></em>
+										<em class="w_invent fr">库存<i>20</i></em>
+									</p>
+								</li>
+								<li>
+									<p class="com_code">
+										<em class="fl">商品编码：<i>5160027578</i></em>
+										<em class="w_checkbox fr"></em>
+									</p>
+									<p class="com_img">
+										<img src="images/w_com_img.png">
+									</p>
+									<p class="com_name">
+										方便面方便面方便面方
+									</p>
+									<p class="com_prices">
+										<em class="w_prices fl">¥ <i>10.00</i></em>
+										<em class="w_invent fr">库存<i>20</i></em>
+									</p>
+								</li>
+								<li>
+									<p class="com_code">
+										<em class="fl">商品编码：<i>5160027578</i></em>
+										<em class="w_checkbox fr"></em>
+									</p>
+									<p class="com_img">
+										<img src="images/w_com_img.png">
+									</p>
+									<p class="com_name">
+										方便面方便面方便面方
+									</p>
+									<p class="com_prices">
+										<em class="w_prices fl">¥ <i>10.00</i></em>
+										<em class="w_invent fr">库存<i>20</i></em>
+									</p>
+								</li>
+								<li>
+									<p class="com_code">
+										<em class="fl">商品编码：<i>5160027578</i></em>
+										<em class="w_checkbox fr"></em>
+									</p>
+									<p class="com_img">
+										<img src="images/w_com_img.png">
+									</p>
+									<p class="com_name">
+										方便面方便面方便面方
+									</p>
+									<p class="com_prices">
+										<em class="w_prices fl">¥ <i>10.00</i></em>
+										<em class="w_invent fr">库存<i>20</i></em>
+									</p>
+								</li>
+							</ul>
+
+							<div class="l_right clearfix">
+								<p>
+									<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+									<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+									<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+								</p>
+								<p class="l_skippage">
+									到<input type="number" />页<button>确定</button>
+								</p>
+							</div>
+							<div class="w_bottom_btn">
+								<span class="w_cancel">取消</span>
+								<span class="w_sure">确定</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--设置提示框-->
+		<div class="f_reminder f_one">
+			<p class="s_shadow"></p>
+			<div class="reminder_box">
+				<p class="reminder_text">提示<span class="fr">×</span></p>
+				<p class="reminder_list">请先设置活动有效期，再添加商品！</p>
+				<div class="reminder_button">
+					<a href="javascript:;" class="last_btn fr">确定</a>
+					<a href="javascript:;" class="first_btn fr">取消</a> 					
+				</div>
+			</div>
+		</div>
+		
+		<!--删除提示--> 
+		<div class="f_reminder f_two">
+			<p class="s_shadow"></p>
+			<div class="reminder_box">
+				<p class="reminder_text">提示<span class="fr">×</span></p>
+				<p class="reminder_list">确认删除商品（方便面）吗？</p>
+				<div class="reminder_button">
+					<a href="javascript:;" class="last_btn fr">确定</a>
+					<a href="javascript:;" class="first_btn fr">取消</a> 					
+				</div>
+			</div>
+		</div>
+		
+		<!--无商品提示--> 
+		<div class="f_reminder f_two">
+			<p class="s_shadow"></p>
+			<div class="reminder_box">
+				<p class="reminder_text">提示<span class="fr">×</span></p>
+				<p class="reminder_list">活动中无商品，请至少添加一个活动商品！</p>
+				<div class="reminder_button">
+					<a href="javascript:;" class="last_btn fr">确定</a>
+					<a href="javascript:;" class="first_btn fr">取消</a> 					
+				</div>
+			</div>
+		</div>
+		
+		<!--自动清除弹窗--> 
+		<div class="f_reminder f_triee">
+			<p class="s_shadow"></p>
+			<div class="reminder_box reminder_min">
+				<p class="reminder_text">提示<span class="fr">×</span></p>
+				<p class="reminder_list reminder_hot">如果活动中包含不符合条件的商品，保存后将自动清除。确认保存吗？</p>
+				<p class="reminder_p">注：待上架、展示中的商品视为不符合条件。</p>
+				<div class="reminder_button">
+					<a href="javascript:;" class="last_btn fr">确定</a>
+					<a href="javascript:;" class="first_btn fr">取消</a> 					
+				</div>
+			</div>
+		</div>
+		<!--验证弹窗-->
+		<div class="addaae_prompt">
+			<p><i></i><span>信息不全，请完善！</span></p>
+		</div>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/dateRange.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/jquery.jedate.js"></script>
+		<script>
+			var start = {
+				format: 'YYYY-MM-DD hh:mm:ss',
+				minDate: '2014-06-16 23:59:59', //设定最小日期为当前日期
+				//isinitVal: true,
+				maxDate: $.nowDate({
+					DD: 0
+				}), //最大日期
+				okfun: function(obj) {
+					end.minDate = obj.val; //开始日选好后，重置结束日的最小日期
+					endDates();
+				}
+			};
+			var end = {
+				format: 'YYYY-MM-DD hh:mm:ss',
+				minDate: $.nowDate({
+					DD: 0
+				}), //设定最小日期为当前日期
+				maxDate: '2099-06-16 23:59:59', //最大日期
+				//isinitVal: true,
+				okfun: function(obj) {
+					start.maxDate = obj.val; //将结束日的初始值设定为开始日的最大日期
+				}
+			};
+			//这里是日期联动的关键        
+			function endDates() {
+				//将结束日期的事件改成 false 即可
+				end.trigger = false;
+				$("#inpend").jeDate(end);
+			}
+			$('#inpstart').jeDate(start);
+			$('#inpend').jeDate(end);
+
+			//或者是
+			$.jeDate('#inpstart', start);
+			$.jeDate('#inpend', end);
+		</script>
+		<script>
+			$(function() {
+				$('.f_title li').click(function() {
+					$('.f_title li').find('span').removeClass('forum_active');
+					$(this).find('span').addClass('forum_active');
+				})
+			});
+		</script>
+		<script>
+			$(function() {
+				//左右等高
+				$(".addMess").height($(".addGood").height())
+					//回显tab选项卡
+				$(".chosePlate .addPlate").click(function() {
+						$(this).addClass("active").siblings().removeClass("active");
+					})
+					//回显板块划上效果
+				$(".productShow").delegate("li", "mousemove", function() {
+					$(this).find(".w_invent").css("color", "#2e85f5")
+				})
+				$(".productShow").delegate("li", "mouseleave", function() {
+						$(this).find(".w_invent").css("color", "#666666")
+					})
+					//遍历修改价格下划线
+				$(".w_invent").click(function() {
+						$(this).siblings(".w_input").css("border-bottom", "1px solid #e6eaec")
+						$(".w_input").find("input").attr("disabled", false)
+					})
+					//删除回显板块
+				$(".add_delete img").click(function() {
+						$(".addMess").height($(".addGood").height())
+						$(this).parents("li").remove();
+						var hxLength = $(".productShow ul li").length
+						$(".addProduct .goodNum span").text(hxLength)
+						if(hxLength == 0) {
+							$(".addGood").css("background", "url(./images/l_bg1.png) no-repeat center 30% #ffffff");
+							$(".addText").show();
+							$(".l_foot_page").hide();
+							$(".addProduct").hide()
+						} else {
+							$(".addGood").css("background", "#FFFFFF");
+							$(".addText").hide();
+						}
+					})
+					//回显板块个数
+				var hxLength = $(".productShow ul li").length
+				$(".addProduct .goodNum span").text(hxLength)
+				if(hxLength == 0) {
+					$(".addGood").css("background", "url(./images/l_bg1.png) no-repeat center 30% #ffffff");
+					$(".addText").show();
+					$(".l_foot_page").hide()
+				} else {
+					$(".addGood").css("background", "#FFFFFF");
+					$(".addText").hide();
+				}
+
+				$(".bottom_save").click(function() {
+						$(".w_input").css("border-bottom", "0px");
+						$(".w_input").find("input").attr("disabled", true)
+					})
+					//整体菜单
+				$(".choose_menu li").click(function() {
+					$(this).addClass("active").siblings().removeClass("active");
+				})
+				$(".choose_menu li").not($(".w_plate")).click(function(e) {
+					$(".w_plate").hide();
+				})
+				$(".choose_menu li:first-child").click(function(e) {
+						$(".w_plate").show();
+					})
+					//详细菜单
+				$(".choose_bottom_left li").click(function() {
+					$(this).addClass("active").siblings().removeClass("active");
+				})
+				var d = 0;
+				$(".com_code .w_checkbox").each(function() {
+					var check = $(this).hasClass("form_active");
+					if(check == true) {
+						d += 1;
+					}
+					$(".choose_menu li:first-child i").html(d)
+				});
+				$('.choose_bottom_right li').click(function() {
+					var d = $(".choose_menu li:first-child i").html();
+					if($(this).find(".w_checkbox").hasClass('form_active')) {
+						$(this).find(".w_checkbox").removeClass('form_active');
+						d--;
+						if(d == 0) {
+							$(".choose_bottom").css("background", "url(./images/w_noproduct.png) no-repeat center");
+							$(".w_bg").hide();
+							$(".w_plate_one").find("i").html("板块")
+						}
+						$(".choose_menu li:first-child i").html(d);
+					} else {
+						$(this).find(".w_checkbox").addClass('form_active');
+						d++;
+						$(".choose_menu li:first-child i").html(d);
+						$(".choose_bottom").css("background", "");
+					}
+				});
+				//板块选择个数
+				var wnum = $(".choose_menu li:first-child i").html()
+				if(wnum <= 0) {
+					$(".choose_bottom").css("background", "url(./images/w_noproduct.png) no-repeat center");
+				} else {
+					$(".choose_bottom").css("background", "");
+					$(".w_bg").show();
+				}
+				//关闭弹窗
+				$(".w_bottom_btn .w_cancel,.choose_close").click(function() {
+						$(".w_popup").fadeOut();
+					})
+					//打开弹窗
+				$(".addPoint,.w_add").click(function() {
+					$(".w_popup").fadeIn();
+				});
+				//下拉
+				$(".w_plate_one li").click(function() {
+					$(".w_bg").show();
+					$(".choose_bottom").css("background", "");
+				});
+				//确定活动商品个数
+				$(".w_bottom_btn .w_sure").click(function() {
+					var wnum = $(".choose_menu li:first-child i").html();
+					$(".addText .goodNum .red").html(wnum);
+					$(".w_popup").fadeOut();
+					$(".addProduct,.productShow").show();
+					$(".addGood").css("background", "#FFFFFF");
+					$(".addText").hide();
+				})
+			})
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$(".discountArticle").each(function() {
+					if($(this).find(".four").html() == "停用") {
+						$(this).find("input").removeAttr("disabled");
+						$(this).find("li").not(".four").css("color", "#666")
+					} else {
+						$(this).find("input").attr("disabled", "disabled");
+						$(this).find("li").not(".four").css("color", "#ccc")
+					}
+				})
+				$(".discountArticle li.four").click(function() {
+					if($(this).html() == "启用") {
+						$(this).html("停用");
+						$(this).parents("ul").find("input").removeAttr("disabled");
+						$(this).siblings().css("color", "#666")
+
+					} else {
+						$(this).html("启用");
+						$(this).parents("ul").find("input").attr("disabled", "disabled");
+						$(this).siblings().css("color", "#ccc")
+					}
+				})
+			})
+		</script>
+		<script>
+			//验证非空
+			var fp1;
+			var fp2;
+			var fp3;
+			$(".bottom_save").click(function() {
+				if($(".inputName input").val() == "") {
+					$(".inputName").css({
+						"border-bottom": "1px solid #ff3333",
+						"background": "url(./images/w_yz.png) no-repeat right"
+					});
+					$(".inputName input").attr("placeholder", "不能为空").addClass("invalid");
+					fp1 = false;
+				} else {
+					$(".inputName").css({
+						"border-bottom": "1px solid #ccc",
+						"background": ""
+					});
+					$(".inputName input").attr("placeholder", "2-20个字").css("color", "#000").removeClass("invalid");
+					fp1 = true;
+				}
+
+				if($(".date_title #inpstart").val() == "") {
+					$(".date_title").css({
+						"color": "#ff3333",
+						"background": "url(./images/w_yz.png) no-repeat right"
+					});
+
+					fp2 = false;
+				} else {
+					$(".date_title").css({
+						"color": "#000",
+						"background": ""
+					});
+					fp2 = true;
+				}
+
+				if($(".f_title li span").is('.forum_active')) {
+					$(".f_title ").css({
+						"color": "#000",
+						"background": ""
+					});
+					fp3 = true;
+
+				} else {
+					$(".f_title ").css({
+						"color": "#ff3333",
+						"width": "220px",
+						"background": "url(./images/w_yz.png) no-repeat right"
+					});
+					fp3 = false;
+				}
+
+				if(fp1 && fp2 && fp3) {
+					return
+				} else {
+					$(".addaae_prompt").fadeIn().delay(2000).fadeOut();
+				}
+
+				$(".inputName").click(function() {
+					$(".inputName").css({
+						"border-bottom": "1px solid #ccc",
+						"background": ""
+					});
+					$(".inputName input").attr("placeholder", "2-20个字").css("color", "#000").removeClass("invalid");
+				})
+				$(".date_title input").click(function() {
+					$(".date_title").css({
+						"color": "#000",
+						"background": ""
+					});
+				})
+				$(".f_title li span").click(function() {
+					$(".f_title").css({
+						"color": "#000",
+						"background": ""
+					});
+				})
+			})
+		</script>
+	</body>
+
+</html>

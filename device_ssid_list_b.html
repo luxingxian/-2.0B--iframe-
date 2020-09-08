@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>微信连WIFI-设备管理-编辑SSID列表</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/device_manage.css" />
+	</head>
+
+	<body>
+		<!--content-->
+
+		<!--主体开始-->
+
+		<div class="l_container device_sb">
+			<div class="l_content">
+				<div class="device_sa clearfix">
+					<p class="left">门店名称</p>
+					<p class="right clear"><span>桔子水晶酒店（北京崇文门店）</span>
+						<a href="javascript:;" class="clear_btn">清空门店网络及设备</a>
+					</p>
+					<p class="left">网络SSID</p>
+					<p class="right"><span>wifi001</span>
+						<a href="javascript:;" class="xiugai">修改</a>
+					</p>
+					<p class="left">设备类型</p>
+					<p class="right"><span>protal型</span></p>
+					<p class="left">服务能力</p>
+					<p class="right"><span>微信方式连网+连网后近场服务</span>
+						<a href="javascript:;" class="mess_btn">查看设备改造信息</a>
+					</p>
+				</div>
+
+				<div class="section_b section_db">
+					<table>
+						<thead>
+							<tr>
+								<td class="par_left">设备</td>
+								<td>MAC地址</td>
+								<td>已具备的能力</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="par_left">Awifi033</td>
+								<td>02C2-EYF7-282U-KB3B</td>
+								<td>微信方式连网</td>
+							</tr>
+							<tr>
+								<td class="par_left">Awifi034</td>
+								<td>9WJG-KGEK-LB3S-9BIK</td>
+								<td>微信方式连网</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+		<!--底部分页开始-->
+		<div class="l_container">
+			<div class="l_foot_page clearfix">
+				<div class="l_left fl">
+					<p>每页显示
+						<select>
+							<option>10</option>
+							<option>20</option>
+							<option>30</option>
+						</select>
+					</p>
+				</div>
+				<div class="l_right fr clearfix">
+					<p>
+						<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+						<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+						<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+					</p>
+					<p class="l_skippage">
+						到<input type="number" />页<button>确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--底部分页--ed-->
+
+		<!--修改网络名称弹窗-->
+		<div class="device_tanbox device_tan_change">
+			<div class="device_tanbox_title">修改网络名称
+				<a href="javascript:;"><img src="images/icon_cancle.png" alt="" /></a>
+			</div>
+			<div class="change_tip">
+				<h1><img src="images/icon_warn.png" alt="" /></h1>
+
+				<p>网络名称修改后，需同步修改所有设备的网络名称，并按照《
+					<a href="">硬件鉴权协议接口</a>》修改流程中的SSID参数，否则将无法正常连网</p>
+			</div>
+			<div class="new_web_box">
+				<div class="new_web clearfix">
+					<p class="name">新的网络名称<br/><em>(SSID)</em></p>
+					<p class="inp"><input type="text" /><br/><span>32个字符以内</span></p>
+				</div>
+			</div>
+			<p class="next_btn">
+				<a href="javascript:;" class="pre_btn">取消</a>
+				<a href="javascript:;" class="xiugai_btn">修改</a>
+			</p>
+		</div>
+		<!--修改网络名称弹窗-->
+
+		<!--修改网络名称确定弹窗-->
+		<div class="device_tanbox device_tan_ok">
+			<div class="device_tanbox_title">修改网络名称
+				<a href="javascript:;"><img src="images/icon_cancle.png" alt="" /></a>
+			</div>
+			<div class="change_success">
+				<p><img src="images/icon_ok.png" alt="" />修改成功！</p>
+			</div>
+			<p class="next_btn">
+				<a href="javascript:;">完成</a>
+			</p>
+		</div>
+		<!--修改网络名称确定弹窗-->
+
+		<!--清空门店网络及设备弹窗-->
+		<div class="device_tanbox device_tan_clear">
+			<div class="device_tanbox_title">清空门店网络及设备
+				<a href="javascript:;"><img src="images/icon_cancle.png" alt="" /></a>
+			</div>
+			<div class="change_clear">
+				<img src="images/icon_warn_big.png" alt="" />
+				<p>此操作将删除该门店的网络配置及所有设备，恢复空门店状态。<br/>是否确认操作？</p>
+			</div>
+			<p class="next_btn">
+				<a href="javascript:;" class="sure_btn">确认</a>
+				<a href="javascript:;" class="pre_btn">取消</a>
+			</p>
+		</div>
+		<!--清空门店网络及设备弹窗-->
+
+		<!--添加设备弹窗-改造设备认证流程-->
+		<div class="device_tanbox device_tan_a device_tan_as">
+			<div class="device_tanbox_title">查看设备改造信息
+				<a href="javascript:;"><img src="images/icon_cancle.png" alt="" /></a>
+			</div>
+			<div class="device_box clearfix">
+				<div class="device_left">
+					<p class="marb10">设备需做以下改造，方可支持微信连Wi-Fi:</p>
+					<p>√.改造认证逻辑：详情参考《
+						<a href="">WiFi硬件鉴权协议接口说明</a>》</p>
+					<p>√.改造认证Portal页：请参考
+						<a href="">demo页(如右图)源代码</a>
+					</p>
+					<p class="mart10">门店Wi-Fi信息:</p>
+					<div class="box_in">
+						<p>门店名称: 浩海国际酒店</p>
+						<p>SSID: 12334</p>
+						<p>shopId: 3127326</p>
+						<p>appId: wxa4b4edd09acf33d5</p>
+						<p>ecretKey: a3e696629912dc7722be49ced0efd8bc <span>重置</span></p>
+					</div>
+					<p>*为保证连网过程安全，建议定期重置以上代码的secretkey。</p>
+				</div>
+				<div class="device_right">
+					<img src="images/pic_weixin.png" alt="" />
+				</div>
+
+			</div>
+
+			<p class="next_btn">
+				<a href="javascript:;">确定</a>
+			</p>
+		</div>
+		<!--添加设备弹窗-改造设备认证流程--ed-->
+
+		<div class="l_drop"></div>
+
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".xiugai").click(function() {
+					$(".device_tan_change").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow()
+				})
+				$(".device_tan_change .pre_btn,.device_tan_change a").click(function() {
+					$(".device_tan_change").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide()
+				})
+				$(".device_tan_change .xiugai_btn").click(function() {
+					$(".device_tan_change").fadeOut();
+					$(".device_tan_ok").delay(500).fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow()
+				})
+				$(".device_tan_ok .next_btn").click(function() {
+					$(".device_tan_ok").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide()
+				})
+
+				$(".device_tanbox_title a").click(function() {
+					$(this).parents(".device_tan").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide()
+				})
+
+				$(".clear_btn").click(function() {
+					$(".device_tan_clear").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow()
+				})
+				$(".device_tan_clear .pre_btn,.device_tanbox_title a").click(function() {
+					$(".device_tan_clear").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide()
+				})
+				$(".device_tan_clear .sure_btn").click(function() {
+					$(".device_tan_clear").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide()
+
+					//关闭本页
+				})
+
+				$(".mess_btn").click(function() {
+					$(".device_tan_as").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow(1)
+				})
+				$(".device_tan_as .next_btn,.device_tan_as a").click(function() {
+					$(".device_tan_as").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide()
+				})
+
+				$(".device_tan_change .inp input").keyup(function() {
+					if($(this).val().length >= 32) {
+						$(".device_tan_change .inp span").html("输入不能超过32个字符").css("color", "#f33")
+					} else {
+						$(".device_tan_change .inp span").html("32个字符以内").css("color", "#666")
+
+					}
+				});
+				//所有弹窗垂直居中显示
+//				function popup() {
+//					$(".device_tanbox").each(function() {
+//						var pop_hei = $(this).outerHeight();
+//						$(this).css("margin-top", -pop_hei / 2);
+//					});
+//
+//				};
+//				popup();
+//
+//				$(window).resize(function() {
+//					popup();
+//				});
+			});
+		</script>
+	</body>
+
+</html>

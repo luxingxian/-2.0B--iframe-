@@ -1,0 +1,2494 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>餐饮-菜品订单</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/dateRange.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" href="css/w_Plate_Style.css" />
+		<link rel="stylesheet" href="css/f_popup.css" />
+		<link rel="stylesheet" type="text/css" href="css/ordersStyle.css" />
+	</head>
+
+	<body>
+		<!--content-->
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content w_all">
+				<!--菜单栏-->
+				<div class="w_navigation">
+					<div class="w_navsbtn">
+						<div class="w_navsbtn_left fl">
+							<em class="active">待处理</em>
+							<em>未完成</em>
+							<em>已完成</em>
+							<em>全部订单</em>
+						</div>
+					</div>
+				</div>
+				<!--菜end-->
+				<!--板块分类-->
+				<div class="l_header clearfix w_plate_class">
+					<div class="w_plate_one">
+						<p><i>板块</i><em></em></p>
+						<ul class="f_border">
+							<li class="l_select_name">
+								板块
+							</li>
+							<li>
+								中餐
+							</li>
+							<li>
+								西餐
+							</li>
+						</ul>
+					</div>
+					<div class="ta_date l_date l_hide" id="div_date1">
+						<span class="date_title" id="date1"></span>
+						<em class="clearDate"></em>
+					</div>
+					<!--<input type="text" placeholder="输入订单编号、客户手机号" class="l_search l_hide" />-->
+					<p class="search_input fl l_hide">
+						<input type="text" placeholder="请输入订单编号,手机号" class="l_search" />
+						<img src="images/l_icon_search.png" alt="" />
+					</p>
+					<div class="l_hide" style="margin-left: 10px;">
+						<p><i>订单来源</i><em></em></p>
+						<ul class="f_border">
+							<li class="l_select_name">
+								Portal
+							</li>
+							<li>
+								H5
+							</li>
+						</ul>
+					</div>
+					<div class="l_hide">
+						<p><i>支付方式</i><em></em></p>
+						<ul class="f_border">
+							<li class="l_select_name">
+								前台记账
+							</li>
+							<li>
+								微信支付
+							</li>
+							<li>
+								线下支付
+							</li>
+						</ul>
+					</div>
+					<div class="l_hide">
+						<p><i>订单状态</i><em></em></p>
+						<ul class="f_border">
+							<li class="l_select_name">
+								全部
+							</li>
+							<li>
+								待买家支付
+							</li>
+							<li>
+								买家已提交
+							</li>
+							<li>
+								买家已取消
+							</li>
+							<li>
+								买家已支付
+							</li>
+							<li>
+								商户已确认
+							</li>
+							<li>
+								待结算
+							</li>
+							<li>
+								交易成功
+							</li>
+							<li>
+								结算完后
+							</li>
+							<li>
+								订单关闭
+							</li>
+						</ul>
+					</div>
+					<a href="javascript:;" class="l_ref fr"><img src="images/l_icon_ref.png" />刷新</a>
+				</div>
+				<!--板块分类end-->
+				<div class="w_table clearfix table_none">
+					<table class="food_order">
+						<thead>
+							<tr>
+								<td>
+									订单编号
+								</td>
+								<td>菜品信息</td>
+								<td>房间号</td>
+								<td>客户信息</td>
+								<td>应收金额</td>
+								<td>支付方式</td>
+								<td>订单来源</td>
+								<td>订单状态</td>
+								<td>创建时间</td>
+								<td>操作人/操作时间</td>
+								<td>操作</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="serial_number">
+									<a href="foods_order_details.html">010116080400040000</a>
+									<em></em>
+									<div class="w_note_information">
+										<i class="note_san"></i>
+										<div class="infor_text f_border">
+											<p>无烟房间，也希望是个</p>
+										</div>
+									</div>
+								</td>
+								<td class="food_information">
+									<p>
+										宫保鸡丁＊1，鱼香肉丝＊2
+									</p>
+								</td>
+								<td>309</td>
+								<td class="oper_person">
+									<p>赵先生</p>
+									<p>18877944744</p>
+								</td>
+								<td class="food_price">
+									￥70.00
+								</td>
+								<td>
+
+								</td>
+								<td>
+									H5
+								</td>
+								<td class="w_sold">
+									<span class="s_icon10">待买家支付</span>
+								</td>
+								<td class="oper_person">
+									<p>2016-08-04</p>
+									<p>12:24:53</p>
+								</td>
+								<td class="oper_person">
+									<p>Norman</p>
+									<p>2016-08-02 12:24:53</p>
+								</td>
+								<td class="l_opt">
+
+								</td>
+							</tr>
+							<tr>
+								<td class="serial_number">
+									<a href="foods_order_details.html">010116080400040000</a>
+									<em></em>
+									<div class="w_note_information">
+										<i class="note_san"></i>
+										<div class="infor_text f_border">
+											<p>无烟房间，也希望是个</p>
+										</div>
+									</div>
+								</td>
+								<td class="food_information">
+									<p>
+										宫保鸡丁＊1，鱼香肉丝＊2
+									</p>
+								</td>
+								<td>3090</td>
+								<td class="oper_person">
+									<p>赵先生</p>
+									<p>18877944744</p>
+								</td>
+								<td class="food_price">
+									￥70.00
+								</td>
+								<td>
+									前台记账
+								</td>
+								<td>
+									portal
+								</td>
+								<td class="w_sold">
+									<span class="s_icon4">买家已提交</span>
+								</td>
+								<td class="oper_person">
+									<p>2016-08-04</p>
+									<p>12:24:53</p>
+								</td>
+								<td class="oper_person">
+									<p>Norman</p>
+									<p>2016-08-02 12:24:53</p>
+								</td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>
+										<p class="l_sure_order mark_sure_order"><img src="images/teur.png" />确认订单</p>
+										<p class="w_cancel_order"><img src="images/flase.png" />取消订单</p>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="serial_number">
+									<a href="foods_order_details.html">010116080400040000</a>
+									<em></em>
+									<div class="w_note_information">
+										<i class="note_san"></i>
+										<div class="infor_text f_border">
+											<p>无烟房间，也希望是个无烟房间，也希望是个</p>
+										</div>
+									</div>
+								</td>
+								<td class="food_information">
+									<p>
+										宫保鸡丁＊1，米饭＊2
+									</p>
+								</td>
+								<td>2555</td>
+								<td class="oper_person">
+									<p>高先生</p>
+									<p>18877944744</p>
+								</td>
+								<td class="food_price">
+									￥95.00
+								</td>
+								<td>
+									前台记账
+								</td>
+								<td>
+									portal
+								</td>
+								<td class="w_sold">
+									<span class="s_icon2">商户已确认</span>
+								</td>
+								<td class="oper_person">
+									<p>2016-08-01</p>
+									<p>12:24:53</p>
+								</td>
+								<td class="oper_person">
+									<p>Norman</p>
+									<p>2016-08-02 12:24:53</p>
+								</td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>
+										<p class="l_sure_order delivered_order"><img src="images/icon_wancheng.png" />完成订单</p>
+										<p class="returnOpr"><img src="images/w_th.png" />退货</p>
+										<p class="w_cancel_order"><img src="images/flase.png" />取消订单</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="serial_number">
+									<a href="foods_order_details.html">010116080400040000</a>
+									<em></em>
+									<div class="w_note_information">
+										<i class="note_san"></i>
+										<div class="infor_text f_border">
+											<p>无烟房间，也希望是个无烟房间，也希望是个</p>
+										</div>
+									</div>
+								</td>
+								<td class="food_information">
+									<p>
+										宫保鸡丁＊1，米饭＊2
+									</p>
+								</td>
+								<td>8888</td>
+								<td class="oper_person">
+									<p>胡晓飞</p>
+									<p>18877944723</p>
+								</td>
+								<td class="food_price">
+									￥88.00
+								</td>
+								<td>
+									前台记账
+								</td>
+								<td>
+									portal
+								</td>
+								<td>
+									<span class="s_icon5">买家已取消</span>
+								</td>
+								<td class="oper_person">
+									<p>2016-07-28</p>
+									<p>12:24:53</p>
+								</td>
+								<td class="oper_person">
+									<p>Norman</p>
+									<p>2016-08-02 12:24:53</p>
+								</td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>
+										<p class="l_sure_order agreed_cancel_order"><img src="images/complete.png" />同意取消订单</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="serial_number">
+									<a href="foods_order_details.html">010116080400040000</a>
+									<em></em>
+									<div class="w_note_information">
+										<i class="note_san"></i>
+										<div class="infor_text f_border">
+											<p>无烟房间，也希望是个无烟房间，也希望是个</p>
+										</div>
+									</div>
+								</td>
+								<td class="food_information">
+									<p>
+										宫保鸡丁＊1，米饭＊2
+									</p>
+								</td>
+								<td>1234</td>
+								<td class="oper_person">
+									<p>胡晓飞</p>
+									<p>18877944723</p>
+								</td>
+								<td class="food_price">
+									￥88.00
+								</td>
+								<td>
+									前台记账
+								</td>
+								<td>
+									portal
+								</td>
+								<td>
+									<span class="s_icon9"><i></i>订单关闭</span>
+								</td>
+								<td class="oper_person">
+									<p>2016-07-28</p>
+									<p>12:24:53</p>
+								</td>
+								<td class="oper_person">
+									<p>Norman</p>
+									<p>2016-08-02 12:24:53</p>
+								</td>
+								<td class="l_opt">
+
+								</td>
+								<tr>
+									<td class="serial_number">
+										<a href="foods_order_details.html">010116080400040000</a>
+									</td>
+									<td class="food_information">
+										<p>
+											宫保鸡丁＊1，米饭＊2
+										</p>
+									</td>
+									<td>6688</td>
+									<td class="oper_person">
+										<p>胡晓飞</p>
+										<p>18877944723</p>
+									</td>
+									<td class="food_price">
+										￥88.00
+									</td>
+									<td>
+										前台记账
+									</td>
+									<td>
+										portal
+									</td>
+									<td>
+										<span class="s_icon11"><i></i>结算完成</span>
+									</td>
+									<td class="oper_person">
+										<p>2016-07-28</p>
+										<p>12:24:53</p>
+									</td>
+									<td class="oper_person">
+										<p>Norman</p>
+										<p>2016-08-02 12:24:53</p>
+									</td>
+									<td class="l_opt">
+									</td>
+								</tr>
+								<tr>
+									<td class="serial_number">
+										<a href="foods_order_details.html">010116080400040000</a>
+									</td>
+									<td class="food_information">
+										<p>
+											宫保鸡丁＊1，米饭＊2
+										</p>
+									</td>
+									<td>4774</td>
+									<td class="oper_person">
+										<p>胡晓飞</p>
+										<p>18877944723</p>
+									</td>
+									<td class="food_price">
+										￥88.00
+									</td>
+									<td>
+										前台记账
+									</td>
+									<td>
+										portal
+									</td>
+									<td>
+										<span class="s_icon12">待结算</span>
+									</td>
+									<td class="oper_person">
+										<p>2016-07-28</p>
+										<p>12:24:53</p>
+									</td>
+									<td class="oper_person">
+										<p>Norman</p>
+										<p>2016-08-02 12:24:53</p>
+									</td>
+									<td class="l_opt">
+									</td>
+								</tr>
+								<tr>
+									<td class="serial_number">
+										<a href="foods_order_details.html">010116080400040000</a>
+									</td>
+									<td class="food_information">
+										<p>
+											宫保鸡丁＊1，米饭＊2
+										</p>
+									</td>
+									<td>6699</td>
+									<td class="oper_person">
+										<p>胡晓飞</p>
+										<p>18877944723</p>
+									</td>
+									<td class="food_price">
+										￥88.00
+									</td>
+									<td>
+										微信支付
+									</td>
+									<td>
+										portal
+									</td>
+									<td>
+										<span class="s_icon13"><i></i>买家已支付</span>
+									</td>
+									<td class="oper_person">
+										<p>2016-07-28</p>
+										<p>12:24:53</p>
+									</td>
+									<td class="oper_person">
+										<p>Norman</p>
+										<p>2016-08-02 12:24:53</p>
+									</td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<p class="l_sure_order delivered_order"><img src="images/icon_wancheng.png" />完成订单</p>
+											<p class="s_tuikuan"><img src="images/s_qian.png" />订单退款</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="serial_number">
+										<a href="foods_order_details.html">010116080400040000</a>
+									</td>
+									<td class="food_information">
+										<p>
+											宫保鸡丁＊1，米饭＊2
+										</p>
+									</td>
+									<td>6677</td>
+									<td class="oper_person">
+										<p>胡晓飞</p>
+										<p>18877944723</p>
+									</td>
+									<td class="food_price">
+										￥88.00
+									</td>
+									<td>
+										线下支付
+									</td>
+									<td>
+										portal
+									</td>
+									<td>
+										<span class="s_icon8"><i></i>交易成功</span>
+									</td>
+									<td class="oper_person">
+										<p>2016-07-28</p>
+										<p>12:24:53</p>
+									</td>
+									<td class="oper_person">
+										<p>Norman</p>
+										<p>2016-08-02 12:24:53</p>
+									</td>
+									<td class="l_opt">
+									</td>
+								</tr>
+								<tr>
+									<td class="serial_number">
+										<a href="foods_order_details.html">010116080400040000</a>
+										<em></em>
+										<div class="w_note_information">
+											<i class="note_san"></i>
+											<div class="infor_text f_border">
+												<p>无烟房间，也希望是个</p>
+											</div>
+										</div>
+									</td>
+									<td class="food_information">
+										<p>
+											宫保鸡丁＊1，鱼香肉丝＊2
+										</p>
+									</td>
+									<td>3090</td>
+									<td class="oper_person">
+										<p>赵先生</p>
+										<p>18877944744</p>
+									</td>
+									<td class="food_price">
+										￥70.00
+									</td>
+									<td>
+										微信支付
+									</td>
+									<td>
+										portal
+									</td>
+									<td class="w_sold">
+										<span class="s_icon4">买家已提交</span>
+									</td>
+									<td class="oper_person">
+										<p>2016-08-04</p>
+										<p>12:24:53</p>
+									</td>
+									<td class="oper_person">
+										<p>Norman</p>
+										<p>2016-08-02 12:24:53</p>
+									</td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<p class="l_sure_order wx_sure_order"><img src="images/teur.png" />确认订单</p>
+											<p class="w_cancel_order"><img src="images/flase.png" />取消订单</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+						</tbody>
+					</table>				
+				</div>
+				<div class="bode_height">
+					<!--选择板块提示-->
+					<div class="node_box">
+						<p class="f_node f_node_none">
+							<img src="images/f_table.png" class="node_img"/>
+							<span class="node_text">请联系系统管理员创建板块</span>
+							<!--<a href="plate_manage.html"><span class="node_hot">创建板块</span></a>-->
+						</p>		
+						<div class="f_node_none">
+							<img src="images/jiantou.png" class="node_img_two" style="display: block; width:35%; height: 173px; position: absolute; left:5%; top: 123px;"/>
+							<p class="f_node_two">				
+								<img src="images/xuanzebankuai.png" class="node_img_two"/>
+								<span class="node_text">请选择板块</span>
+							</p>
+						</div>
+						<p class="f_node f_node_none">
+							<img src="images/f_table2.png" class="node_img"/>
+							<span class="node_text">您没有当前业务权限</span>
+						</p>			
+					</div>
+					<!--选择板块提示-->		
+				</div>
+			</div>
+		</div>
+		<!--主体--ed-->
+		<!--底部分页开始-->
+		<div class="l_container">
+			<div class="l_foot_page clearfix">
+				<div class="l_left fl">
+					<p>每页显示
+						<select class="beautify_input">
+							<option>10</option>
+							<option>20</option>
+							<option>30</option>
+						</select>
+					</p>
+				</div>
+				<div class="l_right fr clearfix">
+					<p>
+						<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+						<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+						<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+					</p>
+					<p class="l_skippage">
+						到<input type="number" />页<button>确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--底部分页--ed-->
+		<!--完成订单-->
+		<!--<div class="w_popup order_delivered_popup">
+			<div class="w_tou_popup"></div>
+			<div class="w_book_delivered ">
+				<div class="w_delivered_top">
+					<i></i>
+					<p class="w_send_product">确认商品已送达？</p>
+					<p>确认后，订单交易完成。</p>
+				</div>
+				<div class="delivered_btn">
+					<span class="w_sure_btn">确定</span>
+					<span class="w_cancel_btn">取消</span>
+				</div>
+			</div>
+		</div>-->
+		<!--前台记账完成订单-->
+		<div class="s_confirm_list log_none">
+			<p class="s_shadow"></p>
+			<div class="confirm_min1 confirm_height clear">
+				<div class="com_min fl">
+					<div class="firm_hot">
+						<p class="firm_list">
+							<span class="firm_span_one">核对商品</span>
+							<span class="firm_span_two">确认送达</span>
+						</p>
+						<ul class="clear">
+							<li class="firm_first fl">
+								<img src="images/f_list_3.png" />
+							</li>
+							<li class="firm_last1 fl">
+								<img src="images/f_list_1.png" />
+							</li>
+						</ul>
+					</div>
+					<div class="goods_content goode_height">
+						<div class="goods_content_none tent_none" style="display:block;">
+							<div class="f_log_list">
+								<table>
+									<thead>
+										<tr>
+											<th>商品编码</th>
+											<th>商品名称</th>
+											<th>数量</th>
+											<th>单价</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="f_log_hot">2160027578</td>
+											<td>宫保鸡丁</td>
+											<td>2</td>
+											<td>¥ 36.00</td>
+										</tr>
+										<tr>
+											<td class="f_log_hot">2160027578</td>
+											<td>宫保鸡丁</td>
+											<td>2</td>
+											<td>¥ 36.00</td>
+										</tr>
+										<tr>
+											<td class="f_log_hot">2160027578</td>
+											<td class="log_cu">宫保鸡丁<em>促</em></td>
+											<td>2</td>
+											<td>¥ 36.00</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="goods_content_none f_block">
+							<div class="goods_hot">
+								<p class="logistics_text">说明：已收款则订单交易成功；未收款则需要客户离店时统一结算。</p>
+								<p class="goods_p">订单信息</p>
+								<div class="goods_nav clear">
+									<p class="goods_text clear fl">
+										<span class="goods_span1 fl">订单类型 </span>
+										<span class="goods_span2 goods_w fl">商品销售订单</span>
+									</p>
+									<p class="clear fl">
+										<span class="goods_span1 fl">订单来源  </span>
+										<span class="goods_span2 fl">微信</span>
+									</p>
+								</div>
+								<div class="goods_nav clear">
+									<p class="goods_text clear fl">
+										<span class="goods_span1 fl">创建时间 </span>
+										<span class="goods_span2 goods_w fl">2016-08-04 14:24:53</span>
+									</p>
+									<p class="clear fl">
+										<span class="goods_span1 fl">下单用户  </span>
+										<span class="goods_span2 fl">hkekghg</span>
+									</p>
+								</div>
+								<div class="goods_nav clear">
+									<p class="goods_text clear fl">
+										<span class="goods_span1 fl">主订单编号 </span>
+										<span class="goods_span2 goods_w fl">z1609211139540267</span>
+									</p>
+								</div>
+							</div>
+							<div class="f_bution">
+								<div class="bution_list">
+									<p class="bution_text">配送信息</p>
+									<p class="bution_hot"><i>*</i>实际收货房间</p>
+									<input type="text" class="bution_inp" />
+								</div>
+								<div class="bution_plase">
+									<p class="bution_hot"><i>*</i>是否收款</p>
+									<ul class="clear">
+										<li class="fl">
+											<p><em></em>已收款<i></i></p>
+											<p class="bution_hover">订单交易成功，无需结算</p>
+										</li>
+										<li class="fl">
+											<p><em></em>未收款<i></i></p>
+											<p class="bution_hover">订单进入待结算环节，客户离店时需要前台统一结算</p>											
+										</li>
+										<!--<li><p class="bution_clik">已收款<i></i></p></li>-->
+									</ul>									
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="firm_button_r scroll_none clear">
+						<a href="javascript:;" class="firm_click fr">下一步</a>
+						<a href="javascript:;" class="firm_list_last fr">取消</a>
+					</p>
+					<div class="s_center1 center_none">
+						<p class="firm_button1 firm_sunmit fl">
+							<a href="javascript:;">上一步</a>
+						</p>
+						<div class="clear fr">
+							<a href="javascript:;" class="firm_btn1 fl">取消</a>
+							<div class="scroll_postion fl">
+								<a href="javascript:;" class="firm_btn2 scroll_click">完成</a>
+								<div class="s_scroll f_scroll_height">
+									<p class="scroll_p">确认商品已送达？确认后，订单交易完成。</p>
+									<!--<p class="scroll_p">确认商品已送达？确认后，订单需要统一结算。</p>-->
+									<p class="clear">
+										<a href="javascript:;" class="scroll_btn2 fr">确定</a>
+										<a href="javascript:;" class="scroll_btn1 fr">取消</a>
+									</p>
+									<span class="scrool_span"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="firm_right1 fr">
+					<div class="firm_post">
+						<p class="post_text">完成订单</p>
+						<div class="post_list">
+							<p class="firm_kuan">订单编号</p>
+							<p>11160804142453400004</p>
+						</div>
+						<div class="post_list">
+							<p>赵先生</p>
+							<p class="post_margin">18877944744</p>
+							<p>1608房间</p>
+							<p class="post_height">
+								<span>备注</span>
+								<span class="post_wight" title="有窗房间请安排有窗房间">有窗房间请安排有窗房间</span>
+							</p>
+						</div>
+						<div class="post_list">
+							<p class="post_hot clear">
+								<span class="fl">商品总金额</span>
+								<spab class="fr">¥ 355.00</spab>
+							</p>
+							<p class="post_hot clear">
+								<span class="fl">优惠</span>
+								<spab class="fr">-¥ 35</spab>
+							</p>
+						</div>
+						<p class="post_last clear">
+							<span class="fl">订单应收金额</span>
+							<span class="fr">¥ 300.00</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--同意取消订单-->
+		<div class="w_popup food_cancel_popup">
+			<div class="w_tou_popup"></div>
+			<div class="w_food_cancel">
+				<div class="w_delivered_top">
+					<i></i>
+					<p class="w_send_product">买家已申请取消订单，</p>
+					<p>是否同意取消？</p>
+				</div>
+				<div class="delivered_btn">
+					<span class="w_sure_btn">确定</span>
+					<span class="w_cancel_btn">取消</span>
+				</div>
+			</div>
+		</div>
+		<!--微信支付确认订单-->
+		<div class="w_popup wx_order_popup">
+			<div class="w_tou_popup"></div>
+			<div class="wxrm_order">
+				<div class="wxrm_left fl">
+					<div class="wxrm_tab">
+						<span class="wxom_info active">商品信息</span>
+						<span class="wxus_info">订单信息</span>
+					</div>
+					<div class="awx_tab_one">
+						<div class="wx_typr_info wx_first">
+							<p class="w_pass_infor">订单信息</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_xone">订单类型</span>
+									<span class="details_xtwo">菜品预订订单</span>
+								</em>
+								<em>
+									<span class="details_xthree">订单来源</span>
+									<span class="details_xfour">H5</span>								
+								</em>
+							</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_xone">创建时间</span>
+									<span class="details_xtwo">2016-08-04 14:24:53</span>
+								</em>
+								<em>
+									<span class="details_xthree">下单用户</span>
+									<span class="details_xfour">hkekghg</span>								
+								</em>
+							</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_xone">主订单编号</span>
+									<span class="details_xtwo">z1609211139540267</span>
+								</em>
+							</p>
+						</div>
+						<div class="wx_typr_info wx_second">
+							<div class="fl">
+								<p class="w_pass_infor">支付信息</p>
+								<p class="w_details_infor">
+									<em>
+										<span class="details_xone">支付方式</span>
+										<span class="details_xtwo">微信支付</span>
+									</em>
+									<em>
+										<span class="details_xone">收款金额</span>
+										<span class="details_xtwo">¥ 335.00</span>
+									</em>
+								</p>
+								<p class="w_details_infor">
+									<em>
+										<span class="details_xone">收款单号</span>
+										<span class="details_xtwo">SK2016080400004</span>
+									</em>
+									<em>
+										<span class="details_xone">交易流水号</span>
+										<span class="details_xtwo">1009660380201506130728806387</span>
+									</em>
+								</p>
+							</div>
+						</div>
+						<div class="wx_typr_info wx_third">
+							<p class="w_pass_infor">配送信息</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_xone">配送方式</span>
+									<span class="details_xtwo">送货上门</span>
+								</em>
+							</p>
+						</div>
+					</div>
+					<div class="awx_tab_two">
+						<div class="w_add_product fr">
+							<em class="wxshum fl">说明：删除的商品，或调整数量的商品将直接退款。</em>
+							<span class="zheng_product">调整商品</span>
+							<input type="button" class="wx_baocun" style="display: none;" value="保存调整">
+							<input type="button" class="wx_quxiao" style="display: none;" value="取消调整" />
+						</div>
+						<div class="w_product_infor">
+							<table class="product_infor_table prointablethree">
+								<thead>
+									<tr>
+										<td>商品编码</td>
+										<td>菜品名称</td>
+										<td>数量</td>
+										<td>单价</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02040205</td>
+										<td>金锣火腿肠肉粒多麻辣味系列115g</td>
+										<td>
+											2
+										</td>
+										<td><i>￥</i>9999.00</td>
+									</tr>
+									<tr>
+										<td>02040205</td>
+										<td>宫保鸡丁<i class="yellowi">促</i></td>
+										<td>
+											1
+										</td>
+										<td><i>￥</i>9999.00</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="product_infor_table prointablefour">
+								<thead>
+									<tr>
+										<td>商品编码</td>
+										<td>菜品名称</td>
+										<td>数量</td>
+										<td>单价</td>
+										<td></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02040205</td>
+										<td>金锣火腿肠肉粒多麻辣味系列115g</td>
+										<td>
+											<p class="shop_cart">
+												<span class="add_subtract_value fl">
+														<input type="text" value="2" />
+													</span>
+												<span class="add_redu fr">
+														<em class="w_add"></em>
+														<em class="w_redu"></em>
+													</span>
+											</p>
+										</td>
+										<td><i>￥</i>9999.00</td>
+										<td><i class="product_infor_delete"></i></td>
+									</tr>
+									<tr>
+										<td>02040205</td>
+										<td>宫保鸡丁<i class="yellowi">促</i></td>
+										<td>
+											<p class="shop_cart">
+												<span class="add_subtract_value fl">
+														<input type="text" value="1" />
+													</span>
+												<span class="add_redu fr">
+														<em class="w_add"></em>
+														<em class="w_redu"></em>
+													</span>
+											</p>
+										</td>
+										<td><i>￥</i>9999.00</td>
+										<td><i class="product_infor_delete"></i></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="wxdelivered_btn">
+						<!--238 84-->
+						<span class="w_sure_btn">确定</span>
+						<span class="w_cancel_btn">取消</span>
+						<div class="xsecondary_popup">
+							<p>是否确认订单？确认后，请及时发货！</p>
+							<em class="secondary_sure_btn">确定</em>
+							<em class="secondary_cancel_btn">取消</em>
+						</div>
+						<i class="note_san"></i>
+					</div>
+				</div>
+				<div class="wx_affirm_right fr">
+					<div class="xaffirm_right_one">确认订单</div>
+					<div class="xaffirm_right_two">
+						<p class="xorder_money">订单编号</p>
+						<p>312016092100001</p>
+					</div>
+					<div class="xaffirm_right_three">
+						<p class="xorder_money">赵先生</p>
+						<p>18877944744</p>
+						<p>
+							<input type="text" value="1608房间" class="xartinput" disabled="disabled" />
+							<span class="xartispan">修改</span>
+						</p>
+						<p>备注</p>
+						<p class="remarkText" title="请在18点后送达">请在18点后送达</p>
+					</div>
+					<div class="xaffirm_right_four">
+						<p class="xorder_money">商品总金额<em>¥ 166.88</em></p>
+						<p>优惠<em>- ¥ 0.00</em></p>
+						<p>订单应收金额<em>¥ 166.88</em></p>
+						<p>退款金额<em>- ¥ 0.00</em></p>
+						<p>待退款金额<em class="yelloem">- ¥ 16.00</em></p>
+						<p>待发货商品总额<em>¥ 100.88</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--前台记账确认订单-->
+		<div class="w_popup affirm_order_popup">
+			<div class="w_tou_popup"></div>
+			<div class="w_affirm_order">
+				<div class="w_affirm_left fl">
+					<div class="w_affirm_tab">
+						<span class="com_info active">商品信息</span>
+						<span class="cus_info">订单信息</span>
+					</div>
+					<div class="affirm_tab_one">
+						<div class="w_typr_info w_first">
+							<p class="w_pass_infor">订单信息</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_one">订单类型</span>
+									<span class="details_two">菜品预订订单</span>
+								</em>
+								<em>
+									<span class="details_three">订单来源</span>
+									<span class="details_four">potral</span>								
+								</em>
+							</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_one">创建时间</span>
+									<span class="details_two">2016-08-04 14:24:53</span>
+								</em>
+								<em>
+									<span class="details_three">下单用户</span>
+									<span class="details_four">hkekghg</span>								
+								</em>
+							</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_one">主订单编号</span>
+									<span class="details_two">z1609211139540267</span>
+								</em>
+							</p>
+						</div>
+						<div class="w_typr_info w_second">
+							<div class="fl">
+								<p class="w_pass_infor">支付信息</p>
+								<p class="w_details_infor">
+									<em>
+									<span class="details_one">支付方式</span>
+									<span class="details_two">前台记账</span>
+								</em>
+								</p>
+							</div>
+						</div>
+						<div class="w_typr_info w_third">
+							<p class="w_pass_infor">配送信息</p>
+							<p class="w_details_infor">
+								<em>
+									<span class="details_one">配送方式</span>
+									<span class="details_two">送货上门</span>
+								</em>
+							</p>
+						</div>
+					</div>
+					<div class="affirm_tab_two">
+						<div class="w_add_product fr">
+							<span class="news_product" style="display: none;">新增商品</span>
+							<span class="tiao_product">调整商品</span>
+							<input type="button" class="w_sure_choice" style="display: none;" value="确定选择">
+							<input type="button" class="w_cancel_choice" style="display: none;" value="取消选择" />
+							<input type="button" class="w_baocun" style="display: none;" value="保存调整">
+							<input type="button" class="w_quxiao" style="display: none;" value="取消调整" />
+						</div>
+						<div class="add_product_query">
+							<div class="add_product_select fl">
+								<div>
+									<p><i>全部</i><em></em></p>
+									<ul class="f_border">
+										<li class="l_select_name">
+											全部
+										</li>
+										<li>
+											今日特价
+										</li>
+										<li>
+											热菜
+										</li>
+										<li>
+											凉菜
+										</li>
+										<li>
+											汤羹
+										</li>
+										<li>
+											主食
+										</li>
+										<li>
+											饮料
+										</li>
+										<li>
+											小吃
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="w_product_query fl">
+								<input type="text" placeholder="输入商品编码、菜品名称" />
+								<a href="javascript:;" class="w_serach"><img src="images/l_icon_search.png"></a>
+							</div>
+						</div>
+						<div class="w_product_infor">
+							<table class="product_infor_table prointableone">
+								<thead>
+									<tr>
+										<td>商品编码</td>
+										<td>菜品名称</td>
+										<td>数量</td>
+										<td>单价</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02040205</td>
+										<td>金锣火腿肠肉粒多麻辣味系列115g</td>
+										<td>
+											2
+										</td>
+										<td><i>￥</i>9999.00</td>
+									</tr>
+									<tr>
+										<td>02040205</td>
+										<td>宫保鸡丁</td>
+										<td>
+											1
+										</td>
+										<td><i>￥</i>9999.00</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="product_infor_table prointabletwo">
+								<thead>
+									<tr>
+										<td>商品编码</td>
+										<td>菜品名称</td>
+										<td>数量</td>
+										<td>单价</td>
+										<td></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>02040205</td>
+										<td>金锣火腿肠肉粒多麻辣味系列115g</td>
+										<td>
+											<p class="shop_cart">
+												<span class="add_subtract_value fl">
+														<input type="text" value="2" />
+													</span>
+												<span class="add_redu fr">
+														<em class="w_add"></em>
+														<em class="w_redu"></em>
+													</span>
+											</p>
+										</td>
+										<td><i>￥</i>9999.00</td>
+										<td><i class="product_infor_delete"></i></td>
+									</tr>
+									<tr>
+										<td>02040205</td>
+										<td>宫保鸡丁</td>
+										<td>
+											<p class="shop_cart">
+												<span class="add_subtract_value fl">
+														<input type="text" value="1" />
+													</span>
+												<span class="add_redu fr">
+														<em class="w_add"></em>
+														<em class="w_redu"></em>
+													</span>
+											</p>
+										</td>
+										<td><i>￥</i>9999.00</td>
+										<td><i class="product_infor_delete"></i></td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="add_product_infor">
+								<thead>
+									<tr>
+										<td></td>
+										<td>商品编号</td>
+										<td>菜品名称</td>
+										<td>分类</td>
+										<td>单价</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>02040205</td>
+										<td>金锣火腿肠肉粒多麻辣味系列115g</td>
+										<td>热菜/今日特价</td>
+										<td><i>￥</i>10.00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>02040205</td>
+										<td>宫保鸡丁<i class="yellowi">促</i></td>
+										<td>杂货</td>
+										<td><i>￥</i>10.00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>02040205</td>
+										<td>酸辣土豆丝</td>
+										<td>杂货</td>
+										<td><i>￥</i>10.00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>02040205</td>
+										<td>金锣火腿肠肉粒多麻辣味系列115g</td>
+										<td>热菜</td>
+										<td><i>￥</i>10.00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>02040205</td>
+										<td>宫保鸡丁</td>
+										<td>杂货</td>
+										<td><i>￥</i>10.00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>02040205</td>
+										<td>酸辣土豆丝</td>
+										<td>杂货</td>
+										<td><i>￥</i>10.00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>02040205</td>
+										<td>金锣火腿肠肉粒多麻辣味系列115g</td>
+										<td>热菜</td>
+										<td><i>￥</i>10.00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>02040205</td>
+										<td>宫保鸡丁</td>
+										<td>杂货</td>
+										<td><i>￥</i>10.00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" /></td>
+										<td>02040205</td>
+										<td>酸辣土豆丝</td>
+										<td>杂货</td>
+										<td><i>￥</i>10.00</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="delivered_btn">
+						<!--238 84-->
+						<span class="w_sure_btn">确定</span>
+						<span class="w_cancel_btn">取消</span>
+						<div class="secondary_popup">
+							<p>是否确认订单？确认后，请及时发货！</p>
+							<em class="secondary_sure_btn">确定</em>
+							<em class="secondary_cancel_btn">取消</em>
+						</div>
+						<i class="note_san"></i>
+					</div>
+				</div>
+				<div class="w_affirm_right fr">
+					<div class="affirm_right_one">确认订单</div>
+					<div class="affirm_right_two">
+						<p class="order_money">订单编号</p>
+						<p>312016092100001</p>
+					</div>
+					<div class="affirm_right_three">
+						<p class="order_money">赵先生</p>
+						<p>18877944744</p>
+						<p>
+							<input type="text" value="1608房间" class="artinput" disabled="disabled" />
+							<span class="artispan">修改</span>
+						</p>
+						<p>备注</p>
+						<p class="remarkText" title="请在18点后送达">请在18点后送达</p>
+					</div>
+					<div class="affirm_right_four">
+						<p class="order_money">商品总金额<em>¥ 166.88</em></p>
+						<p>优惠<em>- ¥ 0.00</em></p>
+					</div>
+					<div class="affirm_right_five">
+						<p class="order_money"><span>订单应收金额</span><em>¥ 166.88</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--餐饮-取消订单-->
+		<div class="popUpBox clearfix popCancleOrder">
+			<div class="popLeft fl">
+				<p class="popTab">
+					<a href="javascript:;" class="active">商品信息</a>
+					<a href="javascript:;">订单信息</a>
+				</p>
+				<div class="tableContent goodInfo">
+					<ul class="clearfix">
+						<li class="fl">商品编码</li>
+						<li class="fl">菜品名称</li>
+						<li class="fl">数量</li>
+						<li class="fl">单价</li>
+					</ul>
+					<div class="scrollContent">
+						<table>
+							<tbody>
+								<tr>
+									<td>111111111</td>
+									<td><span>方便面</span><em class="tip">促</em></td>
+									<td>4</td>
+									<td>￥100</td>
+								</tr>
+								<tr>
+									<td>111111111</td>
+									<td><span>方便面</span><em class="tip">促</em></td>
+									<td>4</td>
+									<td>￥100</td>
+								</tr>
+								<tr>
+									<td>111111111</td>
+									<td><span>方便面</span><em class="tip">促</em></td>
+									<td>4</td>
+									<td>￥100</td>
+								</tr>
+								<tr>
+									<td>111111111</td>
+									<td><span>方便面</span><em class="tip">促</em></td>
+									<td>4</td>
+									<td>￥100</td>
+								</tr>
+								<tr>
+									<td>111111111</td>
+									<td><span>方便面</span><em class="tip">促</em></td>
+									<td>4</td>
+									<td>￥100</td>
+								</tr>
+								<tr>
+									<td>111111111</td>
+									<td><span>方便面</span><em class="tip">促</em></td>
+									<td>4</td>
+									<td>￥100</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cancleRenson">
+						<p class="rensonTitle">取消原因<span class="redColor">&nbsp;&nbsp;( 必填 )</span></p>
+						<div class="textArea">
+							<textarea maxlength="50" placeholder="请输入订单取消理由"></textarea>
+							<span class="l_num"><i>0</i>/50</span>
+						</div>
+					</div>
+				</div>
+				<div class="tableContent orderInfo">
+					<div class="clearfix">
+						<h3 class="orderInfoTitle">订单信息</h3>
+						<p class="fl orderInfoList">
+							<span class="orderKey">订单类型</span>
+							<span class="orderValue">菜品预订订单</span>
+						</p>
+						<p class="fl orderInfoList">
+							<span class="orderKey">订单来源</span>
+							<span class="orderValue">portal</span>
+						</p>
+						<p class="fl orderInfoList">
+							<span class="orderKey">创建时间</span>
+							<span class="orderValue">2016-08-05 15:12:32</span>
+						</p>
+						<p class="fl orderInfoList">
+							<span class="orderKey">下单用户</span>
+							<span class="orderValue">jack</span>
+						</p>
+						<p class="fl orderInfoList orderNum">
+							<span class="orderKey">主订单编号</span>
+							<span class="orderValue">Z1234567894556122</span>
+						</p>
+					</div>
+					<div class="clearfix">
+						<h3 class="orderInfoTitle">支付信息</h3>
+						<p class="fl orderInfoList">
+							<span class="orderKey">支付类型</span>
+							<span class="orderValue">前台记账</span>
+						</p>
+					</div>
+					<div class="clearfix">
+						<h3 class="orderInfoTitle">配送信息</h3>
+						<p class="fl orderInfoList">
+							<span class="orderKey">配送方式</span>
+							<span class="orderValue">送货上门</span>
+						</p>
+					</div>
+				</div>
+				<div class="bottomBtn clearfix">
+					<a href="javascript:;" class="sure fr">确定</a>
+					<a href="javascript:;" class="cancle fr">取消</a>
+					<div class="s_scroll">
+						<p class="scroll_p">是否确认取消？</p>
+						<p class="clear">
+							<a href="javascript:;" class="scroll_btn2 fr">确定</a>
+							<a href="javascript:;" class="scroll_btn1 fr">取消</a>
+						</p>
+						<span class="scrool_span"></span>
+					</div>
+				</div>
+			</div>
+			<div class="popRight fl">
+				<div class="firm_text firm_text_none">
+					<p class="firmTitle">取消订单</p>
+					<div class="paddBottom">
+						<p>订单编号</p>
+						<p>1111111111111111111111</p>
+					</div>
+					<div class="paddBottom">
+						<p>赵先生</p>
+						<p>18518099336</p>
+						<p>1608房</p>
+						<p class="remark">备注</p>
+						<p class="remarkText" title="请18:00以后送达">请18:00以后送达</p>
+					</div>
+					<div class="paddBottom">
+						<p class="money">商品总金额<span>￥500</span></p>
+						<p class="money">优惠<span>-￥50</span></p>
+					</div>
+					<p class="totalMoney">订单应收金额<span>￥200</span></p>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--餐饮-订单退货-->
+		<div class="popUpBox clearfix popReturnOrder">
+			<div class="popLeft fl">
+				<p class="popTab">
+					<a href="javascript:;" class="active">商品信息</a>
+					<a href="javascript:;">订单信息</a>
+				</p>
+				<div class="tableContent goodInfo">
+					<ul class="clearfix">
+						<li class="fl">商品编码</li>
+						<li class="fl">菜品名称</li>
+						<li class="fl">数量</li>
+						<li class="fl">单价</li>
+						<li class="fl"></li>
+					</ul>
+					<div class="scrollContent">
+						<table>
+							<tbody>
+								<tr>
+									<td>111111111</td>
+									<td><span>方便面</span><em class="tip">促</em></td>
+									<td>
+										<div class="goodsNum">
+											<input type="number" value="1" maxNum="10" />
+											<p class="changeNum">
+												<a href="javascript:;" class="addIcon"></a>
+												<a href="javascript:;" class="subIcon"></a>
+											</p>
+										</div>
+									</td>
+									<td>￥100</td>
+									<td><img src="images/iconDel.png" /></td>
+								</tr>
+								<tr>
+									<td>111111111</td>
+									<td><span>方便面</span><em class="tip">促</em></td>
+									<td>
+										<div class="goodsNum">
+											<input type="number" value="1" maxNum="10" />
+											<p class="changeNum">
+												<a href="javascript:;" class="addIcon"></a>
+												<a href="javascript:;" class="subIcon"></a>
+											</p>
+										</div>
+									</td>
+									<td>￥100</td>
+									<td><img src="images/iconDel.png" /></td>
+								</tr>
+								<tr>
+									<td>111111111</td>
+									<td><span>方便面</span><em class="tip">促</em></td>
+									<td>
+										<div class="goodsNum">
+											<input type="number" value="1" maxNum="10" />
+											<p class="changeNum">
+												<a href="javascript:;" class="addIcon"></a>
+												<a href="javascript:;" class="subIcon"></a>
+											</p>
+										</div>
+									</td>
+									<td>￥100</td>
+									<td><img src="images/iconDel.png" /></td>
+								</tr>
+								<tr>
+									<td>111111111</td>
+									<td><span>方便面</span><em class="tip">促</em></td>
+									<td>
+										<div class="goodsNum">
+											<input type="number" value="1" maxNum="10" />
+											<p class="changeNum">
+												<a href="javascript:;" class="addIcon"></a>
+												<a href="javascript:;" class="subIcon"></a>
+											</p>
+										</div>
+									</td>
+									<td>￥100</td>
+									<td><img src="images/iconDel.png" /></td>
+								</tr>
+								<tr>
+									<td>111111111</td>
+									<td><span>方便面</span><em class="tip">促</em></td>
+									<td>
+										<div class="goodsNum">
+											<input type="number" value="1" maxNum="10" />
+											<p class="changeNum">
+												<a href="javascript:;" class="addIcon"></a>
+												<a href="javascript:;" class="subIcon"></a>
+											</p>
+										</div>
+									</td>
+									<td>￥100</td>
+									<td><img src="images/iconDel.png" /></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tableContent orderInfo">
+					<div class="clearfix">
+						<h3 class="orderInfoTitle">订单信息</h3>
+						<p class="fl orderInfoList">
+							<span class="orderKey">订单类型</span>
+							<span class="orderValue">菜品预订订单</span>
+						</p>
+						<p class="fl orderInfoList">
+							<span class="orderKey">订单来源</span>
+							<span class="orderValue">portal</span>
+						</p>
+						<p class="fl orderInfoList">
+							<span class="orderKey">创建时间</span>
+							<span class="orderValue">2016-08-05 15:12:32</span>
+						</p>
+						<p class="fl orderInfoList">
+							<span class="orderKey">下单用户</span>
+							<span class="orderValue">jack</span>
+						</p>
+						<p class="fl orderInfoList orderNum">
+							<span class="orderKey">主订单编号</span>
+							<span class="orderValue">Z1234567894556122</span>
+						</p>
+					</div>
+					<div class="clearfix">
+						<h3 class="orderInfoTitle">支付信息</h3>
+						<p class="fl orderInfoList">
+							<span class="orderKey">支付类型</span>
+							<span class="orderValue">前台记账</span>
+						</p>
+					</div>
+					<div class="clearfix">
+						<h3 class="orderInfoTitle">配送信息</h3>
+						<p class="fl orderInfoList">
+							<span class="orderKey">配送方式</span>
+							<span class="orderValue">送货上门</span>
+						</p>
+					</div>
+				</div>
+				<div class="bottomBtn clearfix">
+					<a href="javascript:;" class="sure fr">确定</a>
+					<a href="javascript:;" class="cancle fr">取消</a>
+					<div class="s_scroll">
+						<p class="scroll_p">是否确认取消？</p>
+						<p class="clear">
+							<a href="javascript:;" class="scroll_btn2 fr">确定</a>
+							<a href="javascript:;" class="scroll_btn1 fr">取消</a>
+						</p>
+						<span class="scrool_span"></span>
+					</div>
+				</div>
+			</div>
+			<div class="popRight fl">
+				<div class="firm_text firm_text_none">
+					<p class="firmTitle">订单退货</p>
+					<div class="paddBottom">
+						<p>订单编号</p>
+						<p>1111111111111111111111</p>
+					</div>
+					<div class="paddBottom">
+						<p>赵先生</p>
+						<p>18518099336</p>
+						<p>1608房</p>
+						<p class="remark">备注</p>
+						<p class="remarkText" title="内容备注内容">内容备注内容</p>
+					</div>
+					<div class="paddBottom">
+						<p class="money">商品总金额<span>￥500</span></p>
+						<p class="money">优惠<span>-￥50</span></p>
+					</div>
+					<p class="totalMoney">订单应收金额<span>￥200</span></p>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!--退款弹窗-->
+		<div class="s_confirm wx_firm_none">
+			<p class="s_shadow"></p>
+			<div class="confirm_min clear">
+				<div class="fl" style="padding-bottom: 20px;">
+					<div class="firm_hot">
+						<p class="firm_list">
+							<span class="firm_span1">选择退款类型</span>
+							<span class="firm_span2">选择退款商品</span>
+						</p>
+						<ul class="clear">
+							<li class="firm_first fl">
+								<img src="images/s_min.png" />
+							</li>
+							<li class="firm_last fl">
+								<img src="images/s_list3.png" />
+							</li>
+						</ul>
+					</div>
+					<div class="firm_left ">
+						<div class="list_margin list_none">
+							<div class="goods_hot">
+								<p class="goods_p">订单信息</p>
+								<div class="goods_nav clear">
+									<p class="goods_text clear fl">
+										<span class="goods_span1 fl">订单类型 </span>
+										<span class="goods_span2 goods_w fl">菜品预订订单</span>
+									</p>
+									<p class="clear fl">
+										<span class="goods_span1 fl">订单来源  </span>
+										<span class="goods_span2 fl">H5</span>
+									</p>
+								</div>
+								<div class="goods_nav clear">
+									<p class="goods_text clear fl">
+										<span class="goods_span1 fl">创建时间 </span>
+										<span class="goods_span2 goods_w fl">2016-08-04 14:24:53</span>
+									</p>
+									<p class="clear fl">
+										<span class="goods_span1 fl">下单用户  </span>
+										<span class="goods_span2 fl">jack</span>
+									</p>
+								</div>
+								<div class="goods_nav clear">
+									<p class="goods_text clear fl">
+										<span class="goods_span1 fl">主订单编号 </span>
+										<span class="goods_span2 goods_w fl">A100210100222121210</span>
+									</p>
+								</div>
+							</div>
+							<div class="goods_hot">
+								<p class="goods_p">支付信息</p>
+								<div class="goods_nav clear">
+									<p class="goods_text clear fl">
+										<span class="goods_span1 fl">支付方式 </span>
+										<span class="goods_span2 goods_w fl">微信支付</span>
+									</p>
+									<p class="clear fl">
+										<span class="goods_span1 fl">收款金额   </span>
+										<span class="goods_span2 fl">￥500</span>
+									</p>
+								</div>
+								<div class="goods_nav clear">
+									<p class="goods_text clear fl">
+										<span class="goods_span1 fl">收款单号  </span>
+										<span class="goods_span2 goods_w fl">SK1608040004</span>
+									</p>
+									<p class="fl">
+										<span class="goods_span1 fl">交易流水号   </span>
+										<span class="goods_span2 fl">1009660380201506130728806387</span>
+									</p>
+								</div>
+							</div>
+							<div class="list_checkbox">
+								<p class="check_p">退款设置<span>（必选）</span></p>
+								<ul class="clear">
+									<li class="fl">
+										<span class="firm_active"></span> 全部退款（订单直接关闭）
+									</li>
+									<li class="fl">
+										<span></span> 部分退款（订单继续进行）
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="give_none">
+							<div class="give_tab_none">
+								<div class="tableContent contentOne">
+									<p class="contentTitle">可退款商品</p>
+									<ul class="clearfix giveTitle">
+										<li class="one">商品编码</li>
+										<li class="two">商品名称</li>
+										<li class="three">数量</li>
+										<li class="four">单价</li>
+										<li class="five"></li>
+										<li class="six giveOpr"></li>
+									</ul>
+									<div class="giveContent">
+										<ul class="clearfix">
+											<li class="one">5160027578</li>
+											<li class="two">方便面</li>
+											<li class="three">2</li>
+											<li class="four">￥20</li>
+											<li class="five"></li>
+											<li class="six giveOpr">退款</li>
+										</ul>
+										<ul class="clearfix">
+											<li class="one">5160027578</li>
+											<li class="two">果盘（大）</li>
+											<li class="three">2</li>
+											<li class="four">￥20</li>
+											<li class="five"></li>
+											<li class="six giveOpr">退款</li>
+										</ul>
+										<ul class="clearfix">
+											<li class="one">5160027578</li>
+											<li class="two">纪念币 <span>促</span></li>
+											<li class="three">2</li>
+											<li class="four">￥20</li>
+											<li class="five"></li>
+											<li class="six giveOpr">退款</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tableContent contentTwo">
+									<p class="contentTitle">待退款商品</p>
+									<ul class="clearfix giveTitle">
+										<li class="one">商品编码</li>
+										<li class="two">商品名称</li>
+										<li class="three">待退数量</li>
+										<li class="four">待退款金额</li>
+										<li class="six giveOpr"></li>
+									</ul>
+									<div class="giveContent">
+										<ul class="clearfix">
+											<li class="one">5160027578</li>
+											<li class="two">方便面</li>
+											<li class="three">
+												<span class="num">2</span>
+												<p class="shop_cart">
+													<span class="add_subtract_value fl">
+														<input type="text" value="1" />
+													</span>
+													<span class="add_redu fr">
+														<em class="w_add"></em>
+														<em class="w_redu"></em>
+													</span>
+												</p>
+											</li>
+											<li class="four">￥20</li>
+											<li class="six giveOpr"><img src="images/sure_delete.png" /></li>
+										</ul>
+										<ul class="clearfix">
+											<li class="one">5160027578</li>
+											<li class="two">果盘（大）</li>
+											<li class="three">
+												<span class="num">2</span>
+												<p class="shop_cart">
+													<span class="add_subtract_value fl">
+														<input type="text" value="1" />
+													</span>
+													<span class="add_redu fr">
+														<em class="w_add"></em>
+														<em class="w_redu"></em>
+													</span>
+												</p>
+											</li>
+											<li class="four">￥20</li>
+											<li class="six giveOpr"><img src="images/sure_delete.png" /></li>
+										</ul>
+										<ul class="clearfix">
+											<li class="one">5160027578</li>
+											<li class="two">纪念币 <span>促</span></li>
+											<li class="three">
+												<span class="num">2</span>
+												<p class="shop_cart">
+													<span class="add_subtract_value fl">
+														<input type="text" value="1" />
+													</span>
+													<span class="add_redu fr">
+														<em class="w_add"></em>
+														<em class="w_redu"></em>
+													</span>
+												</p>
+											</li>
+											<li class="four">￥20</li>
+											<li class="six giveOpr"><img src="images/sure_delete.png" /></li>
+										</ul>
+									</div>
+
+								</div>
+								<div class="s_tui">
+									<p class="contentTitle">退款原因<span class="redColor">（必填）</span></p>
+									<div class="hot_list hot_back clear">
+										<input type="text" class="oder_inp" maxlength="50" placeholder="输入退款原因" onkeyup="javascript:setShowLength(this, 0, 's_span2');" class="fl" />
+										<span class="fr"><i id="s_span2">0</i>/50</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="firm_button scroll_none">
+						<a href="javascript:;" class="fr w_next">下一步</a>
+						<a href="javascript:;" class="w_cancel fr">取消</a>						
+					</p>
+					<div class="s_center center_none">
+						<p class="firm_button1 fl">
+							<a href="javascript:;">上一步</a>
+						</p>
+						<div class="clear fr">
+							<a href="javascript:;" class="firm_btn1 fl">取消</a>
+							<div class="scroll_postion fl">
+								<a href="javascript:;" class="firm_btn2">退款</a>
+								<div class="s_scroll">
+									<p class="scroll_p">是否确认退款？</p>
+									<p class="clear">
+										<a href="javascript:;" class="scroll_btn2 fr">确定</a>
+										<a href="javascript:;" class="scroll_btn1 fr">取消</a>
+									</p>
+									<span class="scrool_span"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="firm_right fr refundOrder">
+					<div class="firm_text firm_text_none">
+						<p class="firmTitle">订单退款</p>
+						<div class="paddBottom">
+							<p>订单编号</p>
+							<p>1111111111111111111111</p>
+						</div>
+						<div class="paddBottom">
+							<p>赵先生</p>
+							<p>18518099336</p>
+							<p>1608房间
+							</p>
+							<p class="remark">备注</p>
+							<p class="remarkText" title="有窗房间请安排有窗房间排有窗房间请安排有窗房间排">有窗房间请安排有窗房间排有窗房间请安排有窗房间排</p>
+						</div>
+						<div class="paddBottom">
+							<p class="money">可退款金额<span class="fr">￥500</span></p>
+						</div>
+						<p class="totalMoney">待退款总额<span class="fr">￥200</span></p>
+						
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div class="l_drop"></div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script src="js/dateRange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/l_daterange.js" type="text/javascript" charset="utf-8"></script>
+		<!--完成订单弹窗-->
+		<script>
+		var s1;
+		var s2;
+			$('.scroll_click').click(function(){
+				if($('.bution_inp').val()==''){					
+					$('.bution_inp').css("border", "1px solid red")					
+					s1 = false;
+				}else{
+					$('.bution_inp').css("border", "1px solid #dcdcdc")
+					s1=true;
+				}
+				if($('.bution_plase ul li em').hasClass('bution_em')){
+					$(".bution_plase ul").css("background", "");
+					s2=true;
+				}else{
+					$(".bution_plase ul").css("background", " url(./images/w_yz.png) no-repeat 94%");
+					s2=false;
+				}
+				if(s1 && s2) {
+					$(this).parent('.scroll_postion').find('.s_scroll').fadeIn();
+					
+				} else {
+					return false
+				}				
+			});
+			
+			/*收款单移入效果*/
+			$('.bution_plase ul li').hover(function(){
+				$(this).find('.bution_hover').stop().fadeIn();
+			},function(){
+				$(this).find('.bution_hover').stop().fadeOut();
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$(".returnOpr").click(function() {
+					$(".popReturnOrder").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow(1);
+
+				});
+				$(".w_cancel_order").click(function() {
+					$(".popCancleOrder").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow(1);
+
+				});
+				var len = 0;
+				$(".textArea textarea").keyup(function() {
+					len = $(this).val().length;
+					$(".textArea .l_num i").html(len);
+					$(this).css("border-color", "#dcdcdc");
+				});
+
+				$(".popTab a").click(function() {
+					$(this).parents(".popUpBox").find(".popTab a").removeClass("active");
+					$(this).addClass("active");
+					var ind = $(this).index()
+					$(this).parents(".popUpBox").find(".tableContent").hide();
+					$(this).parents(".popUpBox").find(".tableContent").eq(ind).show();
+				})
+
+				$(".bottomBtn a.sure").click(function() {
+					if($(this).parents(".popUpBox").find(".textArea textarea").val() == "") {
+						$(this).parents(".popUpBox").find(".textArea textarea").css("border-color", "#f33");
+					} else {
+						$(".s_scroll").fadeIn();
+					}
+					if($(".popTab a:last-child").hasClass("active") && $(this).parents(".popUpBox").find(".textArea textarea").val() == ""){
+						$(".popTab a:first-child").addClass("active").siblings().removeClass("active");
+						$(".goodInfo").show();
+						$(".orderInfo").hide();
+					}
+				})
+				$(".bottomBtn a.sure").click(function() {
+					if($(this).parents(".popUpBox").find(".textArea textarea").val() == "") {
+						$(this).parents(".popUpBox").find(".textArea textarea").css("border-color", "#f33");
+					} else {
+						$(".s_scroll").fadeIn();
+					}
+				})
+				$(".bottomBtn a.sure").click(function() {
+					if($(this).parents(".popUpBox").find(".textArea textarea").val() == "") {
+						$(this).parents(".popUpBox").find(".textArea textarea").css("border-color", "#f33");
+					} else {
+						$(".s_scroll").fadeIn();
+						$(".scroll_btn1").click(function() {
+							$(this).parents(".s_scroll").fadeOut();
+						})
+						$(".scroll_btn2").click(function() {
+							$(this).parents(".popUpBox").fadeOut();
+							$(".l_drop").fadeOut();
+							tcHide();
+						})
+					}
+				})
+				
+				$(".bottomBtn a.cancle").click(function() {
+					$(this).parents(".popUpBox").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide();
+				})
+
+				$(".addIcon").click(function(){
+					var num=$(this).parents(".goodsNum").find("input").val();
+					var maxNum=$(this).parents(".goodsNum").find("input").attr("maxNum");
+					num++;
+					if(num>=maxNum){
+						num=maxNum;
+						$(this).parents(".goodsNum").find(".addIcon").css("background-image","url(images/shop_add.png)");
+					}
+					$(this).parents(".goodsNum").find("input").val(num)
+					$(this).parents(".goodsNum").find(".subIcon").css("background-image","url(images/shop_aedu.png)");
+					
+				})
+				$(".subIcon").click(function(){
+					var num=$(this).parents(".goodsNum").find("input").val();
+					var maxNum=$(this).parents(".goodsNum").find("input").attr("maxNum");
+					num--;
+					if(num<=1){
+						num=1;
+						$(this).parents(".goodsNum").find(".subIcon").css("background-image","url(images/shop_aedu1.png)");
+					}
+					$(this).parents(".goodsNum").find("input").val(num)
+					$(this).parents(".goodsNum").find(".addIcon").css("background-image","url(images/shop_add1.png)");
+					
+				})
+			})
+		</script>
+		<script>
+			$(function() {
+				$('.scroll_btn2').click(function() {
+					$('.firm_none').fadeOut();
+					$('.log_none').fadeOut();
+					$(this).parents('.s_scroll').fadeOut();
+					tcHide();
+				});
+				$('.scroll_btn1').click(function() {
+					$('.s_scroll').fadeOut();
+					//tcHide();
+				})
+				$('.firm_btn1 ').click(function() {
+					$('.firm_none').fadeOut();
+					$('.log_none').fadeOut();
+					tcHide();
+				})
+			});
+		</script>
+		<!--退款弹窗-->
+		<script>
+			$(function() {
+
+				$(function() {
+				/*退款弹窗*/
+				$('.s_tuikuan').click(function() {
+					$('.wx_firm_none').fadeIn();
+					tcShow(1);
+				})
+				/*单选框选中效果*/
+				$('.wx_firm_none .list_checkbox ul li').click(function() {
+					$(this).children('span').addClass('firm_active').parent('li').siblings().children('span').removeClass('firm_active');
+				});
+				/*退款操作二次确认弹窗*/
+				$('.wx_firm_none .firm_btn2').click(function() {
+					if($('.wx_firm_none .s_tui .oder_inp').val() == "") {
+						$(".wx_firm_none .s_tui .hot_back ").css("border", "1px solid red");
+					} else {
+						$(".wx_firm_none .s_tui .hot_back ").css("border", "1px solid #dcdcdc");
+						$('.wx_firm_none .s_scroll').fadeIn();
+						tcShow();
+					}
+				});
+				$('.wx_firm_none .scroll_btn2').click(function() {
+					$('.wx_firm_none').fadeOut();
+					$('.wx_firm_none ').fadeOut();
+					$(this).parents('.wx_firm_none .s_scroll').fadeOut();
+					tcHide();
+				});
+				$('.wx_firm_none .scroll_btn1').click(function() {
+					$('.wx_firm_none .s_scroll').fadeOut();
+				})
+				$('.wx_firm_none .firm_btn1,.wx_firm_none .w_cancel').click(function() {
+					$('.wx_firm_none').fadeOut();
+					$('.wx_firm_none .log_none').fadeOut();
+					tcHide();
+				});
+				$('.wx_firm_none .firm_list_last').click(function() {
+					$('.wx_firm_none').fadeOut();
+					$('.wx_firm_none .log_none').fadeOut();
+					tcHide();
+				})
+				$('.wx_firm_none .l_opt').css('padding-left', '0');
+				$('.wx_firm_none .s_table table>thead>tr>th:last-child').css('padding-left', '0px');
+				/*点击上一步下一步切换效果*/
+				$('.wx_firm_none .firm_button a.w_next').click(function() {
+					if($('.wx_firm_none .list_checkbox ul li').children('span').hasClass('firm_active')) {
+						$('.wx_firm_none .give_tab_none').addClass("partRefund")
+						$(".wx_firm_none .check_p").css("background", "");
+						$('.wx_firm_none .give_tab_none').fadeIn();
+						$('.wx_firm_none .list_none').hide();
+						$('.wx_firm_none .scroll_none').hide();
+						$('.wx_firm_none .give_none').fadeIn();
+						$('.wx_firm_none .center_none').fadeIn();
+						$('.wx_firm_none .firm_last img').attr('src', 'images/s_scorll.png');
+						$(".wx_firm_none .firm_right").css("height", "736px")
+						$(".wx_firm_none .confirm_min").css("height", "735px")
+					} else {
+						$('.wx_firm_none .give_tab_none').removeClass("partRefund");
+						$(".wx_firm_none .check_p").css("background", " url(./images/w_yz.png) no-repeat 94%");
+					}
+				});
+				$('.wx_firm_none .firm_button1  a').click(function() {
+					$(".wx_firm_none .confirm_min").css("height", "555px")
+					$(".wx_firm_none .firm_right").height(0);
+					$('.wx_firm_none .list_none').fadeIn();
+					$('.wx_firm_none .scroll_none').fadeIn();
+					$('.wx_firm_none .give_none').hide();
+					$('.wx_firm_none .center_none').hide();
+					$('.wx_firm_none .firm_last img').attr('src', 'images/s_list3.png');
+					$(".wx_firm_none .firm_right").css("height", "555px")
+				});
+				$('.wx_firm_none .s_dalede').click(function() {
+					$(this).parents('tr').remove();
+				});
+			});
+			});
+		</script>
+
+		<!--购物车-->
+		<script>
+			$(".w_add").click(function() {
+				$totals = parseInt($(this).parents(".add_redu").siblings(".add_subtract_value").find("input").val())
+				$totals++;
+				if($totals > 1) {
+					$(this).siblings(".w_redu").css("background-image", "url(./images/shop_aedu.png)")
+				}
+				$(this).parents(".add_redu").siblings(".add_subtract_value").find("input").val($totals);
+			});
+			$(".w_redu").click(function() {
+				$totals = parseInt($(this).parents(".add_redu").siblings(".add_subtract_value").find("input").val())
+				$totals--;
+				if($totals <= 1) {
+					$(this).css("background-image", "url(./images/shop_aedu1.png)")
+					$totals = 1;
+				}
+				$(this).parents(".add_redu").siblings(".add_subtract_value").find("input").val($totals);
+			});
+		</script>
+		<!--字数限制js-->
+		<script>
+			function setShowLength(obj, maxlength, id) {
+				var rem = maxlength + obj.value.length;
+				var wid = id;
+				if(rem < 0) {
+					rem = 0;
+				}
+				document.getElementById(wid).innerHTML = rem;
+			}
+		</script>
+		<!--//完成订单-->
+		<script>
+			$(document).ready(function() {
+				$(".delivered_order").click(function() {
+					$(".log_none").fadeIn()
+					tcShow(1);
+				})
+				$(".w_cancel_btn").click(function() {
+					$(this).parents(".order_delivered_popup").fadeOut()
+					tcHide();
+				})
+				$(".order_delivered_popup .w_sure_btn").click(function() {
+					$(this).parents(".order_delivered_popup").fadeOut()
+					tcHide();
+				})
+			});
+		</script>
+		<!--//同意取消订单-->
+		<script>
+			$(document).ready(function() {
+				$(".agreed_cancel_order").click(function() {
+					$(".food_cancel_popup").fadeIn()
+					tcShow();
+				})
+				$(".w_cancel_btn").click(function() {
+					$(this).parents(".food_cancel_popup").fadeOut()
+					tcHide()
+				})
+				$(".food_cancel_popup .w_sure_btn").click(function() {
+					if($(".w_agreed_bottom textarea").val() == "") {
+						$(".cancel_reason_popup").fadeIn().delay(1000).fadeOut();
+					} else {
+						$(this).parents(".food_cancel_popup").fadeOut()
+						tcHide()
+					}
+				})
+			});
+		</script>
+		<!--//微信支付确认订单-->
+		<script>
+			$(document).ready(function() {
+				$(".wx_sure_order").click(function() {
+					$(".wx_order_popup").fadeIn();
+					$(".xartispan").show();
+					$(".xartinput").attr("disabled","disabled");
+					$(".xartinput").css("border-bottom","none");
+					tcShow(1);
+				})
+				//确定
+				$(".wxdelivered_btn .w_sure_btn").click(function() {
+					$(".xsecondary_popup,.wxdelivered_btn .note_san").show();
+				})
+				//二次确定
+				$(".xsecondary_popup .secondary_sure_btn").click(function() {
+					$(".wx_order_popup").fadeOut();
+					$(".xsecondary_popup,.wxdelivered_btn .note_san").hide();
+					tcHide()
+				})
+				//取消
+				$(".wxdelivered_btn .w_cancel_btn").click(function() {
+					$(".wx_order_popup").fadeOut();
+					$(".xsecondary_popup,.wxdelivered_btn .note_san").hide();
+					tcHide()
+				})
+				//取消
+				$(".xsecondary_popup .secondary_cancel_btn").click(function() {
+					$(".xsecondary_popup,.wxdelivered_btn .note_san").hide();
+				})
+				//头部切换
+				$(".wxrm_tab span").click(function() {
+					$(this).addClass("active").siblings().removeClass("active");
+				})
+				//订单信息
+				$(".wxus_info").click(function() {
+					$(".awx_tab_one").show();
+					$(".awx_tab_two").hide();
+					$(".wxdelivered_btn").show();
+				})
+				//商品信息
+				$(".wxom_info").click(function() {
+					$(".awx_tab_one").hide();
+					$(".awx_tab_two").show();
+				})
+				//调整商品
+				$(".w_add_product span.zheng_product").click(function() {
+					$(this).hide();
+					$(".prointablethree").hide();
+					$(".prointablefour").show();
+					$(".wx_quxiao,.wx_baocun,.wxshum").show();
+					$(".wxdelivered_btn").hide();
+				});
+				//取消调整，确认调整
+				$(".wx_baocun,.wx_quxiao").click(function() {
+					$(".wx_baocun,.wx_quxiao,.prointablefour,.wxshum").hide();
+					$(".prointablethree,.zheng_product,.wxdelivered_btn").show();
+				});
+				//修改房间
+				$(".xartispan").click(function() {
+					$(this).hide();
+					$(".xartinput").css("border-bottom","1px solid #45db5a");
+					$(".xartinput").removeAttr("disabled","disabled");
+				});
+			});
+		</script>
+		<!--//前台记账确认订单-->
+		<script>
+			$(document).ready(function() {
+				$(".mark_sure_order").click(function() {
+					$(".affirm_order_popup").fadeIn();
+					$(".artispan").show();
+					$(".artinput").attr("disabled","disabled");
+					$(".artinput").css("border-bottom","none");
+					tcShow(1);
+				})
+				//确定
+				$(".affirm_order_popup .w_sure_btn").click(function() {
+					$(".secondary_popup,.delivered_btn .note_san").show();
+				})
+				//二次确定
+				$(".secondary_popup .secondary_sure_btn").click(function() {
+					$(".affirm_order_popup").fadeOut();
+					$(".secondary_popup,.delivered_btn .note_san").hide();
+					tcHide()
+				})
+				//取消
+				$(".secondary_popup .secondary_cancel_btn").click(function() {
+					$(".secondary_popup,.delivered_btn .note_san").hide();
+				})
+				//取消
+				$(".w_cancel_btn").click(function() {
+					$(this).parents(".affirm_order_popup").fadeOut();
+				})
+				//头部切换
+				$(".w_affirm_tab span").click(function() {
+					$(this).addClass("active").siblings().removeClass("active");
+				})
+				//订单信息
+				$(".w_affirm_tab .cus_info").click(function() {
+					$(".affirm_tab_one").show();
+					$(".affirm_tab_two").hide();
+					$(".delivered_btn").show();
+				})
+				//商品信息
+				$(".w_affirm_tab .com_info").click(function() {
+					$(".affirm_tab_one").hide();
+					$(".affirm_tab_two").show();
+				})
+				//调整商品
+				$(".w_add_product span.tiao_product").click(function() {
+					$(this).hide();
+					$(".prointableone").hide();
+					$(".prointabletwo").show();
+					$(".w_quxiao,.w_baocun,.news_product").show();
+					$(".delivered_btn").hide();
+				});
+				//新增商品
+				$(".w_add_product .news_product").click(function() {
+					$(this).hide();
+					$(".w_quxiao,.w_baocun,.prointabletwo").hide();
+					$(".w_cancel_choice").show();
+					$(".w_sure_choice").show();
+					$(".add_product_infor").show();
+					$(".add_product_query").show();
+					$(".delivered_btn").hide();
+				});
+				//取消调整，确认调整
+				$(".w_baocun,.w_quxiao").click(function() {
+					$(".w_baocun,.w_quxiao,.news_product,.prointabletwo").hide();
+					$(".prointableone,.tiao_product,.delivered_btn").show();
+				});
+				//修改房间
+				$(".artispan").click(function() {
+					$(this).hide();
+					$(".artinput").css("border-bottom","1px solid #45db5a");
+					$(".artinput").removeAttr("disabled","disabled");
+				});
+				//取消选择，确认选择
+				$(".w_sure_choice,.w_cancel_choice").click(function() {
+					$(".w_sure_choice,.w_cancel_choice,.add_product_infor,.add_product_query").hide();
+					$(".prointabletwo").show();
+					$(".w_quxiao,.w_baocun,.news_product").show();
+				});
+				$(".product_infor_delete").click(function() {
+					$(this).parents("tr").remove()
+				});
+				$("table.add_product_infor tbody tr td:first-child input[type='checkbox']").click(function() {
+					var d = 0;
+					$("table.add_product_infor tbody tr td:first-child input[type='checkbox']").each(function() {
+						var check = $(this).is(":checked");
+						if(check == true) {
+							d += 1;
+						}
+					});
+					if(d > 0) {
+						$(".w_sure_choice").css({
+							"color": "#19934a",
+							"border": "1px solid #0d9242"
+						})
+						$(".w_sure_choice").attr("disabled", false)
+
+					} else {
+						$(".w_sure_choice").css({
+							"border": "1px solid #ebebeb",
+							"color": "#e7e7e7"
+						});
+						$(".w_sure_choice").attr("disabled", true)
+					}
+				});
+			});
+		</script>
+		<!--//导航栏切换效果-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".w_navsbtn_left em").click(function() {
+					$(this).addClass("active").siblings().removeClass("active");
+				})
+			});
+		</script>
+		<!--备注信息浮动-->
+		<script>
+			$(document).ready(function() {
+				$(this).find(".serial_number em").mouseover(function() {
+					$(this).siblings(".w_note_information").stop(true, true).fadeIn(500);
+				});
+				$(this).find(".serial_number em").mouseout(function() {
+					$(this).siblings(".w_note_information").delay(10).fadeOut(500);
+				});
+			});
+		</script>
+		<!--//备注信息背景图片切换-->
+		<script>
+			$(document).ready(function() {
+				$("table tbody tr").mouseover(function() {
+					$(this).find(".serial_number em").css("background-image", "url(./images/list.png)")
+				});
+				$("table tbody tr").mouseout(function() {
+					$(this).find(".serial_number em").css("background-image", "url(./images/s_icon2.png)")
+				});
+			});
+		</script>
+		<!--//操作按钮弹出-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".operation_more").click(function() {
+					$(this).css("background-image", "url(./images/gengduo1.png)")
+					$(this).siblings(".add_information").fadeIn();
+				})
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				$(".add_product_select div p").click(function() {
+					$(this).next().slideToggle();
+					$(this).parent().siblings().find("ul").slideUp();
+				});
+				$(".add_product_select div ul li").not(".l_select_name").css("cursor", "pointer");
+				$(".add_product_select div ul li").not(".l_select_name").click(function() {
+					$(this).parents("ul").siblings("p").find("i").html($(this).html());
+					$(this).parents("ul").slideUp();
+				});
+				$(".add_product_select div ul li").not(".l_select_name").hover(function() {
+					$(this).css({
+						"background": "#2e85f5",
+						"color": "#fff"
+					});
+				}, function() {
+					$(this).css({
+						"background": "#fff",
+						"color": "#a0a0a0"
+					})
+				});
+			});
+		</script>
+		<script>
+			$(function() {
+				/*发货订单  切换上一步下一步*/
+				$('.firm_sunmit').click(function() {
+					$(this).hide();
+					$('.firm_last1 img').attr('src', 'images/f_list_1.png');
+					$('.tent_none').show();
+					$('.f_block').hide();
+					$('.s_center1').hide();
+					$('.firm_button_r').show();
+				});
+				$('.firm_click').click(function() {
+					$('.firm_last1 img').attr('src', 'images/f_list_2.png');
+					$('.firm_button_r').hide();
+					$('.tent_none').hide();
+					$('.f_block').show();
+					$('.s_center1').show();
+					$('.firm_sunmit').show();
+				});
+
+				/*单选框*/
+				$('.bution_plase ul li p').click(function() {
+					$('.bution_plase ul li p').children('em').removeClass('bution_em');
+					$(this).children('em').addClass('bution_em');
+
+				});
+				/*发货订单  切换上一步下一步*/
+				$('.firm_list_last').click(function(){
+					$('.log_none').fadeOut();
+					tcHide()
+				})
+			});
+		</script>
+		<!--选择板块下拉-->
+		<script>
+			$('.f_node_two .node_text').click(function(){
+				$('.w_plate_one ul').slideDown();
+				
+				
+				return false;
+			});
+		</script>
+	</body>
+
+</html>

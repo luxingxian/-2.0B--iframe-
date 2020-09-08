@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>客房管理平台</title>
+		<link rel="stylesheet" href="css/sjcalendar.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="css/l_tab_title.css" />
+	</head>
+
+	<body>
+		<!--content-->
+		<div class="conetn_mian">
+			<!--头部开始-->
+			<div class="l_container l_tab">
+				<div class="l_content">
+					<div id="menuBg"></div>
+					<p class="l_title">客房</p>
+					<ul class="l_ul clearfix">
+						<li class="active">
+							<a href="room-manage.html" target="iframe_menu" >客房管理平台</a>
+						</li>
+						<li>
+							<a href="room_reservation_list.html" target="iframe_menu" >客房预订单</a>
+						</li>
+						<li>
+							<a href="house_IM.html" target="iframe_menu" >房型信息管理</a>
+						</li>
+						<li>
+							<a href="calendar-manage.html" target="iframe_menu" >日历管理</a>
+						</li>
+						<li>
+							<a href="pricing_scheme_manage.html" target="iframe_menu" >价格方案管理</a>
+						</li>
+						<li>
+							<a href="policy_management.html" target="iframe_menu" >酒店政策管理</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--头部--ed-->
+			<!--主体开始-->
+			<div class="l_container">
+				<!--主体iframe开始-->
+				<div class="iframe_box">
+					<div class="box_index">
+						<iframe src="room-manage.html" name="iframe_menu" id="iframe_menu" scrolling="no"></iframe>
+					</div>
+				</div>
+				<!--主体iframe结束-->
+			</div>
+
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript" src="js/sjcalendar-room.js"></script>
+
+	</body>
+
+</html>

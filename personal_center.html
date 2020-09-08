@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/room.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" href="css/w_Plate_Style.css" />
+		<link rel="stylesheet" href="css/croppic.css" />
+	</head>
+
+	<body>
+		<!--content-->
+
+		<div class="l_container l_tab">
+			<div class="l_content" style="height: 100px;">
+				<p class="l_title">个人中心</p>
+			</div>
+		</div>
+		<div class="l_container">
+			<div class="l_content w_center_person">
+				<div class="mod_data">
+					<span class="fr">修改密码</span>
+				</div>
+				<div class="w_person_content">
+					<div class="w_person_left fl">
+						<div class="person_left_list fr">
+							<div class="person_photo">
+								<img src="images/person_touxiang.png">
+							</div>
+							<div class="person_change">
+								更换头像
+							</div>
+							<div class="person_mation">
+								<h3>个人信息</h3>
+								<div class="person_name">
+									<p class="person_name_img fl">
+
+									</p>
+									<p class="fl">
+										<em>名字</em>
+										<em>魏雯雯</em>
+									</p>
+								</div>
+								<div class="person_name">
+									<p class="login_name_img fl">
+
+									</p>
+									<p class="fl">
+										<em>登录名</em>
+										<em>weiwenwenweiwenweiwenwen</em>
+									</p>
+								</div>
+								<div class="person_name">
+									<p class="person_phone_img fl">
+
+									</p>
+									<p class="fl">
+										<em class="w_phone" style="display: none;">手机号</em>
+										<em class="change_phone">
+														<i class="tel_phone">手机号</i>
+														<span class="no_validation" style="display: none;">未验证</span>
+														<span class="w_bound">绑定</span>
+														<span class="w_replace_phpne" style="display: none;">更换</span>
+														<span class="w_validation" style="display: none;">验证</span></em>
+									</p>
+								</div>
+								<div class="person_name">
+									<p class="person_role_img fl">
+
+									</p>
+									<p class="fl">
+										<em>角色</em>
+										<em>超级管理员、管理员</em>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w_person_right fr">
+						<div class="bus_permissions">
+							<!--业务权限-->
+							<h3>业务权限</h3>
+							<div class="w_product_show">
+								<h4>商品展示、销售</h4>
+								<em>便利店</em><em>民宿便利店</em><em>民宿便利店</em><em>便利店</em><em>便利店</em><em>便利店</em><em>便利店</em><em>便利店</em>
+							</div>
+							<div class="w_product_show">
+								<h4>娱乐展示</h4>
+								<em>便利店</em><em>民宿便利店</em><em>民宿便利店</em><em>便利店</em><em>便利店</em><em>便利店</em><em>便利店</em><em>便利店</em>
+							</div>
+							<!--暂无业务权限-->
+							<div class="w_qx">
+								<img src="images/zanwuyewuquanxian.png" alt="您暂无业务权限" />
+								<p>您暂无业务权限</p>
+							</div>
+
+						</div>
+						<div class="bus_remind">
+							<h3>业务提醒</h3>
+							<div class="bus_remind_left fl">
+								<p class="bus_img fl">
+									<img src="images/wx_remind.png" />
+								</p>
+								<p class="bus_text fl">
+									<em>微信提醒</em>
+									<em>请关注集智集客微信公众号</em>
+								</p>
+							</div>
+							<div class="bus_remind_right fr">
+								<p class="bus_img fl">
+									<img src="images/message_remind.png" />
+								</p>
+								<p class="bus_text fl">
+									<em>短信提醒</em>
+									<em>新订单提醒、取消订单提醒、待处理订单提醒</em>
+								</p>
+								<span class="kt_img"></span>
+							</div>
+						</div>
+						<div class="bus_infor">
+							<h3>商户信息</h3>
+							<ul>
+								<li>
+									<p>商户ID</p>
+									<p>52</p>
+								</li>
+								<li>
+									<p>商户名称</p>
+									<p>中州皇冠假日</p>
+								</li>
+								<li>
+									<p>负责人</p>
+									<p>邵双欣</p>
+								</li>
+								<li>
+									<p>负责人手机号</p>
+									<p>13800138000</p>
+								</li>
+							</ul>
+							<div class="mer_address">
+								<p>商户名称</p>
+								<p>中州皇冠假日中州皇冠假日中州皇冠假日中州皇冠假日中州皇冠假日中州皇冠假日</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--修改密码-->
+		<div class="w_popup w_change_pwd">
+			<div class="w_tou_popup"></div>
+			<div class="change_pwd">
+				<div class="close_pwd">
+					<em class="fl">修改密码</em>
+					<em class="w_close_btn fr">&#10005;</em>
+				</div>
+				<div class="w_pwd">
+					<p><i>*</i>原密码</p>
+					<input type="text" placeholder="输入当前密码" class="pw1" />
+				</div>
+				<div class="w_pwd">
+					<p><i>*</i>新密码</p>
+					<input type="text" placeholder="8-20个字符，必须包含字母及数字" class="pw2" />
+				</div>
+				<div class="w_pwd">
+					<p><i>*</i>确认新密码</p>
+					<input type="text" placeholder="确认密码" class="pw3" />
+				</div>
+				<div class="w_pwd_save">
+					<span class="fr">保存</span>
+				</div>
+			</div>
+		</div>
+		<!--绑定手机号-->
+		<div class="w_popup bind_phone">
+			<div class="w_tou_popup"></div>
+			<div class="bind_mobile_phone">
+				<div class="close_phone">
+					<em class="fl">绑定手机号</em>
+					<em class="w_close_btn fr">&#10005;</em>
+				</div>
+				<div class="w_pwd">
+					<p>手机号</p>
+					<input type="text" class="p1" value="" placeholder="">
+				</div>
+				<div class="w_yzm">
+					<p>短信验证码</p>
+					<input type="text" class="p2" value="" placeholder="">
+					<textarea type="text" id="btn" onclick="settime(this)">获取验证码</textarea>
+				</div>
+				<div class="wx_btn">
+					<span class="wx_save">确定</span>
+					<span class="wx_cancel">取消</span>
+				</div>
+			</div>
+		</div>
+		<!--验证手机号-->
+		<div class="w_popup verify_phone">
+			<div class="w_tou_popup"></div>
+			<div class="verify_mobile_phone">
+				<div class="close_phone">
+					<em class="fl">验证手机号</em>
+					<em class="w_close_btn fr">&#10005;</em>
+				</div>
+				<div class="w_pwd">
+					<p>手机号</p>
+					<i>18733587372</i> <em class="replace_phone">更换</em>
+				</div>
+				<div class="w_yzm">
+					<p>短信验证码</p>
+					<input type="text" class="p3" value="" placeholder="">
+					<textarea type="text" id="btn" onclick="settime(this)">获取验证码</textarea>
+				</div>
+				<div class="wx_btn">
+					<span class="wx_save">确定</span>
+					<span class="wx_cancel">取消</span>
+				</div>
+			</div>
+		</div>
+		<!--更换手机号-->
+		<div class="w_popup w_change_phone">
+			<div class="w_tou_popup"></div>
+			<div class="change_mobile_phone">
+				<div class="close_phone">
+					<em class="fl">更换手机号</em>
+					<em class="w_close_btn fr">&#10005;</em>
+				</div>
+				<div class="w_pwd">
+					<p>手机号</p>
+					<input type="text" class="p4" value="" placeholder="">
+				</div>
+				<div class="w_yzm">
+					<p>短信验证码</p>
+					<input type="text" class="p5" value="" placeholder="">
+					<textarea type="text" id="btn" onclick="settime(this)">获取验证码</textarea>
+				</div>
+				<div class="wx_btn">
+					<span class="wx_save">确定</span>
+					<span class="wx_cancel">取消</span>
+				</div>
+			</div>
+		</div>
+		<!--退出系统弹窗-->
+		<div class="quitbox">
+			<div class="quitpopup">
+				<p class="qptop"><span>确定要退出酒店后台系统吗？</span></p>
+				<p class="qpbut">
+					<input type="button" value="取消" class="undo" />
+					<input type="button" value="确定" class="affirm" />
+				</p>
+			</div>
+		</div>
+		<!--切图-->
+		<div class="cut_photo">
+			<div class="cut_p_top">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModal_center"></div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="assets/js/croppic.min.js"></script>
+		<!--修改密码-->
+		<script>
+			$(function() {
+				$(".mod_data span").click(function() {
+					$(".w_change_pwd").fadeIn();
+					tcShow();
+				})
+				$(".w_change_pwd .w_close_btn").click(function() {
+					$(".w_change_pwd").fadeOut();
+					tcHide();
+				})
+				$(".w_change_pwd input").focus(function() {
+					$(this).css("border-bottom", "1px solid #3c3c3c");
+				})
+				$(".w_change_pwd input").blur(function() {
+					$(this).css("border-bottom", "1px solid #ccd4d8");
+				});
+				$(".w_change_pwd .w_pwd_save").click(function() {
+					var pw1 = $(".change_pwd .pw1").val();
+					var pw2 = $(".change_pwd .pw2").val();
+					var pw3 = $(".change_pwd .pw3").val();
+					//原密码不能为空
+					if(pw1 == "") {
+						$(".pw1").css("border-bottom", "1px solid red").attr('placeholder', '不能为空');
+						$(".pw1").addClass("invalid");
+					} else {
+						$(".pw1").css("border-bottom", "1px solid #c8cacb").attr('placeholder', '');
+						$(".pw1").removeClass("invalid");
+					}
+					//新密码不能为空
+					if(pw2 == "") {
+						$(".pw2").css("border-bottom", "1px solid red").attr('placeholder', '不能为空');
+						$(".pw2").addClass("invalid");
+					} else {
+						$(".pw2").css("border-bottom", "1px solid #c8cacb").attr('placeholder', '');
+						$(".pw2").removeClass("invalid");
+					}
+					//确认新密码不能为空
+					if(pw3 == "") {
+						$(".pw3").css("border-bottom", "1px solid red").attr('placeholder', '不能为空');
+						$(".pw3").addClass("invalid");
+					} else {
+						$(".pw3").css("border-bottom", "1px solid #c8cacb").attr('placeholder', '');
+						$(".pw3").removeClass("invalid");
+					}
+					//关闭弹窗
+					if(pw1 != "" && pw2 != "" && pw3 != "") {
+						$(".w_change_pwd").fadeOut();
+						tcHide();
+					}
+				})
+			})
+		</script>
+		<!--绑定手机号-->
+		<script>
+			$(function() {
+				$(".w_bound").click(function() {
+					$(".bind_phone").fadeIn();
+					tcShow();
+				});
+				$(".bind_phone .wx_cancel,.bind_phone .w_close_btn").click(function() {
+					$(".bind_phone").fadeOut();
+					tcHide();
+				});
+				$(".bind_phone input").focus(function() {
+					$(this).css("border-bottom", "1px solid #3c3c3c");
+				})
+				$(".bind_phone input").blur(function() {
+					$(this).css("border-bottom", "1px solid #ccd4d8");
+				});
+
+				$(".bind_phone .wx_save").click(function() {
+					var ok1 = $(".bind_mobile_phone .p1").val();
+					var ok2 = $(".bind_mobile_phone .p2").val();
+					var zephone = /^1[3|4|5|7|8][0-9]{9}$/
+					//手机号不能为空
+					if(ok1 == "") {
+						$(".p1").css("border-bottom", "1px solid red").attr('placeholder', '不能为空');
+						$(".p1").addClass("invalid");
+					} else {
+						$(".p1").css("border-bottom", "1px solid #c8cacb").attr('placeholder', '');
+						$(".p1").removeClass("invalid");
+					}
+					//验证码不能为空
+					if(ok2 == "") {
+						$(".p2").css("border-bottom", "1px solid red").attr('placeholder', '不能为空');
+						$(".p2").addClass("invalid");
+					} else {
+						$(".p2").css("border-bottom", "1px solid #c8cacb").attr('placeholder', '');
+						$(".p2").removeClass("invalid");
+					}
+					//手机号正则
+					if(zephone.test(ok1)) {
+						$(".p1").css("border-bottom", "1px solid #3c3c3c");
+						$(".p1").css("background", "url(images/yz_true.png) no-repeat right");
+					} else if(ok1 == "") {
+						$(".p1").css("background", "");
+					} else {
+						$(".p1").css("background", "url(images/yz_false.png) no-repeat right");
+						$(".p1").css("border-bottom", "1px solid red");
+					}
+					//关闭弹窗
+					if(ok1 != "" && ok2 != "" && zephone.test(ok1) == true) {
+						$(".bind_phone").fadeOut();
+						$(".w_bound").hide();
+						$(".no_validation").show();
+						$(".w_validation").show();
+						$(".w_phone").show();
+						$(".tel_phone").html(ok1)
+						tcHide();
+					}
+				})
+			})
+		</script>
+		<!--验证手机号-->
+		<script>
+			$(function() {
+				$(".w_validation").click(function() {
+					$(".verify_phone").fadeIn();
+					tcShow();
+				});
+				$(".verify_phone .wx_cancel,.verify_phone .w_close_btn").click(function() {
+					$(".verify_phone").fadeOut();
+					tcHide();
+				});
+				$(".verify_phone input").focus(function() {
+					$(this).css("border-bottom", "1px solid #3c3c3c");
+				})
+				$(".verify_phone input").blur(function() {
+					$(this).css("border-bottom", "1px solid #ccd4d8");
+				});
+
+				$(".verify_phone .wx_save").click(function() {
+					var ok3 = $(".verify_mobile_phone .p3").val();
+					//验证码不能为空
+					if(ok3 == "") {
+						$(".p3").css("border-bottom", "1px solid red").attr('placeholder', '不能为空');
+						$(".p3").addClass("invalid");
+					} else {
+						$(".p3").css("border-bottom", "1px solid #c8cacb").attr('placeholder', '');
+						$(".p3").removeClass("invalid");
+					}
+					//关闭弹窗
+					if(ok3 != "") {
+						$(".verify_phone").fadeOut();
+						$(".w_exchange").show();
+						$(".w_validation").hide();
+						$(".no_validation").css("background", "#1c8422").html("已验证");
+						$(".w_replace_phpne").show();
+						tcHide();
+					}
+				})
+			})
+		</script>
+		<!--更换手机号-->
+		<script>
+			$(function() {
+				$(".w_replace_phpne").click(function() {
+					$(".w_change_phone").fadeIn();
+					tcShow();
+				});
+				$(".replace_phone").click(function() {
+					$(".w_change_phone").fadeIn();
+					tcShow();
+				});
+				$(".w_change_phone .wx_cancel,.w_change_phone .w_close_btn").click(function() {
+					$(".w_change_phone").fadeOut();
+					tcHide();
+				});
+				$(".w_change_phone input").focus(function() {
+					$(this).css("border-bottom", "1px solid #3c3c3c");
+				})
+				$(".w_change_phone input").blur(function() {
+					$(this).css("border-bottom", "1px solid #ccd4d8");
+				});
+
+				$(".w_change_phone .wx_save").click(function() {
+					var ok4 = $(".change_mobile_phone .p4").val();
+					var ok5 = $(".change_mobile_phone .p5").val();
+					var zephone = /^1[3|4|5|7|8][0-9]{9}$/
+					//手机号不能为空
+					if(ok4 == "") {
+						$(".p4").css("border-bottom", "1px solid red").attr('placeholder', '不能为空');
+						$(".p4").addClass("invalid");
+					} else {
+						$(".p4").css("border-bottom", "1px solid #c8cacb").attr('placeholder', '');
+						$(".p4").removeClass("invalid");
+					}
+					//验证码不能为空
+					if(ok5 == "") {
+						$(".p5").css("border-bottom", "1px solid red").attr('placeholder', '不能为空');
+						$(".p5").addClass("invalid");
+					} else {
+						$(".p5").css("border-bottom", "1px solid #c8cacb").attr('placeholder', '');
+						$(".p5").removeClass("invalid");
+					}
+					//手机号正则
+					if(zephone.test(ok4)) {
+						$(".p4").css("border-bottom", "1px solid #3c3c3c");
+						$(".p4").css("background", "url(images/yz_true.png) no-repeat right");
+					} else if(ok4 == "") {
+						$(".p4").css("background", "");
+					} else {
+						$(".p4").css("background", "url(images/yz_false.png) no-repeat right");
+						$(".p4").css("border-bottom", "1px solid red");
+					}
+					//关闭弹窗
+					if(ok4 != "" && ok5 != "" && zephone.test(ok4) == true) {
+						$(".w_change_phone").fadeOut();
+						tcHide();
+					}
+				})
+			})
+		</script>
+		<!--切图弹出-->
+		<script>
+			$(function() {
+				$('.person_change').click(function(e) {
+					$('.cut_photo').fadeIn();
+					tcShow();
+				});
+				$('.cut_photo .cut_p_top a').click(function(e) {
+					$('.cut_photo').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+		<!--验证码倒计时-->
+		<script type="text/javascript">
+			var countdown = 60;
+
+			function settime(obj) {
+				if(countdown == 0) {
+					obj.removeAttribute("disabled");
+					obj.value = "获取验证码";
+					countdown = 60;
+					return;
+				} else {
+					obj.setAttribute("disabled", true);
+					obj.value = "重新发送(" + countdown + ")";
+					countdown--;
+				}
+				setTimeout(function() {
+					settime(obj)
+				}, 1000)
+			}
+		</script>
+		<!--切图插件js-->
+		<script>
+			var croppicContainerModalOptions = {
+				uploadUrl: 'http://tech.harvetech.cn/wifihotel/img_save_to_file.php',
+				cropUrl: 'http://tech.harvetech.cn/wifihotel/img_crop_to_file.php',
+				modal: true,
+				imgEyecandyOpacity: 0.4,
+				loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+				onBeforeImgUpload: function() {
+					console.log('onBeforeImgUpload')
+				},
+				onAfterImgUpload: function() {
+					console.log('onAfterImgUpload')
+				},
+				onImgDrag: function() {
+					console.log('onImgDrag')
+				},
+				onImgZoom: function() {
+					console.log('onImgZoom')
+				},
+				onBeforeImgCrop: function() {
+					console.log('onBeforeImgCrop')
+				},
+				onAfterImgCrop: function() {
+					console.log('onAfterImgCrop')
+				},
+				onReset: function() {
+					console.log('onReset')
+				},
+				onError: function(errormessage) {
+					console.log('onError:' + errormessage)
+				}
+			}
+			var cropContainerModal = new Croppic('cropContainerModal_center', croppicContainerModalOptions);
+		</script>
+	</body>
+
+</html>

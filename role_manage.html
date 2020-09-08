@@ -1,0 +1,3120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>角色管理</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="css/room.css" />
+		<link rel="stylesheet" href="css/l_tab_title.css" />
+	</head>
+
+	<body>
+		<!--content-->
+		<!--主体-->
+		<div class="l_container">
+			<div class="s_content">
+				<div class="content_min">
+					<!--二级筛选导航公用结构-->
+					<div class="l_header1 clearfix">
+						<a href="javascript:;" class="l_ref fr"><img src="images/s_icon.png" />刷新</a>
+					</div>
+					<!--二级筛选导航公用结构--ed---->
+					<div class="s_table">
+						<table>
+							<thead>
+								<tr>
+									<th width="21%" style=" padding-left:7.4%;">编号</th>
+									<th width="21.33%">角色名称</th>
+									<th width="43.2%">权限说明</th>
+									<th width="6.93%">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="s_tip4">
+										1
+									</td>
+									<td>超级管理员</td>
+									<td>
+										查询、更改、添加、删除、下载列表、权限更改
+									</td>
+									<td>
+										<img src="images/s_icon3.png" class="s_plase chakanone" />
+									</td>
+								</tr>
+								<tr>
+									<td class="s_tip4">
+										2
+									</td>
+									<td>平台管理员</td>
+									<td>
+										查询、更改、添加、删除、下载列表、权限更改
+									</td>
+									<td>
+										<img src="images/s_icon3.png" class="s_plase chakantwo" />
+									</td>
+								</tr>
+								<tr>
+									<td class="s_tip4">
+										3
+									</td>
+									<td>平台巡视员</td>
+									<td>
+										查询、更改、添加、删除、下载列表、权限更改
+									</td>
+									<td>
+										<img src="images/s_icon3.png" class="s_plase chakanthree" />
+									</td>
+								</tr>
+								<tr>
+									<td class="s_tip4">
+										4
+									</td>
+									<td>微信管理员</td>
+									<td>
+										微平台：查询、更改、添加
+									</td>
+									<td>
+										<img src="images/s_icon3.png" class="s_plase chakanfour" />
+									</td>
+								</tr>
+								<tr>
+									<td class="s_tip4">
+										5
+									</td>
+									<td>客房管理员</td>
+									<td>
+										查询、更改、添加、删除、下载列表、权限更改
+									</td>
+									<td>
+										<img src="images/s_icon3.png" class="s_plase chakanfive" />
+									</td>
+								</tr>
+								<tr>
+									<td class="s_tip4">
+										6
+									</td>
+									<td>餐饮管理员</td>
+									<td>
+										客房中心：查询、更改、添加
+									</td>
+									<td>
+										<img src="images/s_icon3.png" class="s_plase chakansix" />
+									</td>
+								</tr>
+								<tr>
+									<td class="s_tip4">
+										7
+									</td>
+									<td>商品管理员</td>
+									<td>
+										客房中心：查询、更改、添加
+									</td>
+									<td>
+										<img src="images/s_icon3.png" class="s_plase chakanseven" />
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部分页开始-->
+		<div class="l_container">
+			<div class="l_foot_page clearfix">
+				<div class="l_left fl">
+					<p>每页显示
+						<select>
+							<option>10</option>
+							<option>20</option>
+							<option>30</option>
+						</select>
+					</p>
+				</div>
+				<div class="l_right fr clearfix">
+					<p>
+						<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+						<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+						<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+					</p>
+					<p class="l_skippage">
+						到<input type="number" />页<button>确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--超级管理员编辑-->
+		<div class="role_edit role_editone">
+			<p class="s_shadow"></p>
+			<div class="re_main">
+				<div class="re_top">
+					查看权限
+					<i class="fr">&#10005;</i>
+				</div>
+				<table class="table3">
+					<tr>
+						<td width="80px"><span>角色名称：</span></td>
+						<td colspan="4"><span>超级管理员</span></td>
+					</tr>
+					<tr>
+						<td rowspan="40">
+							<span>权限说明：</span>
+						</td>
+						<td rowspan="7"><span>微平台</span></td>
+						<td><span>公众号管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">授权绑定</label>
+							<label><input type="checkbox" disabled="disabled">手动添加</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看绑定公众号</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>微信支付：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>自定义菜单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看菜单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">添加菜单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">编辑菜单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除菜单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">菜单排序</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">保存并发布</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>关注客户管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">设置分组</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量分组</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改备注</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">加入黑名单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">移出黑名单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新建分组</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改分组</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除分组</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>门店管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增门店</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改门店服务</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除门店</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>微信连Wi-Fi：</span></td>
+						<td>设备管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">添加设备</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改网络名称</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">清空门店网络及设备</label>
+						</td>
+					</tr>
+					<tr>
+						<td>商家主页管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">编辑主页</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>客户中心</span></td>
+						<td><span>来访用户：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">加入白名单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量删除</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>白名单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="7"><span>客房中心</span></td>
+						<td><span>客房管理平台：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">生成价格</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布价格</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改价格</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改房量</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改优惠方案</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客房预订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">确认订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">订单退款</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>房型信息管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增房型</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改房型</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除房型</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>日历管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增节日</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改节日</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除节日</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>价格方案管理：</span></td>
+						<td><span>日常价格：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改方案</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">恢复默认</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>优惠活动：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增优惠</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改优惠</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除优惠</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>酒店政策管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="6"><span>餐饮中心</span></td>
+						<td rowspan="2"><span>菜品预订：</span></td>
+						<td><span>菜品管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增菜品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改菜品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除菜品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">上架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">菜品下架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">菜品售罄</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">菜品开售</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>菜品订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">确认订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>餐桌预订：</span></td>
+						<td><span>订桌控制台：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增预订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改库存</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">确认订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>桌型管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增桌型</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改桌型</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除桌型</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌规则设置：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">开启订桌</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">关闭订桌</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">规则设置</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增暂停预订</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">恢复预订</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>商品中心</span></td>
+						<td><span>商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">上架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">商品下架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">补充库存</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品销售订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">确认订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发货</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">退款</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>娱乐中心</span></td>
+						<td><span>娱乐商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">上架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>会议中心</span></td>
+						<td><span>会议商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">上架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>财务中心</span></td>
+						<td><span>收款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>退款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>数据中心</span></td>
+						<td><span>客流统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>入口统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>评价统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订单统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="3"><span>内容中心</span></td>
+						<td><span>资讯管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增资讯</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改资讯</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除资讯</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>广告位管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">排序</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">替换</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>服务指南：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增服务项</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改服务项</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除服务项</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客服中心</span></td>
+						<td><span>服务评价：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">展示</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">隐藏</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量展示</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量隐藏</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>管理</span></td>
+						<td><span>管理员管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增用户</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改用户</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除用户</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>角色管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商户信息：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品分类管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增分类</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改分类</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">删除分类</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">下线</label>
+						</td>
+					</tr>
+				</table>
+				<div class="re_but">
+					<input type="button" value="关闭" class="sure" />
+				</div>
+			</div>
+		</div>
+		<!--超级管理员编辑结束-->
+
+		<!--平台管理员编辑-->
+		<div class="role_edit role_edittwo">
+			<p class="s_shadow"></p>
+			<div class="re_main">
+				<div class="re_top">
+					查看权限
+					<i class="fr">&#10005;</i>
+				</div>
+				<table class="table3">
+					<tr>
+						<td width="80px"><span>角色名称：</span></td>
+						<td colspan="4"><span>平台管理员</span></td>
+					</tr>
+					<tr>
+						<td rowspan="40">
+							<span>权限说明：</span>
+						</td>
+						<td rowspan="7"><span>微平台</span></td>
+						<td><span>公众号管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">授权绑定</label>
+							<label><input type="checkbox" disabled="disabled">手动添加</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看绑定公众号</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>微信支付：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>自定义菜单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看菜单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">添加菜单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">编辑菜单</label>
+							<label><input type="checkbox" disabled="disabled">删除菜单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">菜单排序</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">保存并发布</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>关注客户管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">设置分组</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量分组</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改备注</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">加入黑名单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">移出黑名单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新建分组</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改分组</label>
+							<label><input type="checkbox" disabled="disabled">删除分组</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>门店管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增门店</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改门店服务</label>
+							<label><input type="checkbox" disabled="disabled">删除门店</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>微信连Wi-Fi：</span></td>
+						<td>设备管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">添加设备</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改网络名称</label>
+							<label><input type="checkbox" disabled="disabled">清空门店网络及设备</label>
+						</td>
+					</tr>
+					<tr>
+						<td>商家主页管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">编辑主页</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>客户中心</span></td>
+						<td><span>来访用户：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">加入白名单</label>
+							<label><input type="checkbox" disabled="disabled">删除</label>
+							<label><input type="checkbox" disabled="disabled">批量删除</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>白名单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">删除</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="7"><span>客房中心</span></td>
+						<td><span>客房管理平台：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">生成价格</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布价格</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改价格</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改房量</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改优惠方案</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客房预订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">确认订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">订单退款</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>房型信息管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增房型</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改房型</label>
+							<label><input type="checkbox" disabled="disabled">删除房型</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>日历管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增节日</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改节日</label>
+							<label><input type="checkbox" disabled="disabled">删除节日</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>价格方案管理：</span></td>
+						<td><span>日常价格：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改方案</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">恢复默认</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>优惠活动：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增优惠</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改优惠</label>
+							<label><input type="checkbox" disabled="disabled">删除优惠</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>酒店政策管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="6"><span>餐饮中心</span></td>
+						<td rowspan="2"><span>菜品预订：</span></td>
+						<td><span>菜品管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增菜品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改菜品</label>
+							<label><input type="checkbox" disabled="disabled">删除菜品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">上架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">菜品下架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">菜品售罄</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">菜品开售</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>菜品订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">确认订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>餐桌预订：</span></td>
+						<td><span>订桌控制台：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增预订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改库存</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">确认订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>桌型管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增桌型</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改桌型</label>
+							<label><input type="checkbox" disabled="disabled">删除桌型</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌规则设置：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">开启订桌</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">关闭订桌</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">规则设置</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增暂停预订</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">恢复预订</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>商品中心</span></td>
+						<td><span>商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">上架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">商品下架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">补充库存</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品销售订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">确认订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发货</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">退款</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>娱乐中心</span></td>
+						<td><span>娱乐商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">上架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>会议中心</span></td>
+						<td><span>会议商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">上架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>财务中心</span></td>
+						<td><span>收款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>退款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>数据中心</span></td>
+						<td><span>客流统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>入口统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>评价统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订单统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="3"><span>内容中心</span></td>
+						<td><span>资讯管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增资讯</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改资讯</label>
+							<label><input type="checkbox" disabled="disabled">删除资讯</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>广告位管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">排序</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">替换</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>服务指南：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增服务项</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改服务项</label>
+							<label><input type="checkbox" disabled="disabled">删除服务项</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>客服中心</span></td>
+						<td><span>服务评价：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">展示</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">隐藏</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量展示</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量隐藏</label>
+						</td>
+						<td><span>服务评价1：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">展示</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">隐藏</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量展示</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量隐藏</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>管理</span></td>
+						<td><span>管理员管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增用户</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改用户</label>
+							<label><input type="checkbox" disabled="disabled">删除用户</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>角色管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商户信息：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">修改</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品分类管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增分类</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改分类</label>
+							<label><input type="checkbox" disabled="disabled">删除分类</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">下线</label>
+						</td>
+					</tr>
+				</table>
+				<div class="re_but">
+					<input type="button" value="关闭" class="sure" />
+				</div>
+			</div>
+		</div>
+		<!--平台管理员编辑结束-->
+
+		<!--平台巡视员编辑-->
+		<div class="role_edit role_editthree">
+			<p class="s_shadow"></p>
+			<div class="re_main">
+				<div class="re_top">
+					查看权限
+					<i class="fr">&#10005;</i>
+				</div>
+				<table class="table3">
+					<tr>
+						<td width="80px"><span>角色名称：</span></td>
+						<td colspan="4"><span>平台巡视员</span></td>
+					</tr>
+					<tr>
+						<td rowspan="40">
+							<span>权限说明：</span>
+						</td>
+						<td rowspan="7"><span>微平台</span></td>
+						<td><span>公众号管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">授权绑定</label>
+							<label><input type="checkbox" disabled="disabled">手动添加</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看绑定公众号</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>微信支付：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>自定义菜单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看菜单</label>
+							<label><input type="checkbox" disabled="disabled">添加菜单</label>
+							<label><input type="checkbox" disabled="disabled">编辑菜单</label>
+							<label><input type="checkbox" disabled="disabled">删除菜单</label>
+							<label><input type="checkbox" disabled="disabled">菜单排序</label>
+							<label><input type="checkbox" disabled="disabled">保存并发布</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>关注客户管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">设置分组</label>
+							<label><input type="checkbox" disabled="disabled">批量分组</label>
+							<label><input type="checkbox" disabled="disabled">修改备注</label>
+							<label><input type="checkbox" disabled="disabled">加入黑名单</label>
+							<label><input type="checkbox" disabled="disabled">移出黑名单</label>
+							<label><input type="checkbox" disabled="disabled">新建分组</label>
+							<label><input type="checkbox" disabled="disabled">修改分组</label>
+							<label><input type="checkbox" disabled="disabled">删除分组</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>门店管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增门店</label>
+							<label><input type="checkbox" disabled="disabled">修改门店服务</label>
+							<label><input type="checkbox" disabled="disabled">删除门店</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>微信连Wi-Fi：</span></td>
+						<td>设备管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">添加设备</label>
+							<label><input type="checkbox" disabled="disabled">修改网络名称</label>
+							<label><input type="checkbox" disabled="disabled">清空门店网络及设备</label>
+						</td>
+					</tr>
+					<tr>
+						<td>商家主页管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">编辑主页</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>客户中心</span></td>
+						<td><span>来访用户：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">加入白名单</label>
+							<label><input type="checkbox" disabled="disabled">删除</label>
+							<label><input type="checkbox" disabled="disabled">批量删除</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>白名单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">删除</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="7"><span>客房中心</span></td>
+						<td><span>客房管理平台：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">生成价格</label>
+							<label><input type="checkbox" disabled="disabled">发布价格</label>
+							<label><input type="checkbox" disabled="disabled">修改价格</label>
+							<label><input type="checkbox" disabled="disabled">修改房量</label>
+							<label><input type="checkbox" disabled="disabled">修改优惠方案</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客房预订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">订单退款</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>房型信息管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增房型</label>
+							<label><input type="checkbox" disabled="disabled">修改房型</label>
+							<label><input type="checkbox" disabled="disabled">删除房型</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>日历管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增节日</label>
+							<label><input type="checkbox" disabled="disabled">修改节日</label>
+							<label><input type="checkbox" disabled="disabled">删除节日</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>价格方案管理：</span></td>
+						<td><span>日常价格：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">修改方案</label>
+							<label><input type="checkbox" disabled="disabled">恢复默认</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>优惠活动：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增优惠</label>
+							<label><input type="checkbox" disabled="disabled">修改优惠</label>
+							<label><input type="checkbox" disabled="disabled">删除优惠</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>酒店政策管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="6"><span>餐饮中心</span></td>
+						<td rowspan="2"><span>菜品预订：</span></td>
+						<td><span>菜品管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增菜品</label>
+							<label><input type="checkbox" disabled="disabled">修改菜品</label>
+							<label><input type="checkbox" disabled="disabled">删除菜品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">菜品下架</label>
+							<label><input type="checkbox" disabled="disabled">菜品售罄</label>
+							<label><input type="checkbox" disabled="disabled">菜品开售</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>菜品订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>餐桌预订：</span></td>
+						<td><span>订桌控制台：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增预订单</label>
+							<label><input type="checkbox" disabled="disabled">修改库存</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">修改订单</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>桌型管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增桌型</label>
+							<label><input type="checkbox" disabled="disabled">修改桌型</label>
+							<label><input type="checkbox" disabled="disabled">删除桌型</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌规则设置：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">开启订桌</label>
+							<label><input type="checkbox" disabled="disabled">关闭订桌</label>
+							<label><input type="checkbox" disabled="disabled">规则设置</label>
+							<label><input type="checkbox" disabled="disabled">新增暂停预订</label>
+							<label><input type="checkbox" disabled="disabled">恢复预订</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>商品中心</span></td>
+						<td><span>商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增商品</label>
+							<label><input type="checkbox" disabled="disabled">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">商品下架</label>
+							<label><input type="checkbox" disabled="disabled">补充库存</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品销售订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">发货</label>
+							<label><input type="checkbox" disabled="disabled">退款</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>娱乐中心</span></td>
+						<td><span>娱乐商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增商品</label>
+							<label><input type="checkbox" disabled="disabled">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>会议中心</span></td>
+						<td><span>会议商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增商品</label>
+							<label><input type="checkbox" disabled="disabled">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>财务中心</span></td>
+						<td><span>收款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>退款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>数据中心</span></td>
+						<td><span>客流统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>入口统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>评价统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订单统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="3"><span>内容中心</span></td>
+						<td><span>资讯管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增资讯</label>
+							<label><input type="checkbox" disabled="disabled">修改资讯</label>
+							<label><input type="checkbox" disabled="disabled">删除资讯</label>
+							<label><input type="checkbox" disabled="disabled">发布</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>广告位管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+							<label><input type="checkbox" disabled="disabled">替换</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>服务指南：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增服务项</label>
+							<label><input type="checkbox" disabled="disabled">修改服务项</label>
+							<label><input type="checkbox" disabled="disabled">删除服务项</label>
+							<label><input type="checkbox" disabled="disabled">发布</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客服中心</span></td>
+						<td><span>服务评价：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">展示</label>
+							<label><input type="checkbox" disabled="disabled">隐藏</label>
+							<label><input type="checkbox" disabled="disabled">批量展示</label>
+							<label><input type="checkbox" disabled="disabled">批量隐藏</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>管理</span></td>
+						<td><span>管理员管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增用户</label>
+							<label><input type="checkbox" disabled="disabled">修改用户</label>
+							<label><input type="checkbox" disabled="disabled">删除用户</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>角色管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商户信息：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">修改</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品分类管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增分类</label>
+							<label><input type="checkbox" disabled="disabled">修改分类</label>
+							<label><input type="checkbox" disabled="disabled">删除分类</label>
+							<label><input type="checkbox" disabled="disabled">发布</label>
+							<label><input type="checkbox" disabled="disabled">下线</label>
+						</td>
+					</tr>
+				</table>
+				<div class="re_but">
+					<input type="button" value="关闭" class="sure" />
+
+				</div>
+			</div>
+		</div>
+		<!--平台巡视员编辑结束-->
+
+		<!--微信管理员编辑-->
+		<div class="role_edit role_editfour">
+			<p class="s_shadow"></p>
+			<div class="re_main">
+				<div class="re_top">
+					查看权限
+					<i class="fr">&#10005;</i>
+				</div>
+				<table class="table3">
+					<tr>
+						<td width="80px"><span>角色名称：</span></td>
+						<td colspan="4"><span>微信管理员</span></td>
+					</tr>
+					<tr>
+						<td rowspan="40">
+							<span>权限说明：</span>
+						</td>
+						<td rowspan="7"><span>微平台</span></td>
+						<td><span>公众号管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">授权绑定</label>
+							<label><input type="checkbox" disabled="disabled">手动添加</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看绑定公众号</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>微信支付：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>自定义菜单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看菜单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">添加菜单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">编辑菜单</label>
+							<label><input type="checkbox" disabled="disabled">删除菜单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">菜单排序</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">保存并发布</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>关注客户管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">设置分组</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量分组</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改备注</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">加入黑名单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">移出黑名单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新建分组</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改分组</label>
+							<label><input type="checkbox" disabled="disabled">删除分组</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>门店管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增门店</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改门店服务</label>
+							<label><input type="checkbox" disabled="disabled">删除门店</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>微信连Wi-Fi：</span></td>
+						<td>设备管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">添加设备</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改网络名称</label>
+							<label><input type="checkbox" disabled="disabled">清空门店网络及设备</label>
+						</td>
+					</tr>
+					<tr>
+						<td>商家主页管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">编辑主页</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>客户中心</span></td>
+						<td><span>来访用户：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">加入白名单</label>
+							<label><input type="checkbox" disabled="disabled">删除</label>
+							<label><input type="checkbox" disabled="disabled">批量删除</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>白名单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">删除</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="7"><span>客房中心</span></td>
+						<td><span>客房管理平台：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">生成价格</label>
+							<label><input type="checkbox" disabled="disabled">发布价格</label>
+							<label><input type="checkbox" disabled="disabled">修改价格</label>
+							<label><input type="checkbox" disabled="disabled">修改房量</label>
+							<label><input type="checkbox" disabled="disabled">修改优惠方案</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客房预订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">订单退款</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>房型信息管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增房型</label>
+							<label><input type="checkbox" disabled="disabled">修改房型</label>
+							<label><input type="checkbox" disabled="disabled">删除房型</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>日历管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增节日</label>
+							<label><input type="checkbox" disabled="disabled">修改节日</label>
+							<label><input type="checkbox" disabled="disabled">删除节日</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>价格方案管理：</span></td>
+						<td><span>日常价格：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">修改方案</label>
+							<label><input type="checkbox" disabled="disabled">恢复默认</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>优惠活动：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增优惠</label>
+							<label><input type="checkbox" disabled="disabled">修改优惠</label>
+							<label><input type="checkbox" disabled="disabled">删除优惠</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>酒店政策管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="6"><span>餐饮中心</span></td>
+						<td rowspan="2"><span>菜品预订：</span></td>
+						<td><span>菜品管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增菜品</label>
+							<label><input type="checkbox" disabled="disabled">修改菜品</label>
+							<label><input type="checkbox" disabled="disabled">删除菜品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">菜品下架</label>
+							<label><input type="checkbox" disabled="disabled">菜品售罄</label>
+							<label><input type="checkbox" disabled="disabled">菜品开售</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>菜品订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>餐桌预订：</span></td>
+						<td><span>订桌控制台：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增预订单</label>
+							<label><input type="checkbox" disabled="disabled">修改库存</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">修改订单</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>桌型管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增桌型</label>
+							<label><input type="checkbox" disabled="disabled">修改桌型</label>
+							<label><input type="checkbox" disabled="disabled">删除桌型</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌规则设置：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">开启订桌</label>
+							<label><input type="checkbox" disabled="disabled">关闭订桌</label>
+							<label><input type="checkbox" disabled="disabled">规则设置</label>
+							<label><input type="checkbox" disabled="disabled">新增暂停预订</label>
+							<label><input type="checkbox" disabled="disabled">恢复预订</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>商品中心</span></td>
+						<td><span>商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增商品</label>
+							<label><input type="checkbox" disabled="disabled">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">商品下架</label>
+							<label><input type="checkbox" disabled="disabled">补充库存</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品销售订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">发货</label>
+							<label><input type="checkbox" disabled="disabled">退款</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>娱乐中心</span></td>
+						<td><span>娱乐商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增商品</label>
+							<label><input type="checkbox" disabled="disabled">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>会议中心</span></td>
+						<td><span>会议商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增商品</label>
+							<label><input type="checkbox" disabled="disabled">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>财务中心</span></td>
+						<td><span>收款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>退款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>数据中心</span></td>
+						<td><span>客流统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>入口统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>评价统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订单统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="3"><span>内容中心</span></td>
+						<td><span>资讯管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增资讯</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改资讯</label>
+							<label><input type="checkbox" disabled="disabled">删除资讯</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>广告位管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+							<label><input type="checkbox" disabled="disabled">替换</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>服务指南：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增服务项</label>
+							<label><input type="checkbox" disabled="disabled">修改服务项</label>
+							<label><input type="checkbox" disabled="disabled">删除服务项</label>
+							<label><input type="checkbox" disabled="disabled">发布</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客服中心</span></td>
+						<td><span>服务评价：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">展示</label>
+							<label><input type="checkbox" disabled="disabled">隐藏</label>
+							<label><input type="checkbox" disabled="disabled">批量展示</label>
+							<label><input type="checkbox" disabled="disabled">批量隐藏</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>管理</span></td>
+						<td><span>管理员管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增用户</label>
+							<label><input type="checkbox" disabled="disabled">修改用户</label>
+							<label><input type="checkbox" disabled="disabled">删除用户</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>角色管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商户信息：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">修改</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品分类管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增分类</label>
+							<label><input type="checkbox" disabled="disabled">修改分类</label>
+							<label><input type="checkbox" disabled="disabled">删除分类</label>
+							<label><input type="checkbox" disabled="disabled">发布</label>
+							<label><input type="checkbox" disabled="disabled">下线</label>
+						</td>
+					</tr>
+				</table>
+				<div class="re_but">
+					<input type="button" value="关闭" class="sure" />
+
+				</div>
+			</div>
+		</div>
+		<!--微信管理员编辑结束-->
+
+		<!--客房管理员编辑-->
+		<div class="role_edit role_editfive">
+			<p class="s_shadow"></p>
+			<div class="re_main">
+				<div class="re_top">
+					查看权限
+					<i class="fr">&#10005;</i>
+				</div>
+				<table class="table3">
+					<tr>
+						<td width="80px"><span>角色名称：</span></td>
+						<td colspan="4"><span>客房管理员</span></td>
+					</tr>
+					<tr>
+						<td rowspan="40">
+							<span>权限说明：</span>
+						</td>
+						<td rowspan="7"><span>微平台</span></td>
+						<td><span>公众号管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">授权绑定</label>
+							<label><input type="checkbox" disabled="disabled">手动添加</label>
+							<label><input type="checkbox" disabled="disabled">查看绑定公众号</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>微信支付：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>自定义菜单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看菜单</label>
+							<label><input type="checkbox" disabled="disabled">添加菜单</label>
+							<label><input type="checkbox" disabled="disabled">编辑菜单</label>
+							<label><input type="checkbox" disabled="disabled">删除菜单</label>
+							<label><input type="checkbox" disabled="disabled">菜单排序</label>
+							<label><input type="checkbox" disabled="disabled">保存并发布</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>关注客户管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">设置分组</label>
+							<label><input type="checkbox" disabled="disabled">批量分组</label>
+							<label><input type="checkbox" disabled="disabled">修改备注</label>
+							<label><input type="checkbox" disabled="disabled">加入黑名单</label>
+							<label><input type="checkbox" disabled="disabled">移出黑名单</label>
+							<label><input type="checkbox" disabled="disabled">新建分组</label>
+							<label><input type="checkbox" disabled="disabled">修改分组</label>
+							<label><input type="checkbox" disabled="disabled">删除分组</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>门店管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增门店</label>
+							<label><input type="checkbox" disabled="disabled">修改门店服务</label>
+							<label><input type="checkbox" disabled="disabled">删除门店</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>微信连Wi-Fi：</span></td>
+						<td>设备管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">添加设备</label>
+							<label><input type="checkbox" disabled="disabled">修改网络名称</label>
+							<label><input type="checkbox" disabled="disabled">清空门店网络及设备</label>
+						</td>
+					</tr>
+					<tr>
+						<td>商家主页管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">编辑主页</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>客户中心</span></td>
+						<td><span>来访用户：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">加入白名单</label>
+							<label><input type="checkbox" disabled="disabled">删除</label>
+							<label><input type="checkbox" disabled="disabled">批量删除</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>白名单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">删除</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="7"><span>客房中心</span></td>
+						<td><span>客房管理平台：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">生成价格</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布价格</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改价格</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改房量</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改优惠方案</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客房预订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">确认订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">订单退款</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>房型信息管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增房型</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改房型</label>
+							<label><input type="checkbox" disabled="disabled">删除房型</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>日历管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增节日</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改节日</label>
+							<label><input type="checkbox" disabled="disabled">删除节日</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>价格方案管理：</span></td>
+						<td><span>日常价格：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改方案</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">恢复默认</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>优惠活动：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增优惠</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改优惠</label>
+							<label><input type="checkbox" disabled="disabled">删除优惠</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>酒店政策管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="6"><span>餐饮中心</span></td>
+						<td rowspan="2"><span>菜品预订：</span></td>
+						<td><span>菜品管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增菜品</label>
+							<label><input type="checkbox" disabled="disabled">修改菜品</label>
+							<label><input type="checkbox" disabled="disabled">删除菜品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">菜品下架</label>
+							<label><input type="checkbox" disabled="disabled">菜品售罄</label>
+							<label><input type="checkbox" disabled="disabled">菜品开售</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>菜品订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>餐桌预订：</span></td>
+						<td><span>订桌控制台：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增预订单</label>
+							<label><input type="checkbox" disabled="disabled">修改库存</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">修改订单</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>桌型管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增桌型</label>
+							<label><input type="checkbox" disabled="disabled">修改桌型</label>
+							<label><input type="checkbox" disabled="disabled">删除桌型</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌规则设置：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">开启订桌</label>
+							<label><input type="checkbox" disabled="disabled">关闭订桌</label>
+							<label><input type="checkbox" disabled="disabled">规则设置</label>
+							<label><input type="checkbox" disabled="disabled">新增暂停预订</label>
+							<label><input type="checkbox" disabled="disabled">恢复预订</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>商品中心</span></td>
+						<td><span>商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增商品</label>
+							<label><input type="checkbox" disabled="disabled">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">商品下架</label>
+							<label><input type="checkbox" disabled="disabled">补充库存</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品销售订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">发货</label>
+							<label><input type="checkbox" disabled="disabled">退款</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>娱乐中心</span></td>
+						<td><span>娱乐商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增商品</label>
+							<label><input type="checkbox" disabled="disabled">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>会议中心</span></td>
+						<td><span>会议商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增商品</label>
+							<label><input type="checkbox" disabled="disabled">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>财务中心</span></td>
+						<td><span>收款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>退款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>数据中心</span></td>
+						<td><span>客流统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>入口统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>评价统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订单统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="3"><span>内容中心</span></td>
+						<td><span>资讯管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增资讯</label>
+							<label><input type="checkbox" disabled="disabled">修改资讯</label>
+							<label><input type="checkbox" disabled="disabled">删除资讯</label>
+							<label><input type="checkbox" disabled="disabled">发布</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>广告位管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+							<label><input type="checkbox" disabled="disabled">替换</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>服务指南：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增服务项</label>
+							<label><input type="checkbox" disabled="disabled">修改服务项</label>
+							<label><input type="checkbox" disabled="disabled">删除服务项</label>
+							<label><input type="checkbox" disabled="disabled">发布</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客服中心</span></td>
+						<td><span>服务评价：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">展示</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">隐藏</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量展示</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量隐藏</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>管理</span></td>
+						<td><span>管理员管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增用户</label>
+							<label><input type="checkbox" disabled="disabled">修改用户</label>
+							<label><input type="checkbox" disabled="disabled">删除用户</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>角色管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商户信息：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">修改</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品分类管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增分类</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改分类</label>
+							<label><input type="checkbox" disabled="disabled">删除分类</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">下线</label>
+						</td>
+					</tr>
+				</table>
+				<div class="re_but">
+					<input type="button" value="关闭" class="sure" />
+
+				</div>
+			</div>
+		</div>
+		<!--客房管理员编辑结束-->
+
+		<!--餐饮管理员编辑-->
+		<div class="role_edit role_editsix">
+			<p class="s_shadow"></p>
+			<div class="re_main">
+				<div class="re_top">
+					查看权限
+					<i class="fr">&#10005;</i>
+				</div>
+				<table class="table3">
+					<tr>
+						<td width="80px"><span>角色名称：</span></td>
+						<td colspan="4"><span>餐饮管理员</span></td>
+					</tr>
+					<tr>
+						<td rowspan="40">
+							<span>权限说明：</span>
+						</td>
+						<td rowspan="7"><span>微平台</span></td>
+						<td><span>公众号管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">授权绑定</label>
+							<label><input type="checkbox" disabled="disabled">手动添加</label>
+							<label><input type="checkbox" disabled="disabled">查看绑定公众号</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>微信支付：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>自定义菜单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看菜单</label>
+							<label><input type="checkbox" disabled="disabled">添加菜单</label>
+							<label><input type="checkbox" disabled="disabled">编辑菜单</label>
+							<label><input type="checkbox" disabled="disabled">删除菜单</label>
+							<label><input type="checkbox" disabled="disabled">菜单排序</label>
+							<label><input type="checkbox" disabled="disabled">保存并发布</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>关注客户管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">设置分组</label>
+							<label><input type="checkbox" disabled="disabled">批量分组</label>
+							<label><input type="checkbox" disabled="disabled">修改备注</label>
+							<label><input type="checkbox" disabled="disabled">加入黑名单</label>
+							<label><input type="checkbox" disabled="disabled">移出黑名单</label>
+							<label><input type="checkbox" disabled="disabled">新建分组</label>
+							<label><input type="checkbox" disabled="disabled">修改分组</label>
+							<label><input type="checkbox" disabled="disabled">删除分组</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>门店管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增门店</label>
+							<label><input type="checkbox" disabled="disabled">修改门店服务</label>
+							<label><input type="checkbox" disabled="disabled">删除门店</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>微信连Wi-Fi：</span></td>
+						<td>设备管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">添加设备</label>
+							<label><input type="checkbox" disabled="disabled">修改网络名称</label>
+							<label><input type="checkbox" disabled="disabled">清空门店网络及设备</label>
+						</td>
+					</tr>
+					<tr>
+						<td>商家主页管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">编辑主页</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>客户中心</span></td>
+						<td><span>来访用户：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">加入白名单</label>
+							<label><input type="checkbox" disabled="disabled">删除</label>
+							<label><input type="checkbox" disabled="disabled">批量删除</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>白名单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">删除</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="7"><span>客房中心</span></td>
+						<td><span>客房管理平台：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">生成价格</label>
+							<label><input type="checkbox" disabled="disabled">发布价格</label>
+							<label><input type="checkbox" disabled="disabled">修改价格</label>
+							<label><input type="checkbox" disabled="disabled">修改房量</label>
+							<label><input type="checkbox" disabled="disabled">修改优惠方案</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客房预订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">订单退款</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>房型信息管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增房型</label>
+							<label><input type="checkbox" disabled="disabled">修改房型</label>
+							<label><input type="checkbox" disabled="disabled">删除房型</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>日历管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增节日</label>
+							<label><input type="checkbox" disabled="disabled">修改节日</label>
+							<label><input type="checkbox" disabled="disabled">删除节日</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>价格方案管理：</span></td>
+						<td><span>日常价格：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">修改方案</label>
+							<label><input type="checkbox" disabled="disabled">恢复默认</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>优惠活动：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增优惠</label>
+							<label><input type="checkbox" disabled="disabled">修改优惠</label>
+							<label><input type="checkbox" disabled="disabled">删除优惠</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>酒店政策管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="6"><span>餐饮中心</span></td>
+						<td rowspan="2"><span>菜品预订：</span></td>
+						<td><span>菜品管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增菜品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改菜品</label>
+							<label><input type="checkbox" disabled="disabled">删除菜品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">上架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">菜品下架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">菜品售罄</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">菜品开售</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>菜品订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">确认订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>餐桌预订：</span></td>
+						<td><span>订桌控制台：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增预订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改库存</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">确认订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>桌型管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增桌型</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改桌型</label>
+							<label><input type="checkbox" disabled="disabled">删除桌型</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌规则设置：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled">开启订桌</label>
+							<label><input type="checkbox" disabled="disabled">关闭订桌</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">规则设置</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增暂停预订</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">恢复预订</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>商品中心</span></td>
+						<td><span>商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增商品</label>
+							<label><input type="checkbox" disabled="disabled">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">商品下架</label>
+							<label><input type="checkbox" disabled="disabled">补充库存</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品销售订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">发货</label>
+							<label><input type="checkbox" disabled="disabled">退款</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>娱乐中心</span></td>
+						<td><span>娱乐商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增商品</label>
+							<label><input type="checkbox" disabled="disabled">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>会议中心</span></td>
+						<td><span>会议商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增商品</label>
+							<label><input type="checkbox" disabled="disabled">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>财务中心</span></td>
+						<td><span>收款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>退款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>数据中心</span></td>
+						<td><span>客流统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>入口统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>评价统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订单统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="3"><span>内容中心</span></td>
+						<td><span>资讯管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增资讯</label>
+							<label><input type="checkbox" disabled="disabled">修改资讯</label>
+							<label><input type="checkbox" disabled="disabled">删除资讯</label>
+							<label><input type="checkbox" disabled="disabled">发布</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>广告位管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+							<label><input type="checkbox" disabled="disabled">替换</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>服务指南：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增服务项</label>
+							<label><input type="checkbox" disabled="disabled">修改服务项</label>
+							<label><input type="checkbox" disabled="disabled">删除服务项</label>
+							<label><input type="checkbox" disabled="disabled">发布</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客服中心</span></td>
+						<td><span>服务评价：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">展示</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">隐藏</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量展示</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量隐藏</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>管理</span></td>
+						<td><span>管理员管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增用户</label>
+							<label><input type="checkbox" disabled="disabled">修改用户</label>
+							<label><input type="checkbox" disabled="disabled">删除用户</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>角色管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商户信息：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">修改</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品分类管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增分类</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改分类</label>
+							<label><input type="checkbox" disabled="disabled">删除分类</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">下线</label>
+						</td>
+					</tr>
+				</table>
+				<div class="re_but">
+					<input type="button" value="关闭" class="sure" />
+
+				</div>
+			</div>
+		</div>
+		<!--餐饮管理员编辑结束-->
+
+		<!--商品管理员编辑-->
+		<div class="role_edit role_editseven">
+			<p class="s_shadow"></p>
+			<div class="re_main">
+				<div class="re_top">
+					查看权限
+					<i class="fr">&#10005;</i>
+				</div>
+				<table class="table3">
+					<tr>
+						<td width="80px"><span>角色名称：</span></td>
+						<td colspan="4"><span>商品管理员</span></td>
+					</tr>
+					<tr>
+						<td rowspan="40">
+							<span>权限说明：</span>
+						</td>
+						<td rowspan="7"><span>微平台</span></td>
+						<td><span>公众号管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">授权绑定</label>
+							<label><input type="checkbox" disabled="disabled">手动添加</label>
+							<label><input type="checkbox" disabled="disabled">查看绑定公众号</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>微信支付：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>自定义菜单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看菜单</label>
+							<label><input type="checkbox" disabled="disabled">添加菜单</label>
+							<label><input type="checkbox" disabled="disabled">编辑菜单</label>
+							<label><input type="checkbox" disabled="disabled">删除菜单</label>
+							<label><input type="checkbox" disabled="disabled">菜单排序</label>
+							<label><input type="checkbox" disabled="disabled">保存并发布</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>关注客户管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">设置分组</label>
+							<label><input type="checkbox" disabled="disabled">批量分组</label>
+							<label><input type="checkbox" disabled="disabled">修改备注</label>
+							<label><input type="checkbox" disabled="disabled">加入黑名单</label>
+							<label><input type="checkbox" disabled="disabled">移出黑名单</label>
+							<label><input type="checkbox" disabled="disabled">新建分组</label>
+							<label><input type="checkbox" disabled="disabled">修改分组</label>
+							<label><input type="checkbox" disabled="disabled">删除分组</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>门店管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增门店</label>
+							<label><input type="checkbox" disabled="disabled">修改门店服务</label>
+							<label><input type="checkbox" disabled="disabled">删除门店</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>微信连Wi-Fi：</span></td>
+						<td>设备管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">添加设备</label>
+							<label><input type="checkbox" disabled="disabled">修改网络名称</label>
+							<label><input type="checkbox" disabled="disabled">清空门店网络及设备</label>
+						</td>
+					</tr>
+					<tr>
+						<td>商家主页管理：</td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">编辑主页</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>客户中心</span></td>
+						<td><span>来访用户：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">加入白名单</label>
+							<label><input type="checkbox" disabled="disabled">删除</label>
+							<label><input type="checkbox" disabled="disabled">批量删除</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>白名单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">删除</label>
+							<label><input type="checkbox" disabled="disabled">下载表单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="7"><span>客房中心</span></td>
+						<td><span>客房管理平台：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">生成价格</label>
+							<label><input type="checkbox" disabled="disabled">发布价格</label>
+							<label><input type="checkbox" disabled="disabled">修改价格</label>
+							<label><input type="checkbox" disabled="disabled">修改房量</label>
+							<label><input type="checkbox" disabled="disabled">修改优惠方案</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客房预订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">订单退款</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>房型信息管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增房型</label>
+							<label><input type="checkbox" disabled="disabled">修改房型</label>
+							<label><input type="checkbox" disabled="disabled">删除房型</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>日历管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增节日</label>
+							<label><input type="checkbox" disabled="disabled">修改节日</label>
+							<label><input type="checkbox" disabled="disabled">删除节日</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>价格方案管理：</span></td>
+						<td><span>日常价格：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">修改方案</label>
+							<label><input type="checkbox" disabled="disabled">恢复默认</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>优惠活动：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增优惠</label>
+							<label><input type="checkbox" disabled="disabled">修改优惠</label>
+							<label><input type="checkbox" disabled="disabled">删除优惠</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>酒店政策管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">设置</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="6"><span>餐饮中心</span></td>
+						<td rowspan="2"><span>菜品预订：</span></td>
+						<td><span>菜品管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增菜品</label>
+							<label><input type="checkbox" disabled="disabled">修改菜品</label>
+							<label><input type="checkbox" disabled="disabled">删除菜品</label>
+							<label><input type="checkbox" disabled="disabled">上架</label>
+							<label><input type="checkbox" disabled="disabled">菜品下架</label>
+							<label><input type="checkbox" disabled="disabled">菜品售罄</label>
+							<label><input type="checkbox" disabled="disabled">菜品开售</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>菜品订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>餐桌预订：</span></td>
+						<td><span>订桌控制台：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增预订单</label>
+							<label><input type="checkbox" disabled="disabled">修改库存</label>
+							<label><input type="checkbox" disabled="disabled">确认订单</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">修改订单</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌订单：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">取消订单</label>
+							<label><input type="checkbox" disabled="disabled">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>桌型管理：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增桌型</label>
+							<label><input type="checkbox" disabled="disabled">修改桌型</label>
+							<label><input type="checkbox" disabled="disabled">删除桌型</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订桌规则设置：</span></td>
+						<td>
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">开启订桌</label>
+							<label><input type="checkbox" disabled="disabled">关闭订桌</label>
+							<label><input type="checkbox" disabled="disabled">规则设置</label>
+							<label><input type="checkbox" disabled="disabled">新增暂停预订</label>
+							<label><input type="checkbox" disabled="disabled">恢复预订</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>商品中心</span></td>
+						<td><span>商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">上架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">商品下架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">补充库存</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品销售订单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">确认订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">同意买家取消订单</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发货</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">退款</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">完成订单</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>娱乐中心</span></td>
+						<td><span>娱乐商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">上架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>会议中心</span></td>
+						<td><span>会议商品管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改商品</label>
+							<label><input type="checkbox" disabled="disabled">删除商品</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">上架</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">商品下架</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><span>财务中心</span></td>
+						<td><span>收款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>退款单：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">获取最新状态</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>数据中心</span></td>
+						<td><span>客流统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>入口统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>评价统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>订单统计：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="3"><span>内容中心</span></td>
+						<td><span>资讯管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增资讯</label>
+							<label><input type="checkbox" disabled="disabled">修改资讯</label>
+							<label><input type="checkbox" disabled="disabled">删除资讯</label>
+							<label><input type="checkbox" disabled="disabled">发布</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>广告位管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+							<label><input type="checkbox" disabled="disabled">替换</label>
+							<label><input type="checkbox" disabled="disabled">预览</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>服务指南：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增服务项</label>
+							<label><input type="checkbox" disabled="disabled">修改服务项</label>
+							<label><input type="checkbox" disabled="disabled">删除服务项</label>
+							<label><input type="checkbox" disabled="disabled">发布</label>
+							<label><input type="checkbox" disabled="disabled">排序</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>客服中心</span></td>
+						<td><span>服务评价：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">展示</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">隐藏</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量展示</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">批量隐藏</label>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4"><span>管理</span></td>
+						<td><span>管理员管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+							<label><input type="checkbox" disabled="disabled">新增用户</label>
+							<label><input type="checkbox" disabled="disabled">修改用户</label>
+							<label><input type="checkbox" disabled="disabled">删除用户</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>角色管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">查看</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商户信息：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled">修改</label>
+						</td>
+					</tr>
+					<tr>
+						<td><span>商品分类管理：</span></td>
+						<td colspan="2">
+							<label><input type="checkbox" disabled="disabled" checked="checked">查看</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">新增分类</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">修改分类</label>
+							<label><input type="checkbox" disabled="disabled">删除分类</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">发布</label>
+							<label><input type="checkbox" disabled="disabled" checked="checked">下线</label>
+						</td>
+					</tr>
+				</table>
+				<div class="re_but">
+					<input type="button" value="关闭" class="sure" />
+
+				</div>
+			</div>
+		</div>
+		<!--商品管理员编辑结束-->
+		<!--主体-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js"></script>
+		<!--鼠标移入表格背景颜色变化-->
+		<script>
+			$(function() {
+				$('.s_table tbody tr').hover(function() {
+					$(this).css('background', '#f0f5f9');
+					$(this).find('.s_icon').css('background', 'url(./images/list.png) no-repeat center')
+				}, function() {
+					$(this).css('background', '#fff');
+					$(this).find('.s_icon').css('background', 'url(./images/s_icon2.png) no-repeat center')
+				});
+
+				$('.s_tip em').hover(function() {
+					$(this).next('.s_list').stop().fadeIn();
+				}, function() {
+					$(this).next('.s_list').stop().fadeOut();
+				});
+
+			});
+		</script>
+		<!--角色编辑弹窗-->
+		<script>
+			$(function() {
+				$('.chakanone').click(function(e) {
+					$('.role_editone').fadeIn();
+					tcShow(1);
+				});
+				$('.chakantwo').click(function(e) {
+					$('.role_edittwo').fadeIn();
+					tcShow(1);
+				});
+				$('.chakanthree').click(function(e) {
+					$('.role_editthree').fadeIn();
+					tcShow(1);
+				});
+				$('.chakanfour').click(function(e) {
+					$('.role_editfour').fadeIn();
+					tcShow(1);
+				});
+				$('.chakanfive').click(function(e) {
+					$('.role_editfive').fadeIn();
+					tcShow(1);
+				});
+				$('.chakansix').click(function(e) {
+					$('.role_editsix').fadeIn();
+					tcShow(1);
+				});
+				$('.chakanseven').click(function(e) {
+					$('.role_editseven').fadeIn();
+					tcShow(1);
+				});
+				$('.role_edit .re_main .re_top i,.role_edit .re_main .re_but input').click(function(e) {
+					$('.role_edit').fadeOut();
+					tcHide();
+				});
+				$('.l_opt').css('padding-left', '0');
+			});
+		</script>
+	</body>
+
+</html>

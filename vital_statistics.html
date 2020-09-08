@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>入口统计</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/dateRange.css" />
+		<link rel="stylesheet" href="css/l_tab_title.css" />
+		<link rel="stylesheet" href="css/record.css" />
+	</head>
+
+	<body>
+		<!--content-->
+
+		<div class="record">
+			<div class="recordtop">
+				<ul>
+					<li class="active">
+						<a href="javascript:;">今天</a>
+					</li>
+					<li>
+						<a href="javascript:;">昨天</a>
+					</li>
+					<li>
+						<a href="javascript:;">7天</a>
+					</li>
+					<li>
+						<a href="javascript:;">30天</a>
+					</li>
+				</ul>
+				<div class="ta_date l_date" id="div_date1">
+					<span class="date_title" id="date1"></span>
+					<em class="clearDate"></em>
+				</div>
+				<div class="l_ref">
+					<a href="javascript:;" class=""><img src="images/l_icon_ref.png">刷新</a>
+				</div>
+			</div>
+			<div class="vscharts">
+				<div class="vscharts_l">
+					<div id="classify"></div>
+				</div>
+				<div class="vscharts_r">
+					<div id="classification"></div>
+				</div>
+			</div>
+			<div class="scaletable">
+				<table>
+					<thead>
+						<tr>
+							<th width="51%"><span>受访页面</span></th>
+							<th width="34%"><span>浏览量（PV）</span></th>
+							<th width="15%"><span>占比</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span>餐饮--中餐厅--今日特价</span></td>
+							<td><span>499</span></td>
+							<td><span>25%</span></td>
+						</tr>
+						<tr>
+							<td><span>餐饮--中餐厅--今日特价</span></td>
+							<td><span>699</span></td>
+							<td><span>32%</span></td>
+						</tr>
+						<tr>
+							<td><span>餐饮--中餐厅--今日特价</span></td>
+							<td><span>1090</span></td>
+							<td><span>45%</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="js/dateRange.js"></script>
+		<script type="text/javascript" src="js/s_daterange.js"></script>
+		<script type="text/javascript" src="js/echarts.js"></script>
+		<script type="text/javascript" src="js/vscharts.js"></script>
+
+	</body>
+
+</html>

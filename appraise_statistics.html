@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>评价统计</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/dateRange.css" />
+		<link rel="stylesheet" href="css/l_tab_title.css" />
+		<link rel="stylesheet" href="css/record.css" />
+	</head>
+
+	<body>
+		<!--content-->
+
+		<div class="record">
+			<div class="tabrc">
+				<a href="javascript:;" class="active">服务评价</a>
+				<a href="indent_statistics.html">订单评价</a>
+			</div>
+			<div class="recordtop">
+				<ul>
+					<li class="active">
+						<a href="javascript:;">今天</a>
+					</li>
+					<li>
+						<a href="javascript:;">昨天</a>
+					</li>
+					<li>
+						<a href="javascript:;">7天</a>
+					</li>
+					<li>
+						<a href="javascript:;">30天</a>
+					</li>
+				</ul>
+				<div class="ta_date l_date" id="div_date1">
+					<span class="date_title" id="date1"></span>
+					<em class="clearDate"></em>
+				</div>
+				<div class="l_ref">
+					<a href="javascript:;" class=""><img src="images/l_icon_ref.png">刷新</a>
+				</div>
+			</div>
+			<div class="starcharts">
+				<span class="scspan">对比</span>
+				<div id="starec"></div>
+			</div>
+			<div class="hotword">
+				<div class="hotword_top"><span>评论热词</span></div>
+				<div class="hotword_text">
+					<ul>
+						<li>
+							<p><span>物超所值</span></p>
+							<p><span>66.5%</span></p>
+						</li>
+						<li>
+							<p><span>服务态度好</span></p>
+							<p><span>40.5%</span></p>
+						</li>
+						<li>
+							<p><span>设备齐全</span></p>
+							<p><span>10.5%</span></p>
+						</li>
+						<li>
+							<p><span>食物美味</span></p>
+							<p><span>17.3%</span></p>
+						</li>
+						<li>
+							<p><span>交通方便</span></p>
+							<p><span>36.3%</span></p>
+						</li>
+						<li>
+							<p><span>餐厅美味</span></p>
+							<p><span>62.6%</span></p>
+						</li>
+						<li>
+							<p><span>免费下午茶</span></p>
+							<p><span>47.6%</span></p>
+						</li>
+						<li>
+							<p><span>周边环境好</span></p>
+							<p><span>77.2%</span></p>
+						</li>
+						<li>
+							<p><span>物超所值</span></p>
+							<p><span>66.5%</span></p>
+						</li>
+						<li>
+							<p><span>服务态度好</span></p>
+							<p><span>40.5%</span></p>
+						</li>
+						<li>
+							<p><span>设备齐全</span></p>
+							<p><span>10.5%</span></p>
+						</li>
+						<li>
+							<p><span>食物美味</span></p>
+							<p><span>17.3%</span></p>
+						</li>
+						<li>
+							<p><span>交通方便</span></p>
+							<p><span>36.3%</span></p>
+						</li>
+						<li>
+							<p><span>餐厅美味</span></p>
+							<p><span>62.6%</span></p>
+						</li>
+						<li>
+							<p><span>免费下午茶</span></p>
+							<p><span>47.6%</span></p>
+						</li>
+						<li>
+							<p><span>周边环境好</span></p>
+							<p><span>77.2%</span></p>
+						</li>
+						<li>
+							<p><span>物超所值</span></p>
+							<p><span>66.5%</span></p>
+						</li>
+						<li>
+							<p><span>服务态度好</span></p>
+							<p><span>40.5%</span></p>
+						</li>
+						<li>
+							<p><span>设备齐全</span></p>
+							<p><span>10.5%</span></p>
+						</li>
+						<li>
+							<p><span>食物美味</span></p>
+							<p><span>17.3%</span></p>
+						</li>
+						<li>
+							<p><span>交通方便</span></p>
+							<p><span>36.3%</span></p>
+						</li>
+						<li>
+							<p><span>餐厅美味</span></p>
+							<p><span>62.6%</span></p>
+						</li>
+						<li>
+							<p><span>免费下午茶</span></p>
+							<p><span>47.6%</span></p>
+						</li>
+						<li>
+							<p><span>周边环境好</span></p>
+							<p><span>77.2%</span></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="js/dateRange.js"></script>
+		<script type="text/javascript" src="js/s_daterange.js"></script>
+		<script type="text/javascript" src="js/echarts.js"></script>
+		<script type="text/javascript" src="js/ascharts.js"></script>
+		<script>
+			//颜色随机
+			$(function() {
+				var liList = $(".hotword_text li")
+				var colorList = ["#df89ff", "#f7a442", "#f5b51c", "#6881ee", "#f36741", "#ed4e5d", "#a4d835", "#54b7eb", "#59d44c", "#f78529", "#338bf8", "#f6bd42", "#55c33f", "#e668aa", "#8584fe", "#e77928", "#e85679", "#55c6d7"];
+				for(var i = 0; i < liList.length; i++) {
+					var bgColor = getColor(colorList);
+				}
+				function getColor(colorList) {
+					liList.each(function() {
+						var colorIndex = Math.floor(Math.random() * colorList.length);
+						var color = colorList[colorIndex];
+						$(this).find("p:first-child").css("background", color)
+					})
+				}
+			})
+		</script>
+	</body>
+
+</html>

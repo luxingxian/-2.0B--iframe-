@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>餐饮-菜品管理</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/dateRange.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" href="css/w_Plate_Style.css" />
+	</head>
+
+	<body>
+		<!--content-->
+		<div class="wrap">
+			<!--头部开始-->
+			<div class="l_container l_tab">
+				<div id="menuBg"></div>
+				<div class="l_content">
+					<p class="l_title">餐饮</p>
+					<ul class="l_ul clearfix">
+						<li class="active">
+							<a href="food_management.html" target="iframe_menu" >菜品管理</a>
+						</li>
+						<li>
+							<a href="food_orders.html" target="iframe_menu" >菜品订单</a>
+						</li>
+						<li>
+							<a href="reservation.html" target="iframe_menu" >订桌控制台</a>
+						</li>
+						<li>
+							<a href="customized_orders.html" target="iframe_menu" >订桌订单</a>
+						</li>
+						<li>
+							<a href="table-cut-manage.html" target="iframe_menu" >桌型管理</a>
+						</li>
+						<li>
+							<a href="book_table_rule_set.html" target="iframe_menu" >订桌规则设置</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--头部--ed-->
+			<!--主体开始-->
+			<div class="l_container">
+				<!--主体iframe开始-->
+				<div class="iframe_box">
+					<div class="box_index">
+						<iframe src="food_management.html" name="iframe_menu" id="iframe_menu" scrolling="no"></iframe>
+					</div>
+				</div>
+				<!--主体iframe结束-->
+			</div>
+		</div>
+		<!--wrap--ed-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script src="js/dateRange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/l_daterange.js" type="text/javascript" charset="utf-8"></script>
+		<!--确认删除弹窗-->
+		<script>
+			$(function() {
+				$(".w_sure_delete").click(function() {
+					$(".delete_sure_popup").fadeIn();
+				})
+				$(".sure_delete_popup .w_sure_btn,.sure_delete_popup .w_cancel_btn").click(function() {
+					$(".delete_sure_popup").fadeOut();
+				})
+			})
+		</script>
+		<!--菜品下架弹窗-->
+		<script>
+			$(function() {
+				$(".w_items_shelves").click(function() {
+					$(".items_sure_popup").fadeIn();
+				})
+				$(".items_sure_popup .w_sure_btn,.items_sure_popup .w_cancel_btn").click(function() {
+					$(".items_sure_popup").fadeOut();
+				})
+			})
+		</script>
+		<!--菜品开售弹窗-->
+		<script>
+			$(function() {
+				$(".w_sure_sales").click(function() {
+					$(".sales_sure_popup").fadeIn();
+				})
+				$(".sales_sure_popup .w_sure_btn,.sales_sure_popup .w_cancel_btn").click(function() {
+					$(".sales_sure_popup").fadeOut();
+				})
+			})
+		</script>
+		<!--菜品售罄弹窗-->
+		<script>
+			$(function() {
+				$(".w_sure_out").click(function() {
+					$(".sales_out_popup").fadeIn();
+				})
+				$(".sales_out_popup .w_sure_btn,.sales_out_popup .w_cancel_btn").click(function() {
+					$(".sales_out_popup").fadeOut();
+				})
+			})
+		</script>
+		<!--待上架-->
+		<script>
+			$(function() {
+				$(".w_stay_on").click(function() {
+					$(".edit_stay_popup").fadeIn();
+				})
+				$(".edit_stay_popup .w_sure_btn,.edit_stay_popup .w_cancel_btn").click(function() {
+					$(".edit_stay_popup").fadeOut();
+				})
+			})
+		</script>
+		<!--//新增菜品弹窗-->
+		<script>
+			$(function() {
+				$(".w_plate_one li").click(function() {
+					if($(this).index() == 0) {
+						$(".add_food").css({
+							"background": "#f1f1f1",
+							"color": "#dedede",
+							"border": "1px solid #dedede"
+						});
+						$(".w_navsbtn_right a").attr("href", "")
+					} else {
+						$(".add_food").css({
+							"background": "#2e85f5",
+							"color": "#FFFFFF",
+							"border": "1px solid #2e85f5"
+						});
+						$(".w_navsbtn_right a").attr("href", "Edit_dishes.html")
+					}
+				})
+			})
+		</script>
+		<!--//chechbox选择效果-->
+		<script>
+			$(function() {
+				$("label").click(function() {
+					$(this).toggleClass("checked");
+				})
+			})
+		</script>
+		<script>
+			$(document).ready(function() {
+				$("table tbody tr td:first-child input[type='checkbox']").click(function() {
+					var d = 0;
+					$("table tbody tr td:first-child input[type='checkbox']").each(function() {
+						var check = $(this).is(":checked");
+						if(check == true) {
+							d += 1;
+						}
+					});
+					if(d > 0) {
+						$(".w_shelves").css("background", "#22af30")
+						$(".w_shelves").css("color", "#fff")
+						$(".w_shelves i").css("background-image", "url(./images/shelves_img1.png)")
+						$(".w_shelves").css("border", "1px solid #22af30");
+						//菜品上架
+						$(function() {
+							$(".w_shelves").click(function() {
+								$(".putaway_sure_popup").fadeIn();
+							})
+							$(".putaway_sure_popup .w_sure_btn,.putaway_sure_popup .w_cancel_btn").click(function() {
+								$(".putaway_sure_popup").fadeOut();
+							})
+						});
+					} else {
+						$(".w_shelves").css("background", "#f1f1f1")
+						$(".w_shelves").css("color", "#dedede")
+						$(".w_shelves i").css("background-image", "url(./images/shelves_img.png)")
+						$(".w_shelves").css("border", "1px solid #dedede");
+					}
+				});
+			});
+		</script>
+		<!--//操作按钮弹出-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".operation_more").click(function() {
+					$(this).css("background-image", "url(./images/gengduo1.png)")
+					$(this).siblings(".add_information").fadeIn();
+				})
+			});
+		</script>
+	</body>
+
+</html>

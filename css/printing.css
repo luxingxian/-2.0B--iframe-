@@ -1,0 +1,69 @@
+*{margin: 0;padding: 0; border: 0;font-family:Tahoma,Arial,"微软雅黑" }
+a,li,input,img,p,div{-webkit-tap-highlight-color:transparent;text-decoration: none;}
+input{background:no-repeat 0 0 scroll;border:none;outline:medium;}
+h1,h2,h3,h4,h5,h6{ font-weight: normal;}
+img{width: 100%;height: 100%;border: none;}
+a:hover,a:focus{text-decoration: none;outline:none;}
+a{border:none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;outline:none；}
+input,select,textarea{outline: none;}
+table{border-spacing: 0;border-collapse:collapse;}
+ul,ol,dl{list-style: none;}
+i,em{ font-style:normal;}
+.clear:after { clear:both; content:""; display:block; }
+.clear { zoom:1;}
+.fl{float: left;}
+.fr{float: right;}
+
+.f_maxbox{ width: 100%; height: 100%; background: #f6f9fb;}
+.f_contenbox{ width: 616px; margin: 0 auto; background: #fff;}
+.f_contenbox .f_con_box{ margin:20px 30px 10px;}
+.f_contenbox .f_con_box .f_con_lpgo{ width: 51px; height: 51px;}
+.f_contenbox .f_con_box .f_height{ height: 51px; line-height: 51px; margin-left: 10px;}
+.f_contenbox .f_room{ color: #333333; font-size: 22px; text-align: center; margin-bottom: 20px;}
+.f_contenbox .room_box{ border: 1px solid #333333;}
+.f_contenbox .room_box .room_min{ padding: 19px 20px; background: #fef8f6; border-bottom: 1px solid #333333;}
+.f_contenbox .room_box .room_min .room_hot img{ width: 12px; height: 15px;vertical-align: middle;}
+.f_contenbox .room_box .room_min .room_hot span{ color: #000000; font-size: 14px; font-weight: bold;}
+.f_contenbox .room_box .room_min .room_text{ color: #000000; font-size: 12px; margin-top: 20px;}
+.f_contenbox .room_box .room_min .room_text span:nth-child(1){display: inline-block;width: 215px;}
+.f_contenbox .room_box .room_min .room_text span:nth-child(2){display: inline-block;/*width: 140px;*/}
+.f_span{ font-size: 12px !important; color: #000; display:inline-block; margin-left: 20px; margin-top: 4px;font-weight:normal !important;}
+.f_contenbox .room_box .room_max{ width: 100%;border-bottom: 1px solid #333;position: relative;}
+.f_contenbox .room_box .room_max .room_one{ width: 4%; padding: 0 2.3%; border-right:1px solid #333 ;border-left:1px solid #333 ; text-align: center;height:120px; font-size: 14px;}
+.f_contenbox .room_box .room_max .room_one span{display: inline-block;position: absolute;top: 50%;width: 10px;margin-left: -6px;margin-top: -38px;}
+.f_contenbox .room_box .room_max .room_one:first-child{border-left: none;}
+.f_contenbox .room_box .room_max .room_two{ width: 45%;position: relative;}
+.f_contenbox .room_box .room_max .room_two p{ color: #333333; font-size: 12px; line-height: 30px;}
+.f_contenbox .room_box .room_max .room_two .room_list{ margin: 10px 0 0 20px;}
+.f_contenbox .room_box .room_max .room_tree p{ color: #333333; font-size: 12px; line-height: 30px;}
+.f_contenbox .room_box .room_max .room_tree .room_tree_box{margin: 10px 0 0 20px;}
+.f_contenbox .room_box .room_mack{border-bottom: 1px solid #333;position:relative;}
+.f_contenbox .room_box .room_mack .mack_two{ width: 91.4%; box-sizing: border-box;border-left: 1px solid #333;}
+.f_contenbox .room_box .room_mack .mack_one{width: 8.6%;font-size: 14px;border-right: 1px solid #333333; overflow:hidden;height: 0px !important;}
+.f_contenbox .room_box .room_mack .mack_one span{display:inline-block;width:10px;position:absolute;top:50%;margin-top:-38px; left: 3.5%;}
+.f_contenbox .room_box .room_mack .mack_two .mack_table{ width: 100%; background: #FEF8F6;}
+.f_contenbox .room_box .room_mack .mack_two .mack_table>table{ width: 100%; font-size: 12px;}
+.f_contenbox .room_box .room_mack .mack_two .mack_table>table>thead>tr{ height: 50px; border-bottom: 1px dashed #999999;}
+.f_contenbox .room_box .room_mack .mack_two .mack_table>table>thead>tr>th{ font-weight: normal; text-align: left; color: #333333; padding-left: 15px;}
+.f_contenbox .room_box .room_mack .mack_two .mack_table>table>tbody>tr{ height: 40px; line-height: 40px;}
+.f_contenbox .room_box .room_mack .mack_two .mack_table>table>tbody>tr td{padding-left: 15px;}
+.f_contenbox .room_box .room_mack .mack_text .mack_hot{ height: 50px; line-height: 50px;border-bottom: 1px dashed #999999; padding-left: 15px; color: #333333; font-size: 12px;border-top: 1px solid #333333;}
+.f_contenbox .room_box .room_mack .mack_text p{ padding-left: 15px; color: #333333; font-size: 12px; line-height: 35px;}
+.f_contenbox .room_box .room_mack .mack_text span:first-child{display: inline-block;width: 425px;}
+.f_contenbox .room_box .room_mniu{ height:auto;border-bottom: 1px solid #333333;}
+.f_contenbox .room_box .room_mniu .mniu_one{width: 8.6%;text-align: center; color: #333333; font-size: 14px;min-height: 66px;height: auto !important;}
+.f_contenbox .room_box .room_mniu .mniu_two span{ line-height: 66px; font-size: 18px; color: #333333;}
+.f_contenbox .room_box .room_mniu .mniu_back{width:91%; background: #fef8f6; box-sizing: border-box;}
+.f_contenbox .room_box .room_mniu .mniu_two{ color: #666666; font-size: 16px; margin-right: 37px; }
+.f_contenbox .room_box .room_plase{border-bottom: 1px solid #333333;position: relative;min-height: 60px;}
+.f_contenbox .room_box .room_plase .plase_one{width: 8.6%;text-align: center; color: #333333; font-size: 14px;border-left:1px solid #333333;border-right: 1px solid #333333;}
+.f_contenbox .room_box .room_plase .plase_one:first-child{border-left: none;}
+.f_contenbox .room_box .room_plase .plase_two{ width: 40%;box-sizing: border-box; color: #333333; font-size: 12px; padding-left: 5px;min-height: 60px;line-height: 60px;}
+.f_contenbox .room_box .room_plase .plase_teer{ color: #333333; font-size: 12px; padding-left: 5px;width: 40%;min-height: 60px;line-height: 60px;}
+.f_contenbox .room_box .mniu_frist{ font-size: 12px !important; color: #333333; margin-right: 100px; padding-left: 10px;}
+.f_contenbox .room_box .mniu_last{ font-size: 12px !important; color: #333333;}
+.mniu_box{ border-bottom: 0 !important;}
+.inp{ display: block; width: 100px; height: 36px; text-align: center; color: #fff; font-size: 14px; background: #2e85f5; border-radius: 2px; margin: 50px auto 30px;}
+.f_contenbox .room_box .room_plase .plase_one>span{display: inline-block;width: 10px;margin-left: -6px;}
+.f_contenbox .room_box .room_mniu .mniu_one>span{display: inline-block; width: 10px;margin-left: -6px;}
+.c_mniuroom{border-right: 1px solid #333;}

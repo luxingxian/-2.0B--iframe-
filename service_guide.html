@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>服务指南</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/croppic.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/room.css" />
+		<link rel="stylesheet" type="text/css" href="css/dateRange.css" />
+		<link rel="stylesheet" type="text/css" href="css/list.css" />
+	</head>
+
+	<body>
+		<!--content-->
+
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content clearfix ">
+				<div class="list_con clear">
+					<ul class="fl">
+						<li class="fl active">全部</li>
+						<li class="fl">已发布</li>
+						<li class="fl">待发布</li>
+					</ul>
+					<p class="list_button fr">
+						<a href="javascript:;" class="s_btn fl">新增服务项</a>
+						<a href="javascript:;" class="s_button1 fl">发布</a>
+					</p>
+				</div>
+				<!--二级筛选导航公用结构-->
+				<div class="l_header clearfix w_plate_class">
+					<a href="javascript:;" class="active">全部</a>
+					<a href="javascript:;">今天</a>
+					<a href="javascript:;">昨天</a>
+					<a href="javascript:;">7天</a>
+					<div class="ta_date l_date fl" id="div_date1">
+						<span class="date_title" id="date1"></span>
+						<em class="clearDate"></em>
+					</div>
+					<p class="search_input fl">
+						<input type="text" placeholder="请输入ID,电话" class="l_search" />
+						<img src="images/l_icon_search.png" alt="" />
+					</p>
+					<a href="javascript:;" class="l_ref fr"><img src="images/s_icon.png" />刷新</a>
+				</div>
+				<!--二级筛选导航公用结构--ed---->
+				<div class="l_table">
+					<table>
+						<thead>
+							<tr>
+								<th width="5.73%"></th>
+								<th width="9.6%">序号</th>
+								<th width="9.86%">发布日期</th>
+								<th width="10.4%">发布人</th>
+								<th width="13.46%">服务项目名称</th>
+								<th width="7.53%">图标</th>
+								<!--<th width="9.6%">地址</th>-->
+								<th width="12.13%">状态</th>
+								<th width="13%">排序</th>
+								<th width="7%">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>1</td>
+								<td>2016-08-13</td>
+								<td>张先生</td>
+								<td>主厨推荐</td>
+								<td><img src="images/l_icon_bankuai.png" class="img_width1" /></td>
+								<!--<td><img src="images/yulan.png" class="img_width" /></td>-->
+								<td class="daishangjia">待发布</td>
+								<td>
+									<div class="w_plate_class1">
+										<div class="w_plate_one s_plate_one">
+											<p><i>1</i><em></em></p>
+											<ul class="selectone f_border">
+												<li>2</li>
+												<li>3</li>
+												<li>4</li>
+												<li>5</li>
+												<li>6</li>
+												<li>7</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>
+										<p class="l_sure_order"><img src="images/amend.png" />修改指南</p>
+										<p class="img_width"><img src="images/f_yulan.png" />预览</p>
+										<p><img src="images/l_icon_del4.png" />删除指南</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>2</td>
+								<td>2016-08-13</td>
+								<td>张先生</td>
+								<td>主厨推荐</td>
+								<td><img src="images/l_icon_bankuai.png" class="img_width1" /></td>
+								<!--<td><img src="images/yulan.png" class="img_width" /></td>-->
+								<td class="daishangjia">待发布</td>
+								<td>
+									<div class="w_plate_class1">
+										<div class="w_plate_one s_plate_one">
+											<p><i>1</i><em></em></p>
+											<ul class="selectone f_border">
+												<li>2</li>
+												<li>3</li>
+												<li>4</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>
+										<p class="l_sure_order"><img src="images/amend.png" />修改指南</p>
+										<p class="img_width"><img src="images/f_yulan.png" />预览</p>
+										<p><img src="images/l_icon_del4.png" />删除指南</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>3</td>
+								<td>2016-08-13</td>
+								<td>张先生</td>
+								<td>主厨推荐</td>
+								<td><img src="images/l_icon_bankuai.png" class="img_width1" /></td>
+								<!--<td><img src="images/yulan.png" class="img_width" /></td>-->
+								<td class="zhanshizhong2"><i>已发布</i></td>
+								<td>
+									<div class="w_plate_class1">
+										<div class="w_plate_one s_plate_one">
+											<p><i>1</i><em></em></p>
+											<ul class="selectone f_border">
+												<li>2</li>
+												<li>3</li>
+												<li>4</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>
+										<p class="l_sure_order"><img src="images/amend.png" />修改指南</p>
+										<p class="img_width"><img src="images/f_yulan.png" />预览</p>
+										<p><img src="images/l_icon_del4.png" />删除指南</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>4</td>
+								<td>2016-08-13</td>
+								<td>张先生</td>
+								<td>主厨推荐</td>
+								<td><img src="images/l_icon_bankuai.png" class="img_width1" /></td>
+								<!--<td><img src="images/yulan.png" class="img_width" /></td>-->
+								<td class="zhanshizhong2"><i>已发布</i></td>
+								<td>
+									<div class="w_plate_class1">
+										<div class="w_plate_one s_plate_one">
+											<p><i>1</i><em></em></p>
+											<ul class="selectone f_border">
+												<li>2</li>
+												<li>3</li>
+												<li>4</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>
+										<p class="l_sure_order"><img src="images/amend.png" />修改指南</p>
+										<p class="img_width"><img src="images/f_yulan.png" />预览</p>
+										<p><img src="images/l_icon_del4.png" />删除指南</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--底部分页开始-->
+			<div class="l_container">
+				<div class="l_foot_page clearfix">
+					<div class="l_left fl">
+						<p>每页显示
+							<select>
+								<option>10</option>
+								<option>20</option>
+								<option>30</option>
+							</select>
+						</p>
+					</div>
+					<div class="l_right fr clearfix">
+						<p>
+							<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+							<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+							<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+						</p>
+						<p class="l_skippage">
+							到<input type="number" />页<button>确定</button>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!--底部分页--ed-->
+		</div>
+
+		<!--新增指南、编辑弹窗-->
+		<div class="guide_edit">
+			<p class="s_shadow"></p>
+			<div class="ge_main">
+				<div class="ge_top">
+					<span>新增指南</span>
+					<i class="fr">&#10005;</i>
+				</div>
+				<div class="ge_m">
+					<div class="ge_m_l fl">
+						<p><span>发布位置：</span>服务指南页</p>
+						<p><span class="span1">发布人：</span>朴海镇</p>
+						<p><span>服务电话：</span><input type="text"></p>
+						<p class="gemp1"><span><i>*</i>内容编辑：</span>
+							<textarea name="title2" maxlength="120" onkeyup="javascript:setShowLength(this, 120, 'word_number2');"></textarea>
+						</p>
+						<p class="p2"><span id="word_number2">内容编辑120字</span></p>
+						<p class="s_huan"><span>链接地址：</span></p>
+					</div>
+					<div class="ge_m_r fr">
+						<p class="p1"><i>*</i>创建服务项：
+							<a href="javascript:;"><img src="images/xinzengfenlei_14.png"><span>换图标</span></a>
+						</p>
+						<p class="p2 gemp2"><i>*</i>名称：<input type="text">
+							<a href="javascript:;">编辑名称</a>
+						</p>
+						<p class="p3">图片编辑</p>
+						<p class="p4">
+							<a href="javascript:;" class="huantu">换图片</a>
+							<a href="javascript:;">删除</a>
+						</p>
+						<div class="chatu1"></div>
+						<p class="p5">图片建议尺寸：750像素 * 500像素</p>
+					</div>
+				</div>
+				<div class="ge_but">
+					<input type="button" value="确定" class="sure" />
+					<input type="button" value="预览" class="pvw" />
+					<input type="button" value="取消" class="undo" />
+				</div>
+				<div class="addge_prompt">
+					<p><i></i><span>信息不全，请完善！</span></p>
+				</div>
+			</div>
+			<!--图库-->
+			<div class="ge_slot">
+				<div class="ge_slot_top fr">
+					<i class="fr">&#10005;</i>
+				</div>
+				<table class="table2">
+					<tr>
+						<td>
+							<label for="abc1" name="abc1"><input type="radio" id="abc1" name="sport" value="abc1"><img src="img/WI-FI.svg"></label>
+						</td>
+						<td>
+							<label for="abc2" name="abc2"><input type="radio" id="abc2" name="sport" value="abc2"><img src="img/WI-FI.svg"></label>
+						</td>
+						<td><label for="abc3" name="abc3"><input type="radio" id="abc3" name="sport" value="abc3"><img src="img/canjirenfuwu.svg"></label></td>
+						<td><label for="abc4" name="abc4"><input type="radio" id="abc4" name="sport" value="abc4"><img src="img/dayinfuwu.svg"></label></td>
+						<td><label for="abc5" name="abc5"><input type="radio" id="abc5" name="sport" value="abc5"><img src="img/diannao.svg"></label></td>
+					</tr>
+					<tr>
+						<td>WI-FI</td>
+						<td>瑜伽保健</td>
+						<td>残疾人服务</td>
+						<td>打印服务</td>
+						<td>电脑</td>
+					</tr>
+					<tr>
+						<td><label for="abc6" name="abc6"><input type="radio" id="abc6" name="sport" value="abc6"><img src="img/dianyingyuanpng.svg"></label></td>
+						<td><label for="abc7" name="abc7"><input type="radio" id="abc7" name="sport" value="abc7"><img src="img/dingpiaofuwu.svg"></label></td>
+						<td><label for="abc8" name="abc8"><input type="radio" id="abc8" name="sport" value="abc8"><img src="img/ertongkanhu.svg"></label></td>
+						<td><label for="abc9" name="abc9"><input type="radio" id="abc9" name="sport" value="abc9"><img src="img/ertongleyuan.svg"></label></td>
+						<td><label for="abc10" name="abc10"><input type="radio" id="abc10" name="sport" value="abc10"><img src="img/guizhongwupinbaoguan.svg"></label></td>
+					</tr>
+					<tr>
+						<td>电影院</td>
+						<td>订票服务</td>
+						<td>儿童看护</td>
+						<td>儿童乐园</td>
+						<td>贵重物品保管</td>
+					</tr>
+					<tr>
+						<td><label for="abc11" name="abc11"><input type="radio" id="abc11" name="sport" value="abc11"><img src="img/jianshenfang.svg"></label></td>
+						<td><label for="abc12" name="abc12"><input type="radio" id="abc12" name="sport" value="abc12"><img src="img/jiaochefuwu.svg"></label></td>
+						<td><label for="abc13" name="abc13"><input type="radio" id="abc13" name="sport" value="abc13"><img src="img/jiaoxingfuwu.svg"></label></td>
+						<td><label for="abc14" name="abc14"><input type="radio" id="abc14" name="sport" value="abc14"><img src="img/jiesongjifuwu.svg"></label></td>
+						<td><label for="abc15" name="abc15"><input type="radio" id="abc15" name="sport" value="abc15"><img src="img/lengyin.svg"></label></td>
+					</tr>
+					<tr>
+						<td>健身房</td>
+						<td>叫车服务</td>
+						<td>叫醒服务</td>
+						<td>接送机服务</td>
+						<td>冷饮</td>
+					</tr>
+					<tr>
+						<td><label for="abc16" name="abc16"><input type="radio" id="abc16" name="sport" value="abc16"><img src="img/lipinlang.svg"></label></td>
+						<td><label for="abc17" name="abc17"><input type="radio" id="abc17" name="sport" value="abc17"><img src="img/suakafuwu.svg"></label></td>
+						<td><label for="abc18" name="abc18"><input type="radio" id="abc18" name="sport" value="abc18"><img src="img/waibiduihuan.svg"></label></td>
+						<td><label for="abc19" name="abc19"><input type="radio" id="abc19" name="sport" value="abc19"><img src="img/xiyifuwu.svg"></label></td>
+						<td><label for="abc20" name="abc20"><input type="radio" id="abc20" name="sport" value="abc20"><img src="img/xinglijicun.svg"></label></td>
+					</tr>
+					<tr>
+						<td>礼品廊</td>
+						<td>刷卡服务</td>
+						<td>外币兑换</td>
+						<td>洗衣服务</td>
+						<td>行李寄存</td>
+					</tr>
+
+				</table>
+				<div class="ge_slot_but">
+					<input type="button" value="提交" />
+				</div>
+			</div>
+		</div>
+
+		<!--预览-->
+		<div class="pvwBox">
+			<p class="s_shadow1"></p>
+			<div class="pvw_top">
+				<div class="pvw_close fr">&#10005;</div>
+			</div>
+			<div class="pvw_main">
+				<div class="nav_bar clearfix">
+					<div class="col-3">
+						<a href="javascript:;" class="back"><img src="images/back-arrow.png" alt="" /></a>
+					</div>
+					<div class="col-6 title">服务指南</div>
+					<div class="col-3 right"></div>
+				</div>
+				<!--头部-->
+				<!--主体-->
+				<div class="subnav1">
+
+					<div class="font">
+						<div class="s_font clear">
+							<span class="s_span1 fl"></span>
+							<span class="s_span2 fl">服务指南</span>
+							<span class="s_span1 fl"></span>
+						</div>
+						<div class="copy">
+							<p class="s_img1">
+								<img src="images/rooms_details.png" />
+							</p>
+							<div class="master">
+								<p class="s_master">
+									<span class="fl">保健瑜伽</span>
+									<span class="fr">服务电话 : 400-5000-333</span>
+								</p>
+							</div>
+							<p class="s_tet">
+								保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽
+							</p>
+						</div>
+					</div>
+					<div class="font">
+						<div class="s_font clear">
+							<span class="s_span1 fl"></span>
+							<span class="s_span2 fl">服务指南</span>
+							<span class="s_span1 fl"></span>
+						</div>
+						<div class="copy">
+							<p class="s_img1">
+								<img src="images/rooms_details.png" />
+							</p>
+							<div class="master">
+								<p class="s_master">
+									<span class="fl">保健瑜伽</span>
+									<span class="fr">服务电话 : 400-5000-333</span>
+								</p>
+							</div>
+							<p class="s_tet">
+								保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽保健瑜伽
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--发布弹窗-->
+		<!--<div class="issue">
+					<div class="is_main">
+						<div class="is_top">
+							<span class="fl">发布</span>
+							<em class="fr">&#10005;</em>
+						</div>
+						<div class="is_m">
+							<span>确定要发布？</span>
+						</div>
+						<div class="is_but">
+							<input type="button" value="确定" class="sure" />
+							<input type="button" value="取消" />
+						</div>
+					</div>
+				</div>-->
+		<div class="s_delete delete_top">
+			<p class="s_shadow"></p>
+			<div class="delete_hot">
+				<div class="delete_list1">
+					<p class="delete_left">确定要发布？</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="delete_determine fr">确定</a>
+					<a href="javascript:;" class="delete_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>
+		<!--发布弹窗-->
+		<!--切图-->
+		<div class="cut_photo1">
+			<div class="cut_p_top1">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="cropContainerModal"></div>
+		</div>
+		<!--切图结束-->
+
+		<!--删除弹窗-->
+		<!--<div class="delete_one">
+					<div class="dlo_main">
+						<div class="dlo_top">
+							<span class="fl">删除</span>
+							<em class="fr">&#10005;</em>
+						</div>
+						<div class="dlo_m">
+							<span>确认要删除？</span>
+						</div>
+						<div class="dlo_but">
+							<input type="button" value="确定" class="sure" />
+							<input type="button" value="取消" />
+						</div>
+					</div>
+				</div>-->
+		<div class="s_delete delete_none">
+			<p class="s_shadow"></p>
+			<div class="delete_hot">
+				<div class="delete_list clear">
+					<span class="fl"></span>
+					<p class="fl">确认要删除？</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="delete_determine fr">确定</a>
+					<a href="javascript:;" class="delete_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>
+		<!--删除弹窗-->
+
+		<!--主体--ed-->
+
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dateRange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/l_daterange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/croppic.min.js" type="text/javascript" charset="UTF-8"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				//chechbox选择效果/上架置灰高亮切换
+				$("td.l_check label").click(function() {
+					$(this).toggleClass("checked");
+					if($(".l_check label").hasClass("checked")) {
+						$(".list_button").children().last('a').addClass("s_button2");
+						$(".s_button2").click(function(e) {
+							$('.delete_top').fadeIn();
+							tcShow();
+						});
+						$('.issue .is_main .is_top em,.issue .is_main .is_but input,.delete_determine,.delete_cancel').click(function(e) {
+							$('.delete_top').fadeOut();
+							tcHide();
+						});
+					} else {
+						$(".s_button2").off();
+						$(".list_button").children().last('a').removeClass("s_button2");
+					}
+				});
+				//新增商品置灰高亮切换
+				$(".w_plate_class div ul li").not(".l_select_name").click(function() {
+					$(".l_add").addClass("active");
+				});
+				$('.list_con ul li').click(function() {
+					$(this).addClass('active').siblings().removeClass('active');
+				});
+			});
+		</script>
+		<script>
+			$(function() {
+				$(document).click(function() {
+					$(".w_plate_class1").find(".w_plate_one ul").slideUp();
+				})
+				$(".w_plate_class1 div p").click(function() {
+					$(this).next().slideToggle();
+					$(this).parents('tr').siblings().find(".w_plate_class1 ul").slideUp();
+					return false;
+				});
+				$(".w_plate_class1 div ul li").not(".l_select_name").css("cursor", "pointer");
+				$(".w_plate_class1 div ul li").not(".l_select_name").click(function() {
+					$(this).parents("ul").siblings("p").find("i").html($(this).html());
+					$(this).parents("ul").slideUp();
+				});
+				$(".w_plate_class1 div ul li").not(".l_select_name").hover(function() {
+					$(this).css({
+						"background": "#2e85f5",
+						"color": "#fff"
+					});
+				}, function() {
+					$(this).css({
+						"background": "#fff",
+						"color": "#a0a0a0"
+					})
+				});
+			})
+		</script>
+
+		<!--新增指南、编辑弹窗-->
+		<script>
+			$(function() {
+				$('a.s_btn').click(function(e) {
+					$('.ge_top span').html("新增指南");
+					$('.guide_edit').fadeIn();
+					tcShow(1);
+				});
+				$('p.l_sure_order').click(function(e) {
+					$('.ge_top span').html("修改指南");
+					$('.guide_edit').fadeIn();
+					tcShow();
+				});
+				$('.guide_edit .ge_main .ge_top i,.guide_edit .ge_but input.undo').click(function(e) {
+					$('.guide_edit,ge_slot').fadeOut();
+					tcHide();
+				});
+				$('.guide_edit .ge_but input.sure').click(function(e) {
+					var one = $(".gemp1 textarea").val().length;
+					var two = $(".gemp2 input").val().length;
+					if(one == 0 || two == 0) {
+						$(".addge_prompt").fadeIn();
+						setTimeout(function() {
+								$(".addge_prompt").fadeOut();
+							},
+							2000);
+					} else {
+						$('.guide_edit,ge_slot').fadeOut();
+					}
+					if(one == 0) {
+						//$(".gemp1 textarea").css("border", "1px solid #ff0000");
+					} else {
+						//$(".gemp1 textarea").css("border", "1px solid #cac8cb");
+					}
+					if(two == 0) {
+						//$(".gemp2 input").css("border", "1px solid #ff0000");
+					} else {
+						//$(".gemp2 input").css("border", "1px solid #cac8cb");
+					}
+				});
+			});
+		</script>
+		<!--图库-->
+		<script>
+			$(function() {
+				$('.ge_m_r .p1 a').click(function(e) {
+					$('.ge_slot').fadeIn();
+				});
+				$('.ge_slot .ge_slot_top i,.ge_slot .ge_slot_but input').click(function(e) {
+					$('.ge_slot').fadeOut();
+				});
+			});
+		</script>
+		<!--字数限制-->
+		<script>
+			function setShowLength(obj, maxlength, id) {
+				var rem = maxlength - obj.value.length;
+				var wid = id;
+				if(rem < 0) {
+					rem = 0;
+				}
+				document.getElementById(wid).innerHTML = rem + "/120字";
+			}
+		</script>
+		<!--新增其他类预览-->
+		<script>
+			$(function() {
+				$('.pvwBox').hide();
+				$('a.click_details,.guide_edit .ge_but input.pvw').click(function(e) {
+					$('.pvwBox').fadeIn();
+					tcShow(1)
+					$('.pvwBox .pvw_close').click(function(e) {
+					$('.pvwBox').fadeOut();
+					tcHide()
+				});
+				});
+				
+				$('.img_width').click(function(e) {
+					$('.pvwBox').fadeIn();
+					tcShow(1);
+					$('.pvwBox .pvw_close').click(function(e) {
+					$('.pvwBox').fadeOut();
+					tcHide();
+				});
+				});
+				
+			});
+		</script>
+		<!--切图插件js-->
+		<script>
+			var croppicContainerModalOptions = {
+				uploadUrl: 'http://tech.harvetech.cn/wifihotel/img_save_to_file.php',
+				cropUrl: 'http://tech.harvetech.cn/wifihotel/img_crop_to_file.php',
+				modal: true,
+				imgEyecandyOpacity: 0.4,
+				loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+				onBeforeImgUpload: function() {
+					console.log('onBeforeImgUpload')
+				},
+				onAfterImgUpload: function() {
+					console.log('onAfterImgUpload')
+				},
+				onImgDrag: function() {
+					console.log('onImgDrag')
+				},
+				onImgZoom: function() {
+					console.log('onImgZoom')
+				},
+				onBeforeImgCrop: function() {
+					console.log('onBeforeImgCrop')
+				},
+				onAfterImgCrop: function() {
+					console.log('onAfterImgCrop')
+				},
+				onReset: function() {
+					console.log('onReset')
+				},
+				onError: function(errormessage) {
+					console.log('onError:' + errormessage)
+				}
+			}
+			var cropContainerModal = new Croppic('cropContainerModal', croppicContainerModalOptions);
+		</script>
+
+		<!--切图弹窗-->
+		<script>
+			$(function() {
+				$('.ge_m_r .chatu1,a.huantu').click(function(e) {
+					$('.cut_photo1').fadeIn();
+					tcShow();
+				});
+				$('.cut_photo1 .cut_p_top1 a').click(function(e) {
+					$('.cut_photo1').fadeOut();
+				});
+			});
+		</script>
+		<!--删除弹窗-->
+		<script>
+			$(function() {
+				$('.l_opt_tips p:last-child').click(function(e) {
+					$('.delete_none').fadeIn();
+					tcShow();
+				});
+				$('.delete_one .dlo_main .dlo_top em,.delete_one .dlo_main .dlo_but input,.delete_determine,.delete_cancel').click(function(e) {
+					$('.delete_none').fadeOut();
+					tcHide();
+				});
+				$('.l_opt').css('padding-left', '0');
+				$('.l_table table>thead>tr>th:last-child').css('padding-left', '0px')
+			});
+		</script>
+	</body>
+
+</html>

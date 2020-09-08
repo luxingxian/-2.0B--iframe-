@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品管理</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/room.css" />
+		<link rel="stylesheet" href="css/dateRange.css" />
+		<link rel="stylesheet" href="css/index.css" />
+
+	</head>
+
+	<body>
+		
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content clearfix ">
+				<div class="l_top_header clearfix">
+					<a href="javascript:;" class="l_online fr"><img src="images/l_icon_online.png" alt="" />上架</a>
+					<p class="s_zeng fr">
+						<span></span>
+						<a href="edit_commodity_center.html" class="l_add">新增商品</a>
+					</p>
+				</div>
+				<!--二级筛选导航公用结构-->
+				<div class="l_header clearfix w_plate_class">
+					<div class="w_plate_one">
+						<p><i>板块</i><em></em></p>
+						<ul class="f_border">
+							<li class="l_select_name">板块</li>
+							<li>日用品</li>
+							<li>特色商品</li>
+							<li>其他</li>
+						</ul>
+					</div>
+					<div class="l_hide">
+						<p><i>分类</i><em></em></p>
+						<ul class="f_border">
+							<li class="l_select_name">分类</li>
+							<li>全部</li>
+						</ul>
+					</div>
+					<div class="l_hide">
+						<p><i>商品状态</i><em></em></p>
+						<ul class="f_border">
+							<li class="l_select_name">商品状态</li>
+							<li>待上架</li>
+							<li>已售罄</li>
+							<li>销售中</li>
+							<li>
+								展示中
+							</li>
+						</ul>
+					</div>
+					<div class="l_hide s_gou">
+						<p><i>销售方式</i><em></em></p>
+						<ul class="f_border">
+							<li class="l_select_name">销售方式</li>
+							<li>全部</li>
+							<li>仅展示</li>
+							<li>可购买</li>
+						</ul>
+					</div>
+					<div class="s_xian" style="display: none;">
+						<p><i>全部</i><em></em></p>
+						<ul class="f_border">
+							<li class="l_select_name">全部</li>
+							<li>全部</li>
+							<li>店内</li>
+							<li>微商城</li>
+						</ul>
+					</div>
+					<div class="ta_date l_date l_hide" id="div_date1">
+						<span class="date_title" id="date1"></span>
+						<em class="clearDate"></em>
+					</div>
+					<p class="search_input fl l_hide">
+						<input type="text" placeholder="请输入商品编号,商品名称" class="l_search" />
+						<img src="images/l_icon_search.png" alt="" />
+					</p>
+
+					<a href="javascript:;" class="l_ref fr"><img src="images/s_icon.png" />刷新</a>
+				</div>
+				<!--二级筛选导航公用结构--ed---->
+
+				<div class="l_table table_none">
+					<table>
+						<thead>
+							<tr>
+								<th width="6.6%"></th>
+								<th width="13.2%">商品编码</th>
+								<th width="11.93%">商品名称</th>
+								<th width="14%">分类</th>
+								<th width="9.93%">商品价格</th>
+								<th width="11.2%">销售方式</th>
+								<th width="11.33%">商品状态</th>
+								<th width="14.86%">操作人/操作时间</th>
+								<th width="7%">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>316002700</td>
+								<td class="s_frsit">最多十个字最多十个字个字</td>
+								<td>洗漱用品</td>
+								<td class="td_span"><span>￥50.00</span><!--<br/><span class="span_red">促：￥10.00</span>--></td>
+								<td>可购买(微信)</td>
+								<td class="daishangjia">待上架</td>
+								<td class="td_span"><span>Normal</span><br/><span>2016-08-02&nbsp;12:44:32</span></td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>													
+										<a href="edit_commodity_center.html">
+											<p class="s_xiugai"><img src="images/amend.png" />修改商品</p>
+										</a>
+										<p class="l_sure"><img src="images/l_icon_del4.png" />删除商品</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>316002700</td>
+								<td class="s_frsit">洗漱用品/清仓</td>
+								<td>洗漱用品</td>
+								<td class="td_span"><span>￥50.00</span></td>
+								<td>仅展示</td>
+								<td class="daishangjia">待上架</td>
+								<td class="td_span"><span>Normal</span><br/><span>2016-08-02&nbsp;12:44:32</span></td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>													
+										<a href="edit_commodity_center.html">
+											<p class="s_xiugai"><img src="images/amend.png" />修改商品</p>
+										</a>
+										<p class="l_sure"><img src="images/l_icon_del4.png" />删除商品</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>316002700</td>
+								<td class="s_frsit">最多十个字最多十个字个字</td>
+								<td>洗漱用品</td>
+								<td class="td_span"><span>￥50.00</span></td>
+								<td>可购买(店内)</td>
+								<td class="zhanshizhong1"><i>已售馨</i></td>
+								<td class="td_span"><span>Normal</span><br/><span>2016-08-02&nbsp;12:44:32</span></td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>																											
+										<p class="s_com"><img src="images/amend.png" />修改商品</p>
+										<p class="s_kucun"><img src="images/s_ku_b.png" />补充库存</p>
+										<p class="xiajia"><img src="images/l_icon_offline.png" />商品下架</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>316002700</td>
+								<td class="s_frsit">纪念品/中秋促销</td>
+								<td>洗漱用品</td>
+								<td class="td_span"><span>￥50.00</span></td>
+								<td>可购买(店内)</td>
+								<td class="zhanshizhong1"><i>已售馨</i></td>
+								<td class="td_span"><span>Normal</span><br/><span>2016-08-02&nbsp;12:44:32</span></td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>													
+										<p class="s_com"><img src="images/amend.png" />修改商品</p>
+										<p class="s_kucun"><img src="images/s_ku_b.png" />补充库存</p>
+										<p class="xiajia"><img src="images/l_icon_offline.png" />商品下架</p>
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>316002700</td>
+								<td class="s_frsit">纪念品/中秋促销</td>
+								<td>洗漱用品</td>
+								<td class="td_span"><span>￥50.00</span></td>
+								<td>可购买(微信)</td>
+								<td class="zhanshizhong"><i>销售中</i></td>
+								<td class="td_span"><span>Normal</span><br/><span>2016-08-02&nbsp;12:44:32</span></td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>													
+										<p class="s_com"><img src="images/amend.png" />修改商品</p>
+										<p class="s_kucun"><img src="images/s_ku_b.png" />补充库存</p>
+										<p class="xiajia"><img src="images/l_icon_offline.png" />商品下架</p>
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>316002700</td>
+								<td class="s_frsit">纪念品/中秋促销</td>
+								<td>洗漱用品</td>
+								<td class="td_span"><span>￥50.00</span></td>
+								<td>仅展示</td>
+								<td class="show"><i>展示中</i></td>
+								<td class="td_span"><span>Normal</span><br/><span>2016-08-02&nbsp;12:44:32</span></td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>													
+										<p class="s_com"><img src="images/amend.png" />修改商品</p>
+										<p class="s_kucun"><img src="images/s_ku_b.png" />补充库存</p>
+										<p class="xiajia"><img src="images/l_icon_offline.png" />商品下架</p>
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="bode_height">
+					<!--选择板块提示-->
+					<div class="node_box">
+						<p class="f_node f_node_none">
+							<img src="images/f_table.png" class="node_img"/>
+							<span class="node_text">请联系系统管理员创建板块</span>
+							<!--<a href="plate_manage.html"><span class="node_hot">创建板块</span></a>-->
+						</p>		
+						<div class="f_node_none">
+							<img src="images/jiantou.png" class="node_img_two" style="display: block; width:35%; height: 173px; position: absolute; left:5%; top: 123px;"/>
+							<p class="f_node_two">				
+								<img src="images/xuanzebankuai.png" class="node_img_two"/>
+								<span class="node_text">请选择板块</span>
+							</p>
+						</div>
+						<p class="f_node f_node_none">
+							<img src="images/f_table2.png" class="node_img"/>
+							<span class="node_text">您没有当前业务权限</span>
+						</p>				
+					</div>
+					<!--选择板块提示-->		
+				</div>
+			</div>
+		</div>
+		<!--主体--ed-->
+		<!--底部分页开始-->
+		<div class="l_container">
+			<div class="l_foot_page clearfix">
+				<div class="l_left fl">
+					<p>每页显示
+						<select>
+							<option>10</option>
+							<option>20</option>
+							<option>30</option>
+						</select>
+					</p>
+				</div>
+				<div class="l_right fr clearfix">
+					<p>
+						<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+						<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+						<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+					</p>
+					<p class="l_skippage">
+						到<input type="number" />页<button>确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--底部分页--ed-->
+			
+		<!--删除弹窗-->
+		<div class="s_delete delete_none">
+			<p class="s_shadow"></p>
+			<div class="delete_hot">
+				<div class="delete_list clear">
+					<span class="fl"></span>
+					<p class="fl">确认删除商品吗？</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="delete_determine fr">确定</a>
+					<a href="javascript:;" class="delete_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>
+		<!--下架商品-->
+		<div class="s_delete delete_none1">
+			<p class="s_shadow"></p>
+			<div class="delete_hot">
+				<div class="delete_list delete_plase clear">
+					<span class="fl"></span>
+					<p class="fl">确认将商品下架吗？</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="delete_determine fr">确定</a>
+					<a href="javascript:;" class="delete_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>
+		<!--上架弹窗-->
+		<div class="s_delete delete_none2">
+			<p class="s_shadow"></p>
+			<div class="delete_hot">
+				<div class="delete_list delete_plase clear">
+					<em class="fl"></em>
+					<p class="fl">确认将商品上架吗？</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="delete_determine fr">确定</a>
+					<a href="javascript:;" class="delete_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>
+		<!--补充库存-->
+		<div class="s_stock stock_none">
+			<p class="s_shadow"></p>
+			<div class="close_list">
+				<div class="close_plase clear">
+					<span class="fl"></span>
+					<p class="fl">补充库存</p>
+				</div>
+				<div class="s_hot">
+					<div class="clear">
+						<div class="fl">
+							<p class="close_text">商品编码</p>
+							<p class="close_hot">01011608040004</p>
+						</div>
+						<div class="stock_left fl">
+							<p class="close_text">商品名称</p>
+							<p class="close_hot">洗衣液</p>
+						</div>
+					</div>
+					<p class="close_last">库存（必填）</p>
+				</div>
+				<div class="hot_list hot_back clear">
+					<input type="text" class="fl" placeholder="数量必须>0" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" />
+				</div>
+				<p class="clear">
+					<a href="javascript:;" class="determine fr">确定</a>
+					<a href="javascript:;" class="cancel fr">取消</a>
+				</p>
+				<div class="cancel_reason_popup">
+					<p><i></i>请先填写关闭原因！</p>
+				</div>
+			</div>
+		</div>
+		<!--提示变为待上架弹窗-->
+		<div class="w_popup edit_stay_popup">
+			<p class="s_shadow"></p>
+			<div class="stay_edit_popup">
+				<div class="w_delivered_top">
+					<p class="w_send_product fl">编辑后商品将变为待上架状态，确认编辑商品吗？</p>
+				</div>
+				<div class="delivered_btn">
+					<a href="edit_commodity_center.html"><span class="w_sure_btn">确定</span></a>
+					<span class="w_cancel_btn">取消</span>
+				</div>
+			</div>
+		</div>
+
+
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/dateRange.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/l_daterange.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			//chechbox选择效果/上架置灰高亮切换
+			$("td.l_check label").click(function() {
+				$(this).toggleClass("checked");
+				if($(".l_check label").hasClass("checked")) {
+					$(".l_online").addClass("active");
+
+					$('.l_online ').click(function() {
+						if($(".l_online").hasClass("active")) {
+							$('.delete_none2').fadeIn();
+							tcShow();
+
+						} else {
+							return false;
+						}
+
+					});
+					$('.l_online').children('img').attr('src', 'images/l_icon_online_w.png')
+				} else {
+					$(".l_online").removeClass("active");
+					//$('.s_zeng span').show();
+					$('.l_online').children('img').attr('src', 'images/l_icon_online.png')
+				}
+			});
+			//新增商品置灰高亮切换
+			$(".w_plate_class div ul li").not(".l_select_name").click(function() {
+				$(".l_add").addClass("active");
+				$('.s_zeng span').hide();
+			});
+		});
+	</script>
+	<script>
+		$(function() {
+			/*删除弹窗*/
+			$('.l_sure').click(function() {
+				$('.delete_none').fadeIn();
+				tcShow();
+			});
+			$('.delete_determine,.delete_cancel').click(function() {
+				$('.s_delete').fadeOut();
+				tcHide();
+			});
+			/*下架商品*/
+			$('.xiajia').click(function() {
+				$('.delete_none1').fadeIn();
+				tcShow();
+			});
+			$('.l_opt').css('padding-left', '0');
+			/*库存*/
+			$('.s_kucun').click(function() {
+				$('.stock_none').fadeIn();
+				tcShow();
+			});
+			$('.cancel').click(function() {
+				$('.stock_none').fadeOut();
+				tcHide()
+			});
+			$(".determine").click(function() {
+				if($(".hot_back  input").val() == "") {
+
+					$(".cancel_reason_popup").fadeIn().delay(1000).fadeOut();
+				} else {
+					$(this).parents(".stock_none").fadeOut();
+					tcHide()
+				}
+				return false;
+			});
+			$('.l_table table>thead>tr>th:last-child').css('padding-left', '0px');
+			/*确认编辑商品弹窗*/
+			$('.s_com').click(function() {
+				$('.edit_stay_popup').fadeIn();
+				tcShow()
+			});
+			$('.w_cancel_btn').click(function(){
+				$('.edit_stay_popup').fadeOut();
+				tcHide()
+			})
+
+		})
+	</script>
+	</body>
+
+</html>

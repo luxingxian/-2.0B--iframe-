@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>资讯管理</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" href="assets/css/croppic.css" />
+		<link rel="stylesheet" href="css/funnyNewsTicker.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" href="css/dateRange.css" />
+		<link rel="stylesheet" type="text/css" href="css/room.css" />
+		<link rel="stylesheet" type="text/css" href="css/preview.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/w_Plate_Style.css" />
+	</head>
+
+	<body>
+		<!--主体开始-->
+		<div class="l_container">
+			<div class="l_content clearfix " style="padding-top: 60px;">
+				<div class="list_con clear" style="margin-top: 0;">
+					<ul class="fl">
+						<li class="fl active">全部</li>
+						<li class="fl">已发布</li>
+						<li class="fl">待发布</li>
+					</ul>
+					<p class="list_button fr">
+						<a href="javascript:;" class="s_btn fl">新增资讯</a>
+						<a href="javascript:;" class="s_button1 fl">发布</a>
+					</p>
+				</div>
+				<!--二级筛选导航公用结构-->
+				<div class="l_header clearfix w_plate_class">
+					<a href="javascript:;" class="active">全部</a>
+					<a href="javascript:;">今天</a>
+					<a href="javascript:;">昨天</a>
+					<a href="javascript:;">7天</a>
+					<div class="ta_date l_date fl" id="div_date1">
+						<span class="date_title" id="date1"></span>
+						<em class="clearDate"></em>
+					</div>
+					<p class="search_input fl">
+						<input type="text" placeholder="请输入资讯名称" class="l_search" />
+						<img src="images/l_icon_search.png" alt="" />
+					</p>
+
+					<a href="javascript:;" class="l_ref fr"><img src="images/s_icon.png" />刷新</a>
+				</div>
+				<!--二级筛选导航公用结构--ed---->
+				<div class="l_table">
+					<table>
+						<thead>
+							<tr>
+								<th width="5.26%"></th>
+								<th width="11.8%">更新日期</th>
+								<th width="11.8%">更新时间</th>
+								<th width="23.13%">文章标题</th>
+								<th width="8.26%">作者</th>
+								<!--<th width="6.26%">预览</th>-->
+								<th width="11.6%">状态</th>
+								<th width="12.66%">优先级</th>
+								<th width="7%">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>2016-08-13</td>
+								<td>11:36:52</td>
+								<td class="s_frsit1">酒店宾馆行业又一新政发布酒店宾馆行业又</td>
+								<td>酒店原创</td>
+								<!--<td><img src="images/yulan.png" class="img_width" /></td>-->
+								<td class="daishangjia">待发布</td>
+								<td>高</td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>
+										<p class="l_sure_order"><img src="images/amend.png" />编辑资讯</p>
+										<p class="img_width"><img src="images/f_yulan.png" />预览</p>
+										<p><img src="images/l_icon_del4.png" />删除资讯</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>2016-08-13</td>
+								<td>11:36:52</td>
+								<td class="s_frsit1">酒店宾馆行业又一新政发布酒店宾馆行业又</td>
+								<td>酒店原创</td>
+								<!--<td><img src="images/yulan.png" class="img_width" /></td>-->
+								<td class="daishangjia">待发布</td>
+								<td>低</td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>
+										<p class="l_sure_order"><img src="images/amend.png" />编辑资讯</p>
+										<p class="img_width"><img src="images/f_yulan.png" />预览</p>
+										<p><img src="images/l_icon_del4.png" />删除资讯</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>2016-08-13</td>
+								<td>11:36:52</td>
+								<td class="s_frsit1">酒店宾馆行业又一新政发布酒店宾馆行业又又</td>
+								<td>酒店原创</td>
+								<!--<td><img src="images/yulan.png" class="img_width" /></td>-->
+								<td class="zhanshizhong2"><i>已发布</i></td>
+								<td>高</td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>
+										<p class="l_sure_order"><img src="images/amend.png" />编辑资讯</p>
+										<p class="img_width"><img src="images/f_yulan.png" />预览</p>
+										<p><img src="images/l_icon_del4.png" />删除资讯</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>2016-08-13</td>
+								<td>11:36:52</td>
+								<td class="s_frsit1">酒店宾馆行业又一新政发布酒店宾馆行业又又又</td>
+								<td>酒店原创</td>
+								<!--<td><img src="images/yulan.png" class="img_width" /></td>-->
+								<td class="zhanshizhong2"><i>已发布</i></td>
+								<td>高</td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>
+										<p class="l_sure_order"><img src="images/amend.png" />编辑资讯</p>
+										<p class="img_width"><img src="images/f_yulan.png" />预览</p>
+										<p><img src="images/l_icon_del4.png" />删除资讯</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="l_check"><input type="checkbox" value="" id="a1" /><label for="a1"></label></td>
+								<td>2016-08-13</td>
+								<td>11:36:52</td>
+								<td class="s_frsit1">酒店宾馆行业又一新政发布酒店宾馆行业又又又</td>
+								<td>酒店原创</td>
+								<!--<td><img src="images/yulan.png" class="img_width" /></td>-->
+								<td class="zhanshizhong2"><i>已发布</i></td>
+								<td>高</td>
+								<td class="l_opt">
+									<img src="images/l_icon_more.png" />
+									<div class="l_opt_tips f_border">
+										<i></i>
+										<p class="l_sure_order"><img src="images/amend.png" />编辑资讯</p>
+										<p class="img_width"><img src="images/f_yulan.png" />预览</p>
+										<p><img src="images/l_icon_del4.png" />删除资讯</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!--主体--ed-->
+			<!--底部分页开始-->
+			<div class="l_container">
+				<div class="l_foot_page clearfix">
+					<div class="l_left fl">
+						<p>每页显示
+							<select>
+								<option>10</option>
+								<option>20</option>
+								<option>30</option>
+							</select>
+						</p>
+					</div>
+					<div class="l_right fr clearfix">
+						<p>
+							<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+							<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+							<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+						</p>
+						<p class="l_skippage">
+							到<input type="number" />页<button>确定</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--底部分页--ed-->
+		</div>
+
+		<!--预览-->
+		<div class="pvwBox">
+			<p class="s_shadow1"></p>
+			<div class="pvw_top">
+				<div class="pvw_close fr">&#10005;</div>
+			</div>
+			<div class="pvw_main">
+				<!--头部-->
+				<div class="nav_bar clearfix">
+					<div class="col-3">
+						<a href="javascript:;" class="back"><img src="images/back-arrow.png" alt="" /></a>
+					</div>
+					<div class="col-6 title">资讯详情</div>
+					<div class="col-3 right"></div>
+				</div>
+				<!--头部-->
+				<div class="detalis_all">
+					<!--顶部banner-->
+					<div class="detalis_top">
+						<img src="images/details_banner.png">
+					</div>
+					<!--顶部banner结束-->
+					<!--来源-->
+					<div class="detalis_source">
+						<div class="details_tou">
+							<img src="images/details_banner.png">
+						</div>
+						<div class="detalis_source_name">
+							<p>来自<span>马蜂窝</span>Michelle</p>
+						</div>
+					</div>
+					<!--来源结束-->
+					<!--来源正文-->
+					<div class="detalis_content">
+						<div class="detalis_content_name">
+							<p>北京丽思卡顿酒店大堂酒廊</p>
+						</div>
+						<div class="detalis_content_infor">
+							<ul>
+								<li><img src="images/address.png"><span>国贸/大望路</span></li>
+								<li class="sx"><span> | </span></li>
+								<li><img src="images/kind.png"><span>西餐</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="l_section">
+						<div class="l_title">
+							<h3><span>资讯标题</span></h3></div>
+						<p class="l_text">资讯内容烤菜，茄子，番茄在葡萄酒，口感一级棒，是非常不错的番茄在葡萄酒，板材中的牛肉用的是不错的番茄在葡萄酒板材中的牛肉用的是牛上最板材中的牛肉用的是牛上最资讯内容烤菜资讯内容烤</p>
+						<p class="l_text">是非常不错的番茄在葡萄酒板材中的牛上最资讯内容烤菜资讯内容烤是非常不错的番茄在葡萄酒板材中的牛肉用的是牛上最板材中的牛肉用的是牛上最资讯内容烤菜资讯内容烤菜</p>
+						<p class="img"><img src="images/bnner_3.jpg" alt="" /></p>
+						<div class="l_title">
+							<h3><span>资讯标题资讯标题</span></h3></div>
+						<p class="l_text">资讯内容烤菜，茄子，番茄在葡萄酒，口感一级棒，是非常不错的番茄在葡萄酒，板材中的牛肉用的是不错的番茄在葡萄酒板材中的牛肉用的是牛上最板材中的牛肉用的是牛上最资讯内容烤菜资讯内容烤</p>
+						<p class="img"><img src="images/bnner_3.jpg" alt="" /></p>
+						<p class="l_text">是非常不错的番茄在葡萄酒板材中的牛上最资讯内容烤菜资讯内容烤是非常不错的番茄在葡萄酒板材中的牛肉用的是牛上最板材中的牛肉用的是牛上最资讯内容烤菜资讯内容烤菜</p>
+						<div class="l_title">
+							<h3><span>资资讯讯标题资讯标题</span></h3></div>
+						<p class="l_text">资讯内容烤菜，茄子，番茄在葡萄酒，口感一级棒，是非常不错的番茄在葡萄酒，板材中的牛肉用的是不错的番茄在葡萄酒板材中的牛肉用的是牛上最板材中的牛肉用的是牛上最资讯内容烤菜资讯内容烤</p>
+						<p class="img"><img src="images/bnner_3.jpg" alt="" /></p>
+						<p class="l_text">是非常不错的番茄在葡萄酒板材中的牛上最资讯内容烤菜资讯内容烤是非常不错的番茄在葡萄酒板材中的牛肉用的是牛上最板材中的牛肉用的是牛上最资讯内容烤菜资讯内容烤菜</p>
+					</div>
+					<!--来源正文结束-->
+					<div class="details_bottom">
+						<p>店铺详情</p>
+						<p class="l_add"><img src="images/bottom_address.png">
+							<a href="javascript:;">朝阳区朝外大街关东店北街20号103朝阳区朝外大街关东店北街20号103室室</a>
+						</p>
+						<p><img src="images/bottom_phone.png">
+							<a href="javascript:;">155555555555</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--单一删除弹窗-->
+		<!--<div class="delete_one w7">
+					<p class="s_shadow"></p>
+					<div class="dlo_main">
+						<div class="dlo_top">
+							<em class="fl" style="font-size: 14px;color: #fff; margin-left: 20px;">删除资讯</em>
+							<em class="fr">&#10005;</em>
+						</div>
+						<div class="dlo_m">
+							<span>确认要删除？</span>
+						</div>
+						<div class="dlo_but">
+							<input type="button" value="确定" class="one_delete" />
+							<input type="button" value="取消" class="one_cancel" />
+						</div>
+					</div>
+				</div>-->
+		<!--删除弹窗-->
+		<div class="s_delete delete_none s1">
+			<p class="s_shadow"></p>
+			<div class="delete_hot">
+				<div class="delete_list clear">
+					<span class="fl"></span>
+					<p class="fl">确认要删除资讯？</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="delete_determine fr">确定</a>
+					<a href="javascript:;" class="delete_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>
+		<!--单一删除弹窗-->
+
+		<!--发布资讯弹窗-->
+		<div class="s_delete delete_top">
+			<p class="s_shadow"></p>
+			<div class="delete_hot">
+				<div class="delete_list1">
+					<p class="delete_left">确定要发布资讯？</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="delete_determine fr">确定</a>
+					<a href="javascript:;" class="delete_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>
+		<!--发布资讯弹窗-->
+
+		<!--新增资讯-->
+		<div class="information_edit w5">
+			<p class="s_shadow"></p>
+			<div class="ime_main">
+				<div class="ime_top">
+					<i class="fl" style="font-size: 13px;color: #fff;margin-left: 10px;">新增资讯</i><i class="fr">&#10005;</i>
+				</div>
+				<div class="ime_m">
+					<div class="ime_m_l fl">
+						<p><span>发布位置：</span>资讯频道</p>
+						<p class="p1"><span class="span2"><i>*</i>标题：</span><input type="text" class="yan1" placeholder="不超过25个汉字"></p>
+						<p class="p2"><span class="span2"><i>*</i>作者：</span><input type="text" class="yan2" placeholder="不超过5个汉字"></p>
+						<p class="p3"><span class="span1"><i>*</i>关键词：</span><input type="text" class="yan3" placeholder="不超过25个汉字"></p>
+						<p><span class="span3">来源：</span><input type="text" class="yan_from" placeholder="不超过10个汉字"></p>
+						<p><span class="yxj"><i>*</i>优先级： <em><input type="radio" name="a" checked="true"/>高</em><em><input type="radio" name="a"/>低</em> </span></p>
+						<p><span class="span4">链接地址：</span></p>
+						<p><span>文字编辑：</span></p>
+						<p class="p2">
+							<span>段落标题：</span>
+							<input type="text" class="ime_text1 ime_text" placeholder="不超过10个汉字">
+							<input type="text" class="ime_text2 ime_text" placeholder="不超过10个汉字">
+							<input type="text" class="ime_text3 ime_text" placeholder="不超过10个汉字">
+							<input type="text" class="ime_text4 ime_text" placeholder="不超过10个汉字">
+							<input type="text" class="ime_text5 ime_text" placeholder="不超过10个汉字">
+							<input type="text" class="ime_text6 ime_text" placeholder="不超过10个汉字">
+						</p>
+						<div class="ime_edit">
+							<div class="ime_edit_l fl">
+								<div class="ime_section1 active w_page">段落1</div>
+								<div class="ime_section2 w_page">段落2</div>
+								<div class="ime_section3 w_page">段落3</div>
+								<div class="ime_section4 w_page">段落4</div>
+								<div class="ime_section5 w_page">段落5</div>
+								<div class="ime_section6 w_page">段落6</div>
+								<div class="ime_add1">+</div>
+								<div class="ime_add2">+</div>
+								<div class="ime_add3">+</div>
+								<div class="ime_add4">+</div>
+								<div class="ime_add5">+</div>
+							</div>
+							<div class="ime_edit_r fr">
+								<div class="ime_text1"><textarea maxlength="1000" onkeyup="javascript:setShowLength(this, 0, 's_em1');"></textarea>
+									<span><em id="s_em1">0</em>/1000</span>
+								</div>
+								<div class="ime_text2"><textarea maxlength="1000" onkeyup="javascript:setShowLength(this, 0, 's_em2');"></textarea>
+									<span><em id="s_em2">0</em>/1000</span></div>
+								<div class="ime_text3"><textarea maxlength="1000" onkeyup="javascript:setShowLength(this, 0, 's_em3');"></textarea>
+									<span><em id="s_em3">0</em>/1000</span></div>
+								<div class="ime_text4"><textarea maxlength="1000" onkeyup="javascript:setShowLength(this, 0, 's_em4');"></textarea>
+									<span><em id="s_em4">0</em>/1000</span></div>
+								<div class="ime_text5"><textarea maxlength="1000" onkeyup="javascript:setShowLength(this, 0, 's_em5');"></textarea>
+									<span><em id="s_em5">0</em>/1000</span></div>
+								<div class="ime_text6"><textarea maxlength="1000" onkeyup="javascript:setShowLength(this, 0, 's_em6');"></textarea>
+									<span><em id="s_em6">0</em>/1000</span></div>
+							</div>
+						</div>
+						<p class="p1">
+							<a href="javascript:;" class="delete_page">删除段落</a>
+						</p>
+					</div>
+					<div class="ime_m_r fr">
+						<p class="p2">图片编辑：</p>
+						<div class="container">
+							<div style="width:100%; margin:0 auto; box-sizing:border-box;">
+								<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing" id="funnyNewsTicker1">
+									<ul>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<p class="p1">图片建议尺寸：750像素 * 500像素</p>
+						<div class="bianjitu"></div>
+						<p class="p3">
+							<a href="javascript:;" class="zxhuantu">换图片</a>
+							<a href="javascript:;" class="delete_img">删除图片</a>
+						</p>
+					</div>
+				</div>
+				<div class="ime_but">
+					<input type="button" value="确定" class="sure" />
+					<input type="button" value="取消" class="wm_cancel" />
+				</div>
+			</div>
+			<div class="addaae_prompt">
+				<p><i></i><span>信息不全，请完善！</span></p>
+			</div>
+		</div>
+		<!--新增资讯-->
+
+		<!--编辑资讯-->
+		<div class="information_edit w6">
+			<p class="s_shadow"></p>
+			<div class="ime_main">
+				<div class="ime_top">
+					<i class="fl" style="font-size: 13px;color: #fff;margin-left: 10px;">编辑资讯</i><i class="fr">&#10005;</i>
+				</div>
+				<div class="ime_m">
+					<div class="ime_m_l fl">
+						<p><span>发布位置：</span>资讯频道</p>
+						<p class="p1"><span class="span2"><i>*</i>标题：</span><input type="text" class="yan1" placeholder="不超过25个汉字"></p>
+						<p class="p2"><span class="span2"><i>*</i>作者：</span><input type="text" class="yan2" placeholder="不超过5个汉字"></p>
+						<p class="p3"><span class="span1"><i>*</i>关键词：</span><input type="text" class="yan3" placeholder="不超过25个汉字"></p>
+						<p><span class="span3">来源：</span>原创</p>
+						<p><span class="yxj"><i>*</i>优先级： <em><input type="radio" name="a" checked="true"/>高</em><em><input type="radio" name="a"/>低</em> </span></p>
+						<p><span class="span4">链接地址：</span></p>
+						<p><span>文字编辑</span></p>
+						<p class="p2">
+							<span>段落标题：</span>
+							<input type="text" class="ime_text1 ime_text" placeholder="不超过10个汉字">
+							<input type="text" class="ime_text2 ime_text" placeholder="不超过10个汉字">
+							<input type="text" class="ime_text3 ime_text" placeholder="不超过10个汉字">
+							<input type="text" class="ime_text4 ime_text" placeholder="不超过10个汉字">
+							<input type="text" class="ime_text5 ime_text" placeholder="不超过10个汉字">
+							<input type="text" class="ime_text6 ime_text" placeholder="不超过10个汉字">
+						</p>
+						<div class="ime_edit">
+							<div class="ime_edit_l fl">
+								<div class="ime_section1 active w_page">段落1</div>
+								<div class="ime_section2 w_page">段落2</div>
+								<div class="ime_section3 w_page">段落3</div>
+								<div class="ime_section4 w_page">段落4</div>
+								<div class="ime_section5 w_page">段落5</div>
+								<div class="ime_section6 w_page">段落6</div>
+								<div class="ime_add1">+</div>
+								<div class="ime_add2">+</div>
+								<div class="ime_add3">+</div>
+								<div class="ime_add4">+</div>
+								<div class="ime_add5">+</div>
+							</div>
+							<div class="ime_edit_r fr">
+								<div class="ime_text1"><textarea maxlength="1000" onkeyup="javascript:setShowLength(this, 0, 's_em1');"></textarea>
+									<span><em id="s_em1">0</em>/1000</span>
+								</div>
+								<div class="ime_text2"><textarea maxlength="1000" onkeyup="javascript:setShowLength(this, 0, 's_em2');"></textarea>
+									<span><em id="s_em2">0</em>/1000</span></div>
+								<div class="ime_text3"><textarea maxlength="1000" onkeyup="javascript:setShowLength(this, 0, 's_em3');"></textarea>
+									<span><em id="s_em3">0</em>/1000</span></div>
+								<div class="ime_text4"><textarea maxlength="1000" onkeyup="javascript:setShowLength(this, 0, 's_em4');"></textarea>
+									<span><em id="s_em4">0</em>/1000</span></div>
+								<div class="ime_text5"><textarea maxlength="1000" onkeyup="javascript:setShowLength(this, 0, 's_em5');"></textarea>
+									<span><em id="s_em5">0</em>/1000</span></div>
+								<div class="ime_text6"><textarea maxlength="1000" onkeyup="javascript:setShowLength(this, 0, 's_em6');"></textarea>
+									<span><em id="s_em6">0</em>/1000</span></div>
+							</div>
+						</div>
+						<p class="p1">
+							<a href="javascript:;" class="delete_page">删除段落</a>
+						</p>
+					</div>
+					<div class="ime_m_r fr">
+						<p class="p2">图片编辑：</p>
+						<div class="container">
+							<div style="width:100%; margin:0 auto; box-sizing:border-box;">
+								<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing" id="funnyNewsTicker2">
+									<ul>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<p class="p1">图片建议尺寸：750像素 * 500像素</p>
+						<div class="bianjitu"></div>
+						<p class="p3">
+							<a href="javascript:;" class="zxhuantu">换图片</a>
+							<a href="javascript:;" class="delete_img">删除图片</a>
+						</p>
+					</div>
+				</div>
+				<div class="ime_but">
+					<input type="button" value="确定" class="sure" />
+					<input type="button" value="取消" class="wm_cancel" />
+				</div>
+			</div>
+			<div class="addaae_prompt">
+				<p><i></i><span>信息不全，请完善！</span></p>
+			</div>
+		</div>
+		<!--编辑资讯-->
+
+		<!--删除段落弹窗-->
+		<!--<div class="delete_one w1">
+					<p class="s_shadow"></p>
+					<div class="dlo_main">
+						<div class="dlo_top">
+							<em class="fl" style="font-size: 14px;color: #fff; margin-left: 20px;">删除段落</em>
+							<em class="fr">&#10005;</em>
+						</div>
+						<div class="dlo_m">
+							<span>您确定要删除段落吗？</span>
+						</div>
+						<div class="dlo_but">
+							<input type="button" value="确定" class="tan_delete_paragraph" />
+							<input type="button" value="取消" class="tan_cancel_paragraph" />
+						</div>
+					</div>
+				</div>-->
+		<div class="s_delete delete_none w1">
+			<p class="s_shadow"></p>
+			<div class="delete_hot">
+				<div class="delete_list clear">
+					<span class="fl"></span>
+					<p class="fl">您确定要删除段落吗？</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="delete_determine fr">确定</a>
+					<a href="javascript:;" class="delete_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>
+		<!--删除段落弹窗-->
+		<!--删除段落弹窗-->
+		<div class="delete_one w2">
+			<p class="s_shadow"></p>
+			<div class="dlo_main">
+				<div class="dlo_top">
+					<em class="fl" style="font-size: 14px;color: #fff; margin-left: 20px;">删除段落</em>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="dlo_m">
+					<span>无法删除，必须保留一个段落！</span>
+				</div>
+				<div class="dlo_but">
+					<input type="button" value="关闭" class="tan_onedelete_paragraph" />
+				</div>
+			</div>
+		</div>
+		<!--删除段落弹窗-->
+		<!--删除图片弹窗-->
+		<!--<div class="delete_one w3">
+					<p class="s_shadow"></p>
+					<div class="dlo_main">
+						<div class="dlo_top">
+							<em class="fl" style="font-size: 14px;color: #fff; margin-left: 20px;">删除图片</em>
+							<em class="fr">&#10005;</em>
+						</div>
+						<div class="dlo_m">
+							<span>您确定要删除图片吗？</span>
+						</div>
+						<div class="dlo_but">
+							<input type="button" value="确定" class="tan_delete_img_sure" />
+							<input type="button" value="取消" class="tan_delete_img_cancel" />
+						</div>
+					</div>
+				</div>-->
+		<div class="s_delete delete_none w3">
+			<p class="s_shadow"></p>
+			<div class="delete_hot">
+				<div class="delete_list clear">
+					<span class="fl"></span>
+					<p class="fl">您确定要删除图片吗？</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="delete_determine fr">确定</a>
+					<a href="javascript:;" class="delete_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>
+		<!--删除图片弹窗-->
+		<!--待发布状态-->
+		<div class="w_popup w4">
+			<div class="w_tou_popup"></div>
+			<div class="w_food_cancel">
+				<div class="w_delivered_top">
+					<i></i>
+					<p class="w_send_product">编辑后将变为待发布状态，</p>
+					<p>确认编辑资讯吗？</p>
+				</div>
+				<div class="delivered_btn">
+					<span class="w_sure_btn release_status">确定</span>
+					<span class="w_cancel_btn cancel_release_status">取消</span>
+				</div>
+			</div>
+		</div>
+
+		<!--编辑弹窗-->
+		<!--切图-->
+		<div class="zxcut_photo">
+			<div class="zxcut_p_top">
+				<a href="javascript:;">完成</a>
+			</div>
+			<div id="im_cropContainerModal"></div>
+		</div>
+		<!--切图结束-->
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dateRange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/l_daterange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/croppic.min.js" type="text/javascript"></script>
+		<script src="js/funnyNewsTicker.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript"> 
+			$(function() {
+				//判断 表格最后一、二行排序位置
+				$(".l_table tr:last-child").find(".l_opt div").css("margin-top","-230px")
+				$(".l_table tr:last-child").find(".l_opt div i").css({"width":"0px","height":"0px","border":"0px","border-left":"13px solid transparent","border-right":"13px solid transparent","border-top":"13px solid #fff","top":"183px"})
+				//chechbox选择效果/上架置灰高亮切换
+				$("td.l_check label").click(function() {
+					$(this).toggleClass("checked");
+					if($(".l_check label").hasClass("checked")) {
+						$(".list_button").children().last('a').addClass("s_button2");
+						$('a.s_button2').click(function(e) {
+							$('.delete_top').fadeIn();
+							tcShow();
+						});
+						$('.issue .is_main .is_top em,.issue .is_main .is_but .one_release,.issue .is_main .is_but input:last-child,.delete_determine ,.delete_cancel').click(function(e) {
+							$('.delete_top').fadeOut();
+							tcHide();
+						});
+
+					} else {
+						$('a.s_button2').off();
+						$(".list_button").children().last('a').removeClass("s_button2");
+					}
+				});
+				//新增商品置灰高亮切换
+				$(".w_plate_class div ul li").not(".l_select_name").click(function() {
+					$(".l_add").addClass("active");
+				});
+				$('.list_con ul li').click(function() {
+					$(this).addClass('active').siblings().removeClass('active');
+				});
+				$('.l_opt').css('padding-left', '0');
+				$('.l_table table>thead>tr>th:last-child').css('padding-left', '0px')
+			});
+		</script>
+		<!--预览弹窗-->
+		<script>
+			$(".pvwBox").hide();
+			$(".img_width").click(function(e) {
+				$(".pvwBox").fadeIn();
+				tcShow(1);
+			})
+			$(".pvw_close").click(function(e) {
+				$(".pvwBox").fadeOut();
+				tcHide();
+			})
+		</script>
+		<!--删除图片弹窗-->
+		<script>
+			$(function() {
+				$(".delete_img").click(function(e) {
+					$(".w3").fadeIn();
+					tcShow();
+				});
+				$('.w3 .dlo_main .dlo_top em,.w3 .dlo_main .dlo_but .tan_delete_img_sure,.w3 .dlo_main .dlo_but .tan_delete_img_cancel,.delete_determine ,.delete_cancel').click(function(e) {
+					$('.w3').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+		<!--删除段落弹窗-->
+		<script>
+			function abc() {
+				$(".delete_page").click(function(e) {
+					var d = 0;
+					$(this).parents(".information_edit").find(".ime_edit_l .w_page").each(function() {
+						if($(this).css("display") == 'block') {
+							d += 1;
+						};
+					});
+					if(d > 1) {
+						$(".w1").fadeIn();
+						tcShow();
+					} else {
+						$(".w2").fadeIn();
+						tcShow();
+					}
+				});
+
+				$('.w1 .dlo_main .dlo_top em,.w1 .dlo_main .dlo_but .tan_delete_paragraph,.w1 .dlo_main .dlo_but .tan_cancel_paragraph,.delete_determine,.delete_cancel').click(function(e) {
+					$('.w1').fadeOut();
+					tcHide();
+				});
+				$('.w2 .dlo_main .dlo_top em,.w2 .dlo_main .dlo_but .tan_onedelete_paragraph').click(function(e) {
+					$('.w2').fadeOut();
+					tcHide();
+				});
+			};
+		</script>
+		<!--单一删除弹窗-->
+		<script>
+			$(function() {
+				$('.l_opt_tips p:last-child').click(function(e) {
+					$('.s1').fadeIn();
+					tcShow();
+				});
+				$('.w7 .dlo_main .dlo_top em,.w7 .dlo_main .dlo_but .one_delete,.w7 .dlo_main .dlo_but .one_cancel,.delete_determine ,.delete_cancel').click(function(e) {
+					$('.s1').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+
+		<!--新增资讯-->
+		<script>
+			$(function() {
+				$('a.s_btn').click(function(e) {
+					$('.w5').fadeIn();
+					tcShow(1);
+					abc();
+				});
+				$('.information_edit .ime_main .ime_top i,.information_edit .wm_cancel').click(function(e) {
+					$('.information_edit').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+		<!--发布编辑弹窗-->
+		<script>
+			$(function() {
+				$('p.l_sure_order').click(function(e) {
+					$('.w4').fadeIn();
+					tcShow();
+				});
+				$('.w4 .release_status').click(function(e) {
+					$('.w6').fadeIn();
+					$('.w4').fadeOut();
+					abc();
+					tcShow(1);
+				});
+				$('.cancel_release_status').click(function(e) {
+					$('.w4').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+		<!--编辑弹窗-->
+		<script>
+			$(function() {
+				$('a.edit').click(function(e) {
+					$('.w6').fadeIn();
+					tcShow();
+					abc();
+				});
+				$('.information_edit .ime_main .ime_top i,.information_edit .wm_cancel').click(function(e) {
+					$('.information_edit').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+		<!--公用js-->
+		<script>
+			$(document).ready(function() {
+				$(".ime_but .sure").click(function() {
+					var one = $(this).parents(".information_edit").find(".p1 input").val().length;
+					var two = $(this).parents(".information_edit").find(".p2 input").val().length;
+					var three = $(this).parents(".information_edit").find(".p3 input").val().length;
+					if(one == 0 || two == 0 || three == 0) {
+						$(".addaae_prompt").fadeIn();
+						setTimeout(function() {
+								$(".addaae_prompt").fadeOut();
+							},
+							2000);
+						if(one == 0) {
+							//$(".yan1").css("border", "1px solid red");
+						} else {
+							//$(".yan1").css("border", "1px solid #c8cacb");
+						}
+						if(two == 0) {
+							//$(".yan2").css("border", "1px solid red");
+						} else {
+							//$(".yan2").css("border", "1px solid #c8cacb");
+						}
+						if(three == 0) {
+							//$(".yan3").css("border", "1px solid red");
+						} else {
+							//$(".yan3").css("border", "1px solid #c8cacb");
+						}
+					} else {
+						$(".information_edit").fadeOut();
+						tcHide();
+					}
+				});
+			});
+		</script>
+
+		<!--公用js结束-->
+		<!--字数限制js-->
+		<script>
+			function setShowLength(obj, maxlength, id) {
+				var rem = maxlength + obj.value.length;
+				var wid = id;
+				if(rem < 0) {
+					rem = 0;
+				}
+				document.getElementById(wid).innerHTML = rem;
+			}
+		</script>
+
+		<script>
+			$(document).ready(function() {
+				$("table tbody tr td:first-child input[type='checkbox']").click(function() {
+					var d = 0;
+					$("table tbody tr td:first-child input[type='checkbox']").each(function() {
+						var check = $(this).is(":checked");
+						if(check == true) {
+							d += 1;
+						}
+					});
+					if(d > 0) {
+						$(".sc_publish").css("background", "#627fb8")
+						$(".sc_publish").css("color", "#fff")
+					} else {
+						$(".sc_publish").css("background", "#e3e3e3")
+						$(".sc_publish").css("color", "#999999")
+					}
+				});
+			});
+		</script>
+		<!--预览-->
+		<script>
+			$(function() {
+				$('a.click_details').click(function(e) {
+					$('.pvwBox').fadeIn();
+					tcShow(1);
+				});
+				$('.pvwBox .pvw_close').click(function(e) {
+					$('.pvwBox').fadeOut();
+					tcHide();
+				});
+			});
+		</script>
+
+		<!--内容编辑添加删除板块-->
+		<script>
+			$(function() {
+				$('.ime_add1').click(function(e) {
+					$('.ime_add1,.ime_edit_r div,.ime_text').hide();
+					$('.ime_add2,.ime_text2,.ime_section2,.ime_text2').show();
+					$(".ime_edit_l div").removeClass("active");
+					$('.ime_section2').addClass("active");
+				});
+				$('.ime_add2').click(function(e) {
+					$('.ime_add2,.ime_edit_r div,.ime_text').hide();
+					$('.ime_add3,.ime_text3,.ime_section3,.ime_text3').show();
+					$(".ime_edit_l div").removeClass("active");
+					$('.ime_section3').addClass("active");
+				});
+				$('.ime_add3').click(function(e) {
+					$('.ime_add3,.ime_edit_r div,.ime_text').hide();
+					$('.ime_add4,.ime_text4,.ime_section4,.ime_text4').show();
+					$(".ime_edit_l div").removeClass("active");
+					$('.ime_section4').addClass("active");
+				});
+				$('.ime_add4').click(function(e) {
+					$('.ime_add4,.ime_edit_r div,.ime_text').hide();
+					$('.ime_add5,.ime_text5,.ime_section5,.ime_text5').show();
+					$(".ime_edit_l div").removeClass("active");
+					$('.ime_section5').addClass("active");
+				});
+				$('.ime_add5').click(function(e) {
+					$('.ime_add5,.ime_edit_r div,.ime_text').hide();
+					$('.ime_text6,.ime_section6,.ime_text6,.ime_text6').show();
+					$(".ime_edit_l div").removeClass("active");
+					$('.ime_section6').addClass("active");
+				});
+				$('.ime_section1').click(function(e) {
+					$('.ime_edit_r div,.ime_text').hide();
+					$('.ime_text1,.ime_text1').show();
+					$(".ime_edit_l div").removeClass("active");
+					$(this).addClass("active");
+				});
+				$('.ime_section2').click(function(e) {
+					$('.ime_edit_r div,.ime_text').hide();
+					$('.ime_text2,.ime_text2').show();
+					$(".ime_edit_l div").removeClass("active");
+					$(this).addClass("active");
+				});
+				$('.ime_section3').click(function(e) {
+					$('.ime_edit_r div,.ime_text').hide();
+					$('.ime_text3,.ime_text3').show();
+					$(".ime_edit_l div").removeClass("active");
+					$(this).addClass("active");
+				});
+				$('.ime_section4').click(function(e) {
+					$('.ime_edit_r div,.ime_text').hide();
+					$('.ime_text4,.ime_text4').show();
+					$(".ime_edit_l div").removeClass("active");
+					$(this).addClass("active");
+				});
+				$('.ime_section5').click(function(e) {
+					$('.ime_edit_r div,.ime_text').hide();
+					$('.ime_text5,.ime_text5').show();
+					$(".ime_edit_l div").removeClass("active");
+					$(this).addClass("active");
+				});
+				$('.ime_section6').click(function(e) {
+					$('.ime_edit_r div,.ime_text').hide();
+					$('.ime_text6,.ime_text6').show();
+					$(".ime_edit_l div").removeClass("active");
+					$(this).addClass("active");
+				});
+			});
+		</script>
+
+		<!--图片编辑展示效果-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#funnyNewsTicker1").funnyNewsTicker({
+					width: "100%",
+					timer: 1000000000,
+					titlecolor: "#FFF",
+					itembgcolor: "#f5f5f5",
+					infobgcolor: "#1a935c",
+					buttonstyle: "white",
+					bordercolor: "#1a935c"
+				});
+			});
+		</script>
+		<!--图片编辑展示效果-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#funnyNewsTicker2").funnyNewsTicker({
+					width: "100%",
+					timer: 1000000000,
+					titlecolor: "#FFF",
+					itembgcolor: "#f5f5f5",
+					infobgcolor: "#1a935c",
+					buttonstyle: "white",
+					bordercolor: "#1a935c"
+				});
+			});
+		</script>
+
+		<!--切图插件js-->
+		<script>
+			var croppicContainerModalOptions = {
+				uploadUrl: 'http://tech.harvetech.cn/wifihotel/img_save_to_file.php',
+				cropUrl: 'http://tech.harvetech.cn/wifihotel/img_crop_to_file.php',
+				modal: true,
+				imgEyecandyOpacity: 0.4,
+				loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+				onBeforeImgUpload: function() {
+					console.log('onBeforeImgUpload')
+				},
+				onAfterImgUpload: function() {
+					console.log('onAfterImgUpload')
+				},
+				onImgDrag: function() {
+					console.log('onImgDrag')
+				},
+				onImgZoom: function() {
+					console.log('onImgZoom')
+				},
+				onBeforeImgCrop: function() {
+					console.log('onBeforeImgCrop')
+				},
+				onAfterImgCrop: function() {
+					console.log('onAfterImgCrop')
+				},
+				onReset: function() {
+					console.log('onReset')
+				},
+				onError: function(errormessage) {
+					console.log('onError:' + errormessage)
+				}
+			}
+			var cropContainerModal = new Croppic('im_cropContainerModal', croppicContainerModalOptions);
+		</script>
+
+		<!--资讯切图弹窗-->
+		<script>
+			$(function() {
+				$('.ime_m_r .bianjitu,a.zxhuantu').click(function(e) {
+					$('.zxcut_photo').fadeIn();
+				});
+				$('.zxcut_photo .zxcut_p_top a').click(function(e) {
+					$('.zxcut_photo').fadeOut();
+				});
+			});
+		</script>
+	</body>
+
+</html>

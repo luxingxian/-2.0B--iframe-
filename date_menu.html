@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>客流统计</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/dateRange.css" />
+		<link rel="stylesheet" href="css/l_tab_title.css" />
+		<link rel="stylesheet" href="css/record.css" />
+	</head>
+
+	<body>
+		<!--content-->
+
+		<div class="wrap">
+			<!--头部开始-->
+			<div class="l_container l_tab">
+				<div id="menuBg"></div>
+				<div class="l_content">
+					<p class="l_title">数据</p>
+					<ul class="l_ul clearfix">
+						<li class="active">
+							<a href="passenger_flow_statistics.html" target="iframe_menu" >客流统计</a>
+						</li>
+						<li>
+							<a href="vital_statistics.html" target="iframe_menu" >入口统计</a>
+						</li>
+						<li>
+							<a href="appraise_statistics.html" target="iframe_menu" >评价统计</a>
+						</li>
+						<li>
+							<a href="order_statistics.html" target="iframe_menu" >订单统计</a>
+						</li>
+						<li>
+							<a href="text_statistics.html" target="iframe_menu" >短信统计</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--主体开始-->
+			<div class="l_container">
+				<!--主体iframe开始-->
+				<div class="iframe_box">
+					<div class="box_index">
+						<iframe src="passenger_flow_statistics.html" name="iframe_menu" id="iframe_menu" scrolling="no" ></iframe>
+					</div>
+				</div>
+				<!--主体iframe结束-->
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+	</body>
+
+</html>

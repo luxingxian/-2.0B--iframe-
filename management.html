@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>微平台-门店管理</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_tab_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_global.css" />
+		<link rel="stylesheet" type="text/css" href="css/l_goods_manage.css" />
+	</head>
+
+	<body>
+		<!--content-->
+			<!--主体开始-->
+			<div class="l_container">
+				<div class="l_content clearfix ">
+					<div class="promit_meassage">
+						<img src="images/w_cancel.png" class="warn_promit"/>
+						<span>公众号门店管理升级为门店小程序后,才能使用此功能 ！</span>
+						<img src="images/ckatopem.png" class="close_promit"/>
+					</div>
+					<div class="l_sub_header clearfix">
+						
+						
+						<a href="javascript:;" class="l_right_btn fr get_stores">获取门店</a>
+						<!--<a href="javascript:;" class="l_right_btn marleft fr l_add_shop" id="addCobfirm">添加门店</a>-->
+						<a href="view_store.html" class="l_right_btn marleft fr l_add_shop">添加门店</a>
+						<!--<a href="javascript:;" class="l_right_btn marleft fr">获取门店</a>-->
+					</div>
+					
+					<!--二级筛选导航公用结构-->
+					<div class="l_header clearfix w_plate_class">
+						<div class="w_plate_one">
+							<p><i>请选择</i><em></em></p>
+							<!--<ul class="f_border">
+								<li>北京</li>
+							</ul>-->
+							<ul class="w_province w_country">
+							</ul>
+						</div>
+						<div>
+							<p><i>请选择</i><em></em></p>
+							<!--<ul class="f_border">
+								<li>北京市</li>
+							</ul>-->
+							<ul class="w_city w_country">
+							</ul>
+						</div>
+						<div>
+							<p><i>请选择</i><em></em></p>
+							<!--<ul class="f_border">
+								<li>朝阳区</li>
+							</ul>-->
+							<ul class="w_area w_country">
+							</ul>
+						</div>
+						<p class="search_input fl"><input type="text" placeholder="请输入门店名称或地址" class="l_search" /><img src="images/l_icon_search.png" alt="" /></p>
+						<a href="javascript:;" class="l_ref fr"><img src="images/l_icon_ref.png" />刷新</a>
+					</div>
+					<!--二级筛选导航公用结构--ed---->
+
+					<div class="l_table table_five">
+						<table>
+							<thead>
+								<tr>
+									<th class="tha">门店名称</th>
+									<th class="thb">地理位置</th>
+									<th class="thc">状态</th>
+									<th class="thd">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="first_td">桔子水晶酒店（北京崇文门店）</td>
+									<td>北京市东城区崇文门外大街南锣鼓巷南巷114号</td>
+									<td class="l_shop_status"><span class="l_submit">审核中</span></td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<a href="store_management.html">
+												<p><img src="images/l_icon_preview.png" />查看门店</p>
+											</a>
+											<p class="l_del_order"><img src="images/l_icon_del4.png" />删除门店</p>
+											<a href="store_compile.html">
+												<p class="l_compile"><img src="images/amend.png" />编辑门店</p>
+											</a>
+											
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="first_td">桔子水晶酒店（北京崇文门店）</td>
+									<td>北京市东城区崇文门外大街南锣鼓巷南巷114号</td>
+									<td class="l_shop_status"><span class="l_success">审核通过</span></td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<a href="store_management.html">
+												<p><img src="images/l_icon_preview.png" />查看门店</p>
+											</a>
+											<p class="l_del_order"><img src="images/l_icon_del4.png" />删除门店</p>
+											<a href="store_compile.html">
+												<p class="l_compile"><img src="images/amend.png" />编辑门店</p>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="first_td">桔子水晶酒店（北京崇文门店）</td>
+									<td>北京市东城区崇文门外大街南锣鼓巷南巷114号</td>
+									<td class="l_shop_status"><span class="l_invalid"><i>×&nbsp;</i>审核失败</span></td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<a href="store_management.html">
+												<p><img src="images/l_icon_preview.png" />查看门店</p>
+											</a>
+											<p class="l_del_order"><img src="images/l_icon_del4.png" />删除门店</p>
+											<a href="store_compile.html">
+												<p class="l_compile"><img src="images/amend.png" />编辑门店</p>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="first_td">桔子水晶酒店（北京崇文门店）</td>
+									<td>北京市东城区崇文门外大街南锣鼓巷南巷114号</td>
+									<td class="l_shop_status"><span class="l_submit">审核中</span></td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<a href="store_management.html">
+												<p><img src="images/l_icon_preview.png" />查看门店</p>
+											</a>
+											<p class="l_del_order"><img src="images/l_icon_del4.png" />删除门店</p>
+											<a href="store_compile.html">
+												<p class="l_compile"><img src="images/amend.png" />编辑门店</p>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="first_td">桔子水晶酒店（北京崇文门店）</td>
+									<td>北京市东城区崇文门外大街南锣鼓巷南巷114号</td>
+									<td class="l_shop_status"><span class="l_success">审核通过</span></td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<a href="store_management.html">
+												<p><img src="images/l_icon_preview.png" />查看门店</p>
+											</a>
+											<p class="l_del_order"><img src="images/l_icon_del4.png" />删除门店</p>
+											<a href="store_compile.html">
+												<p class="l_compile"><img src="images/amend.png" />编辑门店</p>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="first_td">桔子水晶酒店（北京崇文门店）</td>
+									<td>北京市东城区崇文门外大街南锣鼓巷南巷114号</td>
+									<td class="l_shop_status"><span class="l_invalid"><i>×&nbsp;</i>审核失败</span></td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<a href="store_management.html">
+												<p><img src="images/l_icon_preview.png" />查看门店</p>
+											</a>
+											<p class="l_del_order"><img src="images/l_icon_del4.png" />删除门店</p>
+											<a href="store_compile.html">
+												<p class="l_compile"><img src="images/amend.png" />编辑门店</p>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="first_td">桔子水晶酒店（北京崇文门店）</td>
+									<td>北京市东城区崇文门外大街南锣鼓巷南巷114号</td>
+									<td class="l_shop_status"><span class="l_submit">审核中</span></td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<a href="store_management.html">
+												<p><img src="images/l_icon_preview.png" />查看门店</p>
+											</a>
+											<p class="l_del_order"><img src="images/l_icon_del4.png" />删除门店</p>
+											<a href="store_compile.html">
+												<p class="l_compile"><img src="images/amend.png" />编辑门店</p>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="first_td">桔子水晶酒店（北京崇文门店）</td>
+									<td>北京市东城区崇文门外大街南锣鼓巷南巷114号</td>
+									<td class="l_shop_status"><span class="l_success">审核通过</span></td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<a href="store_management.html">
+												<p><img src="images/l_icon_preview.png" />查看门店</p>
+											</a>
+											<p class="l_del_order"><img src="images/l_icon_del4.png" />删除门店</p>
+											<a href="store_compile.html">
+												<p class="l_compile"><img src="images/amend.png" />编辑门店</p>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="first_td">桔子水晶酒店（北京崇文门店）</td>
+									<td>北京市东城区崇文门外大街南锣鼓巷南巷114号</td>
+									<td class="l_shop_status"><span class="l_invalid"><i>×&nbsp;</i>审核失败</span></td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<a href="store_management.html">
+												<p><img src="images/l_icon_preview.png" />查看门店</p>
+											</a>
+											<p class="l_del_order"><img src="images/l_icon_del4.png" />删除门店</p>
+											<a href="store_compile.html">
+												<p class="l_compile"><img src="images/amend.png" />编辑门店</p>
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="first_td">桔子水晶酒店（北京崇文门店）</td>
+									<td>北京市东城区崇文门外大街南锣鼓巷南巷114号</td>
+									<td class="l_shop_status"><span class="l_invalid"><i>×&nbsp;</i>审核失败</span></td>
+									<td class="l_opt">
+										<img src="images/l_icon_more.png" />
+										<div class="l_opt_tips f_border">
+											<i></i>
+											<a href="store_management.html">
+												<p><img src="images/l_icon_preview.png" />查看门店</p>
+											</a>
+											<p class="l_del_order"><img src="images/l_icon_del4.png" />删除门店</p>
+											<a href="store_compile.html">
+												<p class="l_compile"><img src="images/amend.png" />编辑门店</p>
+											</a>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!--主体--ed-->
+			<!--底部分页开始-->
+			<div class="l_container">
+				<div class="l_foot_page clearfix">
+					<div class="l_left fl">
+						<p>每页显示
+							<select>
+								<option>10</option>
+								<option>20</option>
+								<option>30</option>
+							</select>
+						</p>
+					</div>
+					<div class="l_right fr clearfix">
+						<p>
+							<img src="images/l_arrow_left.png" alt="" class="l_arrow_left" /> 页数&nbsp;&nbsp;
+							<span class="l_curentnum">1</span>&nbsp;/&nbsp;<span class="l_totalnum">5</span>
+							<img src="images/l_arrow_right.png" alt="" class="l_arrow_right" />
+						</p>
+						<p class="l_skippage">
+							到<input type="number" />页<button>确定</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--底部分页--ed-->
+
+		</div>
+		<!--wrap--ed-->
+
+		<!--删除弹窗-->
+		<div class="l_popup l_popup_del l_del_moretext">
+			<div class="top_instrduce">
+				<p>
+					<span>删除门店</span>
+					<i></i>
+					<img src="images/ckatopem.png" class="l_cancle"/>
+				</p>
+			</div>
+			<p class="promt_meassage">你确定要继续删除门店吗？删除门店后门店所有业务都不可继续使用！</p>
+			<p class="l_btns">
+				<a href="javascript:;" class="l_ok">确定</a>
+				<a href="javascript:;" class="l_cancle">取消</a>
+			</p>
+		</div>
+		<!--添加门店弹窗-->
+		<div class="addAlert">
+			<div class="top_instrduce">
+				<p>
+					<span>提示</span>
+					<i></i>
+					<img src="images/ckatopem.png" class="l_close"/>
+				</p>
+			</div>
+			<p class="promt_meassage">您的门店小程序尚未审核通过,只有在微信公众号平台审核通过后,才能添加门店！</p>
+			<p class="add_btns">
+				<a href="javascript:;" class="l_close">关闭</a>
+			</p>
+		</div>
+		
+		<!--获取门店弹框-->
+		<div class="achive_store action_first">
+			<div class="top_instrduce">
+				<p>
+					<span>提示</span>
+					<i></i>
+					<img src="images/ckatopem.png" class="lbtn_cancle"/>
+				</p>
+			</div>
+			<div class="meassages_promit">
+				<p class="achive_content">是否获取最新的门店列表 ？</p>
+				<p class="l_btns">
+					<a href="javascript:;" class="lbtn_ok">确定</a>
+					<a href="javascript:;" class="lbtn_cancle">取消</a>
+				</p>
+			</div>
+		</div>
+		<div class="achive_store action_secon">
+				<div class="top_instrduce">
+					<p>
+						<span>提示</span>
+						<i></i>
+					</p>
+				</div>
+				<div class="relax_message">
+					<p>获取中...</p>
+				</div>
+				<div class="success_message">
+					<p>获取成功</p>
+				</div>
+		</div>
+		<!--<div class="relax_message">
+				<p>获取中...</p>
+			</div>-->
+		
+		<!--下载表单弹窗-->
+		<!--<div class="l_popup l_popup_download">
+			<p class="l_pop_article tc">确认要下载表单？</p>
+			<p class="l_btns">
+				<a href="javascript:;" class="l_ok">确定</a>
+				<a href="javascript:;" class="l_cancle">取消</a>
+			</p>
+		</div>-->
+
+		<div class="l_drop"></div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/l_global.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/address.js"></script>
+		<script>
+			$(function() {
+				//					$(".w_province li").click(function() {
+				//					var aa = $(".w_plate_two:first-child i").is(":empty");
+				//					if(aa == true){
+				//						$(".w_plate_two:nth-of-type(2) p,.w_plate_two:nth-of-type(3) p").off("click");
+				//						alert(1)
+				//					}else{
+				//						$(".w_plate_two:nth-of-type(2) p,.w_plate_two:nth-of-type(3) p").on("click");
+				//						alert(2)
+				//					}
+				//					});
+				//获取省
+				for(var j = 0; j < provinceList.length; j++) {
+					var Province = provinceList[j].name;
+					$('.w_province').append('<li>' + Province + '</li>');
+				}
+				//获取市
+				$(".w_province li").click(function() {
+					$('.w_city').empty();
+					var w_province_index = $(this).index();
+					var w_city_index = provinceList[w_province_index];
+					cityList = w_city_index.cityList
+					for(var i = 0; i < w_city_index.cityList.length; i++) {
+						var Country = w_city_index.cityList[i].name
+						$('.w_city').append('<li>' + Country + '</li>');
+					}
+				})
+				$(".w_plate_class").delegate("li", "click", function() {
+					$(this).parents("ul").siblings("p").find("i").html($(this).html());
+					$(this).parents("ul").slideUp();
+				});
+				$(".w_plate_class").delegate("li", "mousemove", function() {
+					$(this).css({
+						"background": "#2e85f5",
+						"color": "#fff",
+						"cursor": "pointer"
+					});
+				});
+				$(".w_plate_class").delegate("li", "mouseleave", function() {
+					$(this).css({
+						"background": "#FFFFFF",
+						"color": "#a0a0a0",
+						"cursor": "pointer"
+					});
+				});
+				//获取区
+				$(".w_city").delegate("li", "click", function() {
+					$('.w_area').empty();
+					var w_area = $(this).index();
+					var w_region = cityList[w_area];
+					for(var i = 0; i < w_region.areaList.length; i++) {
+						var Area = w_region.areaList[i]
+						$('.w_area').append('<li>' + Area + '</li>');
+					}
+				})
+			})
+		</script>
+		<script type="text/javascript">
+//			添加门店弹框
+			$(function(){
+//				弹框展示
+				$("#addCobfirm").on("click",function(){
+					$(".addAlert").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow();
+				});
+				$(".get_stores").click(function(){
+					$(".action_first").fadeIn();
+					$(".l_drop").fadeIn();
+					tcShow();
+				});
+				$(".lbtn_ok").click(function(){
+					$(".action_first").hide();
+//					$(".lbtn_cancle").hide();
+					$(".action_secon").show();
+				})
+//				弹框关闭
+				$(".l_close").on("click",function(){
+					$(this).parents(".addAlert").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide();
+				});
+				$(".lbtn_cancle").on("click",function(){
+					$(this).parents(".achive_store").fadeOut();
+					$(".l_drop").fadeOut();
+					tcHide();
+				});
+				
+			});
+			
+		</script>
+		<script type="text/javascript">
+			$(function(){
+//				门店管理提示信息
+				$(".close_promit").click(function(){
+					$(this).parent("div.promit_meassage").hide();
+				})
+			})
+		</script>
+	</body>
+
+</html>

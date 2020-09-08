@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>客房管理平台</title>
+		<link rel="stylesheet" href="css/sjcalendar.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="css/l_tab_title.css" />
+	</head>
+
+	<body>
+		<!--content-->
+		<!--头部--ed-->
+		<div class="main clear">
+			<div class="calendar-manage">
+				<div class="calendar-manage-top clearfix">
+					<ul>
+						<li class="active">单人标间</li>
+						<li>经济标间</li>
+						<li>经济大床</li>
+						<li>商务标间</li>
+						<li>商务大床</li>
+						<li>三人间</li>
+						<li>家庭房</li>
+						<li>总统套房</li>
+						<li>家庭房</li>
+						<li>总统套房</li>
+						<li>家庭房</li>
+						<li>总统套房</li>
+						<li>家庭房</li>
+						<li>总统套房</li>
+						<li>家庭房</li>
+						<li>总统套房</li>
+					</ul>
+					<div class="calendar-manage_right fr">
+						<em class="btn_left"><img src="images/hui_zuo.png"></em>
+						<em class="btn_right"><img src="images/hui_you.png"></em>
+					</div>
+				</div>
+				<div class="calendar-manage-left">
+					<!-- 日历 -->
+					<div class="c-day room-manage" id="cal_div"></div>
+					<!-- set menu -->
+					<div class="set-box">
+						<a class="create-price" href="javascript:void(0)"><i></i>生成价格</a>
+						<a class="alter-price" href="javascript:void(0)"><i></i>修改价格</a>
+						<a class="alter-number" href="javascript:void(0)"><i></i>修改房量</a>
+					</div>
+					<ul class="label-box">
+						<li class="remarks1"><i></i><span>节日价</span></li>
+						<li class="remarks2"><i></i><span>周末价</span></li>
+						<li class="remarks3"><i></i><span>一口价</span></li>
+						<li class="remarks4"><i></i><span>平日价</span></li>
+						<li class="remarks5"><i></i><span>手动干预</span></li>
+					</ul>
+				</div>
+				<div class="calendar-manage-right calendar_hegiht">
+					<div class="title-top">
+						<a href="javascript:;">刷新</a>
+					</div>
+					<div class="cmr-top">
+						<div class="cmr-top-main">
+							<div class="cmr-top-main-l">
+								<span>月份价格生成</span>
+							</div>
+						</div>
+					</div>
+					<div class="monthBox"></div>
+					<div class="cmr-top">
+						<div class="cmr-top-main">
+							<div class="cmr-top-main-l">
+								<span>房型说明</span>
+							</div>
+						</div>
+					</div>
+					<div class="houseTypeBox">
+						<ul>
+							<li class="breakfast"><i></i>含单早</li>
+							<li class="total"><i></i>房型总量&nbsp;50</li>
+							<li class="usually"><i></i>平日价&nbsp;¥&nbsp;108</li>
+							<li class="weekend"><i></i>周末价&nbsp;¥&nbsp;120</li>
+							<li class="holiday"><i></i>节日价&nbsp;¥&nbsp;150</li>
+						</ul>
+					</div>
+				</div>
+				<div class="operation-note-left">
+					<div class="operation-note-top">
+						<ul>
+							<li class="operation-enabled active">已启用优惠</li>
+							<li class="operation-record">操作记录</li>
+						</ul>
+					</div>
+					<div class="operation-note-main">
+						<div class="operation-note-one">
+							<div class="operation-one-top">
+								<a class="operation-price" href="javascript:;"><i></i>修改优惠方案</a>
+							</div>
+							<div class="operation-one-main">
+								<table class="operation-table1">
+									<thead>
+										<tr>
+											<th colspan="4">支付类型：</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>预付优惠</td>
+											<td>预付</td>
+											<td>不与连住同享</td>
+											<td>85折</td>
+										</tr>
+										<tr>
+											<td>现付优惠</td>
+											<td>现付</td>
+											<td>同享</td>
+											<td>立减20</td>
+										</tr>
+									</tbody>
+								</table>
+								<table class="operation-table2">
+									<thead>
+										<tr>
+											<th colspan="4">连住优惠：</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>6天连住</td>
+											<td>6天</td>
+											<td>不与预订同享</td>
+											<td>8折</td>
+										</tr>
+										<tr>
+											<td>3天连住</td>
+											<td>3天</td>
+											<td>不与预订同享</td>
+											<td>85折</td>
+										</tr>
+									</tbody>
+								</table>
+								<table class="operation-table3">
+									<thead>
+										<tr>
+											<th colspan="4">提前预定：</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>提前1天</td>
+											<td>1天</td>
+											<td>不与连住同享</td>
+											<td>9折</td>
+										</tr>
+										<tr>
+											<td>提前3天</td>
+											<td>3天</td>
+											<td>不与连住同享</td>
+											<td>85折</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="operation-note-two">
+							<table>
+								<thead>
+									<tr>
+										<th>操作方式</th>
+										<th>操作人</th>
+										<th>操作时间</th>
+										<th>操作对象</th>
+										<th>改前值</th>
+										<th>改后值</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>修改周末规则</td>
+										<td>邵双欣</td>
+										<td>2016.8.2&nbsp;14:00</td>
+										<td></td>
+										<td>原值周六、周日</td>
+										<td>改为周五、周六</td>
+									</tr>
+									<tr>
+										<td>修改价格</td>
+										<td>魏雯雯</td>
+										<td>2016.8.2&nbsp;9:00</td>
+										<td>2016.8.2-2016.8.6</td>
+										<td>原值¥ 300.00</td>
+										<td>改为¥ 320.00</td>
+									</tr>
+									<tr>
+										<td>修改价格方案</td>
+										<td>周可文</td>
+										<td>2016.8.4&nbsp;15:00</td>
+										<td>默认方案</td>
+										<td>原值1、1.1、1.5</td>
+										<td>改为1、1.2、1.5</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--调整优惠方案-->
+		<div class="adjust-preferential">
+			<p class="s_shadow"></p>
+			<div class="atp-main">
+				<div class="atp-top">
+					<span class="fl">修改优惠方案</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="atp-m">
+					<div class="atp-m-one">
+						<div class="atpmol">
+							<p><i>房型名称：</i><span>单人标准间</span></p>
+							<p><i>最高折扣：</i><span>80%</span></p>
+							<p><i>优惠方案：</i>
+								<select>
+									<option>支付方式</option>
+									<option>连住优惠</option>
+									<option>提前预订</option>
+								</select>
+							</p>
+						</div>
+						<div class="atpmor">
+							<p><i>编辑月份：</i><span>8月</span></p>
+							<p></p>
+							<p><i>已添加活动：</i></p>
+						</div>
+					</div>
+					<div class="atp-m-two">
+						<table class="atptable1">
+							<thead>
+								<tr>
+									<th>活动名称</th>
+									<th>生效条件</th>
+									<th>叠加规则</th>
+									<th>优惠</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>预付优惠</td>
+									<td>预付</td>
+									<td>叠加</td>
+									<td>8折</td>
+								</tr>
+								<tr>
+									<td>预付优惠</td>
+									<td>预付</td>
+									<td>叠加</td>
+									<td>8折</td>
+								</tr>
+								<tr>
+									<td>现付优惠</td>
+									<td>现付</td>
+									<td>叠加</td>
+									<td>9折</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="atpfuhao">
+							&#187;
+						</div>
+						<table class="atptable2">
+							<thead>
+								<tr>
+									<th>活动名称</th>
+									<th>生效条件</th>
+									<th>叠加规则</th>
+									<th>优惠</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>预付优惠</td>
+									<td>预付</td>
+									<td>叠加</td>
+									<td>85折</td>
+								</tr>
+								<tr>
+									<td>现付优惠</td>
+									<td>现付</td>
+									<td>叠加</td>
+									<td>立减20</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="atp-but">
+					<input type="button" value="确定" class="sure" />
+					<input type="button" value="清空" class="cloudless-sky" />
+					<input type="button" value="取消" class="cancel" />
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<!--修改价格-->
+		<div class="srevised-price">
+			<p class="s_shadow"></p>
+			<div class="srp-main">
+				<div class="srp-top">
+					<span class="fl">修改价格</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="srp-m">
+					<div class="srp-m-one">
+						<i>房型名称：</i>
+						<span>单人标间</span>
+					</div>
+					<div class="srp-m-one">
+						<i>日期范围：</i>
+						<span>2016-08-17 &mdash; 2016-08-19</span>
+					</div>
+					<div class="srp-m-one">
+						<i>价格：</i>
+						<select class="selecttwo">
+							<option>请选择</option>
+							<option value="1">平日价</option>
+							<option value="2">周末价</option>
+							<option value="3">节日价</option>
+							<option value="4">一口价</option>
+						</select>
+						<span class="srpspan1">¥ 108.00</span>
+						<span class="srpspan2">¥ 119.00</span>
+						<span class="srpspan3">¥ 162.00</span>
+						<input type="text" placeholder="例：100.00" class="srpinput" /><em class="srpem">精确到分</em>
+					</div>
+				</div>
+				<div class="srp-but">
+					<input type="button" value="确定" class="sure" />
+					<input type="button" value="取消" class="cancel" />
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<!--修改房量-->
+		<div class="room-is-modified">
+			<p class="s_shadow"></p>
+			<div class="rim-main">
+				<div class="rim-top">
+					<span class="fl">修改房量</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="rim-m">
+					<div class="rim-m-one">
+						<i>房型名称：</i>
+						<span>单人标间</span>
+					</div>
+					<div class="rim-m-one">
+						<i>日期：</i>
+						<span>2016-08-17 &mdash; 2016-08-19</span>
+					</div>
+					<div class="rim-m-one">
+						<i>房态开关：</i>
+						<label><input type="radio" checked="checked" name="radioone" class="sjopen" />开启预订</label><label><input type="radio" name="radioone" class="sjsuspend" />暂停预定</label>
+					</div>
+					<div class="rim-m-two">
+						<i>上线房量：</i>
+						<div class="rim-add-subtract">
+							<input type="button" value="-" class="subtractsj" />
+							<input class="add_subtract_sj" value="30" />
+							<input type="button" value="+" class="addsj" />
+						</div>
+					</div>
+					<div class="rim-m-two">
+						<i>可预订房量：</i>
+						<span>10</span>
+					</div>
+				</div>
+				<div class="rim-but">
+					<input type="button" value="确定" class="sure" />
+					<input type="button" value="取消" class="cancel" />
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<!--生成发布-->
+		<div class="generate-publish-Box">
+			<p class="s_shadow"></p>
+			<div class="gpb-main">
+				<div class="gpb-top-up">
+					<span>生成价格</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="gpb-top">
+					<ul>
+						<li class="gpbli1 active">价格方案确认</li>
+						<li class="gpbli2">节日信息确认</li>
+						<li class="gpbli3">优惠方案选择</li>
+						<li class="gpbli4">发布房价</li>
+					</ul>
+				</div>
+				<div class="gpb-m1">
+					<div class="gpbone">
+						<i>房型名称：</i>
+						<em>单人标准间</em>
+						<i class="afteri">编辑月份：</i>
+						<span>8月</span>
+					</div>
+					<div class="gpbone">
+						<i>周末规则：</i>
+						<em>周五、周六</em>
+					</div>
+					<div class="gpbone1">
+						<i>价格方案：</i>
+						<table>
+							<tr>
+								<td>方案名称</td>
+								<td>平日价</td>
+								<td>周末价</td>
+								<td>节日价</td>
+							</tr>
+							<tr>
+								<td>默认方案</td>
+								<td>100%</td>
+								<td>110%</td>
+								<td>150%</td>
+							</tr>
+							<tr class="gpbtwotr">
+								<td>价格预览</td>
+								<td>¥&nbsp;108元</td>
+								<td>¥&nbsp;119元</td>
+								<td>¥&nbsp;162元</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="gpb-m2">
+					<div class="gpbtwo">
+						<i>房型名称：</i>
+						<em>单人标准间</em>
+						<i class="afteri">编辑月份：</i>
+						<em>8月</em>
+					</div>
+					<div class="gpbtwo">
+						<i>特殊节假日：</i>
+					</div>
+					<div class="gpbtwo1">
+						<table>
+							<tr>
+								<td>活动名称</td>
+								<td>生效条件</td>
+							</tr>
+							<tr>
+								<td>暑期活动</td>
+								<td>8月1日-8月10日</td>
+							</tr>
+							<tr>
+								<td>啤酒节</td>
+								<td>8月16日-8月19日</td>
+							</tr>
+							<tr>
+								<td>暑期活动</td>
+								<td>8月20日-8月22日</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="gpb-m3">
+					<div class="gpb-m-one">
+						<div class="gpbmol">
+							<p><i>房型名称：</i><span>单人标准间</span></p>
+							<p><i>最高折扣：</i><span>80%</span></p>
+							<p><i>优惠方案：</i>
+								<select>
+									<option>支付方式</option>
+									<option>连住优惠</option>
+									<option>提前预订</option>
+								</select>
+							</p>
+						</div>
+						<div class="gpbmor">
+							<p><i>编辑月份：</i><span>8月</span></p>
+							<p><i>上线房量：</i><input type="text" placeholder="默认房型总量" /></p>
+							<p><i>已添加活动：</i></p>
+						</div>
+					</div>
+					<div class="gpb-m-two">
+						<table class="gpbtable1">
+							<thead>
+								<tr>
+									<th>活动名称</th>
+									<th>生效条件</th>
+									<th>叠加规则</th>
+									<th>优惠</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>预付优惠</td>
+									<td>预付</td>
+									<td>叠加</td>
+									<td>8折</td>
+								</tr>
+								<tr>
+									<td>预付优惠</td>
+									<td>预付</td>
+									<td>叠加</td>
+									<td>85折</td>
+								</tr>
+								<tr>
+									<td>现付优惠</td>
+									<td>现付</td>
+									<td>叠加</td>
+									<td>9折</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="gpbfuhao"></div>
+						<table class="gpbtable2">
+							<thead>
+								<tr>
+									<th>活动名称</th>
+									<th>生效条件</th>
+									<th>叠加规则</th>
+									<th>优惠</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>预付优惠</td>
+									<td>预付</td>
+									<td>叠加</td>
+									<td>85折</td>
+								</tr>
+								<tr>
+									<td>现付优惠</td>
+									<td>现付</td>
+									<td>叠加</td>
+									<td>立减20</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="gpb-m4">
+					<div class="gpb-m4-top">
+						<i>房型名称：</i>
+						<em>单人标准间</em>
+						<i class="afteri">编辑月份：</i>
+						<em>8月</em>
+					</div>
+					<div id="cal_mnow_div" class="c-day room-manage mnow"></div>
+				</div>
+				<div class="gpb-but gpb-but1">
+					<input type="button" value="下一步" class="sure" />
+					<input type="button" value="取消" class="cancel" />
+				</div>
+				<div class="gpb-but gpb-but2">
+					<input type="button" value="下一步" class="sure" />
+					<input type="button" value="取消" class="cancel" />
+				</div>
+				<div class="gpb-but gpb-but3">
+					<input type="button" value="下一步" class="sure" />
+					<input type="button" value="清空" class="cloudless-sky" />
+					<input type="button" value="取消" class="cancel" />
+				</div>
+				<div class="gpb-but gpb-but4">
+					<input type="button" value="确认发布" class="sure" />
+					<input type="button" value="取消" class="cancel" />
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<!--单一修改价格-->
+		<div class="reviseoneBox">
+			<p class="s_shadow"></p>
+			<div class="reviseonemain">
+				<div class="reviseonemain-top">
+					<span class="fl">价格</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="reviseonemain-one">
+					<select class="selectqwe">
+						<option>请选择</option>
+						<option value="1">平日价</option>
+						<option value="2">周末价</option>
+						<option value="3">节日价</option>
+						<option value="4">一口价</option>
+					</select>
+					<span class="srpspan7">¥ 108.00</span>
+					<span class="srpspan8">¥ 119.00</span>
+					<span class="srpspan9">¥ 162.00</span>
+					<input type="text" placeholder="例：100.00" class="robinput" /><em class="robem">精确到分</em>
+				</div>
+				<div class="reviseonemain-but">
+					<input type="button" value="保存" />
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<!--单一修改房量-->
+		<div class="amountBox">
+			<div class="amountmain">
+				<div class="amountmain-top">
+					<span class="fl">可售房量</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="amountmain-one">
+					<i>房态开关：</i>
+					<label><input type="radio" checked="checked" name="radiopp" class="ssopen" />开启预订</label><label><input type="radio" name="radiopp" class="sssuspend" />暂停预定</label>
+				</div>
+				<div class="amountmain-two">
+					<i>上线房量：</i>
+					<div class="am-add-subtract">
+						<input type="button" value="-" class="subtractam" />
+						<input class="add_subtract_am" value="30" />
+						<input type="button" value="+" class="addam" />
+					</div>
+				</div>
+				<div class="amountmain-but">
+					<input type="button" value="保存" />
+				</div>
+			</div>
+		</div>
+		<!--end-->
+
+		<!--发布成功提示-->
+		<!--<div class="success-prompt">
+			<div class="sp-main">
+				<div class="sp-top">
+					<span class="fl">提示</span>
+					<em class="fr">&#10005;</em>
+				</div>
+				<div class="sp-m">
+					<span>确认发布xx房型，xx月价格？</span>
+				</div>
+				<div class="sp-but">
+					<input type="button" value="确定" class="sure" />
+					<input type="button" value="取消" class="cancel" />
+				</div>
+			</div>
+		</div>		-->
+		<div class="s_delete delete_top">
+			<p class="s_shadow"></p>
+			<div class="delete_hot">
+				<div class="delete_list1">
+					<p class="delete_left">确认发布xx房型，xx月价格？</p>
+				</div>
+				<p>
+					<a href="javascript:;" class="delete_determine fr">确定</a>
+					<a href="javascript:;" class="delete_cancel fr">取消</a>
+				</p>
+			</div>
+		</div>
+		<!--end-->
+
+		<script>
+			// 模拟传入数据
+			var holiday_data = "2016-10-1:国庆节|2016-10-31:万圣节|2016-11-11:光棍节|2016-11-24:感恩节|2016-12-25:圣诞节|2017-1-1:元旦节"; // 模拟传入法定假日数据
+			var add_holiday_data = "2016-10-28:啤酒节|2016-10-29:啤酒节|2016-10-30:啤酒节|2016-10-31:啤酒节|2016-11-01:啤酒节|2016-11-02:啤酒节|2016-11-03:啤酒节|2016-11-10|2016-11-11|2016-11-12"; // 模拟传入自定义节日数据
+			var intervene_data = "2016-11-10|2016-11-11|2016-11-12|2016-10-29|2016-11-01|2016-11-27|2016-11-28"; // 模拟传入手动干预日期数据
+			var fixedPrice_data = "2016-11-10|2016-11-11|2016-11-12|2016-10-29|2016-11-01|2016-11-27|2016-11-28"; // 模拟传入一口价日期数据
+			var stopSell_data = "2016-10-28|2016-11-02|2016-11-09|2016-11-14|2016-11-24|2016-11-30"; // 模拟传入停售日期数据
+			//平日价/周末价/节日价
+			var price = "108/120/150";
+			var number = 20;
+		</script>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/sjcalendar-room.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//弹窗及选中效果
+				tcHide();
+				$('.l_tab .l_ul li', window.parent.document).removeClass("active")
+				$('.l_tab .l_ul li:first-child', window.parent.document).addClass("active")
+				//弹窗及选中效果结束
+				var li_len = $(".calendar-manage-top ul li").length;
+				var li_wid = $(".calendar-manage-top ul li").outerWidth();
+				var div_wid = $(".calendar-manage-top").outerWidth();
+				var divwidth = $(".calendar-manage-top").width();
+				var w = parseFloat(li_len * li_wid);
+				var ml = 0;
+				if(w < divwidth) {
+					$(".calendar-manage_right").hide();
+				} else {
+					$(".calendar-manage_right").show();
+				}
+				$(".btn_right").click(function() {
+					ml += 100;
+					if(ml > (w - div_wid)) {
+						ml = w - div_wid;
+						return;
+					}
+					$(".calendar-manage-top ul").stop(true, true).animate({
+						"marginLeft": -ml
+					});
+
+				})
+				if(w < divwidth) {
+					$(".calendar-manage-top").css("border-right","0px solid #e3e3e3");
+					$(".calendar-manage-top").css("border-left","0px solid #e3e3e3");
+				} else {
+					$(".calendar-manage-top").css("border-right","1px solid #e3e3e3");
+					$(".calendar-manage-top").css("border-left","1px solid #e3e3e3");
+					$(".calendar-manage-top ul li:first-child").css("border-left","0px solid #e3e3e3");
+				}
+				$(".btn_left").click(function() {
+					ml -= 100;
+					if(ml <= -100) {
+						ml = 0;
+						return;
+					}
+					$(".calendar-manage-top ul").stop(true, true).animate({
+						"marginLeft": -ml
+					});
+				})
+					
+			})
+		</script>
+		
+		<script type="text/javascript">
+			//头部房型切换
+			$(document).ready(function() {
+				$(".calendar-manage-top ul li").click(function() {
+					$(".calendar-manage-top ul li").removeClass("active");
+					$(this).addClass("active");
+				});
+			});
+			//操作记录与启用优惠切换
+			$(document).ready(function() {
+				$(".operation-enabled").click(function() {
+					$(".operation-note-top ul li").removeClass("active");
+					$(this).addClass("active");
+					$(".operation-note-two").hide();
+					$(".operation-note-one").show();
+					$(this).parents("ul").css({
+						"border-bottom": "1px solid #f2f0f0"
+					});
+				});
+			});
+			$(document).ready(function() {
+				$(".operation-record").click(function() {
+					$(".operation-note-top ul li").removeClass("active");
+					$(this).addClass("active");
+					$(".operation-note-one").hide();
+					$(".operation-note-two").show();
+					$(this).parents("ul").css({
+						"border-bottom": "1px solid #fff"
+					});
+				});
+			});
+			//修改价格
+			$(".alter-price").click(function() {
+				$(".srevised-price").fadeIn();
+				tcShow();
+			});
+			$(".srp-top em,.srp-but input").click(function() {
+				$(".srevised-price").fadeOut();
+				tcHide();
+			});
+			//修改价格价格切换
+			$(function() {
+				$(".selecttwo").change(function() {
+					if($('select.selecttwo option:selected').val() == 1) {
+						$(".srpspan1,.srpspan2,.srpspan3,.srpinput,.srpem").hide()
+						$(".srpspan1").show()
+					} else if($('select.selecttwo option:selected').val() == 2) {
+						$(".srpspan1,.srpspan2,.srpspan3,.srpinput,.srpem").hide()
+						$(".srpspan2").show()
+					} else if($('select.selecttwo option:selected').val() == 3) {
+						$(".srpspan1,.srpspan2,.srpspan3,.srpinput,.srpem").hide()
+						$(".srpspan3").show()
+					} else if($('select.selecttwo option:selected').val() == 4) {
+						$(".srpspan1,.srpspan2,.srpspan3,.srpinput,.srpem").hide()
+						$(".srpinput,.srpem").show()
+					}
+					console.log($('select.selecttwo option:selected').val())
+				})
+			});
+			//修改房量
+			$(".alter-number").click(function() {
+				$(".room-is-modified").fadeIn();
+				tcShow()
+			});
+			$(".rim-top em,.rim-but input").click(function() {
+				$(".room-is-modified").fadeOut();
+				tcHide()
+			});
+			//开启、暂停预订切换
+			$(".sjsuspend").click(function() {
+				$(".rim-m-two").hide();
+				tcHide()
+			});
+			$(".sjopen").click(function() {
+				$(".rim-m-two").show();
+				tcShow()
+			});
+			//上线房量加减
+			$(".addsj").click(function() {
+				$nums = parseInt($(this).siblings(".add_subtract_sj").val())
+				$nums++;
+				$(this).siblings(".subtractsj").removeAttr("disabled", "disabled").css({
+					"color": "#333"
+				});
+				$(this).siblings(".add_subtract_sj").val($nums);
+			});
+			$(".subtractsj").click(function() {
+				$nums = parseInt($(this).siblings(".add_subtract_sj").val());
+				$nums--;
+				if($nums < 1) {
+					$(this).css({
+						"color": "#cac8cb"
+					});
+					$nums = 0;
+				}
+				$(this).siblings(".add_subtract_sj").val($nums);
+			});
+			//调整优惠方案
+			$(".operation-price").click(function() {
+				$(".adjust-preferential").fadeIn();
+				tcShow();
+			});
+			$(".atp-top em,.atp-but input.sure,.atp-but input.cancel").click(function() {
+				$(".adjust-preferential").fadeOut();
+				tcHide();
+			});
+			//修改优惠方案添加活动
+			$(document).ready(function() {
+				$(".atptable1").mouseover(function() {
+					$(".atpfuhao").html("&#187;")
+				});
+				$(".atptable2").mouseover(function() {
+					$(".atpfuhao").html("&#171;")
+				});
+			});
+			$(".atptable1").delegate("tbody tr", "click", function() {
+				var table1tr = $(this).html();
+				$(this).remove();
+				$(".atptable2 tbody").append("<tr>" + table1tr + "</tr>");
+			});
+			$(".atptable2").delegate("tbody tr", "click", function() {
+				var table2tr = $(this).html();
+				$(this).remove();
+				$(".atptable1 tbody").append("<tr>" + table2tr + "</tr>");
+			});
+			//生成发布
+			$(".create-price").click(function() {
+				$(".generate-publish-Box").show();
+				tcShow();
+			});
+			$(".gpb-but1 input.sure").click(function() {
+				$(".gpb-m1,.gpb-but1").hide();
+				$(".gpb-m2,.gpb-but2").show();
+				$(".gpb-top ul li").removeClass("active");
+				$(".gpb-top ul li.gpbli2").addClass("active");
+			});
+			$(".gpb-but2 input.sure").click(function() {
+				$(".gpb-m2,.gpb-but2").hide();
+				$(".gpb-m3,.gpb-but3").show();
+				$(".gpb-top ul li").removeClass("active");
+				$(".gpb-top ul li.gpbli3").addClass("active");
+			});
+			$(".gpb-but3 input.sure").click(function() {
+				$(".gpb-m3,.gpb-but3").hide();
+				$(".gpb-m4,.gpb-but4").show();
+				$(".gpb-top ul li").removeClass("active");
+				$(".gpb-top ul li.gpbli4").addClass("active");
+
+				// 价格生成--弹窗
+				judge_price();
+
+				$("#cal_mnow_div .price_number .price").click(function() {
+					$(".reviseoneBox").show();
+				});
+				$(".reviseonemain-but input,.reviseonemain-top em").click(function() {
+					$(".reviseoneBox").hide();
+				});
+				$(function() {
+					$(".selectqwe").change(function() {
+						if($('select.selectqwe option:selected').val() == 1) {
+							$(".srpspan7,.srpspan8,.srpspan9,.robinput,.robem").hide()
+							$(".srpspan7").show()
+						} else if($('select.selectqwe option:selected').val() == 2) {
+							$(".srpspan7,.srpspan8,.srpspan9,.robinput,.robem").hide()
+							$(".srpspan8").show()
+						} else if($('select.selectqwe option:selected').val() == 3) {
+							$(".srpspan7,.srpspan8,.srpspan9,.robinput,.robem").hide()
+							$(".srpspan9").show()
+						} else if($('select.selectqwe option:selected').val() == 4) {
+							$(".srpspan7,.srpspan8,.srpspan9,.robinput,.robem").hide()
+							$(".robinput,.robem").show()
+						}
+						console.log($('select.selectqwe option:selected').val())
+					})
+				});
+				$("#cal_mnow_div .price_number .number").click(function() {
+					$(".amountBox").show();
+				});
+				$(".amountmain-but input,.amountmain-top em").click(function() {
+					$(".amountBox").hide();
+				});
+				//开启、暂停预订切换
+				$(".sssuspend").click(function() {
+					$(".amountmain-two").hide();
+				});
+				$(".ssopen").click(function() {
+					$(".amountmain-two").show();
+				});
+				//上线房量加减
+				$(".addam").click(function() {
+					$nums = parseInt($(this).siblings(".add_subtract_am").val())
+					$nums++;
+					$(this).siblings(".subtractam").removeAttr("disabled", "disabled").css({
+						"color": "#333"
+					});
+					$(this).siblings(".add_subtract_am").val($nums);
+				});
+				$(".subtractam").click(function() {
+					$nums = parseInt($(this).siblings(".add_subtract_am").val());
+					$nums--;
+					if($nums < 1) {
+						$(this).css({
+							"color": "#cac8cb"
+						});
+						$nums = 0;
+					}
+					$(this).siblings(".add_subtract_am").val($nums);
+				});
+
+			});
+
+			$(".gpb-but4 input.sure").click(function() {
+				$(".delete_top").show();
+			});
+			$(".sp-but input.cancel,.sp-top em,.delete_cancel  ").click(function() {
+				$(".delete_top").hide();
+			});
+
+			$(".sp-but input.sure,.delete_determine").click(function() {
+				// 没有实际意义,展示作用==========================================================================================================================
+				$(".delete_top").hide();
+				$(".generate-publish-Box").hide();
+				$(".gpb-m4,.gpb-but4").hide();
+				$(".gpb-m1,.gpb-but1").show();
+				// '生成价格'按钮隐藏
+				$(".set-box .create-price").hide();
+				// 右侧月份选择器中选中的月份展示内容及样式发生变化
+				$(".monthBox ul li.active").removeClass("notSet");
+				$(".monthBox ul li.active").addClass("haveSet");
+				$(".monthBox ul li.active").find("span.label").html("已发布");
+				tcHide();
+				// 价格生成--主日历
+				judge_price2();
+				// 房量为零时，显示售罄
+				$(".calendar li a .price_number .number").each(function() {
+					if(Number($(this).text()) == 0) {
+						$(this).parents(".room-manage .calendar li a").append("<div class='soldOut'></div>")
+					}
+				});
+				// 售罄样式
+				$(".calendar .soldOut").each(function() {
+					$(this).siblings("span.date").css("color", "#aaa");
+					$(this).parents("li").removeClass("add_holiday_bg fixedPrice_bg");
+					$(this).siblings(".intervene,.add_holiday").remove();
+					$(this).siblings(".holiday").css({
+						"background": "#ebaaaa",
+						"border-color": "#e08282"
+					});
+				});
+
+				// 没有实际意义,展示作用==========================================================================================================================
+
+			});
+
+			//关闭
+			$(".gpb-top-up em,.gpb-but input.cancel").click(function() {
+				$(".generate-publish-Box").fadeOut();
+				$(".gpb-m2,.gpb-m3,.gpb-m4,.gpb-but2,.gpb-but3,.gpb-but4").hide();
+				$(".gpb-m1,.gpb-but1").show();
+				$(".gpb-top ul li").removeClass("active");
+				$(".gpb-top ul li.gpbli1").addClass("active");
+				tcHide()
+			});
+			//3
+			//			$(document).ready(function() {
+			//				$(".gpbtable1").mouseover(function() {
+			//					$(".gpbfuhao").html("&#187;")
+			//				});
+			//				$(".gpbtable2").mouseover(function() {
+			//					$(".gpbfuhao").html("&#171;")
+			//				});
+			//			});
+			$(".gpbtable1").delegate("tbody tr", "click", function() {
+				var table1tr = $(this).html();
+				$(this).remove();
+				$(".gpbtable2 tbody").append("<tr>" + table1tr + "</tr>");
+			});
+			$(".gpbtable2").delegate("tbody tr", "click", function() {
+				var table2tr = $(this).html();
+				$(this).remove();
+				$(".gpbtable1 tbody").append("<tr>" + table2tr + "</tr>");
+			});
+		</script>
+
+	</body>
+
+</html>

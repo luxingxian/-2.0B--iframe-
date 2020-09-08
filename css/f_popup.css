@@ -1,0 +1,139 @@
+		/*发货订单弹窗*/
+.s_shadow{width: 100%; height: 100%;position:fixed; background: #000; opacity: 0.4; filter:alpha(opacity:40); }
+.firm_none1{display: none;}	
+.com_min{ width: 606px;}	
+.s_confirm_list{ width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 3;}
+.s_confirm_list .confirm_min1{width:810px; height:573px; background: #fff; position: absolute; top: 0%; left: 43%; margin-left: -405px;}
+.s_confirm_list .firm_left{width:606px; height: 388px; border-bottom: 1px solid #f1f1f1; padding-bottom: 27px; overflow: auto;}
+.s_confirm_list .confirm_min1 .firm_hot .firm_list{margin:28px 0 10px 0;}		
+.s_confirm_list .confirm_min1 .firm_hot .firm_list span{font-size: 14px; color: #222121;}
+.s_confirm_list .confirm_min1 .firm_hot .firm_list .firm_span1{ margin-left: 137px;}
+.s_confirm_list .confirm_min1 .firm_hot .firm_list .firm_span2{ margin-left: 177px; color: #acabab;}
+.s_confirm_list .confirm_min1 .firm_hot ul .firm_first{width:180px;}
+.s_confirm_list .confirm_min1 .firm_hot ul .firm_last1{width: 426px;}
+.s_confirm_list .list_margin{ margin: 0 32px; }
+/*主体*/
+.goods_content{ height: 390px; padding: 0 30px; margin-top: 20px; overflow: auto;}
+.s_confirm_list .goods_hot{ margin-bottom: 32px;}
+.s_confirm_list .goods_margin{ margin-top: 45px;}
+.s_confirm_list .goods_hot .goods_p{ font-size: 14px; color: #000000;}
+.s_confirm_list .goods_hot .goods_nav{margin-top: 10px;}
+.s_confirm_list .goods_hot .goods_nav .goods_text{min-width: 280px;}
+.s_confirm_list .goods_hot .goods_nav .s_nav{ margin-right: 0 !important;}
+.s_confirm_list .goods_hot .goods_nav .goods_span1{ color: #8e8e8e; font-size: 12px; margin-right: 41px;}
+.s_confirm_list .goods_hot .goods_nav .goods_span2{ color: #1d1d1d; font-size: 12px;}
+.s_confirm_list .goods_hot .goods_nav .goods_w{ /*width: 100px;*/}
+.s_confirm_list .s_give{ margin-top: 25px;}
+.s_confirm_list .s_give .give_p{ font-size: 14px; color: #000000; margin-bottom: 16px;}
+.s_confirm_list .s_give .give_span{ color: #8e8e8e; font-size: 12px; margin-right: 40px;}
+.s_confirm_list .s_give .give_hot{ height: 15px; line-height: 15px; margin-right: 56px; cursor: pointer; font-size: 12px;}
+.s_confirm_list .s_give .give_hot span{ display: inline-block; margin-right: 4px; width: 14px; height: 14px; background: url(../images/icon_radio_uncheck.png) no-repeat center; vertical-align: bottom;}
+.s_confirm_list .s_give .give_hot span.s_ton{background: url(../images/icon_radio_check.png) no-repeat center;}
+.s_confirm_list .s_logistics p{ margin-top: 20px;}
+.s_confirm_list .s_logistics span{ display: block; font-size: 12px; color: #8e8e8e;}
+.s_confirm_list .s_logistics input{ height: 30px; width: 100%;margin-top: 16px; font-size: 12px; border: 1px solid #dcdcdc; padding-left: 10px;}
+.s_confirm_list .to_big{ display:block;}
+.s_confirm_list .to_big1{ display: none;}
+.s_confirm_list .logistics_text{ font-size: 12px; color: #333333; margin-bottom: 25px;}
+.s_confirm_list .log_table{ width: 100%;}
+.log_padding{ padding-left: 5px;}
+.log_padding em{ display: inline-block; width: 48px; height: 24px; line-height: 24px; background: #fff6f6; text-align: center; border: 1px solid #eb474e; font-size: 12px; color: #eb474e; border-radius: 2px; margin-right: 10px;}
+.s_confirm_list .log_ul li{height: 40px; line-height: 40px; font-size: 12px; color: #8e8e8e;}
+.s_confirm_list .log_list{ margin-bottom: 10px;}
+.s_confirm_list .log_list li{ width: 100%; height: 44px; line-height: 44px; background: #f3f4f9; color: #282828; font-size: 12px; border-bottom: 1px solid #fff; box-sizing:border-box;}
+.f_cu{ display: inline-block; float: right; width: 36px; height: 24px; margin-top: 10px; line-height: 24px; text-align: center; font-size: 12px; color:#fd8e00; border: 1px solid #fd8e00; background: #fffbf4; border-radius: 2px; margin-right: 10px;}
+.goods_content_none{ display: none;}
+.s_confirm_list .firm_right1{width:204px; background:#0d9242; height: 100%;}
+.s_confirm_list .firm_post{ padding: 0 10px; color: #fff;}
+.s_confirm_list .firm_post .post_text{ font-size: 18px; color: #fff; margin: 20px 0;}
+.s_confirm_list .firm_post .post_list{ padding: 20px 0; border-bottom: 1px solid #088439; font-size: 12px;}
+.s_confirm_list .firm_post .post_margin{ margin: 13px 0;}
+.s_confirm_list .firm_post .post_height{ margin-top: 23px;}
+.s_confirm_list .firm_post .post_height span{ display: block;}
+.s_confirm_list .firm_post .post_list .post_hot{ margin-bottom: 13px;}
+.s_confirm_list .firm_post .post_wight{ width: 135px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis; margin-top: 5px;}
+.s_confirm_list .post_last{ font-size: 12px; color: #fff; margin-top: 19px;}
+.s_confirm_list .firm_button_r{padding: 0 32px;border-top: 1px solid #f1f1f1;}
+.s_confirm_list .firm_button_r .firm_click{ width: 72px; height: 36px; line-height: 36px; text-align: center; font-size: 14px; color: #1f1f1f; background: #e8e8e8; border-radius: 2px; margin-top: 10px;}
+.s_confirm_list .firm_button_r .firm_list_last{display: inline-block; height: 36px; line-height: 36px; font-size: 14px; color: #797979;margin: 12px 35px 0 0;}
+.s_confirm_list .firm_button1 a{ display: inline-block; width: 72px; height: 36px; line-height: 36px; border: 1px solid #d7d7d7; text-align: center; font-size: 14px; color: #1f1f1f; border-radius: 2px; margin-top: 10px;}
+.s_confirm_list .s_center1{padding: 0 32px;/* display: none;*/ border-top: 1px solid #f1f1f1;}
+.s_confirm_list .s_center1 .firm_btn1{ height: 36px; line-height: 36px; margin-top: 10px; font-size: 14px; color: #797979;}
+.s_confirm_list .s_center1 .scroll_postion{ position: relative; }
+.s_confirm_list .s_center1 .firm_btn2{display: inline-block; width: 72px; text-align: center; height: 36px; line-height: 36px; margin-top: 10px; font-size: 14px; color: #1f1f1f; background: #e8e8e8; border-radius: 2px; margin-left: 35px;}
+.s_confirm_list .s_center1 .firm_btn3{display: inline-block; width: 72px; text-align: center; height: 36px; line-height: 36px; margin-top: 10px; font-size: 14px; color: #1f1f1f; background: #e8e8e8; border-radius: 2px; margin-left: 35px;}
+.s_confirm_list .s_center1 .s_scroll{ width: 224px; height: 70px; background: #d8493a; position:absolute; border-radius: 2px; padding:12px; top: -97px; right: -24px; display: none;}
+.s_confirm_list .s_center1 .s_scroll .scroll_p{ font-size: 14px; color: #fff; margin-bottom: 14px;}
+.s_confirm_list .s_center1 .s_scroll .scroll_btn1{ height: 24px; line-height: 24px; font-size: 12px; color: #fff;}
+.s_confirm_list .s_center1 .s_scroll .scroll_btn2{ width: 56px;text-align: center; height: 24px; line-height: 24px; font-size: 12px; color: #262626; background: #fff; border-radius: 2px; margin-left: 15px;}
+.s_confirm_list .s_center1 .s_scroll .scrool_span{ position: absolute;content: "";display: inline-block;height: 0;width: 0;border-color:#d8493a transparent;border-width: 8px 8px 0 8px;  border-style: solid;bottom: -7px; left: 182px;}
+.give_tab_none1{ display: none;}
+.give_tab_none{ display: none;}
+.scroll_none{ display:block;}
+.center_none{ display: none;}
+		/*发货订单弹窗*/
+/*菜品完成订单*/
+.log_none{ display: none;}
+.confirm_height{ height: 600px !important;}
+.goode_height{ height: 425px !important;}
+.f_scroll_height{ height: 79px !important; top: -100px !important;}
+.s_confirm_list .firm_list .firm_span_one{margin-left: 136px;}
+.s_confirm_list .firm_list .firm_span_two{margin-left: 165px; color: #acabab;}
+.s_confirm_list .f_log_list{ width: 100%;}
+.s_confirm_list .f_log_list table{ width: 100%;}
+.s_confirm_list .f_log_list table>thead tr{ height: 34px; line-height: 34px;}
+.s_confirm_list .f_log_list table>thead th{ text-align: left; font-size: 12px; color: #8e8e8e;}
+.s_confirm_list .f_log_list table>tbody>tr{ background: #f3f4f9; border-bottom: 1px solid #fff; height: 44px; line-height: 44px; font-size: 12px; color: #282828;}
+.s_confirm_list .f_log_list table>tbody tr .f_log_hot{ padding-left: 10px;}
+.s_confirm_list .f_log_list table>tbody tr .log_cu em{display: inline-block; width: 36px; height: 24px; line-height: 24px; font-size: 12px; color: #fd8e00; border: 1px solid #fd8e00; background: #fffbf4; text-align: center; border-radius: 2px; margin-left: 10px;}
+.s_confirm_list .bution_list .bution_text{ font-size: 14px; color: #000;}
+.s_confirm_list .bution_hot{ font-size: 12px; color: #8e8e8e; margin: 12px 0 10px 0;}
+.s_confirm_list .bution_hot i{ color: #f52f2f; display: inline-block; margin-right: 4px;}
+.s_confirm_list .bution_list .bution_inp{ width: 97%; border: 1px solid #dcdcdc; height: 32px; padding-left: 10px;}
+.s_confirm_list .bution_plase ul{}
+.s_confirm_list .bution_plase ul li{ font-size: 12px; color: #1d1d1d; margin-right: 70px; cursor: pointer; position: relative;}
+.s_confirm_list .bution_plase ul li i{display: inline-block;vertical-align: middle; width: 14px; height: 12px; background: url(../images/icon_tishi.png) no-repeat center; margin-left: 3px;}
+.s_confirm_list .bution_plase ul li em{ display: inline-block; margin-right: 4px; width: 14px; height: 14px; background: url(../images/icon_radio_uncheck.png) no-repeat center; vertical-align: middle;}
+.s_confirm_list .bution_plase ul li em.bution_em{background: url(../images/icon_radio_check.png) no-repeat center;}
+.s_confirm_list .bution_plase ul li .bution_hover{ width: 130px; padding: 10px 10px; position: absolute; top: 30px; left: 15px; background: #fff;display: none; -moz-box-shadow: 1px 1px 8px #ddd;-webkit-box-shadow: 1px 1px 8px #ddd;-o-box-shadow: 1px 1px 8px #ddd;box-shadow: 1px 1px 8px #ddd;}
+.s_confirm_list .bution_clik{ color: #000; font-size: 12px; display: none;}
+/*客房-前台记账完成订单弹窗*/
+.firm_none1{ display: none;}
+.s_confirm_list .com_log{height: 511px;}
+.s_confirm_list .com_tab{ margin-top: 20px; }
+.s_confirm_list .com_log .com_ul{/*width: 100%;*/padding: 0 30px;border-bottom: 1px solid #f1f1f1; height: 71px;color: #acabab;font-size: 14px; }
+.s_confirm_list .com_log .com_ul li{width: 56px;line-height: 71px;cursor: pointer; margin-right: 79px;}
+.s_confirm_list .com_log .com_ul li.ul_actve{border-bottom: 2px solid #347def;color: #222121;line-height: 70px;}
+.s_confirm_list .com_table{ margin: 0 30px;}
+.com_height{height: 263px;overflow: auto; margin-bottom: 30px;}
+.f_con_text{ color: #8e8e8e; font-size: 12px; margin-bottom: 10px;}
+.f_text_blak{ color: #282828;}
+.f_con_text .f_con_width{ display: inline-block; width: 65px; margin-right: 10px;}
+.s_confirm_list .com_table .com_height>table{ width: 100%;}
+.s_confirm_list .com_table .com_height>table>thead>tr{ height: 34px; line-height: 34px; color: #8e8e8e; font-size: 12px; text-align: left;}
+.s_confirm_list .com_table .com_height>table>thead>tr>th{font-weight: normal;}
+.s_confirm_list .com_table .com_height>table>tbody>tr{ height: 44px; line-height: 44px; font-size: 12px; color: #282828; background: #f3f4f9; border-bottom: 1px solid #fff;}
+.s_confirm_list .com_table .com_height>table>tbody>tr .com_padding{ padding-left: 10px;}
+.s_confirm_list .com_list .w_typr_info.w_first{margin-top: 30px;}
+.s_confirm_list .com_list .w_typr_info.w_second{margin-top: 25px;}
+.s_confirm_list .com_list .w_typr_info.w_third{clear: both; padding-top: 30px;}
+.s_confirm_list .com_list .w_typr_info{margin-left: 30px;}
+.s_confirm_list .com_list .w_typr_info .w_pass_infor{font-size: 14px;color: #000000;}
+.s_confirm_list .com_list .w_typr_info .w_pass_left{display: inline-block; width: 65px;height: 80px; }
+.s_confirm_list .com_list .w_typr_info .w_pass_left .details_one{display: inline-block; font-size: 12px;color: #8e8e8e;padding-top: 10px;}
+.s_confirm_list .com_list .w_typr_info .w_pass_right{display: inline-block;}
+.s_confirm_list .com_list .w_typr_info .w_pass_right td{float: left;font-size: 12px;color: #8e8e8e;padding-top: 10px;width: 150px;}
+.s_confirm_list .com_list .w_typr_info .w_pass_right td i{font-size: 12px;color: #1d1d1d;margin-right: 3px;}
+.s_confirm_list .com_list .w_typr_info .w_details_infor em{display: inline-block;width: 230px;}
+.s_confirm_list .com_list .w_typr_info .w_details_infor .details_one{display: inline-block; font-size: 12px;color: #8e8e8e;padding-top: 10px;}
+.s_confirm_list .com_list .w_typr_info .w_details_infor .details_two{display: inline-block; font-size: 12px;color: #1d1d1d;padding-top: 10px;padding-left: 35px;}
+.s_confirm_list .com_list .w_typr_info .w_details_infor .details_three{display: inline-block; font-size: 12px;color: #8e8e8e;padding-top: 10px;}
+.s_confirm_list .com_list .w_typr_info .w_details_infor .details_four{display: inline-block; font-size: 12px;color: #1d1d1d;padding-top: 10px;padding-left: 23px;}
+.s_confirm_list .com_list .w_typr_info .w_details_infor .details_width{ width: 330px !important;}
+.s_confirm_list .com_list .w_typr_info .infor_clear{ margin-top: 10px;}
+.s_confirm_list .com_list .w_typr_info .infor_clear .infor_left{ width: 10%; color: #8e8e8e; font-size: 12px;}
+.s_confirm_list .com_list .w_typr_info .infor_clear .infor_right{ width: 90%; font-size: 12px; color: #8e8e8e;}
+.s_confirm_list .com_list .w_typr_info .infor_clear .infor_right span{ display: block; margin-bottom: 10px;}
+.s_confirm_list .com_list .w_typr_info .infor_clear .infor_right span em{ color: #1d1d1d;}
+.s_confirm_list .com_list .w_typr_info .infor_clear .infor_right li{width: 30%; margin-right: 3%;}
+.s_confirm_list .com_tab>div{ display: none;}

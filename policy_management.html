@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="css/room.css" />
+		<link rel="stylesheet" href="css/l_tab_title.css" />
+		<title>酒店政策管理</title>
+	</head>
+
+	<body>
+		<!--content-->
+		<!--头部--ed-->
+		<div class="main1 l_content">
+			<div class="policy_time">
+				<p>入住和离店时间</p>
+			</div>
+			<div class="policy_time_details">
+				<p>
+					<span>办理入住时间：<i>12:00</i>至<i>18:00</i></span>
+					<span>办理退房时间：<i>8:00</i>至<i>12:00</i></span>
+					<span class="polity_set">设置</span>
+				</p>
+			</div>
+			<div class="polity_all">
+				<div class="policy_time_fir">
+					<p>
+						<em>
+						<i>*</i>
+						<span>最早入住时间：
+							<select>
+								<option>不限制</option>
+								<option>10:00</option>
+								<option>11:00</option>
+								<option>12:00</option>
+								<option>13:00</option>
+								<option>14:00</option>
+								<option>15:00</option>
+							</select>
+						</span>
+					</em>
+						<em>
+						<i>*</i>
+						<span>最早离店时间：
+							<select>
+								<option>不限制</option>
+								<option>06:00</option>
+								<option>07:00</option>
+								<option>08:00</option>
+								<option>09:00</option>
+								<option>10:00</option>
+								<option>11:00</option>
+								<option>12:00</option>
+							</select>
+						</span>
+					</em>
+					</p>
+				</div>
+				<div class="policy_time_fir">
+					<p>
+						<em>
+						<i>*</i>
+						<span>最晚入住时间：
+							<select class="today_time">
+								<option>不限制</option>
+								<option>16:00</option>
+								<option>17:00</option>
+								<option>18:00</option>
+								<option>19:00</option>
+								<option>20:00</option>
+								<option>21:00</option>
+								<option>22:00</option>
+								<option>23:00</option>
+								<option>00:00</option>
+							</select>
+						</span>
+					</em>
+						<em>
+						<i>*</i>
+						<span>最晚离店时间：
+							<select class="later_time">
+								<option>不限制</option>
+								<option>10:00</option>
+								<option>11:00</option>
+								<option>12:00</option>
+								<option>13:00</option>
+								<option>14:00</option>
+								<option>15:00</option>
+							</select>
+						</span>
+					</em>
+					</p>
+				</div>
+				<div class="policy_anno">
+					<p>
+						<span>办理入住时间：<i>12:00</i>以前</span>
+						<span>办理退房时间：<i>12:00</i>以前</span>
+					</p>
+				</div>
+				<div class="policy_btn">
+					<span class="polity_save">保存</span>
+				</div>
+			</div>
+
+			<div class="policy_time">
+				<p>周末设置</p>
+			</div>
+			<div class="weekend_set">
+				<p>
+					<span>周末规则：<i>周六</i><i>周日</i></span>
+					<span class="week_set">设置</span>
+				</p>
+			</div>
+			<div class="week_all">
+				<div class="weekend_rule">
+					<p>
+						<span>周末规则:</span>
+						<span>
+						<input  type="checkbox" />周一
+					</span>
+						<span>
+						<input  type="checkbox" />周二
+					</span>
+						<span>
+						<input  type="checkbox" />周三
+					</span>
+						<span>
+						<input  type="checkbox" />周四
+					</span>
+						<span>
+						<input  type="checkbox" />周五
+					</span>
+						<span>
+						<input  type="checkbox" />周六
+					</span>
+						<span>
+						<input  type="checkbox" />周日
+					</span>
+					</p>
+				</div>
+				<div class="weekend_btn">
+					<span class="weekend_save">保存</span>
+				</div>
+			</div>
+		</div>
+
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(".polity_set").click(function(e) {
+				$(".policy_time_details").hide();
+				$(".polity_all").show();
+			})
+			$(".polity_save").click(function(e) {
+				$(".polity_all").hide();
+				$(".policy_time_details").show();
+			})
+		</script>
+		<script>
+			$(".week_set").click(function(e) {
+				$(".weekend_set").hide();
+				$(".week_all").show();
+			})
+			$(".weekend_save").click(function(e) {
+				$(".week_all").hide();
+				$(".weekend_set").show();
+			})
+		</script>
+		<script>
+			$('.today_time option:eq(3)').attr('selected', 'selected');
+			$('.later_time option:eq(5)').attr('selected', 'selected');
+		</script>
+	</body>
+
+</html>
